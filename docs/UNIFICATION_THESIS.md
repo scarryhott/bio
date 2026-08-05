@@ -151,6 +151,11 @@ CLOSED_RND1_CLOSURE_HYBRID_EXECUTION
 CLOSED_THREE_ARM_COMPARISON_ARCHITECTURE
 CLOSED_TAGTOKN_FRAMEWORK_COMPATIBILITY_CONTROLS
 CLOSED_FINITE_UPSTREAM_VERIFIED_RND1_CLOSURE_INTEGRATION
+CLOSED_RADICAL_NUMERICS_MODEL_AND_DATA_PROVENANCE
+CLOSED_FULL_RADICAL_NUMERICS_OPEN_SUITE_COMPARISON_FRAMEWORK
+CLOSED_ARC_DERIVED_RETURN_UNIFIED_RUNTIME_ARCHITECTURE
+CLOSED_DATA_AS_RESOLVED_RELATION_PRINCIPLE
+CLOSED_ENDOGENOUS_VERIFICATION_TOPOLOGY_DESIGN
 ```
 
 (Also retained: causal hybrid facts from Chapter A —
@@ -164,12 +169,17 @@ CLOSED_FINITE_UPSTREAM_VERIFIED_RND1_CLOSURE_INTEGRATION
 OPEN_BIO_CLOSURE_VS_RADICAL_NUMERICS_RESULT
 OPEN_HYBRID_VS_INDEPENDENT_ADVANTAGE
 OPEN_BIOLOGICAL_RETURN_VALIDATION
+OPEN_FULL_RADICAL_NUMERICS_BIOLOGICAL_SUITE_RUN
+OPEN_BIO_CLOSURE_VS_RADICAL_NUMERICS_BIOLOGICAL_RESULT
+OPEN_FULL_BIOLOGICAL_UNIFICATION_AGI_EXECUTION
+OPEN_EVO_REPRESENTATION_IN_RETURN_UNIFIED_RUNTIME
 OPEN_HOLISTIC_QUALITY_ADVANTAGE
 OPEN_CONNECTED_RETURN_QUALITY_ADVANTAGE
 ```
 
-The thesis is the **programme** of Bio Closure versus Radical Numerics. It must
-**not** claim that the three-arm comparison itself is closed.
+The thesis is the **programme** of Bio Closure versus Radical Numerics under
+**unified admission verification**. It must **not** claim that the biological
+suite execution or three-arm biological result is closed.
 
 ---
 
@@ -195,7 +205,70 @@ vs \(M_{\mathrm{RND1}}\); biological return validation.
 
 ---
 
-## Chapter B — Independent Bio Closure kernel (ported; not yet race-tested)
+## Chapter C — Holistic biology AGI vs existing architecture and data
+
+**Unified admission verification** means: data, action, environment, candidate
+verification topology, and memory become jointly admissible inside one return —
+not “train → predict → post-hoc check” (`docs/RETURN_UNIFIED_BIO_AGI_RUNTIME.md`).
+
+Against **existing** Radical Numerics–associated architecture and data, the
+comparison surface is defined by
+`docs/FULL_RADICAL_NUMERICS_OPEN_SUITE_COMPARISON.md` and
+`benchmarks/radical_numerics_suite_manifest.json`:
+
+| Arm class | Examples | Role in admission |
+|-----------|----------|-------------------|
+| Closure-native | `bio-closure-independent` | Proposal + return + memory |
+| Learned biological | Evo 1.x / Evo 2 open checkpoints + OpenGenome2 | Representation inside the same episode |
+| Hybrid language | RND1 / RND1+closure | Separate language/substrate chapter (Chapter A) |
+| Reported-only | Omnii | External table only — never a local rerun |
+
+Incorrect organization:
+
+```text
+train Evo/RND1 → emit prediction → closure filter → accept/reject
+```
+
+Required organization:
+
+```text
+current relational basis
+↔ observations + legal actions (+ optional learned representation)
+↔ provisional transformation
+↔ independently returned biological consequence
+↔ verification topology admitted within that return
+↔ integrated next basis
+```
+
+Provenance boundary (`docs/RADICAL_NUMERICS_BIOLOGY_DATA_PROVENANCE.md`):
+RND1 ≠ genome model; Evo 2 / OpenGenome2 are the open biological baselines;
+Omnii remains reported-only.
+
+### Protocol
+
+1. Hold out identical biological returns (variant effect, RNA fitness,
+   perturbation response, gene completion, likelihood where licensed).
+2. Run native learned biological arms (Evo open checkpoints) **inside** the
+   return-unified episode — not as orphaned scorers.
+3. Run \(M_{\mathrm{ClosureBio}}\) on the same episode/legal field/return channel.
+4. Optionally run learned-representation + closure composition arms.
+5. Keep Chapter A language hybrid results out of the biological winner table.
+6. Score with §4 criteria; forbid Omnii “reruns”; forbid using Chapter A
+   coherence shadows as biological success.
+
+Framework CLOSED; suite **execution** OPEN
+(`OPEN_FULL_RADICAL_NUMERICS_BIOLOGICAL_SUITE_RUN`,
+`OPEN_FULL_BIOLOGICAL_UNIFICATION_AGI_EXECUTION`).
+
+Plan without downloading weights:
+
+```bash
+python benchmarks/plan_radical_numerics_suite.py --json
+```
+
+---
+
+## Chapter D — Independent Bio Closure kernel (ported; not yet race-tested)
 
 Source: `closure/independent_model.py`.  
 Loop identity:
@@ -216,18 +289,19 @@ comparison against RND1 is OPEN
 
 ---
 
-## Chapter C — Three-arm empirical protocol (required next)
+## Chapter E — Three-arm empirical language/substrate protocol (optional companion)
 
-1. Define matched biological tasks with **independently returned** environments
-   (assay, simulator, or human-curated consequence — not model echo).
-2. Run \(M_{\mathrm{RND1}}\) (language or adapted prediction where applicable).
-3. Run \(M_{\mathrm{ClosureBio}}\) on the same task/legal field/return channel.
-4. Run \(M_{\mathrm{RND1+Closure}}\) hybrid modes where language or proposal
-   capacity is needed.
-5. Score with the criteria in §4 — not by reusing Chapter A coherence shadows as
-   the independent model’s success metric.
+Retained for language and composition questions \(Q_1\)–\(Q_3\) on RND1-class
+tasks. Biological holistic closure is Chapter C, not this companion.
 
-Until Chapter C reports, the programme title stands; the **result** does not.
+1. Define matched tasks with independently returned environments.
+2. Run \(M_{\mathrm{RND1}}\) where language/proposal capacity applies.
+3. Run \(M_{\mathrm{ClosureBio}}\) on the same legal field/return channel.
+4. Run \(M_{\mathrm{RND1+Closure}}\) hybrid modes.
+5. Do not reuse Chapter A coherence shadows as the independent model’s success metric.
+
+Until Chapters C–E report, the programme title stands; the **biological result**
+does not.
 
 ---
 

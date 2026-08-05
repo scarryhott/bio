@@ -11,31 +11,41 @@ CLOSED_FINITE_UPSTREAM_VERIFIED_RND1_CLOSURE_INTEGRATION
 CLOSED_FULL_MODEL_CAUSAL_INTEGRATION
 CLOSED_FULL_MODEL_CONNECTED_RETURN_EXECUTION
 MEASURED_HYBRID_30B_FOUR_MODE_COMPARISON
+CLOSED_RADICAL_NUMERICS_MODEL_AND_DATA_PROVENANCE
+CLOSED_FULL_RADICAL_NUMERICS_OPEN_SUITE_COMPARISON_FRAMEWORK
+CLOSED_ARC_DERIVED_RETURN_UNIFIED_RUNTIME_ARCHITECTURE
+CLOSED_DATA_AS_RESOLVED_RELATION_PRINCIPLE
 OPEN_BIO_CLOSURE_VS_RADICAL_NUMERICS_RESULT
 OPEN_HYBRID_VS_INDEPENDENT_ADVANTAGE
 OPEN_BIOLOGICAL_RETURN_VALIDATION
+OPEN_FULL_RADICAL_NUMERICS_BIOLOGICAL_SUITE_RUN
+OPEN_BIO_CLOSURE_VS_RADICAL_NUMERICS_BIOLOGICAL_RESULT
+OPEN_FULL_BIOLOGICAL_UNIFICATION_AGI_EXECUTION
 OPEN_HOLISTIC_QUALITY_ADVANTAGE
 OPEN_CONNECTED_RETURN_QUALITY_ADVANTAGE
 ```
 
 **Programme thesis:** `docs/UNIFICATION_THESIS.md` —
 *Bio Closure and Radical Numerics: Independent Return, Learned Proposal, and the
-Three-Arm Test of Closure-Native AGI*.
+Three-Arm Test of Closure-Native AGI*, now including **holistic biology AGI vs
+existing architecture/data under unified admission verification**
+(`docs/RETURN_UNIFIED_BIO_AGI_RUNTIME.md`,
+`docs/FULL_RADICAL_NUMERICS_OPEN_SUITE_COMPARISON.md`).
 
 \[
 \boxed{
-M_{\mathrm{RND1}}
-\;\text{vs}\;
 M_{\mathrm{ClosureBio}}
 \;\text{vs}\;
-M_{\mathrm{RND1+Closure}}
+M_{\mathrm{learned\ bio}}
+\;\text{vs}\;
+M_{\mathrm{RND1(+Closure)}}
+\quad\text{inside one return-unified admission}
 }
 \]
 
-Full closure = that three-arm compare under matched biological tasks and
-independently returned environments. The four hybrid modes
-(`off|probe|full|full-connected-return`) are **Chapter A** (hybrid substrate),
-not the final thesis conclusion. Empirical three-arm results remain OPEN.
+Full biological closure = that compare on held-out returned biological episodes.
+Chapter A (RND1 hybrid four-mode) remains a language/substrate measurement, not
+the biological thesis conclusion. Suite **framework** CLOSED; suite **run** OPEN.
 
 ## Full unified 30B holistic comparison — Chapter A hybrid only (A100-80GB, bf16)
 

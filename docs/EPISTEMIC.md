@@ -14,21 +14,28 @@ Explicit labels used throughout this repository:
 See `docs/UNIFICATION_THESIS.md`:
 
 # Bio Closure and Radical Numerics  
-## Independent Return, Learned Proposal, and the Three-Arm Test of Closure-Native AGI
+## Independent Return, Learned Proposal, and Unified Admission Verification
+
+Holistic biology AGI closure is comparison **against existing architecture and
+data** (Evo/OpenGenome2 open suite; RND1 as language chapter; Omnii reported-only)
+**inside** return-unified admission — not post-hoc filtering
+(`docs/RETURN_UNIFIED_BIO_AGI_RUNTIME.md`,
+`docs/FULL_RADICAL_NUMERICS_OPEN_SUITE_COMPARISON.md`,
+`docs/RADICAL_NUMERICS_BIOLOGY_DATA_PROVENANCE.md`).
 
 \[
-M_{\mathrm{RND1}}
-\;\text{vs}\;
 M_{\mathrm{ClosureBio}}
 \;\text{vs}\;
-M_{\mathrm{RND1+Closure}}
+M_{\mathrm{learned\ bio}}
+\;\text{vs}\;
+M_{\mathrm{RND1(+Closure)}}
 \]
 
 | Arm | What it is | Empirical status |
 |-----|------------|------------------|
-| Radical Numerics | Learned 30B proposal topology | Hybrid modes measured; alone vs closure OPEN |
-| Independent Bio Closure | Closure-native action/return/learning loop | Port CLOSED; vs RND1 OPEN |
-| Hybrid | RND1 proposal + closure admission | Four-mode A100 MEASURED; quality OPEN |
+| Independent Bio Closure | Closure-native action/return/learning | Port CLOSED; vs bio suite OPEN |
+| Learned biological (Evo open) | Genome representations in the same episode | Framework CLOSED; run OPEN |
+| Hybrid RND1±closure | Language/substrate Chapter A | Four-mode A100 MEASURED; not the bio winner table |
 
 ### Architecture CLOSED
 
@@ -36,12 +43,16 @@ M_{\mathrm{RND1+Closure}}
 CLOSED_INDEPENDENT_BIO_CLOSURE_MODEL_PORT
 CLOSED_RND1_CLOSURE_HYBRID_EXECUTION
 CLOSED_THREE_ARM_COMPARISON_ARCHITECTURE
+CLOSED_FULL_RADICAL_NUMERICS_OPEN_SUITE_COMPARISON_FRAMEWORK
+CLOSED_ARC_DERIVED_RETURN_UNIFIED_RUNTIME_ARCHITECTURE
 ```
 
 ### Empirical thesis OPEN
 
 ```text
 OPEN_BIO_CLOSURE_VS_RADICAL_NUMERICS_RESULT
+OPEN_FULL_RADICAL_NUMERICS_BIOLOGICAL_SUITE_RUN
+OPEN_FULL_BIOLOGICAL_UNIFICATION_AGI_EXECUTION
 OPEN_HYBRID_VS_INDEPENDENT_ADVANTAGE
 OPEN_BIOLOGICAL_RETURN_VALIDATION
 ```
