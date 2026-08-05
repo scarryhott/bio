@@ -3,38 +3,49 @@
 ## Current verdict
 
 ```text
+CLOSED_INDEPENDENT_BIO_CLOSURE_MODEL_PORT
+CLOSED_RND1_CLOSURE_HYBRID_EXECUTION
+CLOSED_THREE_ARM_COMPARISON_ARCHITECTURE
+CLOSED_TAGTOKN_FRAMEWORK_COMPATIBILITY_CONTROLS
 CLOSED_FINITE_UPSTREAM_VERIFIED_RND1_CLOSURE_INTEGRATION
 CLOSED_FULL_MODEL_CAUSAL_INTEGRATION
 CLOSED_FULL_MODEL_CONNECTED_RETURN_EXECUTION
-CLOSED_FULL_CLOSURE_CONTROLLER_REUNIFIED_RND1
-MEASURED_FULL_UNIFIED_30B_HOLISTIC_COMPARISON
-CLOSED_INDEPENDENT_CLOSURE_MODEL_PORT
-CLOSED_TAGTOKN_FRAMEWORK_COMPATIBILITY_CONTROLS
-OPEN_INDEPENDENT_CLOSURE_VS_RND1_COMPARISON
+MEASURED_HYBRID_30B_FOUR_MODE_COMPARISON
+OPEN_BIO_CLOSURE_VS_RADICAL_NUMERICS_RESULT
+OPEN_HYBRID_VS_INDEPENDENT_ADVANTAGE
+OPEN_BIOLOGICAL_RETURN_VALIDATION
 OPEN_HOLISTIC_QUALITY_ADVANTAGE
 OPEN_CONNECTED_RETURN_QUALITY_ADVANTAGE
 ```
 
-**Definition:** the *full unified verification* completed so far is the 30B-model
-holistic comparison across `off | probe | full | full-connected-return` on
-`radicalnumerics/RND1-Base-0910` under identical prompts, seeds, steps, and hardware.
-That experiment is the RND1 hybrid/substrate comparison, not the independent-model
-head-to-head.
+**Programme thesis:** `docs/UNIFICATION_THESIS.md` —
+*Bio Closure and Radical Numerics: Independent Return, Learned Proposal, and the
+Three-Arm Test of Closure-Native AGI*.
 
-Authoritative artifacts:
+\[
+\boxed{
+M_{\mathrm{RND1}}
+\;\text{vs}\;
+M_{\mathrm{ClosureBio}}
+\;\text{vs}\;
+M_{\mathrm{RND1+Closure}}
+}
+\]
+
+Full closure = that three-arm compare under matched biological tasks and
+independently returned environments. The four hybrid modes
+(`off|probe|full|full-connected-return`) are **Chapter A** (hybrid substrate),
+not the final thesis conclusion. Empirical three-arm results remain OPEN.
+
+## Full unified 30B holistic comparison — Chapter A hybrid only (A100-80GB, bf16)
+
+Authoritative hybrid artifacts:
 
 * `benchmarks/results/cloud_holistic_unified.json`
 * HF run [`hfjobs_a100_holistic_6a7372606b79c09949c23580`](https://huggingface.co/datasets/scarryhott/bio-closure-benchmarks/tree/main/runs/hfjobs_a100_holistic_6a7372606b79c09949c23580)
-  (job [`6a7372606b79c09949c23580`](https://huggingface.co/jobs/scarryhott/6a7372606b79c09949c23580))
-* Thesis: `docs/UNIFICATION_THESIS.md`
-
-**Quality** advantages remain OPEN. Coherence shadows and token-diff tallies are
-axiometric instruments, not closure identity.
-
-## Full unified 30B holistic comparison (A100-80GB, bf16)
 
 Hardware: ≈ **58 GB** allocated. Seeds `1..5`, 32 steps, prompt
-“The living cell maintains”.
+“The living cell maintains”. **RND1 substrate only** — not \(M_{\mathrm{ClosureBio}}\).
 
 | Mode | Mean latency | OPEN events | Coherence shadow | Difference from `off` |
 |------|-------------:|------------:|-----------------:|----------------------:|
@@ -129,7 +140,7 @@ independently returned environments. Therefore:
 
 ```text
 CLOSED_INDEPENDENT_CLOSURE_MODEL_PORT
-OPEN_INDEPENDENT_CLOSURE_VS_RND1_COMPARISON
+OPEN_BIO_CLOSURE_VS_RADICAL_NUMERICS_RESULT
 ```
 
 ## Tagtokn compatibility

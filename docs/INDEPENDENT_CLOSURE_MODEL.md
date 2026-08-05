@@ -38,28 +38,31 @@ authority remains `OPEN`. A contradictory or unrecoverable return is
 `REJECTED`. Only a complete independently returned cycle is `ADMITTED` and
 enters authoritative memory. Repetition does not inflate memory.
 
-## Relationship to the RND1 work
+## Relationship to the three-arm programme
 
-The existing 30B result is a hybrid substrate experiment:
+Programme thesis: `docs/UNIFICATION_THESIS.md`.
+
+The existing 30B result is **Chapter A** — hybrid substrate only:
 
 ```text
 RND1 proposal + closure admission
 ```
 
-This package adds the missing independent arm:
+This package is arm \(M_{\mathrm{ClosureBio}}\):
 
 ```text
 closure-native proposal + closure-native return resolution
 ```
 
-A valid future comparison is therefore:
+A valid future comparison is:
 
 1. native RND1;
 2. independent closure-native model;
-3. RND1 + closure hybrid.
+3. RND1 + closure hybrid;
 
-These arms must use matched tasks and returned environments. Token coherence
-from the previous RND1 run is not a score for this independent model.
+under matched biological tasks and independently returned environments. Token
+coherence from the previous RND1 run is not a score for this independent model.
+Empirical status: `OPEN_BIO_CLOSURE_VS_RADICAL_NUMERICS_RESULT`.
 
 ## Tagtokn compatibility audit
 

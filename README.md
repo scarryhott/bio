@@ -22,34 +22,42 @@ Model weights are **not** stored in this repository.
 | `docs/` | Architecture, stage status, thesis, provenance, open-suite comparison, return-unified runtime | DESIGN DERIVATION / REPORTED ARTIFACT |
 | `UPSTREAM.md` | Provenance | REPORTED ARTIFACT |
 
-**Stage verdict** (see `docs/STAGE_STATUS.md`):
+**Programme thesis** (`docs/UNIFICATION_THESIS.md`):
 
 ```text
+CLOSED_INDEPENDENT_BIO_CLOSURE_MODEL_PORT
+CLOSED_RND1_CLOSURE_HYBRID_EXECUTION
+CLOSED_THREE_ARM_COMPARISON_ARCHITECTURE
 CLOSED_FULL_MODEL_CAUSAL_INTEGRATION
 CLOSED_FULL_MODEL_CONNECTED_RETURN_EXECUTION
-MEASURED_FULL_UNIFIED_30B_HOLISTIC_COMPARISON
-CLOSED_INDEPENDENT_CLOSURE_MODEL_PORT
+MEASURED_HYBRID_30B_FOUR_MODE_COMPARISON
 CLOSED_RADICAL_NUMERICS_MODEL_AND_DATA_PROVENANCE
 CLOSED_FULL_RADICAL_NUMERICS_OPEN_SUITE_COMPARISON_FRAMEWORK
 CLOSED_ARC_DERIVED_RETURN_UNIFIED_RUNTIME_ARCHITECTURE
+OPEN_BIO_CLOSURE_VS_RADICAL_NUMERICS_RESULT
+OPEN_HYBRID_VS_INDEPENDENT_ADVANTAGE
+OPEN_BIOLOGICAL_RETURN_VALIDATION
 OPEN_FULL_RADICAL_NUMERICS_BIOLOGICAL_SUITE_RUN
 OPEN_BIO_CLOSURE_VS_RADICAL_NUMERICS_BIOLOGICAL_RESULT
 OPEN_HOLISTIC_QUALITY_ADVANTAGE
 OPEN_CONNECTED_RETURN_QUALITY_ADVANTAGE
 ```
 
-Authoritative 30B artifact: `benchmarks/results/cloud_holistic_unified.json`  
-(HF run `hfjobs_a100_holistic_6a7372606b79c09949c23580`).  
-Thesis: `docs/UNIFICATION_THESIS.md`.
+Three arms: \(M_{\mathrm{RND1}}\) · \(M_{\mathrm{ClosureBio}}\) · \(M_{\mathrm{RND1+Closure}}\).  
+Chapter A (hybrid four-mode A100) is measured; the three-arm biological comparison is OPEN.
 
-| Mode | Mean latency | vs `off` |
+Authoritative hybrid artifact: `benchmarks/results/cloud_holistic_unified.json`  
+(HF run `hfjobs_a100_holistic_6a7372606b79c09949c23580`). Independent kernel:
+`closure/independent_model.py` — see `docs/INDEPENDENT_CLOSURE_MODEL.md`.
+
+| Hybrid mode | Mean latency | vs `off` |
 |------|-------------:|----------|
 | `off` | 5.80 s | baseline |
 | `probe` | 6.03 s | identical (0/68) |
 | `full` | 6.43 s | 63/68 diffs |
 | `full-connected-return` | 5.88 s | 61/68 diffs; ≠ `full`; 1953 OPEN |
 
-Not a quality win.
+Not a quality win; not the independent-model head-to-head.
 
 ## Return-unified runtime: not pre/post training
 
