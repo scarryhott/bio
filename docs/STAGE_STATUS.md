@@ -6,21 +6,18 @@
 CLOSED_FINITE_UPSTREAM_VERIFIED_RND1_CLOSURE_INTEGRATION
 CLOSED_FULL_MODEL_CAUSAL_INTEGRATION
 CLOSED_FULL_CLOSURE_CONTROLLER_REUNIFIED_RND1
-OPEN_FULL_UNIFIED_30B_HOLISTIC_COMPARISON
+MEASURED_FULL_UNIFIED_30B_HOLISTIC_COMPARISON
 OPEN_HOLISTIC_QUALITY_ADVANTAGE
 OPEN_CONNECTED_RETURN_QUALITY_ADVANTAGE
 ```
 
-**Definition:** the *full unified verification closure* is the **full 30B-model
-holistic comparison** across
+**Definition:** the *full unified verification* **is** the 30B-model holistic
+comparison across `off | probe | full | full-connected-return` on
+`radicalnumerics/RND1-Base-0910`. That measurement is now recorded
+(`benchmarks/results/cloud_holistic_unified.json`, HF dataset run
+`hfjobs_a100_holistic_6a7372606b79c09949c23580`). **Quality** advantages remain OPEN.
 
-```text
-off | probe | full | full-connected-return
-```
-
-on `radicalnumerics/RND1-Base-0910` under identical prompts, seeds, and hardware.
-Finite controller reunification and the prior A100 `off/probe/full` causal run are
-necessary foundations; they are **not** that closure.
+Thesis: `docs/UNIFICATION_THESIS.md`.
 
 ## Full-model result (A100-80GB, bf16)
 

@@ -2,17 +2,24 @@
 
 ## Full unified verification (= 30B holistic comparison)
 
-**Definition:** full unified verification closure is the 30B holistic mode compare
-(`off | probe | full | full-connected-return`) on `RND1-Base-0910` — not finite
-controller reunification alone.
+**Definition:** full unified verification is the 30B holistic mode compare
+(`off | probe | full | full-connected-return`) on `RND1-Base-0910`.
 
 | Field | Value |
 |-------|-------|
-| Job (in flight) | [`6a7372606b79c09949c23580`](https://huggingface.co/jobs/scarryhott/6a7372606b79c09949c23580) (`bio-rnd1-holistic-unified`) |
-| Flavor | `a100-large` |
-| Modes | `off probe full full-connected-return` × seeds `1..5` × 32 steps |
-| Status label until assessed | `OPEN_FULL_UNIFIED_30B_HOLISTIC_COMPARISON` |
-| Entrypoint | `scripts/hf_jobs_a100_bench.sh` |
+| Job | [`6a7372606b79c09949c23580`](https://huggingface.co/jobs/scarryhott/6a7372606b79c09949c23580) **COMPLETED** |
+| Results | [`hfjobs_a100_holistic_…`](https://huggingface.co/datasets/scarryhott/bio-closure-benchmarks/tree/main/runs/hfjobs_a100_holistic_6a7372606b79c09949c23580) |
+| Local | `benchmarks/results/cloud_holistic_unified.json` |
+| Thesis | `docs/UNIFICATION_THESIS.md` |
+
+| Mode | Mean latency | Open | Coherence | vs `off` |
+|------|-------------:|-----:|----------:|----------|
+| off | 5.80 s | 0 | 0.731 | — |
+| probe | 6.03 s | 961 | 0.731 | identical |
+| full | 6.43 s | 961 | 0.448 | 63/68 |
+| full-connected-return | 5.88 s | 1953 | 0.075 | 61/68; ≠ full |
+
+Quality advantages remain OPEN.
 
 ## Prior A100 causal run (off/probe/full only)
 
