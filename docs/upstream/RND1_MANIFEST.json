@@ -1,0 +1,37 @@
+{
+  "organization": "https://github.com/RadicalNumerics",
+  "upstream_repository": "https://github.com/RadicalNumerics/RND1",
+  "upstream_commit": "13f81540fc2f4eb3da0959956398e5c395620b15",
+  "model_weights": "radicalnumerics/RND1-Base-0910",
+  "license": "Apache-2.0",
+  "verified_at": "2026-08-04",
+  "epistemic_status": "REPORTED ARTIFACT",
+  "pristine_files": {
+    "rnd/modeling_rnd.py": "3f3bd2f8944f3245d22b7954b1f1bf0c2d7d65a43de19237f719cad7f3f92a92",
+    "rnd/configuration_rnd.py": "6af214e4fa047bc67991ecab074adb5dcc65c96c349e2aa113fc52d71d3f8214",
+    "rnd/terminal_visualizer.py": "cafd986035c135920a3ad899956f74be9781cfe0ed1f27efd23f1d337d461fc2",
+    "LICENSE": "0ef76345a09f64901f9675babf15249029d092062b8357fd90dcaddf7175eb4d",
+    "NOTICE": "e2665ba2a8da5ea9660dd0ba66423668ec6ca04c35fe4bffdd7a7fb8292d9091",
+    "demo_rnd_generation.py": "77e55ee011565adea38d1236dcf111aff8ee7cbcefdf18e54ec67195a68ffc9b",
+    ".pre-commit-config.yaml": "0c1e1007d8be19bdf9501a5bc1cd79787e510326f2dd006c43410000ea228232"
+  },
+  "intentionally_modified": {
+    "rnd/sampling.py": "closure_mode off/probe/full hooks; default off preserves upstream admission",
+    "rnd/generation_config.py": "closure_* generation options; defaults leave baseline unchanged",
+    "rnd/generation_utils.py": "forwards closure config into diffusion_sample",
+    "rnd/__init__.py": "lazy imports for lightweight tests; Auto-register still attempted"
+  },
+  "related_org_repos_not_vendored": [
+    {"name": "spear", "url": "https://github.com/RadicalNumerics/spear", "note": "architecture research primitives; not required for RND1 inference"},
+    {"name": "dInfer", "url": "https://github.com/RadicalNumerics/dInfer", "note": "fork of inclusionAI/dInfer; optional DLM serving; not vendored here"},
+    {"name": "sglang", "url": "https://github.com/RadicalNumerics/sglang", "note": "serving fork; not vendored"},
+    {"name": "assets", "url": "https://github.com/RadicalNumerics/assets", "note": "org assets"},
+    {"name": "cutlass", "url": "https://github.com/RadicalNumerics/cutlass", "note": "NVIDIA cutlass fork"},
+    {"name": "cccl", "url": "https://github.com/RadicalNumerics/cccl", "note": "NVIDIA cccl fork"},
+    {"name": "tritonparse", "url": "https://github.com/RadicalNumerics/tritonparse", "note": "triton tooling fork"}
+  ],
+  "baseline_equivalence": {
+    "status": "PASS",
+    "note": "closure_mode=off matched live RadicalNumerics/RND1 diffusion_sample on prefix/suffix/top-k/top-p/greedy/stochastic mock cases at verified_at"
+  }
+}

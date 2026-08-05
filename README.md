@@ -1,51 +1,86 @@
 # Bio Closure Architecture on RND1
 
-This repository derives from the public Apache-2.0 `RadicalNumerics/RND1` inference architecture and deploys the Black Mirror / IVI–NRR closure-derived AGI admissible-verification layer for biological and coevolutionary actuation.
+This repository contains the public Apache-2.0 [`RadicalNumerics/RND1`](https://github.com/RadicalNumerics/RND1) inference source tree integrated with a Black Mirror / IVI–NRR closure-derived admissible-verification layer for biological and coevolutionary actuation.
 
 ## Upstream
 
 - Source: `RadicalNumerics/RND1`
-- Model: `radicalnumerics/RND1-Base-0910`
-- Upstream purpose: masked-diffusion language-model inference
+- Copied commit: see `UPSTREAM_COMMIT`
+- Model weights (external): `radicalnumerics/RND1-Base-0910`
+- License: Apache License 2.0 (`LICENSE`, `NOTICE`)
 
-## Closure carrier
+Model weights are **not** stored in this repository.
 
-The architecture does not treat entropy, probability, score, digest, fitness, or benchmark performance as closure identity. Its native state is:
+## Repository map
 
-```text
-ClosureCarrier(
-  originless_basis,
-  potential_gate=(ball, hair, semantics, openings, admissibility),
-  ordered_support,
-  observer_return_partition,
-  axiometric_evidence
-)
+| Area | Role | Epistemic status |
+|------|------|------------------|
+| `rnd/` | Copied upstream RND1 source + closure hooks in `sampling.py` | RERUNNABLE (baseline path) |
+| `closure/` | Native Potential Gate, hair, runtime, biology | DESIGN DERIVATION / RERUNNABLE finite controls |
+| `tests/` | Finite unit + mock sampler + Radical Numerics verify | RERUNNABLE |
+| `benchmarks/` | Full-model GPU harness + A100 artifact | REPORTED ARTIFACT (causal); quality still OPEN EMPIRICAL CLAIM |
+| `docs/` | Architecture, epistemic labels, stage status, upstream README | DESIGN DERIVATION / REPORTED ARTIFACT |
+| `UPSTREAM.md` | Provenance | REPORTED ARTIFACT |
+
+**Stage verdict:** `CLOSED_FULL_MODEL_CAUSAL_INTEGRATION` /
+`OPEN_HOLISTIC_QUALITY_ADVANTAGE` (finite foundation still
+`CLOSED_FINITE_UPSTREAM_VERIFIED_RND1_CLOSURE_INTEGRATION`) — see `docs/STAGE_STATUS.md`.
+
+Full-model A100 artifact: `benchmarks/results/cloud_latest.json`
+(`probe` ≡ `off` outputs; `full` ≠ `off` with ~4.4% latency). Not a quality win.
+
+## Unified axiometry
+
+One intrinsic relation \(\mathcal C\) (not a fixed chart list). Verification topologies are **candidates admitted in their own resolution** — basis/closure cycle equality and encode↔eval alignment — under the same states as any other episode. Derivation motifs guide *how* admission works; they are not a catalog of pre-approved topologies.
+
+## Native carrier
+
+\[
+G_t=(B_t,H_t,\Sigma_t,\Omega_t,\rho_t,\Gamma_t,\Pi_t,\mathcal A_t)
+\]
+
+Resolution states: `CLOSED_HIGHER` | `CLOSED_TO_OPENING` | `OPEN` | `FALSE_COLLAPSE` | `REFUSED`
+
+Entropy, confidence, digests, fitness, and PASS counts are axiometric shadows in \(\mathcal A_t\). They do not authorize closure.
+
+**AGI claim surface:** Phase 6 Lean negatives (`docs/AGI_NEGATIVE_FORMAL.md`) state what
+closure-native AGI **cannot** be (self-certifying echo, token inflation, pre-return
+action, Boolean/wash/projection substitution, etc.). They do not assert AGI here.
+
+## Generation modes
+
+```python
+closure_mode: Literal["off", "probe", "full"] = "off"
 ```
 
-Resolution states:
+- `off` — unmodified upstream RND1 admission
+- `probe` — closure telemetry computed; baseline admission authoritative
+- `full` — closure controls token admission
 
-- `CLOSED_HIGHER`
-- `CLOSED_TO_OPENING`
-- `OPEN`
-- `FALSE_COLLAPSE`
-- `REFUSED`
+Every denoising step under probe/full follows:
 
-## Biological interpretation
+```text
+RND1 proposal → local token support → nonlocal hair → global sequence relation
+→ return reconstruction → ordered potential-gate admission
+→ commit / remain open / reject → next denoising basis
+```
 
-- organism, cell, community, or model context = perspectival ball
-- development, ecology, other agents, and transformed contexts = possible hair
-- mutation, intervention, behavior, or token proposal = microaction while OPEN
-- coevolution = reciprocal non-identical recovery
-- selection, confidence, entropy, and fitness = axiometric shadows
-- verified return = next encoding basis
+## Quick start
 
-## Structure
+```bash
+pip install -e ".[test,linting]"
+pytest -q
+```
 
-- `rnd/`: upstream-compatible RND1 package surface
-- `closure/`: native Potential Gate, ordered return, admissibility, coevolution, and integration runtime
-- `tests/`: finite closure controls
-- `UPSTREAM.md`: provenance and source reconciliation
+Full-model benchmark (GPU + HF weights):
+
+```bash
+python benchmarks/compare_rnd1_closure.py \
+  --model radicalnumerics/RND1-Base-0910 \
+  --modes off probe full \
+  --seeds 1 2 3 4 5
+```
 
 ## Status
 
-This repository contains a runnable finite closure controller and integration architecture. It does not claim unrestricted AGI, empirical biological validation, or that the 30B model weights are stored here.
+This repository provides a runnable finite closure controller integrated into the live RND1 sampler. Full-model measurement verifies **causal** probe/full separation on `RND1-Base-0910`; it does **not** claim unrestricted AGI, empirical biological validation, or improved generation quality (holistic quality remains OPEN).

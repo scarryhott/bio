@@ -1,52 +1,88 @@
-# Closure-derived biological AGI architecture
+# Closure–RND1 architecture
+
+## Epistemic labels
+
+| Label | Meaning |
+|-------|---------|
+| RERUNNABLE | Deterministic finite test or mock path executable in CI |
+| REPORTED ARTIFACT | Provenance, logs, or measured outputs stored as evidence |
+| DESIGN DERIVATION | Architecture derived from unified closure axiometry |
+| OPEN EMPIRICAL CLAIM | Requires external 30B weights / GPU; not asserted by CI |
+
+## Unified axiometry (not a fixed topology catalog)
+
+There is one intrinsic closure relation \(\mathcal C\). Local and global are resolutions of \(\mathcal C\), not primitives:
+
+\[
+L(\mathcal C) \leftarrow \mathcal C \rightarrow G(\mathcal C).
+\]
+
+Closure is the generator/operator: it takes an **arbitrary** verification topos and constructs further topoi until encode↔eval relation becomes possible. Fixed eval is an *apparent* unitary after admission — not a pre-listed chart inventory.
+
+**Verification topologies are not fixed.** Each candidate topology is admitted in its own resolution:
+
+```text
+candidate topos
+  → basis/closure cycles (homology/homotopy; curl/div)
+  → encode↔eval alignment
+  → CLOSED_HIGHER | CLOSED_TO_OPENING | OPEN | FALSE_COLLAPSE | REFUSED
+```
+
+Decision is relational admissibility (\(\mathcal C \vdash h\), \(\mathcal C \vdash \neg h\), or open), not external assertion against a static allow-list.
+
+Derivation motifs in `closure/topology.py` (`UNIFIED_AXIOMETRY_MOTIFS`) describe *how* \(\mathcal C\) admits. They are **not** topologies and must not be treated as a closed catalog of admissible charts.
+
+## Layers
+
+1. **Copied upstream RND1 source** (`rnd/`, `LICENSE`, `NOTICE`) — Radical Numerics Apache-2.0
+2. **Unmodified baseline path** — `closure_mode="off"` uses the upstream entropy/confidence schedule only
+3. **Closure integration** — `closure/` + sampler hooks; governs admission in `full` mode
+4. **Biological interpretation** — `closure/biology.py`; non-identical reciprocal recovery
+5. **Finite tests** — `tests/test_closure_runtime.py`
+6. **Mock sampler tests** — `tests/test_rnd1_sampler_integration.py` (CI)
+7. **Full-model tests** — `benchmarks/compare_rnd1_closure.py` (A100 artifact: causal integration CLOSED; holistic quality OPEN)
 
 ## Carrier
 
-```text
-C -> PotentialGate(B,H,Sigma,Omega,rho) -> microactions
-  -> transformed return -> admissible resolution -> next encoding basis
-```
+\[
+G_t=(B_t,H_t,\Sigma_t,\Omega_t,\rho_t,\Gamma_t,\Pi_t,\mathcal A_t)
+\]
 
-`C` is prior to the local/global split. Formal evidence is axiometry relative to the active perspective and is not closure identity.
+- \(B_t\): masked sequence / perspectival ball
+- \(H_t\): typed holistic hair (local, distant, prefix/suffix, hidden, MoE, digest, history, biology)
+- \(\Sigma_t\): semantic relation under generation
+- \(\Omega_t\): unresolved openings (including open topology candidates)
+- \(\rho_t\): mandate / provenance / recovery requirements
+- \(\Gamma_t\): ordered denoising ancestry
+- \(\Pi_t\): observer-relative return-side partition
+- \(\mathcal A_t\): axiometric evidence (logits, entropy, confidence, …) — **shadows only**
 
-## Invariants
+## Resolution invariants (motifs of C)
 
 1. Originless admission precedes ball/hair polarization.
-2. Identity is ordered support, layer survival, closure path, and recoverable transformation.
+2. Identity is ordered support, transformation path, local/global relation, return discrepancy, observer side, digest *reference*, and openings — not a score.
 3. A digest references an interaction closure but cannot replace its path.
-4. Missing return is `OPEN`, not `FALSE`.
-5. Positively witnessed contradiction, fabrication, or reordering is `FALSE_COLLAPSE`.
-6. Successful closure is either `CLOSED_HIGHER` or `CLOSED_TO_OPENING`.
-7. A child gate is authorized only when its support is reconstructible through the parent.
-8. Repetition inside one controlled component creates no new closure rank.
-9. The observer's perspectival ball determines the return-side label.
-10. Entropy, confidence, probability, fitness, price, and scores remain projections.
+4. Missing return is `OPEN`; reordering / contradiction is `FALSE_COLLAPSE`.
+5. Success is `CLOSED_HIGHER` or `CLOSED_TO_OPENING`.
+6. Child gates / further topoi require reconstructible parent admission.
+7. \([\Gamma \diamond W]_{\mathcal C}=[\Gamma]_{\mathcal C}\) when \(W\) adds no independent transform.
+8. Refusal blocks learning write-back.
+9. Basis↔closure cycle equality derives topology admission; scores do not.
 
-## Biological actuation
+## Formal negatives (Phase 6 Lean)
 
-Biological evolution is modeled as local actuation through a shared closure carrier, not as fitness maximization.
+What a closure-native controller / AGI **cannot** be is machine-checked in the Phase 6
+Lean stack (NRRF568–574) and summarized for this repo in `docs/AGI_NEGATIVE_FORMAL.md`.
+Those theorems are about abstract admission structure and candidate projection rules —
+not about deployed RND1, biology, or markets. They bind the claim surface of this
+integration (no self-certifying echo, no wash mint, no Boolean collapse, no digest
+authority, no substrate token, …).
 
-- local ball: cell, organism, community, or experimental perspective
-- hair: development, ecology, another organism, another modality, or independent experiment
-- microaction: mutation, behavior, intervention, token proposal, model proposal
-- return: transformed consequence that reconstructs or contradicts the maintained relation
-- coevolution: reciprocal recovery preserving non-identity
-
-Selection and measured fitness describe persistence from one axiometric perspective. They do not independently authorize closure.
-
-## RND1 integration
-
-RND1 proposes tokens across a masked sequence. `closure_token_admission` computes local, hair, global, and return telemetry to order provisional token microactions. The semantic action remains OPEN until `ClosureRuntime` receives an independent `ReturnWitness`.
-
-Thus:
+## Biological actuation path
 
 ```text
-model proposal != closure
-low entropy != closure
-high confidence != closure
-provisional token admission -> ordered microaction -> return verification
+local proposal → developmental/ecological propagation → transformed return
+→ CLOSED_HIGHER | CLOSED_TO_OPENING | OPEN | FALSE_COLLAPSE
 ```
 
-## Learning
-
-Only an admitted or corrected return becomes the next encoding basis. Refusal blocks write-back while retaining evidence. A closed parent may create a child OPEN gate.
+Fitness, mutation likelihood, and phenotype probability may propose acts; they never certify closure.

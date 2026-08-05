@@ -1,4 +1,4 @@
-name: closure-tests
+name: closure-rnd1-ci
 
 on:
   push:
@@ -17,13 +17,39 @@ jobs:
         python-version: ["3.11", "3.12"]
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
           cache: pip
-      - name: Install test dependency
-        run: python -m pip install --upgrade pip pytest
-      - name: Compile core closure package
-        run: python -m compileall -q closure tests
-      - name: Run tests
+
+      - name: Install package and test deps
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[test,linting]"
+
+      - name: Compile packages
+        run: python -m compileall -q closure rnd tests benchmarks
+
+      - name: Lint
+        run: python -m ruff check closure tests benchmarks rnd/sampling.py rnd/generation_config.py rnd/generation_utils.py
+
+      - name: Upstream compatibility checks
+        run: python -m pytest -q tests/test_upstream_compatibility.py tests/test_radicalnumerics_verify.py
+
+      - name: Unit tests (finite closure)
+        run: python -m pytest -q tests/test_closure_runtime.py
+
+      - name: Mock sampler integration tests
+        run: python -m pytest -q tests/test_rnd1_sampler_integration.py
+
+      - name: Full suite
         run: python -m pytest -q
+
+  note-full-model:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Full-model benchmark (radicalnumerics/RND1-Base-0910) is an OPEN EMPIRICAL CLAIM"
+          echo "and is not executed in CI. Run locally with GPU:"
+          echo "  python benchmarks/compare_rnd1_closure.py --modes off probe full --seeds 1 2 3 4 5"

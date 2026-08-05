@@ -5,8 +5,10 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "bio-closure-rnd1"
 version = "0.1.0"
-description = "Closure-derived admissible verification and biological coevolution control for RND1"
+description = "Closure-derived admissible verification and biological coevolution control integrated with Radical Numerics RND1"
+readme = "README.md"
 requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
 dependencies = [
   "torch>=2.8",
   "transformers>=5.0.0",
@@ -16,7 +18,7 @@ dependencies = [
 
 [project.optional-dependencies]
 test = ["pytest>=8"]
-linting = ["ruff>=0.13.2"]
+linting = ["ruff>=0.13.2", "pre-commit>=4.0.0"]
 
 [tool.setuptools.packages.find]
 include = ["closure*", "rnd*"]
@@ -24,3 +26,16 @@ include = ["closure*", "rnd*"]
 [tool.ruff]
 line-length = 100
 target-version = "py311"
+show-fixes = false
+extend-exclude = ["*.ipynb"]
+
+[tool.ruff.lint]
+select = ["E", "F", "B", "UP", "SIM", "I", "S506", "PIE"]
+ignore = ["D417", "D10", "E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["E402", "F401"]
+"rnd/*" = ["I001"]  # preserve upstream import style where practical
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
