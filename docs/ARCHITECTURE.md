@@ -41,6 +41,7 @@ Derivation motifs in `closure/topology.py` (`UNIFIED_AXIOMETRY_MOTIFS`) describe
 5. **Finite tests** — `tests/test_closure_runtime.py`
 6. **Mock sampler tests** — `tests/test_rnd1_sampler_integration.py` (CI)
 7. **Full-model tests** — `benchmarks/compare_rnd1_closure.py` (A100 artifact: causal integration CLOSED; holistic quality OPEN)
+8. **Project-derived connected return** — `docs/CHAITIN_CONNECTED_RETURN_DERIVATION.md`; finite occurrence/contact reconstruction proposed for the next sampler stage
 
 ## Carrier
 
@@ -68,6 +69,22 @@ G_t=(B_t,H_t,\Sigma_t,\Omega_t,\rho_t,\Gamma_t,\Pi_t,\mathcal A_t)
 7. \([\Gamma \diamond W]_{\mathcal C}=[\Gamma]_{\mathcal C}\) when \(W\) adds no independent transform.
 8. Refusal blocks learning write-back.
 9. Basis↔closure cycle equality derives topology admission; scores do not.
+
+## Project-derived connected-return identity
+
+The Closure–Chaitin runtime sharpens holistic identity beyond token confidence or an averaged embedding. Its finite structure is:
+
+```text
+labeled local occurrences
+→ extension/rotation string presentations
+→ transformed return needles
+→ order reconstructed from shared contacts
+→ five primitive return cells
+→ one holistic support-recovery cell
+→ continued opening
+```
+
+The current transfer target is a future `full-connected-return` mode. It must preserve occurrence identity, derive order from returned contacts, reject broken or ambiguous returns as OPEN, and admit the holistic cell only when every required primitive support is recursively recoverable. The complete derivation and its claim boundary are recorded in `docs/CHAITIN_CONNECTED_RETURN_DERIVATION.md`.
 
 ## Formal negatives (Phase 6 Lean)
 
