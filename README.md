@@ -1,6 +1,6 @@
 # Bio Closure Architecture on RND1
 
-This repository contains the public Apache-2.0 [`RadicalNumerics/RND1`](https://github.com/RadicalNumerics/RND1) inference source tree integrated with a Black Mirror / IVI–NRR closure-derived admissible-verification layer for biological and coevolutionary actuation.
+This repository contains the public Apache-2.0 [`RadicalNumerics/RND1`](https://github.com/RadicalNumerics/RND1) inference source tree integrated with a Black Mirror / IVI–NRR closure-derived admissible-verification layer for biological and coevolutionary actuation. It now also contains the independently derived closure-native architectural loop as a separate proposal-and-return model.
 
 ## Upstream
 
@@ -16,10 +16,10 @@ Model weights are **not** stored in this repository.
 | Area | Role | Epistemic status |
 |------|------|------------------|
 | `rnd/` | Copied upstream RND1 source + closure hooks in `sampling.py` | RERUNNABLE (baseline path) |
-| `closure/` | Native Potential Gate, hair, runtime, biology, connected return | DESIGN DERIVATION / RERUNNABLE finite controls |
-| `tests/` | Finite unit + mock sampler + Radical Numerics verify (35 tests) | RERUNNABLE |
+| `closure/` | Potential Gate, runtime, biology, connected return, independent closure-native model, Tagtokn bridge | DESIGN DERIVATION / RERUNNABLE finite controls |
+| `tests/` | Finite unit + mock sampler + Radical Numerics verify + independent-model controls (42 tests) | RERUNNABLE |
 | `benchmarks/` | Full-model GPU harness + 30B holistic artifact | REPORTED ARTIFACT (measured); quality still OPEN |
-| `docs/` | Architecture, epistemic labels, stage status, unification thesis | DESIGN DERIVATION / REPORTED ARTIFACT |
+| `docs/` | Architecture, epistemic labels, stage status, unification thesis, independent-model provenance | DESIGN DERIVATION / REPORTED ARTIFACT |
 | `UPSTREAM.md` | Provenance | REPORTED ARTIFACT |
 
 **Stage verdict** (see `docs/STAGE_STATUS.md`):
@@ -28,6 +28,8 @@ Model weights are **not** stored in this repository.
 CLOSED_FULL_MODEL_CAUSAL_INTEGRATION
 CLOSED_FULL_MODEL_CONNECTED_RETURN_EXECUTION
 MEASURED_FULL_UNIFIED_30B_HOLISTIC_COMPARISON
+CLOSED_INDEPENDENT_CLOSURE_MODEL_PORT
+OPEN_INDEPENDENT_CLOSURE_VS_RND1_COMPARISON
 OPEN_HOLISTIC_QUALITY_ADVANTAGE
 OPEN_CONNECTED_RETURN_QUALITY_ADVANTAGE
 ```
@@ -62,6 +64,29 @@ Entropy, confidence, digests, fitness, and PASS counts are axiometric shadows in
 **AGI claim surface:** Phase 6 Lean negatives (`docs/AGI_NEGATIVE_FORMAL.md`) state what
 closure-native AGI **cannot** be (self-certifying echo, token inflation, pre-return
 action, Boolean/wash/projection substitution, etc.). They do not assert AGI here.
+
+## Independent closure-native model
+
+`closure/independent_model.py` ports the project model `UnifiedClosureArchitecturalLoop` as an independent executable arm:
+
+```text
+(C_t, E_t, A_legal,t)
+→ A_t
+→ (E_t+1, A_legal,t+1)
+→ C_t+1
+```
+
+It originates provisional actions from admitted relational history and the complete current legal-action field. It has no RND1, Torch, Transformers, logits, confidence, or entropy dependency. Only an independently observed, recoverable whole-cycle return enters authoritative memory; self-authored or missing returns remain OPEN, contradictions are rejected, and repeated receipts do not inflate memory.
+
+`closure/tagtokn_bridge.py` checks the model against the `scarryhott/tagtokn` framework: closure remains prior to tokens, OPEN claims issue no supply, circular replay stays OPEN, contradiction issues nothing, and only an admitted independent return can issue a downstream semantic receipt. See `docs/INDEPENDENT_CLOSURE_MODEL.md`.
+
+The intended comparison now has three distinct arms:
+
+1. native RND1;
+2. independent closure-native model;
+3. RND1 + closure hybrid.
+
+The independent-vs-RND1 head-to-head remains OPEN until both operate against matched tasks and independently returned environments.
 
 ## Generation modes
 
@@ -101,4 +126,4 @@ python benchmarks/compare_rnd1_closure.py \
 
 ## Status
 
-This repository provides a runnable finite closure controller integrated into the live RND1 sampler. The measured 30B holistic compare verifies **causal** `probe`/`full` separation and **executed** `full-connected-return` on `RND1-Base-0910`. It does **not** claim unrestricted AGI, empirical biological validation, or improved generation quality (quality advantages remain OPEN).
+This repository now contains both the live RND1 closure hybrid and the independently derived closure-native proposal/return loop. The measured 30B holistic compare verifies **causal** `probe`/`full` separation and **executed** `full-connected-return` on `RND1-Base-0910`. The independent model's finite controls are closed, but its matched comparison against RND1 has not yet been run. The repository does **not** claim unrestricted AGI, empirical biological validation, or improved generation quality.
