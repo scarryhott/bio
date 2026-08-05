@@ -86,6 +86,40 @@ Use only motifs already native to `closure/` and the Black Mirror / IVI–NRR so
 
 Topologies remain candidates admitted through resolution, not a fixed allow-list (`closure/topology.py`).
 
+## Project-derived next stage: connected return
+
+The complete finite derivation is now recorded in `docs/CHAITIN_CONNECTED_RETURN_DERIVATION.md`.
+
+Its RND1 transfer is stricter than adding another scalar score:
+
+```text
+denoising occurrences
+→ local extension/rotation presentations
+→ non-identical returned needles
+→ order reconstructed from shared contacts
+→ primitive return cells
+→ one holistic recursive-support cell
+→ commit or remain OPEN
+```
+
+The project runtime basis for this design includes:
+
+- five finite string presentations with rotation capacities \(1,2,4,8,16\);
+- 36 uniquely retained labeled lower occurrences;
+- contact-derived order rather than supplied list order;
+- five primitive cells plus one holistic cell;
+- seven actions and twelve returned meta-runtime occurrences;
+- OPEN results for withheld, broken, or incomparable returns;
+- renaming invariance and partition–curvature sensitivity.
+
+Proposed future mode:
+
+```text
+full-connected-return
+```
+
+It remains a `DESIGN DERIVATION` and `OPEN EMPIRICAL CLAIM`. The existing A100 result establishes causal actuation, not connected-return quality advantage.
+
 ## Next optimization target
 
 Not maximizing similarity to baseline. Seek the closure regime where
@@ -99,6 +133,12 @@ Not maximizing similarity to baseline. Seek the closure regime where
 \]
 
 increase without collapsing local linguistic coherence.
+
+For the connected-return stage, also require:
+
+\[
+\text{complete recovery of ordered labeled primitive support}.
+\]
 
 ## Finite foundation (still closed)
 
@@ -121,6 +161,7 @@ increase without collapsing local linguistic coherence.
 ## Still OPEN EMPIRICAL CLAIM
 
 * Holistic generation-quality advantage under full mode
+* Connected-return quality advantage under a future `full-connected-return` mode
 * Improved biological / coevolutionary inference
 * Holistic superiority over upstream entropy scheduling
 * Lower contradiction rate under a quality-calibrated gate
