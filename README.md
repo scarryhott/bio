@@ -19,7 +19,7 @@ Model weights are **not** stored in this repository.
 | `closure/` | Potential Gate, runtime, biology, connected return, independent closure-native model, Tagtokn bridge | DESIGN DERIVATION / RERUNNABLE finite controls |
 | `tests/` | Finite unit + mock sampler + Radical Numerics verify + independent-model controls (42 tests) | RERUNNABLE |
 | `benchmarks/` | Full-model GPU harness + 30B holistic artifact | REPORTED ARTIFACT (measured); quality still OPEN |
-| `docs/` | Architecture, epistemic labels, stage status, unification thesis, independent-model provenance | DESIGN DERIVATION / REPORTED ARTIFACT |
+| `docs/` | Architecture, epistemic labels, stage status, unification thesis, model and data provenance | DESIGN DERIVATION / REPORTED ARTIFACT |
 | `UPSTREAM.md` | Provenance | REPORTED ARTIFACT |
 
 **Stage verdict** (see `docs/STAGE_STATUS.md`):
@@ -29,7 +29,9 @@ CLOSED_FULL_MODEL_CAUSAL_INTEGRATION
 CLOSED_FULL_MODEL_CONNECTED_RETURN_EXECUTION
 MEASURED_FULL_UNIFIED_30B_HOLISTIC_COMPARISON
 CLOSED_INDEPENDENT_CLOSURE_MODEL_PORT
+CLOSED_RADICAL_NUMERICS_MODEL_AND_DATA_PROVENANCE
 OPEN_INDEPENDENT_CLOSURE_VS_RND1_COMPARISON
+OPEN_BIO_CLOSURE_VS_RADICAL_NUMERICS_BIOLOGICAL_RESULT
 OPEN_HOLISTIC_QUALITY_ADVANTAGE
 OPEN_CONNECTED_RETURN_QUALITY_ADVANTAGE
 ```
@@ -46,6 +48,24 @@ Thesis: `docs/UNIFICATION_THESIS.md`.
 | `full-connected-return` | 5.88 s | 61/68 diffs; ≠ `full`; 1953 OPEN |
 
 Not a quality win.
+
+## Radical Numerics model and biology distinction
+
+Radical Numerics is the company that released RND1 and publicly identifies its team with the Evo/Evo 2 biological-model programme. Those facts do not make RND1 itself a biological foundation model.
+
+- **RND1-Base-0910** is a 30.5B sparse diffusion language model converted from Qwen3-30B-A3B and continually pretrained for diffusion-language behavior. Its reported evaluations are general language, reasoning, mathematics, and code tasks. Its public materials do not identify a dedicated DNA/genomics training corpus.
+- **Evo 2** is a genome model trained on the explicitly documented `OpenGenome2` corpus: more than 8.8 trillion curated nucleotides across bacteria, archaea, eukarya, and bacteriophage. The 7B and 40B models were trained on 2.4T and 9.3T tokens respectively.
+- **Omnii** is Radical Numerics' next-generation genome-language-model research preview. The company reports results on ClinVar, TraitGym, RNAGym, CNV, and related biological benchmarks, but a complete public training-data inventory and reproducibility package equivalent to Evo 2/OpenGenome2 are not yet available.
+
+Therefore the completed 30B run in this repository is an **RND1 language-model hybrid/substrate experiment**, not Bio Closure versus Radical Numerics' biological model. See `docs/RADICAL_NUMERICS_BIOLOGY_DATA_PROVENANCE.md`.
+
+The corrected biological thesis programme is:
+
+1. independent Bio Closure kernel;
+2. an open biological baseline such as Evo 2;
+3. optionally, the biological baseline plus closure admission/return.
+
+That public biological three-arm run remains open.
 
 ## Unified axiometry
 
@@ -80,13 +100,13 @@ It originates provisional actions from admitted relational history and the compl
 
 `closure/tagtokn_bridge.py` checks the model against the `scarryhott/tagtokn` framework: closure remains prior to tokens, OPEN claims issue no supply, circular replay stays OPEN, contradiction issues nothing, and only an admitted independent return can issue a downstream semantic receipt. See `docs/INDEPENDENT_CLOSURE_MODEL.md`.
 
-The intended comparison now has three distinct arms:
+The computational comparison currently has three distinct arms:
 
 1. native RND1;
 2. independent closure-native model;
 3. RND1 + closure hybrid.
 
-The independent-vs-RND1 head-to-head remains OPEN until both operate against matched tasks and independently returned environments.
+The independent-vs-RND1 head-to-head remains OPEN until both operate against matched tasks and independently returned environments. A biological comparison additionally requires a biological baseline and public biological datasets with held-out returned consequences.
 
 ## Generation modes
 
@@ -126,4 +146,4 @@ python benchmarks/compare_rnd1_closure.py \
 
 ## Status
 
-This repository now contains both the live RND1 closure hybrid and the independently derived closure-native proposal/return loop. The measured 30B holistic compare verifies **causal** `probe`/`full` separation and **executed** `full-connected-return` on `RND1-Base-0910`. The independent model's finite controls are closed, but its matched comparison against RND1 has not yet been run. The repository does **not** claim unrestricted AGI, empirical biological validation, or improved generation quality.
+This repository now contains both the live RND1 closure hybrid and the independently derived closure-native proposal/return loop. The measured 30B holistic compare verifies **causal** `probe`/`full` separation and **executed** `full-connected-return` on `RND1-Base-0910`. It does not constitute a biological model comparison. The independent model's finite controls are closed, but neither its matched comparison against RND1 nor the public-dataset Bio Closure versus Evo 2/Omnii programme has been run. The repository does **not** claim unrestricted AGI, empirical biological validation, superiority over Radical Numerics biological models, or improved generation quality.
