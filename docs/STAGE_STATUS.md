@@ -26,11 +26,8 @@ OPEN_CONNECTED_RETURN_QUALITY_ADVANTAGE
 ```
 
 **Programme thesis:** `docs/UNIFICATION_THESIS.md` —
-*Bio Closure and Radical Numerics: Independent Return, Learned Proposal, and the
-Three-Arm Test of Closure-Native AGI*, now including **holistic biology AGI vs
-existing architecture/data under unified admission verification**
-(`docs/RETURN_UNIFIED_BIO_AGI_RUNTIME.md`,
-`docs/FULL_RADICAL_NUMERICS_OPEN_SUITE_COMPARISON.md`).
+*Bio Closure and Radical Numerics: Independent Return, Learned Proposal, and
+Unified Admission Verification of Biology AGI*.
 
 \[
 \boxed{
@@ -149,7 +146,7 @@ The independent model has not yet been evaluated against RND1 on matched tasks a
 independently returned environments. Therefore:
 
 ```text
-CLOSED_INDEPENDENT_CLOSURE_MODEL_PORT
+CLOSED_INDEPENDENT_BIO_CLOSURE_MODEL_PORT
 OPEN_BIO_CLOSURE_VS_RADICAL_NUMERICS_RESULT
 ```
 

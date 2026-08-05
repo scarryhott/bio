@@ -14,7 +14,7 @@ Explicit labels used throughout this repository:
 See `docs/UNIFICATION_THESIS.md`:
 
 # Bio Closure and Radical Numerics  
-## Independent Return, Learned Proposal, and Unified Admission Verification
+## Independent Return, Learned Proposal, and Unified Admission Verification of Biology AGI
 
 Holistic biology AGI closure is comparison **against existing architecture and
 data** (Evo/OpenGenome2 open suite; RND1 as language chapter; Omnii reported-only)

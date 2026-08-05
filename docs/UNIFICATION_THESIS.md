@@ -1,21 +1,37 @@
 # Bio Closure and Radical Numerics
 
-## Independent Return, Learned Proposal, and the Three-Arm Test of Closure-Native AGI
+## Independent Return, Learned Proposal, and Unified Admission Verification of Biology AGI
 
 **Epistemic status:** DESIGN DERIVATION + REPORTED ARTIFACT architecture  
-**Empirical three-arm comparison:** OPEN (not yet closed)
+**Empirical biological suite / three-arm result:** OPEN (not yet closed)
 
-This document reframes the programme. The completed 30B four-mode run is retained as
-**Chapter A — hybrid substrate experiment**, not as the final thesis conclusion.
+This document is the programme thesis. The completed 30B four-mode RND1 run is
+**Chapter A — hybrid language/substrate experiment**, not the biological
+conclusion. Holistic biology AGI closure is comparison against **existing
+architecture and data** inside **unified admission verification**
+(`docs/RETURN_UNIFIED_BIO_AGI_RUNTIME.md`,
+`docs/FULL_RADICAL_NUMERICS_OPEN_SUITE_COMPARISON.md`,
+`docs/RADICAL_NUMERICS_BIOLOGY_DATA_PROVENANCE.md`).
 
 \[
 \boxed{
+M_{\mathrm{ClosureBio}}
+\;\text{vs}\;
+M_{\mathrm{learned\ bio}}
+\;\text{vs}\;
+M_{\mathrm{RND1(+Closure)}}
+\quad\text{inside one return-unified admission}
+}
+\]
+
+Companion language/substrate framing (Chapter A / Chapter D):
+
+\[
 \text{Bio Closure}
 \quad\text{vs}\quad
 \text{Radical Numerics}
 \quad\text{vs}\quad
 \text{Radical Numerics + Closure}
-}
 \]
 
 ---
@@ -205,7 +221,7 @@ vs \(M_{\mathrm{RND1}}\); biological return validation.
 
 ---
 
-## Chapter C — Holistic biology AGI vs existing architecture and data
+## Chapter B — Holistic biology AGI vs existing architecture and data
 
 **Unified admission verification** means: data, action, environment, candidate
 verification topology, and memory become jointly admissible inside one return —
@@ -268,7 +284,7 @@ python benchmarks/plan_radical_numerics_suite.py --json
 
 ---
 
-## Chapter D — Independent Bio Closure kernel (ported; not yet race-tested)
+## Chapter C — Independent Bio Closure kernel (ported; not yet race-tested)
 
 Source: `closure/independent_model.py`.  
 Loop identity:
@@ -289,10 +305,10 @@ comparison against RND1 is OPEN
 
 ---
 
-## Chapter E — Three-arm empirical language/substrate protocol (optional companion)
+## Chapter D — Three-arm empirical language/substrate protocol (optional companion)
 
 Retained for language and composition questions \(Q_1\)–\(Q_3\) on RND1-class
-tasks. Biological holistic closure is Chapter C, not this companion.
+tasks. Biological holistic closure is Chapter B, not this companion.
 
 1. Define matched tasks with independently returned environments.
 2. Run \(M_{\mathrm{RND1}}\) where language/proposal capacity applies.
@@ -300,7 +316,7 @@ tasks. Biological holistic closure is Chapter C, not this companion.
 4. Run \(M_{\mathrm{RND1+Closure}}\) hybrid modes.
 5. Do not reuse Chapter A coherence shadows as the independent model’s success metric.
 
-Until Chapters C–E report, the programme title stands; the **biological result**
+Until Chapters B–D report, the programme title stands; the **biological result**
 does not.
 
 ---
@@ -320,7 +336,9 @@ None of these are proved by Chapter A token diffs.
 
 ## One-line programme statement
 
-> Learned proposal (Radical Numerics), closure-native return learning (Bio Closure),
-> and their hybrid are three arms of one verification programme; only independently
-> returned biological consequences can close the comparison — and that result is
-> still OPEN.
+> Closure is the return-unified operation through which biological data, action,
+> environment, verification topology, and memory become jointly admissible.
+> Learned biological models (open Evo/OpenGenome2), the independent Bio Closure
+> kernel, and the RND1±closure language hybrid are arms inside that admission —
+> not a train→predict→post-hoc-filter pipeline. Only independently returned
+> biological consequences can close the comparison; that execution remains OPEN.
