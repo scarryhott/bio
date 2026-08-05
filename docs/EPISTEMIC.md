@@ -7,24 +7,39 @@ Explicit labels used throughout this repository:
 | **RERUNNABLE** | Deterministic finite controller or mock-sampler path; CI green means this |
 | **REPORTED ARTIFACT** | Provenance records, benchmark JSON, or measured logs stored as evidence |
 | **DESIGN DERIVATION** | Architecture derived from unified Black Mirror / IVI–NRR closure axiometry |
-| **OPEN EMPIRICAL CLAIM** | Requires `radicalnumerics/RND1-Base-0910` + GPU; not asserted by CI |
+| **OPEN EMPIRICAL CLAIM** | Requires external eval beyond token diffs / shadows; not asserted by CI |
 
 ## Full unified verification (= 30B holistic comparison)
 
-The full unified verification closure is **not** the finite reunification commit.
-It is the GPU holistic compare of all four modes on `RND1-Base-0910`:
+The full unified verification **is** the GPU holistic compare of all four modes on
+`RND1-Base-0910`:
 
 ```text
 off | probe | full | full-connected-return
 ```
 
-Until that artifact is measured and quality criteria are assessed, status remains:
+That artifact is **measured and committed**:
+
+* `benchmarks/results/cloud_holistic_unified.json`
+* HF run `hfjobs_a100_holistic_6a7372606b79c09949c23580`
+* Thesis: `docs/UNIFICATION_THESIS.md`
 
 ```text
-OPEN_FULL_UNIFIED_30B_HOLISTIC_COMPARISON
+MEASURED_FULL_UNIFIED_30B_HOLISTIC_COMPARISON
+CLOSED_FULL_MODEL_CAUSAL_INTEGRATION
+CLOSED_FULL_MODEL_CONNECTED_RETURN_EXECUTION
+OPEN_HOLISTIC_QUALITY_ADVANTAGE
+OPEN_CONNECTED_RETURN_QUALITY_ADVANTAGE
 ```
 
-Harness:
+| Mode | Mean latency | OPEN | Coherence | vs `off` |
+|------|-------------:|-----:|----------:|----------|
+| `off` | 5.80 s | 0 | 0.731 | baseline |
+| `probe` | 6.03 s | 961 | 0.731 | identical |
+| `full` | 6.43 s | 961 | 0.448 | 63/68 |
+| `full-connected-return` | 5.88 s | 1953 | 0.075 | 61/68; ≠ `full` |
+
+Harness (reproduce):
 
 ```bash
 python benchmarks/compare_rnd1_closure.py \
@@ -33,35 +48,20 @@ python benchmarks/compare_rnd1_closure.py \
   --seeds 1 2 3 4 5 --steps 32
 ```
 
-## Full-model stage (measured so far)
+## Connected-return controller
 
-A100 compare (`benchmarks/results/cloud_latest.json`) closes **causal integration**
-for `off/probe/full` only (no `full-connected-return` in that run):
-
-- \(\operatorname{Output}_{\mathrm{probe}}=\operatorname{Output}_{\mathrm{off}}\) with open-event telemetry
-- \(\operatorname{Output}_{\mathrm{full}}\neq\operatorname{Output}_{\mathrm{off}}\) (~92.6% token diffs; ~4.4% latency)
-
-Verdict: `CLOSED_FULL_MODEL_CAUSAL_INTEGRATION` / `OPEN_HOLISTIC_QUALITY_ADVANTAGE`
-(see `docs/STAGE_STATUS.md`).
-
-## Connected-return reunification (finite)
-
-`full-connected-return` is implemented (`closure/connected_return.py`) and verified
-as a finite RND1 sampler mode alongside `off` / `probe` / `full`. Default remains
-`closure_mode="off"`. Live Radical Numerics pristine files and pinned commit are
-unchanged.
-
-Verdict addition: `CLOSED_FULL_CLOSURE_REUNIFIED_RND1_VERIFIED` with
-`OPEN_CONNECTED_RETURN_QUALITY_ADVANTAGE` (and holistic quality still OPEN).
+`full-connected-return` is implemented (`closure/connected_return.py`), default remains
+`closure_mode="off"`, pristine Radical Numerics files and pinned commit unchanged.
+Execution on 30B is CLOSED; quality advantage is OPEN.
 
 Chaitin material used here is only the project’s **finite connected-return /
-ordered-support** reading (local string presentations under shared contacts) —
-not Kolmogorov universality, RH, or unrestricted incompleteness proofs.
+ordered-support** reading — not Kolmogorov universality, RH, or unrestricted
+incompleteness proofs.
 
 ## Claims that remain open
 
 - Holistic generation-quality advantage under full mode (coherence shadow presently lower)
-- Connected-return quality advantage under `full-connected-return`
+- Connected-return quality advantage under `full-connected-return` (execution measured; quality OPEN)
 - Empirical biological validation of the coevolution adapter
 - Any unrestricted AGI claim; any universal Chaitin–Kakeya / RH law
 - Sybil / controller independence (Lean records the boundary; does not close it)

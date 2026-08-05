@@ -16,18 +16,34 @@ Model weights are **not** stored in this repository.
 | Area | Role | Epistemic status |
 |------|------|------------------|
 | `rnd/` | Copied upstream RND1 source + closure hooks in `sampling.py` | RERUNNABLE (baseline path) |
-| `closure/` | Native Potential Gate, hair, runtime, biology | DESIGN DERIVATION / RERUNNABLE finite controls |
-| `tests/` | Finite unit + mock sampler + Radical Numerics verify | RERUNNABLE |
-| `benchmarks/` | Full-model GPU harness + A100 artifact | REPORTED ARTIFACT (causal); quality still OPEN EMPIRICAL CLAIM |
-| `docs/` | Architecture, epistemic labels, stage status, upstream README | DESIGN DERIVATION / REPORTED ARTIFACT |
+| `closure/` | Native Potential Gate, hair, runtime, biology, connected return | DESIGN DERIVATION / RERUNNABLE finite controls |
+| `tests/` | Finite unit + mock sampler + Radical Numerics verify (35 tests) | RERUNNABLE |
+| `benchmarks/` | Full-model GPU harness + 30B holistic artifact | REPORTED ARTIFACT (measured); quality still OPEN |
+| `docs/` | Architecture, epistemic labels, stage status, unification thesis | DESIGN DERIVATION / REPORTED ARTIFACT |
 | `UPSTREAM.md` | Provenance | REPORTED ARTIFACT |
 
-**Stage verdict:** `CLOSED_FULL_MODEL_CAUSAL_INTEGRATION` /
-`OPEN_HOLISTIC_QUALITY_ADVANTAGE` (finite foundation still
-`CLOSED_FINITE_UPSTREAM_VERIFIED_RND1_CLOSURE_INTEGRATION`) — see `docs/STAGE_STATUS.md`.
+**Stage verdict** (see `docs/STAGE_STATUS.md`):
 
-Full-model A100 artifact: `benchmarks/results/cloud_latest.json`
-(`probe` ≡ `off` outputs; `full` ≠ `off` with ~4.4% latency). Not a quality win.
+```text
+CLOSED_FULL_MODEL_CAUSAL_INTEGRATION
+CLOSED_FULL_MODEL_CONNECTED_RETURN_EXECUTION
+MEASURED_FULL_UNIFIED_30B_HOLISTIC_COMPARISON
+OPEN_HOLISTIC_QUALITY_ADVANTAGE
+OPEN_CONNECTED_RETURN_QUALITY_ADVANTAGE
+```
+
+Authoritative 30B artifact: `benchmarks/results/cloud_holistic_unified.json`  
+(HF run `hfjobs_a100_holistic_6a7372606b79c09949c23580`).  
+Thesis: `docs/UNIFICATION_THESIS.md`.
+
+| Mode | Mean latency | vs `off` |
+|------|-------------:|----------|
+| `off` | 5.80 s | baseline |
+| `probe` | 6.03 s | identical (0/68) |
+| `full` | 6.43 s | 63/68 diffs |
+| `full-connected-return` | 5.88 s | 61/68 diffs; ≠ `full`; 1953 OPEN |
+
+Not a quality win.
 
 ## Unified axiometry
 
@@ -56,9 +72,9 @@ closure_mode: Literal["off", "probe", "full", "full-connected-return"] = "off"
 - `off` — unmodified upstream RND1 admission
 - `probe` — closure telemetry computed; baseline admission authoritative
 - `full` — closure controls token admission
-- `full-connected-return` — contact-ordered connected return (Chaitin-derived finite controller; quality still OPEN)
+- `full-connected-return` — contact-ordered connected return (executed on 30B; quality still OPEN)
 
-Every denoising step under probe/full follows:
+Every denoising step under probe/full/full-connected-return follows:
 
 ```text
 RND1 proposal → local token support → nonlocal hair → global sequence relation
@@ -73,15 +89,16 @@ pip install -e ".[test,linting]"
 pytest -q
 ```
 
-Full-model benchmark (GPU + HF weights):
+Full unified 30B holistic benchmark (GPU + HF weights):
 
 ```bash
 python benchmarks/compare_rnd1_closure.py \
   --model radicalnumerics/RND1-Base-0910 \
-  --modes off probe full \
-  --seeds 1 2 3 4 5
+  --modes off probe full full-connected-return \
+  --seeds 1 2 3 4 5 \
+  --steps 32
 ```
 
 ## Status
 
-This repository provides a runnable finite closure controller integrated into the live RND1 sampler. Full-model measurement verifies **causal** probe/full separation on `RND1-Base-0910`; it does **not** claim unrestricted AGI, empirical biological validation, or improved generation quality (holistic quality remains OPEN).
+This repository provides a runnable finite closure controller integrated into the live RND1 sampler. The measured 30B holistic compare verifies **causal** `probe`/`full` separation and **executed** `full-connected-return` on `RND1-Base-0910`. It does **not** claim unrestricted AGI, empirical biological validation, or improved generation quality (quality advantages remain OPEN).

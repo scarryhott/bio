@@ -5,6 +5,7 @@
 ```text
 CLOSED_FINITE_UPSTREAM_VERIFIED_RND1_CLOSURE_INTEGRATION
 CLOSED_FULL_MODEL_CAUSAL_INTEGRATION
+CLOSED_FULL_MODEL_CONNECTED_RETURN_EXECUTION
 CLOSED_FULL_CLOSURE_CONTROLLER_REUNIFIED_RND1
 MEASURED_FULL_UNIFIED_30B_HOLISTIC_COMPARISON
 OPEN_HOLISTIC_QUALITY_ADVANTAGE
@@ -13,25 +14,32 @@ OPEN_CONNECTED_RETURN_QUALITY_ADVANTAGE
 
 **Definition:** the *full unified verification* **is** the 30B-model holistic
 comparison across `off | probe | full | full-connected-return` on
-`radicalnumerics/RND1-Base-0910`. That measurement is now recorded
-(`benchmarks/results/cloud_holistic_unified.json`, HF dataset run
-`hfjobs_a100_holistic_6a7372606b79c09949c23580`). **Quality** advantages remain OPEN.
+`radicalnumerics/RND1-Base-0910` under identical prompts, seeds, steps, and hardware.
 
-Thesis: `docs/UNIFICATION_THESIS.md`.
+Authoritative artifacts:
 
-## Full-model result (A100-80GB, bf16)
+* `benchmarks/results/cloud_holistic_unified.json`
+* HF run [`hfjobs_a100_holistic_6a7372606b79c09949c23580`](https://huggingface.co/datasets/scarryhott/bio-closure-benchmarks/tree/main/runs/hfjobs_a100_holistic_6a7372606b79c09949c23580)
+  (job [`6a7372606b79c09949c23580`](https://huggingface.co/jobs/scarryhott/6a7372606b79c09949c23580))
+* Thesis: `docs/UNIFICATION_THESIS.md`
 
-Authoritative artifacts: `benchmarks/results/cloud_latest.json` and
-[`scarryhott/bio-closure-benchmarks`](https://huggingface.co/datasets/scarryhott/bio-closure-benchmarks/tree/main/runs/hfjobs_a100_6a736104a00abefd4b293eef)
-(job [`6a736104a00abefd4b293eef`](https://huggingface.co/jobs/scarryhott/6a736104a00abefd4b293eef)).
+**Quality** advantages remain OPEN. Coherence shadows and token-diff tallies are
+axiometric instruments, not closure identity.
 
-| Mode | Mean latency | Output relation to `off` | Interpretation |
-|------|-------------:|--------------------------|----------------|
-| `off` | 4.77 s | Baseline | Upstream RND1 behavior |
-| `probe` | 4.70 s | Identical tokens | Closure instrumentation is non-interfering |
-| `full` | 4.98 s | 63/68 tokens differ every seed | Closure materially changes generation |
+## Full unified 30B holistic comparison (A100-80GB, bf16)
 
-Hardware: ≈ **58 GB** bf16 on A100-80GB.
+Hardware: ≈ **58 GB** allocated. Seeds `1..5`, 32 steps, prompt
+“The living cell maintains”.
+
+| Mode | Mean latency | OPEN events | Coherence shadow | Difference from `off` |
+|------|-------------:|------------:|-----------------:|----------------------:|
+| `off` | 5.80 s | 0 | 0.731 | baseline |
+| `probe` | 6.03 s | 961 | 0.731 | 0/68 (identical) |
+| `full` | 6.43 s | 961 | 0.448 | 63/68 |
+| `full-connected-return` | 5.88 s | **1953** | **0.075** | 61/68; also ≠ `full` |
+
+Each of the five `full-connected-return` seeds reports 1953 OPEN events and
+coherence shadow ≈ `0.0746269`.
 
 ### Strongest verified relations
 
@@ -43,8 +51,7 @@ Hardware: ≈ **58 GB** bf16 on A100-80GB.
 }
 \]
 
-despite **961** recorded open events per probe/full run. Probe measures Potential-Gate OPEN structure without changing the upstream generation path
-(observation ≠ actuation).
+despite 961 recorded open events. Observation ≠ actuation.
 
 \[
 \boxed{
@@ -54,43 +61,45 @@ despite **961** recorded open events per probe/full run. Probe measures Potentia
 }
 \]
 
-with \(\frac{63}{68}\approx 92.6\%\) tokens differing. The controller is not cosmetic; it changes the denoising trajectory.
-
-Latency overhead vs baseline:
+with \(\frac{63}{68}\approx 92.6\%\) tokens differing → causal actuation
+(`CLOSED_FULL_MODEL_CAUSAL_INTEGRATION`).
 
 \[
-\frac{4.98-4.77}{4.77}\approx 4.4\%
+\boxed{
+\operatorname{Output}_{\mathrm{fcr}}
+\neq
+\operatorname{Output}_{\mathrm{off}}
+\quad\text{and}\quad
+\operatorname{Output}_{\mathrm{fcr}}
+\neq
+\operatorname{Output}_{\mathrm{full}}
+}
 \]
 
-Modest computational overhead; **not** a quality gain.
+with 1953 OPEN events → connected-return **executed** on the live 30B chart
+(`CLOSED_FULL_MODEL_CONNECTED_RETURN_EXECUTION`). Not a quality win.
 
 ### Holistic reading
 
-1. **Observation closure works without intervention** — probe records OPEN structure while preserving exact upstream output.
-2. **Actuated closure is causally effective** — full changes almost the entire continuation across every seed.
-3. **The current gate is not yet quality-calibrated** — lower `coherence_shadow` under full indicates stronger relational intervention presently disrupts ordinary linguistic coherence.
+1. **Observation works without intervention** — probe ≡ off tokens.
+2. **Full actuation is causally effective** — almost the entire continuation changes.
+3. **Connected-return is a distinct executed regime** — more OPEN, different trajectory from `full`, latency not worse than `full`.
+4. **Neither actuated mode is quality-calibrated** — coherence shadow falls under `full` and collapses further under `full-connected-return` on this probe.
 
-This benchmark must **not** be described as a performance win. It shows the closure topology has become operationally causal rather than a detached formal layer.
+This benchmark must **not** be described as a performance win.
 
-## Admissibility grounding (project-integral only)
+## Earlier three-mode causal run (superseded as authoritative)
 
-Use only motifs already native to `closure/` and the Black Mirror / IVI–NRR sources as they bind to RND1 — not universal incompleteness proofs, RH, or unrestricted Chaitin–Kakeya laws (those remain OPEN / non-claims in the evidence edition).
+The first A100 job (`6a736104a00abefd4b293eef`, `off/probe/full` only) remains a
+historical REPORTED ARTIFACT under
+`runs/hfjobs_a100_6a736104a00abefd4b293eef`. Prefer
+`cloud_holistic_unified.json` for all four-mode claims.
 
-| Motif | Role in this result |
-|-------|---------------------|
-| Relational admissibility \(\mathcal C \vdash h\) / \(\neg h\) / open | Probe retains OPEN counts; full actuates admission |
-| Ordered return / ordered-support identity | Token order is the closure path; reordering ≠ same path |
-| Finite connected return (Chaitin-style **strings as local presentations**) | Finite ordered recovery under shared contacts — analogy for path identity, **not** a Kolmogorov universality claim |
-| Potential Gate as unresolved board/moves/return | Probe observes the unresolved gate; full revises legal continuation |
-| Axiometry is shadow | `coherence_shadow`, digests, open counts, token-diff tallies ≠ closure identity |
+## Connected-return mode (implemented and measured)
 
-Topologies remain candidates admitted through resolution, not a fixed allow-list (`closure/topology.py`).
-
-## Project-derived next stage: connected return
-
-The complete finite derivation is now recorded in `docs/CHAITIN_CONNECTED_RETURN_DERIVATION.md`.
-
-Its RND1 transfer is stricter than adding another scalar score:
+Derivation: `docs/CHAITIN_CONNECTED_RETURN_DERIVATION.md`.  
+Controller: `closure/connected_return.py` → `admit_denoising_step` /
+`diffusion_sample`.
 
 ```text
 denoising occurrences
@@ -102,27 +111,9 @@ denoising occurrences
 → commit or remain OPEN
 ```
 
-The project runtime basis for this design includes:
-
-- five finite string presentations with rotation capacities \(1,2,4,8,16\);
-- 36 uniquely retained labeled lower occurrences;
-- contact-derived order rather than supplied list order;
-- five primitive cells plus one holistic cell;
-- seven actions and twelve returned meta-runtime occurrences;
-- OPEN results for withheld, broken, or incomparable returns;
-- renaming invariance and partition–curvature sensitivity.
-
-Proposed future mode:
-
-```text
-full-connected-return
-```
-
-**Finite reunification status:** mode is now implemented in `closure/connected_return.py`
-and wired through `admit_denoising_step` / `diffusion_sample`. It is RERUNNABLE as a
-finite controller. Holistic quality advantage under this mode remains
-`OPEN EMPIRICAL CLAIM`. The existing A100 result establishes causal actuation for
-`full`, not connected-return quality advantage.
+Mode `full-connected-return` is **not** a proposed future mode. It is
+RERUNNABLE in finite tests and **executed** on the 30B holistic compare.
+Quality advantage under this mode remains `OPEN_CONNECTED_RETURN_QUALITY_ADVANTAGE`.
 
 ## Next optimization target
 
@@ -136,9 +127,7 @@ Not maximizing similarity to baseline. Seek the closure regime where
 \text{cross-step stability}
 \]
 
-increase without collapsing local linguistic coherence.
-
-For the connected-return stage, also require:
+increase without collapsing local linguistic coherence, while retaining
 
 \[
 \text{complete recovery of ordered labeled primitive support}.
@@ -154,7 +143,7 @@ For the connected-return stage, also require:
 +
 \text{baseline equivalence}
 +
-\text{28 passing tests}
+\text{35 passing tests}
 }
 \]
 
@@ -164,8 +153,8 @@ For the connected-return stage, also require:
 
 ## Still OPEN EMPIRICAL CLAIM
 
-* Holistic generation-quality advantage under full mode
-* Connected-return quality advantage under a future `full-connected-return` mode
+* Holistic generation-quality advantage under `full`
+* Connected-return quality advantage under `full-connected-return` (execution CLOSED; quality OPEN)
 * Improved biological / coevolutionary inference
 * Holistic superiority over upstream entropy scheduling
 * Lower contradiction rate under a quality-calibrated gate
@@ -182,3 +171,15 @@ catalogue topologies, etc. Full catalogue: `docs/AGI_NEGATIVE_FORMAL.md`.
 
 These tighten the forbidden-claim envelope. They do **not** establish AGI, quality
 advantage, or physical identification.
+
+## Admissibility grounding (project-integral only)
+
+| Motif | Role in the holistic result |
+|-------|-----------------------------|
+| Relational admissibility \(\mathcal C \vdash h\) / \(\neg h\) / open | Probe retains OPEN counts; full/fcr actuate admission |
+| Ordered return / ordered-support identity | Token order is the closure path |
+| Finite connected return (Chaitin-style strings as local presentations) | `full-connected-return` contact order — not classical Ω |
+| Potential Gate as unresolved board/moves/return | Probe observes; full/fcr revise continuation |
+| Axiometry is shadow | Coherence / digests / open counts / diffs ≠ identity |
+
+Topologies remain candidates admitted through resolution (`closure/topology.py`).

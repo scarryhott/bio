@@ -21,24 +21,21 @@
 
 Quality advantages remain OPEN.
 
-## Prior A100 causal run (off/probe/full only)
+## Prior A100 causal run (off/probe/full only — historical)
+
+Superseded as authoritative by the four-mode holistic artifact above.
+Figures below are the first three-mode job only:
 
 | Field | Value |
 |-------|-------|
 | Job | [`6a736104a00abefd4b293eef`](https://huggingface.co/jobs/scarryhott/6a736104a00abefd4b293eef) |
 | Results | [`scarryhott/bio-closure-benchmarks`](https://huggingface.co/datasets/scarryhott/bio-closure-benchmarks/tree/main/runs/hfjobs_a100_6a736104a00abefd4b293eef) |
-| Local | `benchmarks/results/cloud_latest.json` |
 
 | Mode | Mean latency | vs `off` | Note |
 |------|-------------:|----------|------|
 | `off` | 4.77 s | — | Baseline |
 | `probe` | 4.70 s | identical tokens | Non-interfering observation (961 open events) |
 | `full` | 4.98 s | **63/68** diffs every seed | Causal actuation; ~4.4 % latency overhead |
-
-Hardware: NVIDIA A100-SXM4-80GB, bf16, ≈58 GB allocated.
-
-Not a quality win. Lower `coherence_shadow` under `full` keeps holistic advantage OPEN.
-`full-connected-return` quality remains separately open until the holistic job finishes.
 
 ## Earlier path notes
 

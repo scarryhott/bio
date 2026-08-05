@@ -50,6 +50,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "Full-model benchmark (radicalnumerics/RND1-Base-0910) is an OPEN EMPIRICAL CLAIM"
-          echo "and is not executed in CI. Run locally with GPU:"
-          echo "  python benchmarks/compare_rnd1_closure.py --modes off probe full --seeds 1 2 3 4 5"
+          echo "Full unified 30B holistic compare (radicalnumerics/RND1-Base-0910) is measured"
+          echo "on GPU outside CI (quality advantages remain OPEN EMPIRICAL CLAIM). Reproduce with:"
+          echo "  python benchmarks/compare_rnd1_closure.py --modes off probe full full-connected-return --seeds 1 2 3 4 5 --steps 32"
+          echo "Authoritative artifact: benchmarks/results/cloud_holistic_unified.json"
