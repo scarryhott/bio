@@ -1,0 +1,1067 @@
+{
+  "schema_version": "1.0",
+  "protocol": "goel-quantum-environmental-closure-via-bio-levels-and-data-chart",
+  "generated_at": "2026-08-05T23:40:58.669349+00:00",
+  "verdict": "GOEL_QUANTUM_ENVIRONMENTAL_CLOSURE_DERIVED",
+  "passed": true,
+  "relation": {
+    "z": "z_B \u2295 z_H",
+    "z_B": "DNA / bio-token Kakeya local ball (weight 2)",
+    "z_H": "environment \u00b1 quantum carrier as global Chaitin hair (weight 1/2)",
+    "P": "diag(2, 1/2)",
+    "R6": "sigma o P",
+    "R6_squared": "id",
+    "unitary": "\u27e8P x, P y\u27e9_C = \u27e8x, y\u27e9_C",
+    "omega_C": "i z_B \u2227 z_H \u2208 H^{1,1}, fixed by P and R6",
+    "classical_goel_hair": "ADMITTED when DNA\u00d7env independently returned",
+    "quantum_environmental_closure": "requires witnessed Q carrier through R6 + artifact-excluded interference; default \u03b4_C(Q)=OPEN",
+    "goel_binding": "DNA=piano, environment=fingers; Q not free identity upgrade"
+  },
+  "bio_closure_levels": [
+    {
+      "level_id": "ivi0_pure_place",
+      "name": "IVI-0 Pure Place",
+      "goel_role": "pre-DNA / pre-environment \u2014 only 0\u2194\u221e dual limits",
+      "partition": null,
+      "transcript": "docs/transcript_closure/closure_structure_map.json#ivi0"
+    },
+    {
+      "level_id": "ivi1_adjacency",
+      "name": "IVI-1 Adjacency",
+      "goel_role": "DNA locus adjacent to milieu without forced coupling",
+      "partition": "undirected DNA\u2013env contact",
+      "transcript": "docs/transcript_closure/closure_structure_map.json#ivi1"
+    },
+    {
+      "level_id": "ivi2_orientation",
+      "name": "IVI-2 Orientation",
+      "goel_role": "polymerase direction / tension-tuned motor orientation",
+      "partition": "directed motor path on DNA",
+      "transcript": "docs/transcript_closure/closure_structure_map.json#ivi2"
+    },
+    {
+      "level_id": "ivi3_quantum_env",
+      "name": "IVI-3 Triality / quantum\u2013environmental",
+      "goel_role": "local non-invertibility + resuperposition on DNA\u00d7env; quantum = partial verification on relations (transcript bridge)",
+      "partition": "z_B \u2295 z_H with possible Q on hair fiber",
+      "transcript": "docs/transcript_closure/closure_structure_map.json#quantum",
+      "equals": "quantum-gravity axiometry / Goel Q hypothesis locus"
+    },
+    {
+      "level_id": "ball_partition",
+      "name": "Local Kakeya bio-token ball (z_B)",
+      "goel_role": "DNA template occurrences inside bio-tokens; weight 2",
+      "partition": "z_B",
+      "topology_weight": "2"
+    },
+    {
+      "level_id": "hair_curvature",
+      "name": "Global Chaitin\u2013Goel hair (z_H)",
+      "goel_role": "environment \u00b1 quantum carrier; weight 1/2",
+      "partition": "z_H",
+      "topology_weight": "1/2"
+    },
+    {
+      "level_id": "level6_r6_return",
+      "name": "Level-6 Galois ball\u2192hair return",
+      "goel_role": "R_6 = \u03c3\u2218P; R_6\u00b2=id \u2014 quantum-env closure identity",
+      "partition": "R_6(z_B, z_H)",
+      "identity": "R_6^2 = id"
+    },
+    {
+      "level_id": "delta_c_q_gate",
+      "name": "Biological double-slit \u03b4_C(Q)",
+      "goel_role": "witnessed interference return or OPEN",
+      "partition": "orientation-sensitive Level-6 residue",
+      "default": "OPEN"
+    }
+  ],
+  "data_admissibility_chart": [
+    {
+      "stage_id": "originless_basis",
+      "admissible_statement": "Admit current relational basis C_t provisionally; ball/hair are projections, not priors.",
+      "goel_quantum_env_realization": "C_t prior to DNA/env split; Goel motor not yet polarized",
+      "level6_operator": "C before z_B \u2295 z_H",
+      "writes_memory": false,
+      "quantum_status_at_stage": "not_yet_posed",
+      "data_class": "provisional_observation"
+    },
+    {
+      "stage_id": "expose_observation_field",
+      "admissible_statement": "Expose provisional observation, measurement, and action field A_legal,t as candidates.",
+      "goel_quantum_env_realization": "Expose DNA template (ball) and milieu/Q carrier (hair) as candidates",
+      "level6_operator": "z = z_B \u2295 z_H provisional",
+      "writes_memory": false,
+      "quantum_status_at_stage": "provisional_Q_candidate",
+      "data_class": "provisional_observation"
+    },
+    {
+      "stage_id": "provisional_transform",
+      "admissible_statement": "Generate provisional act A_t inside the current basis without write-back.",
+      "goel_quantum_env_realization": "Provisional polymerase act under tension without write-back",
+      "level6_operator": "P = diag(2, 1/2) weights applied provisionally",
+      "writes_memory": false,
+      "quantum_status_at_stage": "shadow_only",
+      "data_class": "axiometric_shadow"
+    },
+    {
+      "stage_id": "preserve_pre_return",
+      "admissible_statement": "Preserve the pre-return relation so return can recover identity non-identically.",
+      "goel_quantum_env_realization": "Seal pre-return DNA\u00d7env relation for non-identical recovery",
+      "level6_operator": "pre-R_6 sealed relation",
+      "writes_memory": false,
+      "quantum_status_at_stage": "sealed_not_resolved",
+      "data_class": "provisional_observation"
+    },
+    {
+      "stage_id": "environmental_transform",
+      "admissible_statement": "Allow organism / environment / architecture interaction to transform the episode.",
+      "goel_quantum_env_realization": "Environment transforms motor mode (Goel: DNA=piano, env=fingers)",
+      "level6_operator": "\u03ba_{1/2} hair curvature on z_H",
+      "writes_memory": false,
+      "quantum_status_at_stage": "env_coupled_classical_path",
+      "data_class": "returned_consequence"
+    },
+    {
+      "stage_id": "independent_return",
+      "admissible_statement": "Receive independently returned consequence R_t (not model echo from a controlled boundary).",
+      "goel_quantum_env_realization": "Independent DNA\u00d7env return \u2014 not polymerase echo",
+      "level6_operator": "R_6 = \u03c3\u2218P ball-into-hair",
+      "writes_memory": false,
+      "quantum_status_at_stage": "classical_ok_Q_pending",
+      "data_class": "returned_consequence"
+    },
+    {
+      "stage_id": "endogenous_topology",
+      "admissible_statement": "Generate candidate verification topology V_t from the return (not a fixed chart catalog).",
+      "goel_quantum_env_realization": "\u03c9_C = i z_B \u2227 z_H \u2208 H^{1,1}; unitary \u27e8\u00b7,\u00b7\u27e9_C from return",
+      "level6_operator": "P(\u03c9_C)=\u03c9_C; R_6(\u03c9_C)=\u03c9_C",
+      "writes_memory": false,
+      "quantum_status_at_stage": "topology_fixed_Q_not_certified",
+      "data_class": "relative_interference_residue"
+    },
+    {
+      "stage_id": "delta_c_resolution",
+      "admissible_statement": "Resolve \u03b4_C(h): C \u22a2 h, C \u22a2 \u00ach, or open \u2014 relational admissibility, not external assertion.",
+      "goel_quantum_env_realization": "\u03b4_C(Q): witnessed interference \u2192 admit; else OPEN (double-slit gate)",
+      "level6_operator": "Level-6 orientation residue vs Level-5 shadow",
+      "writes_memory": false,
+      "quantum_status_at_stage": "OPEN_unless_witnessed",
+      "data_class": "open_candidate"
+    },
+    {
+      "stage_id": "integrate_resolved_relation",
+      "admissible_statement": "Integrate only the resolved relational identity into C_{t+1}; shadows never certify.",
+      "goel_quantum_env_realization": "Admit classical env-coupled hair; Q only if witnessed R_6 return",
+      "level6_operator": "write-back under dual Close(B) \u2227 Close(H_Goel)",
+      "writes_memory": true,
+      "quantum_status_at_stage": "classical_admit_Q_OPEN_default",
+      "data_class": "admitted_memory"
+    },
+    {
+      "stage_id": "repartition_next",
+      "admissible_statement": "Repartition local (Kakeya bio-token) and global (Goel\u2013Chaitin hair, incl. \u03b4_C(Q)) for the next episode.",
+      "goel_quantum_env_realization": "Repartition next bio-token ball and Goel\u2013Chaitin hair under C_{t+1}",
+      "level6_operator": "R_6\u00b2=id then next opening",
+      "writes_memory": false,
+      "quantum_status_at_stage": "carry_OPEN_Q_forward",
+      "data_class": "open_candidate"
+    }
+  ],
+  "data_classes": {
+    "provisional_observation": "Candidate ball/hair presentation before return \u2014 not memory.",
+    "returned_consequence": "Independently measured modality that can complete a recovery cycle.",
+    "axiometric_shadow": "Likelihood, fitness, confidence, entropy, PASS counts \u2014 may propose, never certify.",
+    "open_candidate": "\u03b4_C open: retained as an opening / next topos layer, not discarded as a suite failure.",
+    "admitted_memory": "Resolved relation with write_back_allowed \u2014 enters C_{t+1}.",
+    "refused_or_collapsed": "Mandate refusal or false collapse \u2014 positively non-admissible.",
+    "relative_interference_residue": "Double-slit relative difference across arms; becomes \u03b4_C(Q) only after artifact-excluded independent return."
+  },
+  "admissible_data_architecture": {
+    "kind": "ADMISSIBLE_DATA_ARCHITECTURE",
+    "epistemic_status": "DESIGN_DERIVATION",
+    "not_a_pass_aggregate": true,
+    "relation": "(C_t, B_bio_token, H_Goel_Chaitin_incl_\u03b4_C(Q), E_t, A_legal,t) \u2194_C (A_t, E_{t+1}, R_t, V_t, C_{t+1})",
+    "general_derivation": [
+      {
+        "step_id": "originless_basis",
+        "statement": "Admit current relational basis C_t provisionally; ball/hair are projections, not priors.",
+        "writes_memory": false,
+        "epistemic_note": "C is prior to subject/object and to any dataset inventory."
+      },
+      {
+        "step_id": "expose_observation_field",
+        "statement": "Expose provisional observation, measurement, and action field A_legal,t as candidates.",
+        "writes_memory": false,
+        "epistemic_note": "Provisional data is not yet admissible identity."
+      },
+      {
+        "step_id": "provisional_transform",
+        "statement": "Generate provisional act A_t inside the current basis without write-back.",
+        "writes_memory": false,
+        "epistemic_note": ""
+      },
+      {
+        "step_id": "preserve_pre_return",
+        "statement": "Preserve the pre-return relation so return can recover identity non-identically.",
+        "writes_memory": false,
+        "epistemic_note": ""
+      },
+      {
+        "step_id": "environmental_transform",
+        "statement": "Allow organism / environment / architecture interaction to transform the episode.",
+        "writes_memory": false,
+        "epistemic_note": "Environment is a modality, not an auxiliary feature vector."
+      },
+      {
+        "step_id": "independent_return",
+        "statement": "Receive independently returned consequence R_t (not model echo from a controlled boundary).",
+        "writes_memory": false,
+        "epistemic_note": "Missing return \u2192 OPEN; self-authored echo \u2192 OPEN; contradiction \u2192 REJECTED."
+      },
+      {
+        "step_id": "endogenous_topology",
+        "statement": "Generate candidate verification topology V_t from the return (not a fixed chart catalog).",
+        "writes_memory": false,
+        "epistemic_note": ""
+      },
+      {
+        "step_id": "delta_c_resolution",
+        "statement": "Resolve \u03b4_C(h): C \u22a2 h, C \u22a2 \u00ach, or open \u2014 relational admissibility, not external assertion.",
+        "writes_memory": false,
+        "epistemic_note": ""
+      },
+      {
+        "step_id": "integrate_resolved_relation",
+        "statement": "Integrate only the resolved relational identity into C_{t+1}; shadows never certify.",
+        "writes_memory": true,
+        "epistemic_note": "Write-back is allowed only for jointly verified operation \u2227 topology."
+      },
+      {
+        "step_id": "repartition_next",
+        "statement": "Repartition local (Kakeya bio-token) and global (Goel\u2013Chaitin hair, incl. \u03b4_C(Q)) for the next episode.",
+        "writes_memory": false,
+        "epistemic_note": ""
+      }
+    ],
+    "data_classes": {
+      "provisional_observation": "Candidate ball/hair presentation before return \u2014 not memory.",
+      "returned_consequence": "Independently measured modality that can complete a recovery cycle.",
+      "axiometric_shadow": "Likelihood, fitness, confidence, entropy, PASS counts \u2014 may propose, never certify.",
+      "open_candidate": "\u03b4_C open: retained as an opening / next topos layer, not discarded as a suite failure.",
+      "admitted_memory": "Resolved relation with write_back_allowed \u2014 enters C_{t+1}.",
+      "refused_or_collapsed": "Mandate refusal or false collapse \u2014 positively non-admissible.",
+      "relative_interference_residue": "Double-slit relative difference across arms; becomes \u03b4_C(Q) only after artifact-excluded independent return."
+    },
+    "motifs": [
+      "originless_prior",
+      "generator_not_totality",
+      "relational_admissibility",
+      "cycle_equality_derives_closure",
+      "ordered_support_identity",
+      "nrr_non_repetition",
+      "axiometry_is_shadow",
+      "independent_return",
+      "missing_return_is_open",
+      "return_side_partition",
+      "refusal_blocks_writeback",
+      "biological_nonidentical_recovery"
+    ],
+    "contrast_to_existing_models": {
+      "train_predict_filter": "Learned proposal \u2192 prediction \u2192 external score/filter. Data is training fuel; admission is post-hoc ranking.",
+      "benchmark_suite_pass": "Aggregated PASS/FAIL over fixed tasks. Pass counts are shadows, not identity.",
+      "return_unified_admission": "Data becomes admissible only as its relation is resolved inside one return with endogenous verification topology. Holistic verification reveals this architecture \u2014 it does not reduce to containing a pass."
+    },
+    "revealed_from_run": {
+      "admitted_memory_episodes": [
+        "pert-resp-001",
+        "seq-lik-001",
+        "var-eff-001",
+        "opengenome2-seq-000",
+        "opengenome2-seq-001",
+        "traitgym-000",
+        "traitgym-001",
+        "traitgym-002",
+        "clinvar-000",
+        "clinvar-001",
+        "clinvar-002"
+      ],
+      "open_candidate_episodes": [
+        "pert-resp-001",
+        "seq-lik-001",
+        "var-eff-001",
+        "opengenome2-seq-000",
+        "opengenome2-seq-001",
+        "traitgym-000",
+        "traitgym-001",
+        "traitgym-002",
+        "clinvar-000",
+        "clinvar-001",
+        "clinvar-002",
+        "delta_c_q_goel_quantum_environmental"
+      ],
+      "refused_or_rejected_episodes": [],
+      "next_openings": [
+        "next-environmental-coupling",
+        "delta_c_q_biological_double_slit",
+        "goel_quantum_environmental_R6_return"
+      ],
+      "double_slit_relative_verification": {},
+      "ownership": {
+        "closure_agi": "ours_transcript_ivi_nrr",
+        "goel_programme": "parallel_not_subsumption",
+        "level6": "reunified_reciprocal_topology",
+        "rnd1_is_our_model": false
+      },
+      "principle": "data_as_resolved_relation",
+      "certifiers_forbidden": [
+        "mutation_likelihood",
+        "fitness",
+        "confidence",
+        "entropy",
+        "PASS_count",
+        "weight_presence",
+        "thermodynamic_efficiency_figures"
+      ]
+    },
+    "architecture_digest": "2b29e29fdcf0aaf29ef598f8"
+  },
+  "level6_reunified": {
+    "verdict": "REUNIFIED_INTERNAL_CLOSURE_HODGE_VERIFIED",
+    "r6_square_identity": true,
+    "intrinsic_unitarity": true,
+    "fractal_hypotenuse_return": true,
+    "lambert_triangle_time": true,
+    "kakeya_reconstruction": true,
+    "level5_forgets_orientation": true,
+    "level6_retains_orientation": true,
+    "p2_candidate": {
+      "degree": 4,
+      "hodge_type": [
+        2,
+        2
+      ],
+      "ball_weight": "4",
+      "hair_weight": "1/4",
+      "total_weight": "1",
+      "topology_fixed": true,
+      "galois_return_fixed": true,
+      "rational_trace_mechanism": "formal Tr_{K/Q}(alpha_p)",
+      "smooth_projective_variety_constructed": false,
+      "outside_cycle_map_proved": false
+    },
+    "classical_hodge_counterexample": "OPEN: no smooth projective X and no non-algebraicity proof",
+    "basis_id": "B_C:6e066d635aa08f0b",
+    "trace_id": "Omega_C:824fdb921a4614c0"
+  },
+  "episode_bindings": [
+    {
+      "episode_id": "gene-comp-001",
+      "benchmark_id": "gene-completion",
+      "has_dna": true,
+      "has_environment": false,
+      "quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+      "goel_status": null,
+      "dual_status": null,
+      "level6_pair": {
+        "ball": [
+          0.9310905521691522,
+          0.7017847504354513
+        ],
+        "hair": [
+          1.151922359108441,
+          -0.906635567465945
+        ],
+        "P": [
+          "2",
+          "1/2"
+        ],
+        "R6": "sigma o P"
+      },
+      "r6_square_holds": true,
+      "unitary_pairing_holds": true,
+      "delta_c_q": "OPEN",
+      "classical_hair_admitted": false,
+      "quantum_env_closed": false,
+      "reason": "insufficient DNA\u00d7env modalities for Goel hair"
+    },
+    {
+      "episode_id": "pert-resp-001",
+      "benchmark_id": "perturbation-response",
+      "has_dna": true,
+      "has_environment": true,
+      "quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+      "goel_status": "ADMITTED_GLOBAL_HAIR",
+      "dual_status": "DUAL_CLOSED_TO_OPENING",
+      "level6_pair": {
+        "ball": [
+          0.5209264108610634,
+          -0.12417207212982984
+        ],
+        "hair": [
+          0.581454201911449,
+          -0.5111776258007571
+        ],
+        "P": [
+          "2",
+          "1/2"
+        ],
+        "R6": "sigma o P"
+      },
+      "r6_square_holds": true,
+      "unitary_pairing_holds": true,
+      "delta_c_q": "OPEN",
+      "classical_hair_admitted": true,
+      "quantum_env_closed": false,
+      "reason": "classical Goel DNA\u00d7env hair admitted under Level-6 unitary form; \u03b4_C(Q)=OPEN \u2014 quantum environmental closure not yet witnessed"
+    },
+    {
+      "episode_id": "rna-fit-001",
+      "benchmark_id": "rna-fitness",
+      "has_dna": false,
+      "has_environment": true,
+      "quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+      "goel_status": null,
+      "dual_status": null,
+      "level6_pair": {
+        "ball": [
+          0.5270756533781709,
+          -0.5812263459272744
+        ],
+        "hair": [
+          1.7297614868683187,
+          -0.7081529445615953
+        ],
+        "P": [
+          "2",
+          "1/2"
+        ],
+        "R6": "sigma o P"
+      },
+      "r6_square_holds": true,
+      "unitary_pairing_holds": true,
+      "delta_c_q": "OPEN",
+      "classical_hair_admitted": false,
+      "quantum_env_closed": false,
+      "reason": "insufficient DNA\u00d7env modalities for Goel hair"
+    },
+    {
+      "episode_id": "seq-lik-001",
+      "benchmark_id": "sequence-likelihood",
+      "has_dna": true,
+      "has_environment": true,
+      "quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+      "goel_status": "ADMITTED_GLOBAL_HAIR",
+      "dual_status": "DUAL_CLOSED_TO_OPENING",
+      "level6_pair": {
+        "ball": [
+          1.1359640375911175,
+          -0.9786415625663105
+        ],
+        "hair": [
+          1.2031607718563546,
+          0.5100711415894494
+        ],
+        "P": [
+          "2",
+          "1/2"
+        ],
+        "R6": "sigma o P"
+      },
+      "r6_square_holds": true,
+      "unitary_pairing_holds": true,
+      "delta_c_q": "OPEN",
+      "classical_hair_admitted": true,
+      "quantum_env_closed": false,
+      "reason": "classical Goel DNA\u00d7env hair admitted under Level-6 unitary form; \u03b4_C(Q)=OPEN \u2014 quantum environmental closure not yet witnessed"
+    },
+    {
+      "episode_id": "var-eff-001",
+      "benchmark_id": "variant-effect",
+      "has_dna": true,
+      "has_environment": true,
+      "quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+      "goel_status": "ADMITTED_GLOBAL_HAIR",
+      "dual_status": "DUAL_CLOSED_TO_OPENING",
+      "level6_pair": {
+        "ball": [
+          0.440816791074075,
+          -0.04471689015503899
+        ],
+        "hair": [
+          1.511919298386648,
+          -0.540937700143768
+        ],
+        "P": [
+          "2",
+          "1/2"
+        ],
+        "R6": "sigma o P"
+      },
+      "r6_square_holds": true,
+      "unitary_pairing_holds": true,
+      "delta_c_q": "OPEN",
+      "classical_hair_admitted": true,
+      "quantum_env_closed": false,
+      "reason": "classical Goel DNA\u00d7env hair admitted under Level-6 unitary form; \u03b4_C(Q)=OPEN \u2014 quantum environmental closure not yet witnessed"
+    },
+    {
+      "episode_id": "var-eff-open-self",
+      "benchmark_id": "variant-effect",
+      "has_dna": true,
+      "has_environment": false,
+      "quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+      "goel_status": null,
+      "dual_status": null,
+      "level6_pair": {
+        "ball": [
+          1.3397526494436323,
+          0.3754312809615934
+        ],
+        "hair": [
+          1.0421229615556362,
+          -0.9701192462165187
+        ],
+        "P": [
+          "2",
+          "1/2"
+        ],
+        "R6": "sigma o P"
+      },
+      "r6_square_holds": true,
+      "unitary_pairing_holds": true,
+      "delta_c_q": "OPEN",
+      "classical_hair_admitted": false,
+      "quantum_env_closed": false,
+      "reason": "insufficient DNA\u00d7env modalities for Goel hair"
+    },
+    {
+      "episode_id": "opengenome2-gene-000",
+      "benchmark_id": "gene-completion",
+      "has_dna": true,
+      "has_environment": false,
+      "quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+      "goel_status": null,
+      "dual_status": null,
+      "level6_pair": {
+        "ball": [
+          1.5590095055077713,
+          0.4716930495858409
+        ],
+        "hair": [
+          1.074876717134583,
+          0.4051123665774037
+        ],
+        "P": [
+          "2",
+          "1/2"
+        ],
+        "R6": "sigma o P"
+      },
+      "r6_square_holds": true,
+      "unitary_pairing_holds": true,
+      "delta_c_q": "OPEN",
+      "classical_hair_admitted": false,
+      "quantum_env_closed": false,
+      "reason": "insufficient DNA\u00d7env modalities for Goel hair"
+    },
+    {
+      "episode_id": "opengenome2-gene-001",
+      "benchmark_id": "gene-completion",
+      "has_dna": true,
+      "has_environment": false,
+      "quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+      "goel_status": null,
+      "dual_status": null,
+      "level6_pair": {
+        "ball": [
+          0.2610423698814219,
+          -1.2221689261431268
+        ],
+        "hair": [
+          1.5502628054936096,
+          0.07844730264703914
+        ],
+        "P": [
+          "2",
+          "1/2"
+        ],
+        "R6": "sigma o P"
+      },
+      "r6_square_holds": true,
+      "unitary_pairing_holds": true,
+      "delta_c_q": "OPEN",
+      "classical_hair_admitted": false,
+      "quantum_env_closed": false,
+      "reason": "insufficient DNA\u00d7env modalities for Goel hair"
+    },
+    {
+      "episode_id": "opengenome2-seq-000",
+      "benchmark_id": "sequence-likelihood",
+      "has_dna": true,
+      "has_environment": true,
+      "quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+      "goel_status": "ADMITTED_GLOBAL_HAIR",
+      "dual_status": "DUAL_CLOSED_TO_OPENING",
+      "level6_pair": {
+        "ball": [
+          1.2538707073554096,
+          -0.387379234455847
+        ],
+        "hair": [
+          0.9274021662253427,
+          0.07222177212178282
+        ],
+        "P": [
+          "2",
+          "1/2"
+        ],
+        "R6": "sigma o P"
+      },
+      "r6_square_holds": true,
+      "unitary_pairing_holds": true,
+      "delta_c_q": "OPEN",
+      "classical_hair_admitted": true,
+      "quantum_env_closed": false,
+      "reason": "classical Goel DNA\u00d7env hair admitted under Level-6 unitary form; \u03b4_C(Q)=OPEN \u2014 quantum environmental closure not yet witnessed"
+    },
+    {
+      "episode_id": "opengenome2-seq-001",
+      "benchmark_id": "sequence-likelihood",
+      "has_dna": true,
+      "has_environment": true,
+      "quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+      "goel_status": "ADMITTED_GLOBAL_HAIR",
+      "dual_status": "DUAL_CLOSED_TO_OPENING",
+      "level6_pair": {
+        "ball": [
+          0.6032056108473813,
+          -0.8466052719383979
+        ],
+        "hair": [
+          0.26629411138507864,
+          0.523050371038972
+        ],
+        "P": [
+          "2",
+          "1/2"
+        ],
+        "R6": "sigma o P"
+      },
+      "r6_square_holds": true,
+      "unitary_pairing_holds": true,
+      "delta_c_q": "OPEN",
+      "classical_hair_admitted": true,
+      "quantum_env_closed": false,
+      "reason": "classical Goel DNA\u00d7env hair admitted under Level-6 unitary form; \u03b4_C(Q)=OPEN \u2014 quantum environmental closure not yet witnessed"
+    },
+    {
+      "episode_id": "traitgym-000",
+      "benchmark_id": "variant-effect",
+      "has_dna": true,
+      "has_environment": true,
+      "quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+      "goel_status": "ADMITTED_GLOBAL_HAIR",
+      "dual_status": "DUAL_CLOSED_TO_OPENING",
+      "level6_pair": {
+        "ball": [
+          0.4876146737340872,
+          -0.7240799375516549
+        ],
+        "hair": [
+          0.3397323383460129,
+          0.0036506297191722936
+        ],
+        "P": [
+          "2",
+          "1/2"
+        ],
+        "R6": "sigma o P"
+      },
+      "r6_square_holds": true,
+      "unitary_pairing_holds": true,
+      "delta_c_q": "OPEN",
+      "classical_hair_admitted": true,
+      "quantum_env_closed": false,
+      "reason": "classical Goel DNA\u00d7env hair admitted under Level-6 unitary form; \u03b4_C(Q)=OPEN \u2014 quantum environmental closure not yet witnessed"
+    },
+    {
+      "episode_id": "traitgym-001",
+      "benchmark_id": "variant-effect",
+      "has_dna": true,
+      "has_environment": true,
+      "quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+      "goel_status": "ADMITTED_GLOBAL_HAIR",
+      "dual_status": "DUAL_CLOSED_TO_OPENING",
+      "level6_pair": {
+        "ball": [
+          1.2254343911715397,
+          -0.671116865570917
+        ],
+        "hair": [
+          1.6647486029925638,
+          -1.043672431212308
+        ],
+        "P": [
+          "2",
+          "1/2"
+        ],
+        "R6": "sigma o P"
+      },
+      "r6_square_holds": true,
+      "unitary_pairing_holds": true,
+      "delta_c_q": "OPEN",
+      "classical_hair_admitted": true,
+      "quantum_env_closed": false,
+      "reason": "classical Goel DNA\u00d7env hair admitted under Level-6 unitary form; \u03b4_C(Q)=OPEN \u2014 quantum environmental closure not yet witnessed"
+    },
+    {
+      "episode_id": "traitgym-002",
+      "benchmark_id": "variant-effect",
+      "has_dna": true,
+      "has_environment": true,
+      "quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+      "goel_status": "ADMITTED_GLOBAL_HAIR",
+      "dual_status": "DUAL_CLOSED_TO_OPENING",
+      "level6_pair": {
+        "ball": [
+          0.3273781922360366,
+          -1.2029749038519746
+        ],
+        "hair": [
+          0.7943916739999297,
+          0.7056570118189922
+        ],
+        "P": [
+          "2",
+          "1/2"
+        ],
+        "R6": "sigma o P"
+      },
+      "r6_square_holds": true,
+      "unitary_pairing_holds": true,
+      "delta_c_q": "OPEN",
+      "classical_hair_admitted": true,
+      "quantum_env_closed": false,
+      "reason": "classical Goel DNA\u00d7env hair admitted under Level-6 unitary form; \u03b4_C(Q)=OPEN \u2014 quantum environmental closure not yet witnessed"
+    },
+    {
+      "episode_id": "clinvar-000",
+      "benchmark_id": "variant-effect",
+      "has_dna": true,
+      "has_environment": true,
+      "quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+      "goel_status": "ADMITTED_GLOBAL_HAIR",
+      "dual_status": "DUAL_CLOSED_TO_OPENING",
+      "level6_pair": {
+        "ball": [
+          1.143611476848277,
+          -0.3768988394008248
+        ],
+        "hair": [
+          1.631669352269189,
+          -0.46322182175079873
+        ],
+        "P": [
+          "2",
+          "1/2"
+        ],
+        "R6": "sigma o P"
+      },
+      "r6_square_holds": true,
+      "unitary_pairing_holds": true,
+      "delta_c_q": "OPEN",
+      "classical_hair_admitted": true,
+      "quantum_env_closed": false,
+      "reason": "classical Goel DNA\u00d7env hair admitted under Level-6 unitary form; \u03b4_C(Q)=OPEN \u2014 quantum environmental closure not yet witnessed"
+    },
+    {
+      "episode_id": "clinvar-001",
+      "benchmark_id": "variant-effect",
+      "has_dna": true,
+      "has_environment": true,
+      "quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+      "goel_status": "ADMITTED_GLOBAL_HAIR",
+      "dual_status": "DUAL_CLOSED_TO_OPENING",
+      "level6_pair": {
+        "ball": [
+          0.2820658300845106,
+          -0.23871477110979966
+        ],
+        "hair": [
+          1.532758733207071,
+          -0.9488693707852787
+        ],
+        "P": [
+          "2",
+          "1/2"
+        ],
+        "R6": "sigma o P"
+      },
+      "r6_square_holds": true,
+      "unitary_pairing_holds": true,
+      "delta_c_q": "OPEN",
+      "classical_hair_admitted": true,
+      "quantum_env_closed": false,
+      "reason": "classical Goel DNA\u00d7env hair admitted under Level-6 unitary form; \u03b4_C(Q)=OPEN \u2014 quantum environmental closure not yet witnessed"
+    },
+    {
+      "episode_id": "clinvar-002",
+      "benchmark_id": "variant-effect",
+      "has_dna": true,
+      "has_environment": true,
+      "quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+      "goel_status": "ADMITTED_GLOBAL_HAIR",
+      "dual_status": "DUAL_CLOSED_TO_OPENING",
+      "level6_pair": {
+        "ball": [
+          1.2666351165428373,
+          0.10853141903843055
+        ],
+        "hair": [
+          1.1344455053062283,
+          0.20466494594110762
+        ],
+        "P": [
+          "2",
+          "1/2"
+        ],
+        "R6": "sigma o P"
+      },
+      "r6_square_holds": true,
+      "unitary_pairing_holds": true,
+      "delta_c_q": "OPEN",
+      "classical_hair_admitted": true,
+      "quantum_env_closed": false,
+      "reason": "classical Goel DNA\u00d7env hair admitted under Level-6 unitary form; \u03b4_C(Q)=OPEN \u2014 quantum environmental closure not yet witnessed"
+    },
+    {
+      "episode_id": "proteingym-000",
+      "benchmark_id": "variant-effect",
+      "has_dna": false,
+      "has_environment": true,
+      "quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+      "goel_status": null,
+      "dual_status": null,
+      "level6_pair": {
+        "ball": [
+          1.6945495667039765,
+          -0.027167000057447543
+        ],
+        "hair": [
+          0.5400760421273476,
+          0.15635401508918823
+        ],
+        "P": [
+          "2",
+          "1/2"
+        ],
+        "R6": "sigma o P"
+      },
+      "r6_square_holds": true,
+      "unitary_pairing_holds": true,
+      "delta_c_q": "OPEN",
+      "classical_hair_admitted": false,
+      "quantum_env_closed": false,
+      "reason": "insufficient DNA\u00d7env modalities for Goel hair"
+    },
+    {
+      "episode_id": "proteingym-001",
+      "benchmark_id": "variant-effect",
+      "has_dna": false,
+      "has_environment": true,
+      "quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+      "goel_status": null,
+      "dual_status": null,
+      "level6_pair": {
+        "ball": [
+          1.2345214271881901,
+          0.4714766172043692
+        ],
+        "hair": [
+          1.6777980904858087,
+          -0.20283997686413113
+        ],
+        "P": [
+          "2",
+          "1/2"
+        ],
+        "R6": "sigma o P"
+      },
+      "r6_square_holds": true,
+      "unitary_pairing_holds": true,
+      "delta_c_q": "OPEN",
+      "classical_hair_admitted": false,
+      "quantum_env_closed": false,
+      "reason": "insufficient DNA\u00d7env modalities for Goel hair"
+    },
+    {
+      "episode_id": "proteingym-002",
+      "benchmark_id": "variant-effect",
+      "has_dna": false,
+      "has_environment": true,
+      "quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+      "goel_status": null,
+      "dual_status": null,
+      "level6_pair": {
+        "ball": [
+          1.2348151137085666,
+          -0.24573165527445529
+        ],
+        "hair": [
+          1.0414426422890841,
+          -0.16064248767463551
+        ],
+        "P": [
+          "2",
+          "1/2"
+        ],
+        "R6": "sigma o P"
+      },
+      "r6_square_holds": true,
+      "unitary_pairing_holds": true,
+      "delta_c_q": "OPEN",
+      "classical_hair_admitted": false,
+      "quantum_env_closed": false,
+      "reason": "insufficient DNA\u00d7env modalities for Goel hair"
+    },
+    {
+      "episode_id": "rnagym-000",
+      "benchmark_id": "rna-fitness",
+      "has_dna": false,
+      "has_environment": true,
+      "quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+      "goel_status": null,
+      "dual_status": null,
+      "level6_pair": {
+        "ball": [
+          0.9773459475783971,
+          0.2816436219801297
+        ],
+        "hair": [
+          1.137706950979239,
+          0.45938917987732886
+        ],
+        "P": [
+          "2",
+          "1/2"
+        ],
+        "R6": "sigma o P"
+      },
+      "r6_square_holds": true,
+      "unitary_pairing_holds": true,
+      "delta_c_q": "OPEN",
+      "classical_hair_admitted": false,
+      "quantum_env_closed": false,
+      "reason": "insufficient DNA\u00d7env modalities for Goel hair"
+    },
+    {
+      "episode_id": "rnagym-001",
+      "benchmark_id": "rna-fitness",
+      "has_dna": false,
+      "has_environment": true,
+      "quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+      "goel_status": null,
+      "dual_status": null,
+      "level6_pair": {
+        "ball": [
+          0.4223981578071597,
+          -0.7577679831319879
+        ],
+        "hair": [
+          1.6542293386078042,
+          -1.030154316634907
+        ],
+        "P": [
+          "2",
+          "1/2"
+        ],
+        "R6": "sigma o P"
+      },
+      "r6_square_holds": true,
+      "unitary_pairing_holds": true,
+      "delta_c_q": "OPEN",
+      "classical_hair_admitted": false,
+      "quantum_env_closed": false,
+      "reason": "insufficient DNA\u00d7env modalities for Goel hair"
+    },
+    {
+      "episode_id": "rnagym-002",
+      "benchmark_id": "rna-fitness",
+      "has_dna": false,
+      "has_environment": true,
+      "quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+      "goel_status": null,
+      "dual_status": null,
+      "level6_pair": {
+        "ball": [
+          1.4500486820936316,
+          0.6649293135653551
+        ],
+        "hair": [
+          0.9866145254896522,
+          -0.4372425091423193
+        ],
+        "P": [
+          "2",
+          "1/2"
+        ],
+        "R6": "sigma o P"
+      },
+      "r6_square_holds": true,
+      "unitary_pairing_holds": true,
+      "delta_c_q": "OPEN",
+      "classical_hair_admitted": false,
+      "quantum_env_closed": false,
+      "reason": "insufficient DNA\u00d7env modalities for Goel hair"
+    }
+  ],
+  "summary": {
+    "episodes_total": 22,
+    "dna_env_episodes": 11,
+    "classical_goel_hair_admitted": 11,
+    "quantum_environmental_closed": 0,
+    "delta_c_q_open": 11,
+    "r6_square_on_dna_env": true,
+    "unitary_on_dna_env": true
+  },
+  "stateful_biological_closure": {
+    "stateful_chain": true,
+    "final_c_t": "da38dc9096b91194eb4e4b5f18cec5df96373941bf28525bb25eee8bb7958ce4",
+    "admitted_unities": 21,
+    "goel_qe_open_candidates": 11
+  },
+  "parallel_dialogue": {
+    "relation": "Goel Consciousness Science \u2194 Black Mirror Closure Axiometry",
+    "subsumption": false,
+    "doctrine": "docs/GOEL_BLACK_MIRROR_PARALLEL_DIALOGUE.md",
+    "goel_supplies": "biological carrier, (M,E,I), open living motors, consciousness-first ontology, biological double-slit roadmap, Fifth Revolution teleology",
+    "black_mirror_supplies": "originless C, ball\u2013hair, independent return \u03c1, \u03b4_C, Chaitin global hair / Kakeya local bio-token verification"
+  },
+  "ownership": {
+    "closure_agi": "ours_transcript_ivi_nrr",
+    "goel_programme": "independent_parallel_scientific_paradigm",
+    "rnd1": "radical_numerics_external_architecture",
+    "rnd1_is_our_model": false
+  },
+  "epistemic": {
+    "derived": "quantum_environmental_closure_architecture_of_goel_operator",
+    "classical_dna_env_hair": "MEASURED_ADMITTED_WHEN_COUPLED",
+    "quantum_environmental_empirical": "OPEN_DELTA_C_Q",
+    "level6_internal": "VERIFIED",
+    "classical_hodge_ce": "OPEN",
+    "not_claimed": [
+      "classical Chaitin Omega",
+      "empirical interference closure",
+      "classical Hodge counterexample",
+      "Goel subsumed into Black Mirror",
+      "RND1 ownership of Chaitin hair"
+    ],
+    "transcript_basis": [
+      "docs/transcript_closure/closure_structure_map.json",
+      "docs/CHAITIN_CONNECTED_RETURN_DERIVATION.md",
+      "docs/GOEL_DNA_ENVIRONMENT_CHAITIN_OPERATOR.md"
+    ]
+  },
+  "architecture_digest": "538e8aec4bcd9a8ec29cf998"
+}

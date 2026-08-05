@@ -304,7 +304,7 @@ def reunify_episode(
 
     model = loop or UnifiedClosureArchitecturalLoop()
     # Architecture identity enters the source observation as a reunified relation,
-    # never as a certifying score.
+    # never as a certifying score. Shared-loop runs seal against prior C_t.
     source = {
         "observation": episode.source_observation,
         "architecture": {
@@ -314,6 +314,8 @@ def reunify_episode(
         },
         "modalities": sorted(episode.biological.modalities),
         "shared_relation": episode.biological.shared_relation,
+        "prior_c_t": model.memory.authoritative_digest,
+        "admitted_unities_before": len(model.memory.admitted),
     }
     returned = {
         "observation": episode.returned_observation,

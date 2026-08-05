@@ -40,7 +40,13 @@ def run_full_closure(
     ours_only: bool = False,
     episodes_path: Path = DEFAULT_EPISODES,
     negative_controls: bool = True,
+    stateful: bool = True,
 ) -> dict[str, Any]:
+    from closure.stateful_biological_closure import (
+        StatefulBiologicalClosure,
+        order_episodes_for_stateful_run,
+    )
+
     manifest = load_manifest()
     systems = {row["id"]: row for row in manifest["systems"]}
     plan = build_plan(
@@ -51,23 +57,51 @@ def run_full_closure(
     if ours_only:
         plan = [arm for arm in plan if arm.system_id == "bio-closure-independent"]
     episodes = load_finite_bio_episodes(episodes_path)
-    by_benchmark: dict[str, list] = {}
+    filtered = []
     for episode in episodes:
-        if not negative_controls and episode.role.startswith("negative-control"):
+        if not negative_controls and (
+            episode.role.startswith("negative-control")
+            or episode.self_authored
+            or "open-self" in episode.episode_id
+        ):
             continue
+        filtered.append(episode)
+    episodes = filtered
+    by_benchmark: dict[str, list] = {}
+    for episode in order_episodes_for_stateful_run(episodes):
         by_benchmark.setdefault(episode.benchmark_id, []).append(episode)
 
+    our_state = StatefulBiologicalClosure() if stateful else None
+    seen_our: set[str] = set()
     receipts: list[dict[str, Any]] = []
     for arm in plan:
         system = systems[arm.system_id]
         architecture = architecture_from_system(system)
         for episode in by_benchmark.get(arm.benchmark_id, []):
-            receipt = reunify_episode(architecture, episode)
-            receipts.append(receipt_to_dict(receipt))
+            if arm.system_id == "bio-closure-independent" and our_state is not None:
+                if episode.episode_id in seen_our:
+                    continue
+                step = our_state.run_episode(episode)
+                seen_our.add(episode.episode_id)
+                receipts.append(step.to_dict())
+            else:
+                receipt = reunify_episode(architecture, episode)
+                receipts.append(receipt_to_dict(receipt))
+
+    if our_state is not None:
+        for episode in order_episodes_for_stateful_run(episodes):
+            if episode.episode_id not in seen_our:
+                step = our_state.run_episode(episode)
+                seen_our.add(episode.episode_id)
+                receipts.append(step.to_dict())
+        our_state.derive_cross_dataset_hypotheses()
+        stateful_summary = our_state.report()
+    else:
+        stateful_summary = None
 
     joint_counts = Counter(row["joint_arm_status"] for row in receipts)
     verification_counts = Counter(row["verification_status"] for row in receipts)
-    learned_counts = Counter(row["learned_claim_status"] for row in receipts)
+    learned_counts = Counter(row.get("learned_claim_status", "n/a") for row in receipts)
     goel_counts = Counter(
         row["goel_operator_status"] for row in receipts if row.get("goel_operator_status")
     )
@@ -89,14 +123,17 @@ def run_full_closure(
         row
         for row in receipts
         if row["system_id"] == "bio-closure-independent"
-        and row["episode_id"].endswith("open-self")
+        and "open-self" in row["episode_id"]
     ]
 
     return {
-        "schema_version": "1.0",
+        "schema_version": "1.1",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "protocol": "return-unified-full-closure-reunification",
-        "relation": "(C_t, E_t, A_legal,t) ↔_C (A_t, E_{t+1}, R_t, V_t, C_{t+1})",
+        "relation": (
+            "C_0 --E_i--> C_i on our kernel (stateful); "
+            "(C_t, E_t, A_legal,t) ↔_C (A_t, E_{t+1}, R_t, V_t, C_{t+1})"
+        ),
         "manifest_status_date": manifest["status_date"],
         "plan_summary": summarize(manifest, plan),
         "episodes_path": str(episodes_path.relative_to(ROOT))
@@ -113,17 +150,21 @@ def run_full_closure(
         "kernel_negative_control_open_or_rejected": len(
             [r for r in kernel_controls_open if r["verification_status"] != "VERIFIED"]
         ),
+        "stateful_biological_closure": stateful_summary,
         "epistemic": {
             "finite_kernel_data_topology_reunification": "MEASURED"
             if kernel_verified
             else "OPEN",
+            "stateful_chain": bool(stateful_summary and stateful_summary.get("stateful_chain")),
+            "not_aggregate_of_separate_closes": bool(
+                stateful_summary and stateful_summary.get("stateful_chain")
+            ),
             "external_open_weight_biological_suite": "OPEN",
             "full_biological_unification_agi_execution": "OPEN",
             "note": (
-                "VERIFIED joint arms require independent Bio Closure kernel on "
-                "held-out returns. Evo/OpenGenome2 arms reunify architecture "
-                "carriers and data into admission but stay OPEN until weights "
-                "and adapters execute inside the same return."
+                "Our kernel carries one shared C_t across held-out episodes. "
+                "Evo/OpenGenome2 arms reunify carriers but stay OPEN until weights "
+                "execute inside the same return."
             ),
         },
         "receipts": receipts,

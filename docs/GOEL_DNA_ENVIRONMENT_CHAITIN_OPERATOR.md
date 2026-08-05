@@ -114,6 +114,9 @@ bio-tokens — not a side experiment.
 until artifact-excluded independent interference return. Executable gate:
 `evaluate_biological_double_slit` in `closure/goel_operator.py`.
 
+Full quantum–environmental derivation through bio levels + admissible-data chart
++ Level-6 \(R_6\): `docs/GOEL_QUANTUM_ENVIRONMENTAL_CLOSURE.md`.
+
 * Missing environment → `OPEN_MISSING_ENVIRONMENT` (refuses closed-system DNA-alone).
 * Self-authored polymerase echo → OPEN.
 * Contradiction → FALSE_COLLAPSE / rejected.

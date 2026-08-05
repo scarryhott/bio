@@ -69,8 +69,10 @@ Derivation motifs in `closure/topology.py` (`UNIFIED_AXIOMETRY_MOTIFS`) describe
 13. **Paper + data layer (not weights-only)** — `benchmarks/paper_architecture_data_catalog.json` + `closure/paper_data_layer.py` (Goel, Evo/OpenGenome2, TraitGym/RNAGym/ProteinGym/ClinVar, Wuite prior)
 14. **Open dataset download / online adapters** — `closure/dataset_adapters.py` + `benchmarks/download_open_datasets.py` + `benchmarks/run_open_data_closure.py` (HF datasets-server + NCBI E-utilities → `benchmarks/data_cache/` → reunification)
 15. **PRIMARY: frontier paper admission** — `closure/frontier_paper_admission.py` + `benchmarks/run_frontier_paper_admission.py` + `benchmarks/frontier_paper_results.json`
-16. **Unified verification** — `closure/unified_verification.py` + `benchmarks/run_unified_verification.py` — primary product is **admissible-data architecture** (`closure/admissible_data.py`), not a PASS aggregate; biological double-slit runs as **relative return** inside our Closure AGI (`closure/double_slit_return.py`)
-17. **RN open + Goel paper combined (supporting)** — `closure/rn_open_surface.py` + `closure/rn_goel_combined.py` + `benchmarks/run_rn_goel_combined.py` (RND1 open code as finite AI presentation + Goel paper logic under our C; not a substitute for frontier-paper primary)
+16. **Stateful biological closure** — `closure/stateful_biological_closure.py` + `benchmarks/run_stateful_biological_closure.py` — one shared \(C_t\) across episodes + cross-dataset \(h\) (\(\delta_C\) OPEN)
+17. **Goel quantum–environmental closure** — `closure/goel_quantum_environmental_closure.py` + `closure/level6_reciprocal_topology.py` — bio levels + data chart + Level-6 \(R_6=\sigma\circ P\)
+18. **Unified verification** — `closure/unified_verification.py` + `benchmarks/run_unified_verification.py` — primary product is **admissible-data architecture** (`closure/admissible_data.py`), not a PASS aggregate; biological double-slit runs as **relative return** inside our Closure AGI (`closure/double_slit_return.py`)
+19. **RN open + Goel paper combined (supporting)** — `closure/rn_open_surface.py` + `closure/rn_goel_combined.py` + `benchmarks/run_rn_goel_combined.py` (RND1 open code as finite AI presentation + Goel paper logic under our C; not a substitute for frontier-paper primary)
 
 ## Carrier
 

@@ -28,12 +28,8 @@ from .return_unified_runtime import (
     load_finite_bio_episodes,
     reunify_episode,
 )
-from .self_verification import (
-    ClosureVerificationStatus,
-    closure_verification_is_authoritative,
-    verify_closure_operation,
-)
-from .topology import UnifiedAxiometry, VerificationTopology, admit_verification_topology
+from .self_verification import ClosureVerificationStatus
+from .topology import UnifiedAxiometry
 from .types import Resolution
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -143,95 +139,58 @@ def _layer_double_slit_relative_return() -> tuple[UnifiedLayer, DoubleSlitRelati
 
 
 def _layer_self_verification_on_bio_tokens() -> tuple[UnifiedLayer, list[str], list[str]]:
-    """Unified admission: operation ∧ topology on positive + control bio episodes."""
+    """Unified admission: operation ∧ topology on positive + control bio episodes.
+
+    One shared loop + axiometry so C_t carries across finite bio tokens
+    (not Aggregate(Close(E_i))). Receipts already include reunify+verify.
+    """
 
     architecture = architecture_from_system(OUR_SYSTEM, weights_available=True)
     episodes = load_finite_bio_episodes(EPISODES_PATH)
     axiometry = UnifiedAxiometry()
+    loop = UnifiedClosureArchitecturalLoop()
     verified = 0
     open_controls = 0
     admitted_ids: list[str] = []
     open_ids: list[str] = []
     rows: list[dict[str, Any]] = []
+    c_before = loop.memory.authoritative_digest
+    chain_ok = True
 
     for episode in episodes:
-        receipt = reunify_episode(architecture, episode, axiometry=axiometry)
+        receipt = reunify_episode(
+            architecture, episode, loop=loop, axiometry=axiometry
+        )
+        c_after = loop.memory.authoritative_digest
+        if rows and rows[-1].get("c_after") != c_before:
+            chain_ok = False
         is_control = episode.self_authored or "open-self" in episode.episode_id
-        loop = UnifiedClosureArchitecturalLoop()
-        source = {
-            "observation": episode.source_observation,
-            "architecture": {
-                "system_id": architecture.system_id,
-                "digest": architecture.architecture_digest,
-            },
-            "modalities": sorted(episode.biological.modalities),
-            "shared_relation": episode.biological.shared_relation,
-        }
-        returned = {
-            "observation": episode.returned_observation,
-            "architecture_digest": architecture.architecture_digest,
-            "shared_relation": episode.biological.shared_relation,
-        }
-        turn = loop.transact(
-            source,
-            episode.legal_actions,
-            returned,
-            episode.next_legal_actions,
-            independent=episode.independent,
-            self_authored=episode.self_authored,
-            contradictory=episode.contradictory,
-        )
-        cycle = {
-            "path": [
-                "local_proposal",
-                "developmental_ecological_propagation",
-                "transformed_return",
-                "resolution",
-            ],
-            "shared_relation": episode.biological.shared_relation,
-            "modalities": sorted(episode.biological.modalities),
-        }
-        topos = {
-            "relation": episode.biological.shared_relation,
-            "episode": episode.episode_id,
-            "benchmark": episode.benchmark_id,
-        }
-        topology = VerificationTopology(
-            topology_id=f"unified:{episode.episode_id}",
-            basis_cycle=dict(cycle),
-            closure_cycle=dict(cycle),
-            encoding_topos=dict(topos),
-            relation_topos=dict(topos),
-            openings=list(episode.biological.openings) or ["next-return-layer"],
-            ball_perspective={"side": "bio_token_local"},
-            hair_perspective={
-                "side": "goel_chaitin_global_hair",
-                "dialogue": "goel_leftrightarrow_black_mirror",
-            },
-        )
-        topo_receipt = admit_verification_topology(UnifiedAxiometry(), topology)
-        verification = verify_closure_operation(turn, topo_receipt)
         row = {
             "episode_id": episode.episode_id,
             "reunify_status": receipt.verification_status.value,
-            "self_verification": verification.status.value,
-            "authoritative": closure_verification_is_authoritative(verification),
-            "topology_resolution": topo_receipt.resolution.value,
-            "operation_admission": turn.comparison.admission.value,
+            "self_verification": receipt.verification_status.value,
+            "authoritative": receipt.authoritative,
+            "topology_resolution": receipt.topology_resolution.value,
+            "operation_admission": receipt.operation_admission.value,
             "is_control": is_control,
             "openings": list(episode.biological.openings),
+            "c_before": c_before,
+            "c_after": c_after,
+            "admitted_unities": len(loop.memory.admitted),
+            "stateful_prior": len(rows) > 0,
         }
         rows.append(row)
+        c_before = c_after
         if is_control:
             open_ids.append(episode.episode_id)
-            if verification.status is not ClosureVerificationStatus.VERIFIED:
+            if receipt.verification_status is not ClosureVerificationStatus.VERIFIED:
                 open_controls += 1
         else:
             if (
-                verification.status is ClosureVerificationStatus.VERIFIED
-                and closure_verification_is_authoritative(verification)
-                and turn.comparison.admission is Admission.ADMITTED
-                and topo_receipt.resolution
+                receipt.verification_status is ClosureVerificationStatus.VERIFIED
+                and receipt.authoritative
+                and receipt.operation_admission is Admission.ADMITTED
+                and receipt.topology_resolution
                 in {Resolution.CLOSED_HIGHER, Resolution.CLOSED_TO_OPENING}
             ):
                 verified += 1
@@ -241,15 +200,58 @@ def _layer_self_verification_on_bio_tokens() -> tuple[UnifiedLayer, list[str], l
 
     positives = sum(1 for e in episodes if not (e.self_authored or "open-self" in e.episode_id))
     controls = len(episodes) - positives
-    ok = verified == positives and open_controls == controls and positives > 0
+    ok = (
+        verified == positives
+        and open_controls == controls
+        and positives > 0
+        and chain_ok
+    )
     layer = UnifiedLayer(
         "unified_self_verification_bio_tokens",
         ok,
         "BIO_TOKEN_SELF_VERIFICATION_CLOSED" if ok else "BIO_TOKEN_SELF_VERIFICATION_INCOMPLETE",
-        f"verified_positives={verified}/{positives} open_controls={open_controls}/{controls}",
-        {"episodes": rows},
+        (
+            f"verified_positives={verified}/{positives} "
+            f"open_controls={open_controls}/{controls} "
+            f"stateful_chain={chain_ok}"
+        ),
+        {
+            "episodes": rows,
+            "stateful_chain": chain_ok,
+            "final_c_t": loop.memory.authoritative_digest,
+            "admitted_unities": len(loop.memory.admitted),
+        },
     )
     return layer, admitted_ids, open_ids
+
+
+def _layer_stateful_biological_closure() -> UnifiedLayer:
+    """Instrument: shared C_t across finite bio episodes + OPEN cross-dataset h."""
+
+    from .stateful_biological_closure import run_stateful_biological_closure
+
+    episodes = load_finite_bio_episodes(EPISODES_PATH)
+    report = run_stateful_biological_closure(episodes)
+    ok = bool(report.get("passed")) and bool(report.get("stateful_chain"))
+    return UnifiedLayer(
+        "stateful_biological_closure",
+        ok,
+        str(report.get("verdict")),
+        (
+            f"episodes={report.get('episode_count')} "
+            f"admitted={report.get('admitted_unities')} "
+            f"hypotheses_open={report.get('hypotheses_open')}"
+        ),
+        {
+            "stateful_chain": report.get("stateful_chain"),
+            "final_c_t": report.get("final_c_t"),
+            "hypotheses_open": report.get("hypotheses_open"),
+            "new_resolutions_empirically_closed": report.get("epistemic", {}).get(
+                "new_resolutions_empirically_closed"
+            ),
+            "relation": report.get("relation"),
+        },
+    )
 
 
 def _layer_paper_data() -> UnifiedLayer:
@@ -289,11 +291,13 @@ def run_unified_verification(*, require_external_gate: bool = True) -> dict[str,
 
     bio_layer, admitted_ids, open_ids = _layer_self_verification_on_bio_tokens()
     slit_layer, relative = _layer_double_slit_relative_return()
+    stateful_layer = _layer_stateful_biological_closure()
     layers = [
         _layer_our_closure(),
         _layer_goel_black_mirror_dialogue(),
         slit_layer,
         bio_layer,
+        stateful_layer,
         _layer_paper_data(),
         _layer_external_suite(require_gate=require_external_gate),
     ]
@@ -356,6 +360,10 @@ def run_unified_verification(*, require_external_gate: bool = True) -> dict[str,
         "biological_double_slit_relative_return": "RAN_INSIDE_CLOSURE_MODEL",
         "delta_c_q_biological_double_slit": relative.delta_c_q,
         "bio_token_self_verification": "VERIFIED" if bio_layer.ok else "OPEN",
+        "stateful_biological_closure": (
+            "CHAIN_MEASURED" if stateful_layer.ok else "INCOMPLETE"
+        ),
+        "cross_dataset_resolutions_empirically_closed": False,
         "paper_data_layer": "CATALOGUED",
         "external_suite": layers[-1].verdict,
         "evo_live_weight_execution": "OPEN",

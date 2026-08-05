@@ -53,21 +53,52 @@ Doctrine: `docs/CLOUD_RUN_STATUS.md`
 | Rank | Command | Role |
 |-----:|---------|------|
 | 1 | `benchmarks/run_frontier_paper_admission.py` | **PRIMARY** our C vs frontier papers |
-| 2 | `benchmarks/verify_our_closure.py` | Internal reunify+verify gate |
-| 3 | `benchmarks/run_unified_verification.py` | Admissible-data architecture + instruments |
-| 4 | `benchmarks/run_open_data_closure.py` | Downloaded/online bio returns under C |
-| 5 | `benchmarks/run_full_closure.py` | Architecture carriers × finite episodes |
-| 6 | `benchmarks/run_external_suite.py` | Gated external integration |
-| 7 | `benchmarks/run_rn_goel_combined.py` | Supporting RN open + Goel paper logic |
-| 8 | `benchmarks/compare_rnd1_closure.py` | Finite AI substrate test only |
+| 2 | `benchmarks/run_stateful_biological_closure.py` | **One shared \(C_t\)** across all bio episodes + cross-dataset \(h\) (\(\delta_C\)=OPEN) |
+| 3 | `benchmarks/run_goel_quantum_environmental_closure.py` | Goel Q–env closure via bio levels + data chart + Level-6 \(R_6\) |
+| 4 | `benchmarks/verify_our_closure.py` | Internal reunify+verify gate |
+| 5 | `benchmarks/run_unified_verification.py` | Admissible-data architecture + instruments |
+| 6 | `benchmarks/run_open_data_closure.py` | Open-data returns under stateful our kernel |
+| 7 | `benchmarks/run_full_closure.py` | Architecture carriers × finite episodes (stateful our kernel) |
+| 8 | `benchmarks/run_external_suite.py` | Gated external integration |
+| 9 | `benchmarks/run_rn_goel_combined.py` | Supporting RN open + Goel paper logic |
+| 10 | `benchmarks/compare_rnd1_closure.py` | Finite AI substrate test only |
 
-## Ownership
+## Stateful biological closure (decisive architecture)
 
-| Pole | Owner |
-|------|-------|
-| Closure AGI / Kakeya local / Chaitin–Goel global hair | **Ours** |
-| RND1 / Evo / Omnii | **Radical Numerics** (external) |
-| Goel DNA×env mechanism | Goel papers, bound into **our** global hair |
+Harness unification alone is not enough. The biological run must carry one
+shared \(C_t\):
 
-See `docs/OUR_CLOSURE_AGI_VS_RADICAL_NUMERICS.md`, `docs/STAGE_STATUS.md`,
-`docs/UNIFICATION_THESIS.md`.
+\[
+C_0 \xrightarrow{E_1} C_1 \xrightarrow{E_2} C_2 \rightarrow \cdots
+\]
+
+not \(\operatorname{Aggregate}(\operatorname{Close}(E_i))\).
+
+```bash
+python3.11 benchmarks/run_stateful_biological_closure.py --include-open-data
+```
+
+Module: `closure/stateful_biological_closure.py`  
+Transcript basis: NRR multi-directional bundle + identifiability retained
+(`docs/transcript_closure/closure_structure_map.json`).
+
+Cross-dataset hypotheses are derived from the admitted ledger with
+\(\delta_C(h)=\mathrm{OPEN}\) until independent empirical return.
+
+## Goel quantum–environmental closure (Level-6)
+
+```bash
+python3.11 benchmarks/run_goel_quantum_environmental_closure.py
+```
+
+Module: `closure/goel_quantum_environmental_closure.py`  
+Level-6: `closure/level6_reciprocal_topology.py`  
+Doctrine: `docs/GOEL_QUANTUM_ENVIRONMENTAL_CLOSURE.md`
+
+\[
+z_B=\text{DNA/Kakeya},\quad
+z_H=\text{env}\pm Q,\quad
+R_6=\sigma\circ P,\quad
+R_6^2=\mathrm{id},\quad
+\delta_C(Q)=\mathrm{OPEN}\ \text{(default)}.
+\]

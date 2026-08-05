@@ -68,5 +68,14 @@ def test_unified_verification_reveals_architecture() -> None:
     )
     ids = {layer["layer_id"] for layer in report["layers"]}
     assert "biological_double_slit_relative_return" in ids
+    assert "stateful_biological_closure" in ids
+    assert report["epistemic"]["stateful_biological_closure"] == "CHAIN_MEASURED"
+    assert report["epistemic"]["cross_dataset_resolutions_empirically_closed"] is False
     assert all(layer["ok"] for layer in report["layers"])
     assert all(layer["role"] == "instrument" for layer in report["layers"])
+    bio = next(
+        layer
+        for layer in report["layers"]
+        if layer["layer_id"] == "unified_self_verification_bio_tokens"
+    )
+    assert bio["evidence"]["stateful_chain"] is True

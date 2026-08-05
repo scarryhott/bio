@@ -601,6 +601,12 @@ def programme_role_split() -> dict[str, Any]:
                 "until artifact-excluded independent interference return"
             ),
             "quantum": "empirical carrier only; unwitnessed quantum claims stay OPEN",
+            "level6_reciprocal_topology": (
+                "z_B=DNA/Kakeya ball (weight 2), z_H=env±Q hair (weight 1/2); "
+                "R_6=σ∘P with R_6²=id; unitary under ⟨·,·⟩_C — "
+                "closure/level6_reciprocal_topology.py + "
+                "closure/goel_quantum_environmental_closure.py"
+            ),
             "not_claimed": [
                 "classical Chaitin Ω",
                 "Kolmogorov universality",

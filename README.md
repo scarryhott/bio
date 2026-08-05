@@ -53,13 +53,15 @@ M_{\mathrm{ClosureBio}}
 ```text
 CLOSED_PROGRAMME_PRIORITY_OUR_CLOSURE_VS_FRONTIER_PAPERS
 CLOSED_RND1_30B_AS_FINITE_AI_SUBSTRATE_TEST_NOT_BIO
-MEASURED_OUR_CLOSURE_ADMISSION_VS_FRONTIER_PAPERS
+MEASURED_STATEFUL_BIOLOGICAL_CLOSURE_CHAIN
+MEASURED_GOEL_QUANTUM_ENVIRONMENTAL_CLOSURE_DERIVED
 MEASURED_OUR_CLOSURE_REUNIFIED_VERIFIED
 MEASURED_EXTERNAL_SUITE_INTEGRATED
 MEASURED_OPEN_DATASET_ONLINE_SAMPLES_IN_CLOSURE
+OPEN_CROSS_DATASET_EMPIRICAL_RESOLUTIONS
+OPEN_DELTA_C_Q_BIOLOGICAL_DOUBLE_SLIT
 OPEN_BIO_CLOSURE_VS_RADICAL_NUMERICS_BIOLOGICAL_RESULT
 OPEN_EVO_WEIGHT_EXECUTION_ON_CATALOGUED_DATA
-OPEN_DELTA_C_Q_BIOLOGICAL_DOUBLE_SLIT
 ```
 
 **Role split:** local Kakeya + global Chaitin/Goel are **ours**; RND1/Evo/Omnii
@@ -73,6 +75,24 @@ python3.11 benchmarks/run_frontier_paper_admission.py
 
 → `OUR_CLOSURE_ADMISSION_VS_FRONTIER_PAPERS_MEASURED`  
 (`benchmarks/results/frontier_paper_admission.json`)
+
+**Stateful biological run** (one shared \(C_t\) across datasets, not aggregate closes):
+
+```bash
+python3.11 benchmarks/run_stateful_biological_closure.py --include-open-data
+```
+
+→ `STATEFUL_BIOLOGICAL_CLOSURE_CHAIN_MEASURED`  
+Cross-dataset \(h\) are derived with \(\delta_C=\mathrm{OPEN}\) until independent return.
+
+**Goel quantum–environmental closure** (Level-6 \(R_6=\sigma\circ P\)):
+
+```bash
+python3.11 benchmarks/run_goel_quantum_environmental_closure.py
+```
+
+→ `GOEL_QUANTUM_ENVIRONMENTAL_CLOSURE_DERIVED`  
+Classical DNA×env hair admits; \(\delta_C(Q)\) stays OPEN (`docs/GOEL_QUANTUM_ENVIRONMENTAL_CLOSURE.md`).
 
 **Our Closure AGI** must pass internal reunify+verify
 (`benchmarks/verify_our_closure.py` → `OUR_CLOSURE_REUNIFIED_VERIFIED`).
