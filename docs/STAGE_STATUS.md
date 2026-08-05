@@ -8,13 +8,18 @@ CLOSED_FULL_MODEL_CAUSAL_INTEGRATION
 CLOSED_FULL_MODEL_CONNECTED_RETURN_EXECUTION
 CLOSED_FULL_CLOSURE_CONTROLLER_REUNIFIED_RND1
 MEASURED_FULL_UNIFIED_30B_HOLISTIC_COMPARISON
+CLOSED_INDEPENDENT_CLOSURE_MODEL_PORT
+CLOSED_TAGTOKN_FRAMEWORK_COMPATIBILITY_CONTROLS
+OPEN_INDEPENDENT_CLOSURE_VS_RND1_COMPARISON
 OPEN_HOLISTIC_QUALITY_ADVANTAGE
 OPEN_CONNECTED_RETURN_QUALITY_ADVANTAGE
 ```
 
-**Definition:** the *full unified verification* **is** the 30B-model holistic
-comparison across `off | probe | full | full-connected-return` on
+**Definition:** the *full unified verification* completed so far is the 30B-model
+holistic comparison across `off | probe | full | full-connected-return` on
 `radicalnumerics/RND1-Base-0910` under identical prompts, seeds, steps, and hardware.
+That experiment is the RND1 hybrid/substrate comparison, not the independent-model
+head-to-head.
 
 Authoritative artifacts:
 
@@ -86,7 +91,62 @@ with 1953 OPEN events → connected-return **executed** on the live 30B chart
 3. **Connected-return is a distinct executed regime** — more OPEN, different trajectory from `full`, latency not worse than `full`.
 4. **Neither actuated mode is quality-calibrated** — coherence shadow falls under `full` and collapses further under `full-connected-return` on this probe.
 
-This benchmark must **not** be described as a performance win.
+This benchmark must **not** be described as a performance win or as the independent
+closure-native model.
+
+## Independent closure-native model (ported)
+
+Source: `closure/independent_model.py`.  
+Tagtokn bridge: `closure/tagtokn_bridge.py`.  
+Provenance/scope: `docs/INDEPENDENT_CLOSURE_MODEL.md`.
+
+The model is a compact executable port of the project
+`UnifiedClosureArchitecturalLoop`, with native operation:
+
+```text
+(C_t, E_t, A_legal,t)
+→ A_t
+→ (E_t+1, A_legal,t+1)
+→ C_t+1
+```
+
+It has no RND1, Torch, Transformers, logits, confidence, or entropy dependency.
+The proposal is selected from the complete current legal-action field relative to
+admitted relational memory. A complete independent return can be admitted; a
+self-authored/missing return stays OPEN; contradiction/refusal is rejected;
+repetition does not inflate memory.
+
+The port closes the missing architectural distinction:
+
+```text
+native RND1
+independent closure-native model
+RND1 + closure hybrid
+```
+
+The independent model has not yet been evaluated against RND1 on matched tasks and
+independently returned environments. Therefore:
+
+```text
+CLOSED_INDEPENDENT_CLOSURE_MODEL_PORT
+OPEN_INDEPENDENT_CLOSURE_VS_RND1_COMPARISON
+```
+
+## Tagtokn compatibility
+
+The bridge was checked against `scarryhott/tagtokn/src/lib/closure.js` and
+`research/CLOSURE_NATIVE_TOKENOMICS.md`:
+
+* closure remains prior to token issuance;
+* OPEN claims issue no native supply;
+* self-authored replay stays OPEN;
+* contradictory return issues no token;
+* only an admitted independent return can issue a semantic receipt;
+* a residual continuation can open a child gate;
+* market value and human worth are excluded from token identity.
+
+These are finite compatibility controls. Tagtokn remains a downstream receipt,
+network, and market-projection framework—not the model's closure authority.
 
 ## Earlier three-mode causal run (superseded as authoritative)
 
@@ -115,23 +175,18 @@ Mode `full-connected-return` is **not** a proposed future mode. It is
 RERUNNABLE in finite tests and **executed** on the 30B holistic compare.
 Quality advantage under this mode remains `OPEN_CONNECTED_RETURN_QUALITY_ADVANTAGE`.
 
-## Next optimization target
+## Next comparison target
 
-Not maximizing similarity to baseline. Seek the closure regime where
+Run matched tasks through all three arms:
 
-\[
-\text{ordered return gain}
-+
-\text{open-state fidelity}
-+
-\text{cross-step stability}
-\]
+1. RND1 native proposal and entropy admission;
+2. independent closure-native proposal and returned resolution;
+3. RND1 proposal plus closure admission.
 
-increase without collapsing local linguistic coherence, while retaining
-
-\[
-\text{complete recovery of ordered labeled primitive support}.
-\]
+The environment must return independently observed consequences. Compare task
+success, contradiction handling, correct OPEN behavior, relational recovery,
+continuation learning, latency, and resource use. Token coherence alone is not the
+comparison identity.
 
 ## Finite foundation (still closed)
 
@@ -141,18 +196,22 @@ increase without collapsing local linguistic coherence, while retaining
 +
 \text{controlled closure deltas}
 +
-\text{baseline equivalence}
+\text{independent closure-native port}
 +
-\text{35 passing tests}
+\text{Tagtokn compatibility bridge}
++
+\text{42 passing tests}
 }
 \]
 
 * Upstream identity preserved (`docs/upstream/RND1_MANIFEST.json`).
 * Closure deltas localized to generation/sampling admission.
 * `closure_mode="off"` remains a genuine baseline.
+* Independent model imports no RND1/Transformers/Torch proposal machinery.
 
 ## Still OPEN EMPIRICAL CLAIM
 
+* Independent closure-native model versus RND1 on matched returned tasks
 * Holistic generation-quality advantage under `full`
 * Connected-return quality advantage under `full-connected-return` (execution CLOSED; quality OPEN)
 * Improved biological / coevolutionary inference
@@ -174,12 +233,12 @@ advantage, or physical identification.
 
 ## Admissibility grounding (project-integral only)
 
-| Motif | Role in the holistic result |
-|-------|-----------------------------|
-| Relational admissibility \(\mathcal C \vdash h\) / \(\neg h\) / open | Probe retains OPEN counts; full/fcr actuate admission |
-| Ordered return / ordered-support identity | Token order is the closure path |
+| Motif | Role in the current programme |
+|-------|-------------------------------|
+| Relational admissibility \(\mathcal C \vdash h\) / \(\neg h\) / open | Probe retains OPEN; hybrid modes actuate; independent loop admits whole returned cycles |
+| Ordered return / ordered-support identity | Token order in the hybrid; sealed action/return order in the independent model |
 | Finite connected return (Chaitin-style strings as local presentations) | `full-connected-return` contact order — not classical Ω |
-| Potential Gate as unresolved board/moves/return | Probe observes; full/fcr revise continuation |
-| Axiometry is shadow | Coherence / digests / open counts / diffs ≠ identity |
+| Potential Gate as unresolved board/moves/return | Hybrid sampler gate and independent complete legal-action field |
+| Axiometry is shadow | Coherence / digests / open counts / diffs / tokens ≠ identity |
 
 Topologies remain candidates admitted through resolution (`closure/topology.py`).
