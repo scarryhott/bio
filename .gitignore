@@ -224,5 +224,6 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# Local HF download mirrors of benchmark artifacts (keep cloud_latest.json)
+# Local HF download mirrors of benchmark artifacts (keep cloud_*.json)
 benchmarks/results/hf_download/
+benchmarks/results/hf_holistic/
