@@ -28,6 +28,8 @@ See `docs/STAGE_STATUS.md` for the full epistemic reading.
 Hardware: NVIDIA A100-SXM4-80GB, bf16, ≈58 GB allocated.
 
 Not a quality win. Lower `coherence_shadow` under `full` keeps holistic advantage OPEN.
+`full-connected-return` is reunified in-tree as a finite controller; its quality
+advantage is separately `OPEN_CONNECTED_RETURN_QUALITY_ADVANTAGE`.
 
 ## Earlier path notes
 

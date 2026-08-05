@@ -363,9 +363,9 @@ A missing necessary hair, ambiguous connected return, or broken contact remains 
 
 Paraphrase or consistent renaming should preserve the trace when the contact topology is unchanged. Altering partition–curvature or ordered return should alter the trace.
 
-## 11. Proposed sampler stage
+## 11. Sampler stage
 
-Add a fourth benchmarkable mode without replacing the existing three:
+Four benchmarkable modes (three prior + connected return):
 
 ```text
 off
@@ -374,16 +374,17 @@ full
 full-connected-return
 ```
 
-`full-connected-return` should:
+`full-connected-return` is implemented in `closure/connected_return.py` and
+`closure/sampler_bridge.py`. It:
 
-1. retain labeled denoising occurrences;
-2. construct finite local cells;
-3. derive shared return contacts;
-4. reconstruct cell order from contacts;
-5. require primitive return laws;
-6. admit a holistic cell only under complete support recovery;
-7. leave missing or ambiguous returns OPEN;
-8. create a child opening after successful finite return.
+1. retains labeled denoising occurrences;
+2. constructs finite local cells;
+3. derives shared return contacts;
+4. reconstructs cell order from contacts;
+5. requires primitive return laws;
+6. admits a holistic cell only under complete support recovery;
+7. leaves missing or ambiguous returns OPEN;
+8. creates a child opening after successful finite return.
 
 The testable hypothesis is not “more token divergence.” It is:
 
@@ -395,4 +396,4 @@ The testable hypothesis is not “more token divergence.” It is:
 }
 \]
 
-This remains an `OPEN EMPIRICAL CLAIM` until independent downstream evaluation shows an advantage over `off`, `probe`, and the present `full` controller.
+This remains an `OPEN EMPIRICAL CLAIM` until independent downstream evaluation shows an advantage over `off`, `probe`, and the present `full` controller. Finite reunification against RND1 (`closure_mode="off"` baseline + live pristine verify) is CLOSED as a controller-integration fact.

@@ -19,6 +19,16 @@ A100 compare (`benchmarks/results/cloud_latest.json`) closes **causal integratio
 Verdict: `CLOSED_FULL_MODEL_CAUSAL_INTEGRATION` / `OPEN_HOLISTIC_QUALITY_ADVANTAGE`
 (see `docs/STAGE_STATUS.md`).
 
+## Connected-return reunification (finite)
+
+`full-connected-return` is implemented (`closure/connected_return.py`) and verified
+as a finite RND1 sampler mode alongside `off` / `probe` / `full`. Default remains
+`closure_mode="off"`. Live Radical Numerics pristine files and pinned commit are
+unchanged.
+
+Verdict addition: `CLOSED_FULL_CLOSURE_REUNIFIED_RND1_VERIFIED` with
+`OPEN_CONNECTED_RETURN_QUALITY_ADVANTAGE` (and holistic quality still OPEN).
+
 Chaitin material used here is only the project’s **finite connected-return /
 ordered-support** reading (local string presentations under shared contacts) —
 not Kolmogorov universality, RH, or unrestricted incompleteness proofs.
@@ -26,6 +36,7 @@ not Kolmogorov universality, RH, or unrestricted incompleteness proofs.
 ## Claims that remain open
 
 - Holistic generation-quality advantage under full mode (coherence shadow presently lower)
+- Connected-return quality advantage under `full-connected-return`
 - Empirical biological validation of the coevolution adapter
 - Any unrestricted AGI claim; any universal Chaitin–Kakeya / RH law
 - Sybil / controller independence (Lean records the boundary; does not close it)

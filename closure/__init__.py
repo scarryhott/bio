@@ -12,6 +12,13 @@ from .biology import (
     shadow_cannot_certify,
     to_potential_gate,
 )
+from .connected_return import (
+    ConnectedReturnVerdict,
+    LabeledOccurrence,
+    LocalCell,
+    evaluate_connected_return,
+    make_occurrence,
+)
 from .digest import digest, interaction_digest, partition_curvature_digest
 from .hair import build_holistic_hair
 from .runtime import ClosureRuntime
@@ -52,9 +59,12 @@ __all__ = [
     "ClosureReceipt",
     "ClosureRuntime",
     "CoevolutionCarrier",
+    "ConnectedReturnVerdict",
     "DerivationMotif",
     "HairComposition",
     "HairSource",
+    "LabeledOccurrence",
+    "LocalCell",
     "MicroAction",
     "PotentialGate",
     "Resolution",
@@ -71,7 +81,9 @@ __all__ = [
     "construct_next_topos",
     "default_admissibility_policy",
     "digest",
+    "evaluate_connected_return",
     "interaction_digest",
+    "make_occurrence",
     "partition_curvature_digest",
     "resolution_from_biological_return",
     "shadow_cannot_certify",

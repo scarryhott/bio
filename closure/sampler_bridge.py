@@ -9,6 +9,10 @@ from typing import Any
 import torch
 
 from .digest import digest
+from .connected_return import (
+    evaluate_connected_return,
+    make_occurrence,
+)
 from .rnd_controller import TokenAdmission, closure_token_admission
 from .runtime import ClosureRuntime
 from .types import (
@@ -191,11 +195,12 @@ def admit_denoising_step(
             ordered_support=runtime.ordered_support(carrier.gate),
         )
 
-    # full mode: closure controls admission
+    connected = cfg.mode == "full-connected-return"
+
+    # full / full-connected-return: closure controls admission
     commit = admission.admit & maskable
     # Ensure finite progress when baseline wanted progress and candidates exist.
     if target > 0 and not commit.any() and maskable.any():
-        # Force minimum progress on best non-contradictory probe.
         score = admission.telemetry["probe_score"]
         for b in range(maskable.shape[0]):
             avail = maskable[b].nonzero(as_tuple=False).flatten()
@@ -206,6 +211,74 @@ def admit_denoising_step(
 
     reject = admission.telemetry["contradiction"] & maskable & ~commit
     open_mask = maskable & ~commit & ~reject
+
+    # Connected-return: label candidate occurrences and admit only under
+    # unique contact-derived order + complete primitive support recovery.
+    connected_verdict = None
+    if connected:
+        candidates: list = []
+        for b in range(commit.shape[0]):
+            for pos in commit[b].nonzero(as_tuple=False).flatten().tolist():
+                residual = float(admission.telemetry["return_residual"][b, pos].item())
+                independent = residual > cfg.open_state_threshold * 0.5
+                occ = make_occurrence(
+                    token_id=int(pred_i[b, pos].item()),
+                    position=int(pos),
+                    step=step,
+                    prior_mask=True,
+                    ancestry="denoising_return",
+                    return_side=str(carrier.return_partition.get("side", "ball")),
+                    residual=residual,
+                    independently_transformed=independent,
+                )
+                candidates.append(occ)
+        connected_verdict = evaluate_connected_return(candidates)
+        carrier.labeled_occurrences.extend(candidates)
+        carrier.connected_return_trace.append(
+            {
+                "step": step,
+                "status": connected_verdict.status,
+                "shared_contacts": connected_verdict.shared_contacts,
+                "support_size": len(connected_verdict.holistic_support),
+                "admissible": len(connected_verdict.admissible_occurrence_ids),
+            }
+        )
+        allowed = set(connected_verdict.admissible_occurrence_ids)
+        if not connected_verdict.admits:
+            # Leave all candidates OPEN — do not inflate tokens on broken return.
+            for b in range(commit.shape[0]):
+                open_mask[b] = open_mask[b] | commit[b]
+                commit[b] = False
+        else:
+            for b in range(commit.shape[0]):
+                for pos in commit[b].nonzero(as_tuple=False).flatten().tolist():
+                    # Match by reconstructing the same occurrence id.
+                    residual = float(admission.telemetry["return_residual"][b, pos].item())
+                    independent = residual > cfg.open_state_threshold * 0.5
+                    oid = make_occurrence(
+                        token_id=int(pred_i[b, pos].item()),
+                        position=int(pos),
+                        step=step,
+                        prior_mask=True,
+                        ancestry="denoising_return",
+                        return_side=str(carrier.return_partition.get("side", "ball")),
+                        residual=residual,
+                        independently_transformed=independent,
+                    ).occurrence_id
+                    if oid not in allowed:
+                        commit[b, pos] = False
+                        open_mask[b, pos] = True
+
+        # Finite progress floor: if baseline demanded progress and everything stayed
+        # OPEN due to incomplete multi-cell contacts, allow minimum_finite_progress
+        # only when each singleton passes primitive return (single-cell OK path).
+        if target > 0 and not commit.any() and candidates:
+            singleton = evaluate_connected_return(candidates[:1])
+            if singleton.admits:
+                pos = candidates[0].position
+                commit[0, pos] = True
+                open_mask[0, pos] = False
+                connected_verdict = singleton
 
     resolutions: dict[int, Resolution] = {}
     for b in range(commit.shape[0]):
@@ -223,6 +296,7 @@ def admit_denoising_step(
                     "position": int(pos),
                     "confidence": float(conf_i[b, pos].item()),
                     "entropy": float(ent_i[b, pos].item()),
+                    "connected_return": connected,
                 },
                 step_index=step,
                 position=int(pos),
@@ -234,8 +308,6 @@ def admit_denoising_step(
             residual = float(admission.telemetry["return_residual"][b, pos].item())
             independent = residual > cfg.open_state_threshold * 0.5
             if cfg.require_independent_return and not independent:
-                # Keep as provisional open unless baseline schedule forces commit path;
-                # here we still commit token provisionally but mark OPEN resolution.
                 resolutions[int(pos)] = Resolution.OPEN
                 witness = ReturnWitness(
                     source_boundary="model_echo",
@@ -248,8 +320,14 @@ def admit_denoising_step(
                 resolutions[int(pos)] = receipt.resolution
                 continue
 
+            next_opening = "next_denoising_step" if open_mask[b].any() else None
+            if connected and connected_verdict is not None and connected_verdict.admits:
+                next_opening = "child_connected_return_opening"
+
             witness = ReturnWitness(
-                source_boundary="denoising_return",
+                source_boundary="denoising_return"
+                if not connected
+                else "connected_return",
                 transformed_context=f"step:{step}:pos:{pos}:residual:{residual:.4f}",
                 recovered_relation=str(carrier.semantics.get("relation_key")),
                 ordered_support=runtime.ordered_support(carrier.gate),
@@ -257,11 +335,14 @@ def admit_denoising_step(
                     "local_viability": True,
                     "global_consequence": True,
                     "independently_transformed": True,
+                    "connected_return_status": None
+                    if connected_verdict is None
+                    else connected_verdict.status,
                 },
                 transformation_path=(f"noise→token@{pos}", f"step:{step}"),
                 return_discrepancy=residual,
                 return_side=carrier.return_partition.get("side"),
-                next_opening="next_denoising_step" if open_mask[b].any() else None,
+                next_opening=next_opening,
             )
             receipt = runtime.resolve(carrier.gate, witness)
             resolutions[int(pos)] = receipt.resolution
@@ -283,8 +364,15 @@ def admit_denoising_step(
     carrier.step_index = step
     carrier.open_positions = open_mask[0].nonzero(as_tuple=False).flatten().tolist()
     telemetry = dict(admission.telemetry) if cfg.emit_telemetry else {}
-    telemetry["mode"] = "full"
+    telemetry["mode"] = cfg.mode
     telemetry["resolutions"] = {str(k): v.value for k, v in resolutions.items()}
+    if connected_verdict is not None:
+        telemetry["connected_return"] = {
+            "status": connected_verdict.status,
+            "shared_contacts": list(connected_verdict.shared_contacts),
+            "holistic_support_size": len(connected_verdict.holistic_support),
+            "admits": connected_verdict.admits,
+        }
     return StepAdmission(
         commit_mask=commit,
         open_mask=open_mask,

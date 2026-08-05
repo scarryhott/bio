@@ -145,3 +145,26 @@ def test_closure_telemetry_aligns_with_commits():
         if "committed" in step:
             assert step["committed"] >= 0
             assert "ordered_support" in step
+
+
+def test_full_connected_return_terminates_and_traces():
+    out = _run("full-connected-return")
+    assert out["sequences"].shape == (1, 16)
+    assert out["forward_passes"] >= 1
+    assert out["closure_mode"] == "full-connected-return"
+    assert out["closure_trace"]
+    modes = {s.get("mode") for s in out["closure_trace"] if "mode" in s}
+    assert "full-connected-return" in modes
+    # Still finite generation
+    assert (out["sequences"] != 0).any()
+
+
+def test_modes_reunified_off_probe_full_connected():
+    """Reunified mode surface: off≡probe tokens; full/connected are actuated."""
+    off = _run("off")
+    probe = _run("probe")
+    full = _run("full")
+    connected = _run("full-connected-return")
+    assert torch.equal(off["sequences"], probe["sequences"])
+    assert off["sequences"].shape == full["sequences"].shape == connected["sequences"].shape
+    assert connected["closure_mode"] == "full-connected-return"

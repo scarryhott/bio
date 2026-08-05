@@ -3,8 +3,10 @@
 ## Current verdict
 
 ```text
+CLOSED_FULL_CLOSURE_REUNIFIED_RND1_VERIFIED
 CLOSED_FULL_MODEL_CAUSAL_INTEGRATION
 OPEN_HOLISTIC_QUALITY_ADVANTAGE
+OPEN_CONNECTED_RETURN_QUALITY_ADVANTAGE
 ```
 
 Prior finite stage remains closed as foundation:
@@ -118,7 +120,11 @@ Proposed future mode:
 full-connected-return
 ```
 
-It remains a `DESIGN DERIVATION` and `OPEN EMPIRICAL CLAIM`. The existing A100 result establishes causal actuation, not connected-return quality advantage.
+**Finite reunification status:** mode is now implemented in `closure/connected_return.py`
+and wired through `admit_denoising_step` / `diffusion_sample`. It is RERUNNABLE as a
+finite controller. Holistic quality advantage under this mode remains
+`OPEN EMPIRICAL CLAIM`. The existing A100 result establishes causal actuation for
+`full`, not connected-return quality advantage.
 
 ## Next optimization target
 

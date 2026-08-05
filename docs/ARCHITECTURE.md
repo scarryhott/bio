@@ -41,7 +41,7 @@ Derivation motifs in `closure/topology.py` (`UNIFIED_AXIOMETRY_MOTIFS`) describe
 5. **Finite tests** — `tests/test_closure_runtime.py`
 6. **Mock sampler tests** — `tests/test_rnd1_sampler_integration.py` (CI)
 7. **Full-model tests** — `benchmarks/compare_rnd1_closure.py` (A100 artifact: causal integration CLOSED; holistic quality OPEN)
-8. **Project-derived connected return** — `docs/CHAITIN_CONNECTED_RETURN_DERIVATION.md`; finite occurrence/contact reconstruction proposed for the next sampler stage
+8. **Project-derived connected return** — `docs/CHAITIN_CONNECTED_RETURN_DERIVATION.md` + `closure/connected_return.py` (`full-connected-return` mode; quality OPEN)
 
 ## Carrier
 
@@ -84,7 +84,12 @@ labeled local occurrences
 → continued opening
 ```
 
-The current transfer target is a future `full-connected-return` mode. It must preserve occurrence identity, derive order from returned contacts, reject broken or ambiguous returns as OPEN, and admit the holistic cell only when every required primitive support is recursively recoverable. The complete derivation and its claim boundary are recorded in `docs/CHAITIN_CONNECTED_RETURN_DERIVATION.md`.
+The current transfer target is `full-connected-return` mode (implemented as a finite
+controller). It must preserve occurrence identity, derive order from returned contacts,
+reject broken or ambiguous returns as OPEN, and admit the holistic cell only when every
+required primitive support is recursively recoverable. The complete derivation and its
+claim boundary are recorded in `docs/CHAITIN_CONNECTED_RETURN_DERIVATION.md`. Quality
+advantage remains OPEN EMPIRICAL CLAIM.
 
 ## Formal negatives (Phase 6 Lean)
 

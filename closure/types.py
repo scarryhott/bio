@@ -21,7 +21,7 @@ class Resolution(str, Enum):
     REFUSED = "REFUSED"
 
 
-ClosureMode = Literal["off", "probe", "full"]
+ClosureMode = Literal["off", "probe", "full", "full-connected-return"]
 
 
 @dataclass(frozen=True)
@@ -155,6 +155,9 @@ class ClosureCarrier:
     open_positions: list[int] = field(default_factory=list)
     # Unified axiometry handle: topologies admitted in resolution, not fixed.
     axiometry_relation: str = "C"
+    # Connected-return episode state (full-connected-return mode).
+    labeled_occurrences: list[Any] = field(default_factory=list)
+    connected_return_trace: list[dict[str, Any]] = field(default_factory=list)
 
     @property
     def B(self) -> dict[str, Any]:

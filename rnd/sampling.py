@@ -23,7 +23,7 @@ from typing import Any, Literal
 import torch
 import torch.nn as nn
 
-ClosureMode = Literal["off", "probe", "full"]
+ClosureMode = Literal["off", "probe", "full", "full-connected-return"]
 
 
 def apply_top_k_filtering(logits: torch.Tensor, k: int) -> torch.Tensor:
@@ -104,7 +104,8 @@ def diffusion_sample(
         visualizer: Optional visualizer for live visualization
         add_eos_at_end: Whether to force EOS token at the end of the sequence
         eb_gamma: Optional entropy-bound gamma for upstream EB schedule
-        closure_mode: "off" (baseline), "probe" (telemetry only), or "full" (closure admission)
+        closure_mode: "off" (baseline), "probe" (telemetry), "full" (closure admission),
+                      or "full-connected-return" (contact-ordered connected return)
         closure_config: Optional closure.types.ClosureConfig
         return_closure_trace: If True, return dict with sequences and closure telemetry
         biological_context: Optional external biological hair context
@@ -385,13 +386,14 @@ def diffusion_sample(
         # Final fill: baseline always commits remaining masks. In full closure mode,
         # remaining uncertain tokens may stay marked OPEN in the trace while still
         # receiving a provisional token so generation terminates finitely.
-        if carrier is not None and carrier.config.mode == "full":
+        if carrier is not None and carrier.config.mode in {"full", "full-connected-return"}:
             closure_trace.append(
                 {
                     "step": 0,
-                    "mode": "full",
+                    "mode": carrier.config.mode,
                     "final_open_positions": maskable[0].nonzero(as_tuple=False).flatten().tolist(),
                     "note": "finite termination fill; unresolved openings recorded",
+                    "connected_return_trace": list(carrier.connected_return_trace),
                 }
             )
         xt[maskable] = pred_i[maskable]

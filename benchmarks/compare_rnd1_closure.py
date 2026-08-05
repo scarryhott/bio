@@ -8,8 +8,12 @@ do not treat scores, latency, or PASS counts as closure identity.
 Example:
   python benchmarks/compare_rnd1_closure.py \\
     --model radicalnumerics/RND1-Base-0910 \\
-    --modes off probe full \\
+    --modes off probe full full-connected-return \\
     --seeds 1 2 3 4 5
+
+Modes: off (baseline), probe (non-interfering), full (causal actuation),
+full-connected-return (contact-ordered finite controller). Quality advantages
+remain OPEN EMPIRICAL CLAIM; causal full≠off is separately recorded.
 """
 
 from __future__ import annotations

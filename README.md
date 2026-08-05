@@ -50,12 +50,13 @@ action, Boolean/wash/projection substitution, etc.). They do not assert AGI here
 ## Generation modes
 
 ```python
-closure_mode: Literal["off", "probe", "full"] = "off"
+closure_mode: Literal["off", "probe", "full", "full-connected-return"] = "off"
 ```
 
 - `off` — unmodified upstream RND1 admission
 - `probe` — closure telemetry computed; baseline admission authoritative
 - `full` — closure controls token admission
+- `full-connected-return` — contact-ordered connected return (Chaitin-derived finite controller; quality still OPEN)
 
 Every denoising step under probe/full follows:
 

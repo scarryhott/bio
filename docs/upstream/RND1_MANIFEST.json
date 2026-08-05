@@ -16,7 +16,7 @@
     ".pre-commit-config.yaml": "0c1e1007d8be19bdf9501a5bc1cd79787e510326f2dd006c43410000ea228232"
   },
   "intentionally_modified": {
-    "rnd/sampling.py": "closure_mode off/probe/full hooks; default off preserves upstream admission",
+    "rnd/sampling.py": "closure_mode off/probe/full/full-connected-return hooks; default off preserves upstream admission",
     "rnd/generation_config.py": "closure_* generation options; defaults leave baseline unchanged",
     "rnd/generation_utils.py": "forwards closure config into diffusion_sample",
     "rnd/__init__.py": "lazy imports for lightweight tests; Auto-register still attempted"
