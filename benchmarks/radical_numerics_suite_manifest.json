@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0",
+  "status_date": "2026-08-05",
+  "purpose": "Define the full comparison surface between the independent Bio Closure kernel and the publicly accessible Radical Numerics-associated model suite without conflating open, hosted, and reported-only systems.",
+  "systems": [
+    {
+      "id": "bio-closure-independent",
+      "family": "black-mirror-closure",
+      "role": "closure-native proposal, return resolution, and admitted memory",
+      "availability": "repository-local",
+      "runnable": true,
+      "open_weights": false,
+      "open_code": true,
+      "biological_native": true,
+      "adapter": "closure.independent_model:UnifiedClosureArchitecturalLoop",
+      "epistemic_status": "RERUNNABLE_FINITE_KERNEL"
+    },
+    {
+      "id": "rnd1-base-0910",
+      "family": "radical-numerics-rnd1",
+      "role": "general diffusion language model baseline",
+      "availability": "open-weights",
+      "runnable": true,
+      "open_weights": true,
+      "open_code": true,
+      "biological_native": false,
+      "model_id": "radicalnumerics/RND1-Base-0910",
+      "epistemic_status": "MEASURED_LANGUAGE_MODEL_ARM"
+    },
+    {
+      "id": "rnd1-plus-closure",
+      "family": "hybrid",
+      "role": "RND1 proposals with closure admission",
+      "availability": "repository-local-plus-open-weights",
+      "runnable": true,
+      "open_weights": true,
+      "open_code": true,
+      "biological_native": false,
+      "model_id": "radicalnumerics/RND1-Base-0910",
+      "epistemic_status": "MEASURED_HYBRID_ARM"
+    },
+    {
+      "id": "evo-1",
+      "family": "evo",
+      "role": "open prokaryotic genome language model",
+      "availability": "open-weights",
+      "runnable": true,
+      "open_weights": true,
+      "open_code": true,
+      "biological_native": true,
+      "repository": "https://github.com/evo-design/evo",
+      "dataset": "OpenGenome",
+      "epistemic_status": "OPEN_EXTERNAL_BASELINE"
+    },
+    {
+      "id": "evo2-1b-base",
+      "family": "evo2",
+      "role": "small open genome language model smoke-test baseline",
+      "availability": "open-weights",
+      "runnable": true,
+      "open_weights": true,
+      "open_code": true,
+      "biological_native": true,
+      "model_name": "evo2_1b_base",
+      "repository": "https://github.com/ArcInstitute/evo2",
+      "dataset": "OpenGenome2",
+      "epistemic_status": "OPEN_EXTERNAL_BASELINE_WEAKER_MODEL"
+    },
+    {
+      "id": "evo2-7b",
+      "family": "evo2",
+      "role": "primary accessible open biological baseline",
+      "availability": "open-weights",
+      "runnable": true,
+      "open_weights": true,
+      "open_code": true,
+      "biological_native": true,
+      "model_name": "evo2_7b",
+      "repository": "https://github.com/ArcInstitute/evo2",
+      "dataset": "OpenGenome2",
+      "epistemic_status": "PRIMARY_OPEN_BIOLOGICAL_BASELINE"
+    },
+    {
+      "id": "evo2-20b",
+      "family": "evo2",
+      "role": "single-H100 strong biological baseline",
+      "availability": "open-weights",
+      "runnable": true,
+      "open_weights": true,
+      "open_code": true,
+      "biological_native": true,
+      "model_name": "evo2_20b",
+      "repository": "https://github.com/ArcInstitute/evo2",
+      "dataset": "OpenGenome2",
+      "hardware_note": "Hopper GPU and FP8 Transformer Engine required",
+      "epistemic_status": "OPEN_EXTERNAL_BASELINE_HARDWARE_GATED"
+    },
+    {
+      "id": "evo2-40b",
+      "family": "evo2",
+      "role": "strongest fully open Evo 2 baseline",
+      "availability": "open-weights",
+      "runnable": true,
+      "open_weights": true,
+      "open_code": true,
+      "biological_native": true,
+      "model_name": "evo2_40b",
+      "repository": "https://github.com/ArcInstitute/evo2",
+      "dataset": "OpenGenome2",
+      "hardware_note": "multiple H100-class GPUs generally required",
+      "epistemic_status": "OPEN_EXTERNAL_BASELINE_HARDWARE_GATED"
+    },
+    {
+      "id": "omnii",
+      "family": "radical-numerics-omnii",
+      "role": "reported next-generation genome language model",
+      "availability": "early-access-reported-only",
+      "runnable": false,
+      "open_weights": false,
+      "open_code": false,
+      "biological_native": true,
+      "reported_benchmarks": [
+        "ClinVar coding and noncoding SNVs and indels",
+        "ClinVar copy-number variants",
+        "TraitGym",
+        "RNAGym"
+      ],
+      "epistemic_status": "REPORTED_EXTERNAL_SYSTEM_NOT_REPRODUCIBLE"
+    }
+  ],
+  "benchmark_families": [
+    {
+      "id": "sequence-likelihood",
+      "return_type": "held-out nucleotide likelihood or rank",
+      "compatible_systems": ["bio-closure-independent", "evo-1", "evo2-1b-base", "evo2-7b", "evo2-20b", "evo2-40b"],
+      "status": "FRAMEWORK_DEFINED"
+    },
+    {
+      "id": "variant-effect",
+      "return_type": "held-out experimental or clinical variant consequence",
+      "datasets": ["TraitGym", "BRCA1 DMS", "BRCA2 SGE", "ClinVar", "ProteinGym"],
+      "compatible_systems": ["bio-closure-independent", "evo2-7b", "evo2-20b", "evo2-40b", "omnii"],
+      "status": "OPEN_DATA_ADAPTER_REQUIRED"
+    },
+    {
+      "id": "gene-completion",
+      "return_type": "held-out genomic continuation and annotation coherence",
+      "compatible_systems": ["bio-closure-independent", "evo-1", "evo2-1b-base", "evo2-7b", "evo2-20b", "evo2-40b"],
+      "status": "OPEN_DATA_ADAPTER_REQUIRED"
+    },
+    {
+      "id": "rna-fitness",
+      "return_type": "held-out measured RNA fitness",
+      "datasets": ["RNAGym"],
+      "compatible_systems": ["bio-closure-independent", "evo2-7b", "evo2-20b", "evo2-40b", "omnii"],
+      "status": "OPEN_DATA_ADAPTER_REQUIRED"
+    },
+    {
+      "id": "perturbation-response",
+      "return_type": "measured post-intervention expression or phenotype",
+      "datasets": ["LINCS L1000", "scPerturb", "public single-cell perturbation benchmarks"],
+      "compatible_systems": ["bio-closure-independent", "evo2-7b", "evo2-20b", "evo2-40b"],
+      "status": "OPEN_MULTIMODAL_ADAPTER_REQUIRED"
+    }
+  ],
+  "comparison_rules": {
+    "same_split": true,
+    "same_input_carrier": true,
+    "held_out_return_required": true,
+    "record_dataset_license": true,
+    "record_model_commit_or_revision": true,
+    "record_hardware_and_precision": true,
+    "separate_native_and_hybrid_arms": true,
+    "do_not_score_reported_only_models_as_rerun": true,
+    "do_not_treat_language_coherence_as_biological_closure": true
+  },
+  "verdict": {
+    "framework": "CLOSED_FULL_RADICAL_NUMERICS_OPEN_SUITE_COMPARISON_FRAMEWORK",
+    "execution": "OPEN_FULL_RADICAL_NUMERICS_BIOLOGICAL_SUITE_RUN",
+    "omnii": "REPORTED_ONLY_UNTIL_PUBLIC_INTERFACE"
+  }
+}
