@@ -1,5 +1,5 @@
 # Copyright 2026 scarryhott/bio contributors.
-"""Closure-derived admissible verification for RND1 and biological coevolution."""
+"""Closure-native AGI kernel, RND1 integration, and biological coevolution."""
 
 from .biology import (
     BIOLOGICAL_RELATIONS,
@@ -21,7 +21,32 @@ from .connected_return import (
 )
 from .digest import digest, interaction_digest, partition_curvature_digest
 from .hair import build_holistic_hair
+from .independent_model import (
+    Admission,
+    ArchitecturalLoopTurn,
+    ArchitecturalUnity,
+    ClosureBackComparison,
+    ClosureLoopMemory,
+    IndependentEvaluation,
+    InterfaceProjection,
+    InterfaceValueError,
+    LoopInvariant,
+    OpaqueAction,
+    OpaqueConfiguration,
+    ProvisionalProjection,
+    UnifiedClosureArchitecturalLoop,
+    canonical_json,
+    canonical_value,
+    stable_digest,
+)
 from .runtime import ClosureRuntime
+from .tagtokn_bridge import (
+    TagtoknClosureReceipt,
+    TagtoknReturnStatus,
+    classify_turn,
+    framework_compatibility,
+    to_tagtokn_receipt,
+)
 from .topology import (
     ADMISSIBLE_TOPOLOGIES,
     UNIFIED_AXIOMETRY_MOTIFS,
@@ -50,11 +75,16 @@ from .types import (
 
 __all__ = [
     "ADMISSIBLE_TOPOLOGIES",
+    "Admission",
+    "ArchitecturalLoopTurn",
+    "ArchitecturalUnity",
     "BIOLOGICAL_RELATIONS",
     "BiologicalEpisode",
     "BiologicalPerspective",
+    "ClosureBackComparison",
     "ClosureCarrier",
     "ClosureConfig",
+    "ClosureLoopMemory",
     "ClosureMode",
     "ClosureReceipt",
     "ClosureRuntime",
@@ -63,31 +93,47 @@ __all__ = [
     "DerivationMotif",
     "HairComposition",
     "HairSource",
+    "IndependentEvaluation",
+    "InterfaceProjection",
+    "InterfaceValueError",
     "LabeledOccurrence",
     "LocalCell",
+    "LoopInvariant",
     "MicroAction",
+    "OpaqueAction",
+    "OpaqueConfiguration",
     "PotentialGate",
+    "ProvisionalProjection",
     "Resolution",
     "ReturnWitness",
     "StepAdmission",
+    "TagtoknClosureReceipt",
+    "TagtoknReturnStatus",
     "UNIFIED_AXIOMETRY_MOTIFS",
     "UnifiedAxiometry",
+    "UnifiedClosureArchitecturalLoop",
     "VerificationTopology",
     "admit_verification_topology",
     "assert_admissible",
     "biological_act_path",
     "biological_episode_to_carrier",
     "build_holistic_hair",
+    "canonical_json",
+    "canonical_value",
+    "classify_turn",
     "construct_next_topos",
     "default_admissibility_policy",
     "digest",
     "evaluate_connected_return",
+    "framework_compatibility",
     "interaction_digest",
     "make_occurrence",
     "partition_curvature_digest",
     "resolution_from_biological_return",
     "shadow_cannot_certify",
+    "stable_digest",
     "to_potential_gate",
+    "to_tagtokn_receipt",
     "topology_to_gate",
 ]
 
