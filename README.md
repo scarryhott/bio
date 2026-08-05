@@ -1,8 +1,19 @@
-# Bio Closure Architecture on RND1
+# Bio Closure AGI (ours) vs frontier paper results
 
-This repository contains the public Apache-2.0 [`RadicalNumerics/RND1`](https://github.com/RadicalNumerics/RND1) inference source tree integrated with a Black Mirror / IVI–NRR closure-derived admissible-verification layer for biological and coevolutionary actuation. It now also contains the independently derived closure-native architectural loop and a full comparison framework for the open Radical Numerics-associated biological suite.
+This repository implements a **self-contained Closure AGI** for biology from the
+IVI–NRR / Black Mirror architectural thesis (transcripts +
+`docs/transcript_closure/`).
 
-## Upstream
+**Programme authority:** `docs/PROGRAMME.md`
+
+**Primary goal:** our Closure verification admission against **stated frontier
+paper results** (Evo 2 / OpenGenome2, Omnii reported, Goel, TraitGym, RNAGym, …).
+
+**RND1 is not our model** and the 30B hybrid is **not** bio closure — it is a
+**finite AI substrate test** only (`docs/CLOUD_RUN_STATUS.md`).
+Ownership map: `docs/OUR_CLOSURE_AGI_VS_RADICAL_NUMERICS.md`.
+
+## Upstream (external RND1 vendoring)
 
 - Source: `RadicalNumerics/RND1`
 - Copied commit: see `UPSTREAM_COMMIT`
@@ -15,54 +26,63 @@ Model weights are **not** stored in this repository.
 
 | Area | Role | Epistemic status |
 |------|------|------------------|
-| `rnd/` | Copied upstream RND1 source + closure hooks in `sampling.py` | RERUNNABLE (baseline path) |
-| `closure/` | Potential Gate, runtime, biology, connected return, independent closure-native model, Tagtokn bridge | DESIGN DERIVATION / RERUNNABLE finite controls |
-| `tests/` | Finite unit, mock sampler, independent-kernel, and full-suite manifest controls | RERUNNABLE |
-| `benchmarks/` | RND1 GPU harness, 30B artifact, open-suite manifest and planner | MEASURED ARTIFACT + FRAMEWORK DEFINITION |
-| `docs/` | Architecture, stage status, thesis, provenance, open-suite comparison, return-unified runtime | DESIGN DERIVATION / REPORTED ARTIFACT |
-| `UPSTREAM.md` | Provenance | REPORTED ARTIFACT |
+| `closure/` | **Our** Closure AGI: IVI spine, runtime, biology, Kakeya return, Goel hair, frontier admission | DESIGN / RERUNNABLE / MEASURED |
+| `benchmarks/` | Frontier paper catalog, open-data cache, reunification, primary runners | MEASURED + FRAMEWORK |
+| `docs/` | Programme priority, ownership, thesis, Goel, return-unified runtime | DESIGN / REPORTED |
+| `rnd/` | **External** RND1 inference + our admission hooks | Finite AI test harness only |
+| `tests/` | Finite unit, mock sampler, independent-kernel, frontier admission | RERUNNABLE |
+| `UPSTREAM.md` | RND1 provenance (external) | REPORTED ARTIFACT |
 
-**Programme thesis** (`docs/UNIFICATION_THESIS.md`):
-
-```text
-CLOSED_INDEPENDENT_BIO_CLOSURE_MODEL_PORT
-CLOSED_RND1_CLOSURE_HYBRID_EXECUTION
-CLOSED_THREE_ARM_COMPARISON_ARCHITECTURE
-CLOSED_TAGTOKN_FRAMEWORK_COMPATIBILITY_CONTROLS
-CLOSED_FINITE_UPSTREAM_VERIFIED_RND1_CLOSURE_INTEGRATION
-CLOSED_FULL_MODEL_CAUSAL_INTEGRATION
-CLOSED_FULL_MODEL_CONNECTED_RETURN_EXECUTION
-MEASURED_HYBRID_30B_FOUR_MODE_COMPARISON
-CLOSED_RADICAL_NUMERICS_MODEL_AND_DATA_PROVENANCE
-CLOSED_FULL_RADICAL_NUMERICS_OPEN_SUITE_COMPARISON_FRAMEWORK
-CLOSED_ARC_DERIVED_RETURN_UNIFIED_RUNTIME_ARCHITECTURE
-CLOSED_DATA_AS_RESOLVED_RELATION_PRINCIPLE
-OPEN_BIO_CLOSURE_VS_RADICAL_NUMERICS_RESULT
-OPEN_HYBRID_VS_INDEPENDENT_ADVANTAGE
-OPEN_BIOLOGICAL_RETURN_VALIDATION
-OPEN_FULL_RADICAL_NUMERICS_BIOLOGICAL_SUITE_RUN
-OPEN_BIO_CLOSURE_VS_RADICAL_NUMERICS_BIOLOGICAL_RESULT
-OPEN_FULL_BIOLOGICAL_UNIFICATION_AGI_EXECUTION
-OPEN_HOLISTIC_QUALITY_ADVANTAGE
-OPEN_CONNECTED_RETURN_QUALITY_ADVANTAGE
-```
+**Authoritative priority** (`docs/PROGRAMME.md` / `docs/STAGE_STATUS.md`):
 
 \[
 M_{\mathrm{ClosureBio}}
 \;\text{vs}\;
-M_{\mathrm{learned\ bio}}
-\;\text{vs}\;
-M_{\mathrm{RND1(+Closure)}}
+\text{FrontierPaperResults}
 \quad\text{inside return-unified admission}
 \]
 
-Chapter A (RND1 hybrid four-mode A100) is measured as language/substrate only.
-Holistic biology AGI vs existing architecture/data is OPEN
-(`OPEN_FULL_RADICAL_NUMERICS_BIOLOGICAL_SUITE_RUN`).
+\[
+\text{RND1-30B}(\pm C)
+\;=\;
+\text{FINITE\_AI\_SUBSTRATE\_TEST}
+\;\neq\;
+\text{bio closure}
+\]
 
-Authoritative hybrid artifact: `benchmarks/results/cloud_holistic_unified.json`  
-(HF run `hfjobs_a100_holistic_6a7372606b79c09949c23580`). Independent kernel:
-`closure/independent_model.py` — see `docs/INDEPENDENT_CLOSURE_MODEL.md`.
+```text
+CLOSED_PROGRAMME_PRIORITY_OUR_CLOSURE_VS_FRONTIER_PAPERS
+CLOSED_RND1_30B_AS_FINITE_AI_SUBSTRATE_TEST_NOT_BIO
+MEASURED_OUR_CLOSURE_ADMISSION_VS_FRONTIER_PAPERS
+MEASURED_OUR_CLOSURE_REUNIFIED_VERIFIED
+MEASURED_EXTERNAL_SUITE_INTEGRATED
+MEASURED_OPEN_DATASET_ONLINE_SAMPLES_IN_CLOSURE
+OPEN_BIO_CLOSURE_VS_RADICAL_NUMERICS_BIOLOGICAL_RESULT
+OPEN_EVO_WEIGHT_EXECUTION_ON_CATALOGUED_DATA
+OPEN_DELTA_C_Q_BIOLOGICAL_DOUBLE_SLIT
+```
+
+**Role split:** local Kakeya + global Chaitin/Goel are **ours**; RND1/Evo/Omnii
+are **Radical Numerics external** architectures.
+
+**Primary command:**
+
+```bash
+python3.11 benchmarks/run_frontier_paper_admission.py
+```
+
+→ `OUR_CLOSURE_ADMISSION_VS_FRONTIER_PAPERS_MEASURED`  
+(`benchmarks/results/frontier_paper_admission.json`)
+
+**Our Closure AGI** must pass internal reunify+verify
+(`benchmarks/verify_our_closure.py` → `OUR_CLOSURE_REUNIFIED_VERIFIED`).
+External suite integrates papers + open datasets + optional weights
+(`docs/PAPER_ARCHITECTURE_DATA_LAYER.md`). Live Evo weight execution remains OPEN.
+
+### Finite AI substrate test (Chapter A — not bio)
+
+Artifact: `benchmarks/results/cloud_holistic_unified.json`  
+(HF run `hfjobs_a100_holistic_6a7372606b79c09949c23580`).
 
 | Hybrid mode | Mean latency | vs `off` |
 |------|-------------:|----------|
@@ -71,7 +91,7 @@ Authoritative hybrid artifact: `benchmarks/results/cloud_holistic_unified.json`
 | `full` | 6.43 s | 63/68 diffs |
 | `full-connected-return` | 5.88 s | 61/68 diffs; ≠ `full`; 1953 OPEN |
 
-Not a quality win; not the independent-model head-to-head.
+Not a quality win; not the biological programme conclusion.
 
 ## Return-unified runtime: not pre/post training
 
@@ -154,7 +174,7 @@ python benchmarks/plan_radical_numerics_suite.py --benchmark variant-effect
 
 The manifest covers sequence likelihood, variant effect, gene completion, RNA fitness, and perturbation-response tasks. It enforces identical held-out returns, exact checkpoint and dataset provenance, separation of native and unified runtime organizations, and forbids reported-only Omnii results from being labelled as reruns. See `docs/FULL_RADICAL_NUMERICS_OPEN_SUITE_COMPARISON.md`.
 
-The framework is closed; dataset adapters, Evo 2 participation inside the return-unified runtime, Goel-inspired DNA/environment operator runtime, and the complete biological suite run remain open.
+The framework is closed; dataset adapters, Evo 2 participation inside the return-unified runtime, physical Goel polymerase runtime / witnessed quantum carriers, and the complete biological suite run remain open. The Goel **binding** (global Chaitin DNA–env operator) and Radical Numerics **local Kakeya** role split are documented in `docs/GOEL_DNA_ENVIRONMENT_CHAITIN_OPERATOR.md`.
 
 ## Unified axiometry
 
@@ -204,10 +224,12 @@ These modes are an implemented substrate experiment, not the final biological re
 
 ```bash
 pip install -e ".[test,linting]"
-pytest -q
+python3.11 -m pytest -q
+python3.11 benchmarks/run_frontier_paper_admission.py
+python3.11 benchmarks/run_unified_verification.py
 ```
 
-Full unified RND1 benchmark:
+Finite AI substrate test only (RND1-30B — **not** bio closure):
 
 ```bash
 python benchmarks/compare_rnd1_closure.py \
@@ -219,6 +241,13 @@ python benchmarks/compare_rnd1_closure.py \
 
 ## Status
 
-This repository contains the measured RND1 closure hybrid, the independent Black Mirror Bio Closure kernel, the complete comparison framework for the open Evo/Evo 2 suite plus reported-only Omnii, and the ARC-derived return-unified biological AGI architecture. The framework is executable as a plan and validated by finite controls, but no full biological-suite benchmark has yet been run.
+**Primary:** our Closure admission vs stated frontier paper results is MEASURED
+(`benchmarks/run_frontier_paper_admission.py`). Authority: `docs/PROGRAMME.md`.
 
-The repository does **not** claim unrestricted AGI, empirical biological validation, superiority over Radical Numerics biological models, or improved generation quality.
+Supporting: independent Black Mirror Bio Closure kernel, open Evo/Evo 2 suite
+framework, Omnii reported-only, return-unified runtime, open-dataset samples.
+RND1-30B hybrid is a **finite AI substrate test only**. Live Evo weight execution
+and full biological superiority claims remain OPEN.
+
+The repository does **not** claim unrestricted AGI, empirical biological
+superiority over Radical Numerics biological models, or improved generation quality.

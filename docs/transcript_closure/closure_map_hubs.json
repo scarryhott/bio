@@ -1,0 +1,550 @@
+{
+  "hubs": [
+    {
+      "id": "triangle time",
+      "label": "Triangle Time",
+      "layer": 2,
+      "w": 39
+    },
+    {
+      "id": "predual",
+      "label": "predual",
+      "layer": 1,
+      "w": 31
+    },
+    {
+      "id": "kakeya (ivi)",
+      "label": "Kakeya (IVI)",
+      "layer": 3,
+      "w": 30
+    },
+    {
+      "id": "0-\u221e closure",
+      "label": "0-\u221e closure",
+      "layer": 0,
+      "w": 25
+    },
+    {
+      "id": "w-lambert axis",
+      "label": "W-Lambert axis",
+      "layer": 2,
+      "w": 22
+    },
+    {
+      "id": "nrr",
+      "label": "NRR",
+      "layer": 4,
+      "w": 21
+    },
+    {
+      "id": "chaitin-kakeya",
+      "label": "Chaitin-Kakeya",
+      "layer": 3,
+      "w": 20
+    },
+    {
+      "id": "collapse (ivi)",
+      "label": "Collapse (IVI)",
+      "layer": 4,
+      "w": 20
+    },
+    {
+      "id": "tan \u03c0/2 closure",
+      "label": "tan \u03c0/2 closure",
+      "layer": 1,
+      "w": 14
+    },
+    {
+      "id": "ivi",
+      "label": "IVI",
+      "layer": 5,
+      "w": 13
+    },
+    {
+      "id": "\u03bc(n) ivi spin map",
+      "label": "\u03bc(n) IVI spin map",
+      "layer": 1,
+      "w": 13
+    },
+    {
+      "id": "resuperposition",
+      "label": "resuperposition",
+      "layer": 4,
+      "w": 9
+    },
+    {
+      "id": "predual collapse framework (rh 1/2)",
+      "label": "Predual collapse framework (",
+      "layer": 1,
+      "w": 8
+    },
+    {
+      "id": "chaitin (ivi seam)",
+      "label": "Chaitin (IVI seam)",
+      "layer": 3,
+      "w": 7
+    },
+    {
+      "id": "place",
+      "label": "Place",
+      "layer": 0,
+      "w": 6
+    },
+    {
+      "id": "ivi-2",
+      "label": "IVI-2",
+      "layer": 5,
+      "w": 6
+    },
+    {
+      "id": "predual fourier / modular branches",
+      "label": "predual Fourier / modular br",
+      "layer": 1,
+      "w": 5
+    },
+    {
+      "id": "0-\u221e circle / triangle closure geometry",
+      "label": "0-\u221e circle / triangle closur",
+      "layer": 1,
+      "w": 5
+    },
+    {
+      "id": "collapse residue / projection \u03c0 from nrr",
+      "label": "Collapse residue / projectio",
+      "layer": 4,
+      "w": 5
+    },
+    {
+      "id": "\u03b8(p) = arctan(k/kn)",
+      "label": "\u03b8(P) = arctan(K/Kn)",
+      "layer": 1,
+      "w": 5
+    },
+    {
+      "id": "nrr closure operator",
+      "label": "NRR Closure Operator",
+      "layer": 4,
+      "w": 4
+    },
+    {
+      "id": "ivi canonical statement (qg as verificat",
+      "label": "IVI canonical statement (QG ",
+      "layer": 5,
+      "w": 4
+    },
+    {
+      "id": "i and r poles",
+      "label": "i and r poles",
+      "layer": 5,
+      "w": 4
+    },
+    {
+      "id": "5-fold closure (roots of unity)",
+      "label": "5-fold closure (roots of uni",
+      "layer": 5,
+      "w": 4
+    },
+    {
+      "id": "nrr as normalized chaitin residual (chai",
+      "label": "NRR as normalized Chaitin re",
+      "layer": 3,
+      "w": 4
+    },
+    {
+      "id": "c mass/speed = ie^kakeya; c frequency/le",
+      "label": "c mass/speed = ie^Kakeya; c ",
+      "layer": 2,
+      "w": 4
+    },
+    {
+      "id": "predual relation",
+      "label": "Predual relation",
+      "layer": 1,
+      "w": 4
+    },
+    {
+      "id": "triangle space",
+      "label": "Triangle Space",
+      "layer": 2,
+      "w": 3
+    }
+  ],
+  "edges": [
+    {
+      "from": "\u03b8(p) = arctan(k/kn)",
+      "to": "tan \u03c0/2 closure",
+      "rel": "equals_limit",
+      "n": 5
+    },
+    {
+      "from": "kakeya (ivi)",
+      "to": "collapse (ivi)",
+      "rel": "fixes",
+      "n": 5
+    },
+    {
+      "from": "triangle time",
+      "to": "w-lambert axis",
+      "rel": "wall-extension as",
+      "n": 5
+    },
+    {
+      "from": "w-lambert axis",
+      "to": "triangle time",
+      "rel": "is lifted to continuum from",
+      "n": 4
+    },
+    {
+      "from": "0-\u221e closure",
+      "to": "predual",
+      "rel": "explicit_statement",
+      "n": 3
+    },
+    {
+      "from": "triangle time",
+      "to": "chaitin-kakeya",
+      "rel": "traces",
+      "n": 3
+    },
+    {
+      "from": "\u03bc(n) ivi spin map",
+      "to": "collapse (ivi)",
+      "rel": "dual map",
+      "n": 3
+    },
+    {
+      "from": "predual",
+      "to": "collapse (ivi)",
+      "rel": "=",
+      "n": 3
+    },
+    {
+      "from": "0-\u221e circle / triangle closure geometry",
+      "to": "tan \u03c0/2 closure",
+      "rel": "is",
+      "n": 2
+    },
+    {
+      "from": "chaitin-kakeya",
+      "to": "kakeya (ivi)",
+      "rel": "constrains_through",
+      "n": 2
+    },
+    {
+      "from": "ivi",
+      "to": "kakeya (ivi)",
+      "rel": "inherits",
+      "n": 2
+    },
+    {
+      "from": "ivi levels",
+      "to": "triangle time",
+      "rel": "are SpanVectors in",
+      "n": 2
+    },
+    {
+      "from": "kakeya (ivi)",
+      "to": "chaitin (ivi seam)",
+      "rel": "wheel conversion of seam with",
+      "n": 2
+    },
+    {
+      "from": "kakeya (ivi)",
+      "to": "triangle time",
+      "rel": "is not W-Lambert part",
+      "n": 2
+    },
+    {
+      "from": "kakeya (ivi)",
+      "to": "ivi",
+      "rel": "ontology bridge for",
+      "n": 2
+    },
+    {
+      "from": "w-lambert axis",
+      "to": "chaitin-kakeya",
+      "rel": "forces_local_equals_global",
+      "n": 2
+    },
+    {
+      "from": "nrr",
+      "to": "triangle time",
+      "rel": "is exactly",
+      "n": 2
+    },
+    {
+      "from": "nrr",
+      "to": "predual collapse framework (rh 1/2)",
+      "rel": "deductive spine derives",
+      "n": 2
+    },
+    {
+      "from": "place",
+      "to": "nrr",
+      "rel": "valid iff satisfies",
+      "n": 2
+    },
+    {
+      "from": "predual collapse framework (rh 1/2)",
+      "to": "predual",
+      "rel": "is",
+      "n": 2
+    },
+    {
+      "from": "predual fourier / modular branches",
+      "to": "tan \u03c0/2 closure",
+      "rel": "is not separate operator but",
+      "n": 2
+    },
+    {
+      "from": "0-\u221e closure",
+      "to": "i and r poles",
+      "rel": "explicit_statement",
+      "n": 1
+    },
+    {
+      "from": "0-\u221e circle / triangle closure geometry",
+      "to": "triangle time",
+      "rel": "multiplication becomes triangle time equ",
+      "n": 1
+    },
+    {
+      "from": "0-\u221e closure",
+      "to": "5-fold closure (roots of unity)",
+      "rel": "is",
+      "n": 1
+    },
+    {
+      "from": "interbound_0inf_pair",
+      "to": "predual relation",
+      "rel": "equals",
+      "n": 1
+    },
+    {
+      "from": "chaitin (ivi seam)",
+      "to": "chaitin-kakeya",
+      "rel": "is",
+      "n": 1
+    },
+    {
+      "from": "chaitin-kakeya",
+      "to": "nrr",
+      "rel": "=",
+      "n": 1
+    },
+    {
+      "from": "chaitin-kakeya",
+      "to": "c mass/speed = ie^kakeya; c frequency/le",
+      "rel": "global aspect equality",
+      "n": 1
+    },
+    {
+      "from": "chaitin-kakeya",
+      "to": "chaitin (ivi seam)",
+      "rel": "encodes",
+      "n": 1
+    },
+    {
+      "from": "chaitin-kakeya",
+      "to": "w-lambert axis",
+      "rel": "constrains",
+      "n": 1
+    },
+    {
+      "from": "chaitin-kakeya",
+      "to": "0-\u221e closure",
+      "rel": "alternative_definition_of",
+      "n": 1
+    },
+    {
+      "from": "chaitin (ivi seam)",
+      "to": "collapse residue / projection \u03c0 from nrr",
+      "rel": "builds",
+      "n": 1
+    },
+    {
+      "from": "nrr as normalized chaitin residual (chai",
+      "to": "nrr state variable nrr(k)",
+      "rel": "defines",
+      "n": 1
+    },
+    {
+      "from": "5-fold closure (roots of unity)",
+      "to": "triangle time",
+      "rel": "canonically produces",
+      "n": 1
+    },
+    {
+      "from": "triangle time",
+      "to": "nrr",
+      "rel": "is one gate within",
+      "n": 1
+    },
+    {
+      "from": "0-\u221e closure",
+      "to": "ivi",
+      "rel": "is",
+      "n": 1
+    },
+    {
+      "from": "ivi",
+      "to": "1 + oi expansion / place spacetime",
+      "rel": "is",
+      "n": 1
+    },
+    {
+      "from": "ivi",
+      "to": "chaitin-kakeya",
+      "rel": "=",
+      "n": 1
+    },
+    {
+      "from": "0-\u221e closure",
+      "to": "tan \u03c0/2 closure",
+      "rel": "explicit_statement",
+      "n": 1
+    },
+    {
+      "from": "nrr closure operator",
+      "to": "collapse (ivi)",
+      "rel": "distinct from",
+      "n": 1
+    },
+    {
+      "from": "kakeya (ivi)",
+      "to": "chaitin-kakeya",
+      "rel": "defined as rotation limit",
+      "n": 1
+    },
+    {
+      "from": "kakeya (ivi)",
+      "to": "i and r poles",
+      "rel": "expanded via W\u2013Lambert",
+      "n": 1
+    },
+    {
+      "from": "kakeya (ivi)",
+      "to": "c mass/speed = ie^kakeya; c frequency/le",
+      "rel": "rotation limit of gl sheaf (stated)",
+      "n": 1
+    },
+    {
+      "from": "kakeya (ivi)",
+      "to": "w-lambert axis",
+      "rel": "defined as",
+      "n": 1
+    },
+    {
+      "from": "kakeya (ivi)",
+      "to": "resuperposition",
+      "rel": "injects into via bridge",
+      "n": 1
+    },
+    {
+      "from": "collapse (ivi)",
+      "to": "predual relation",
+      "rel": "are_readings_of",
+      "n": 1
+    },
+    {
+      "from": "nrr",
+      "to": "nrr as normalized chaitin residual (chai",
+      "rel": "=",
+      "n": 1
+    },
+    {
+      "from": "nrr as normalized chaitin residual (chai",
+      "to": "chaitin-kakeya",
+      "rel": "NRR = Chaitin_K / ie^K",
+      "n": 1
+    },
+    {
+      "from": "nrr closure operator",
+      "to": "collapse residue / projection \u03c0 from nrr",
+      "rel": "explicit_statement",
+      "n": 1
+    },
+    {
+      "from": "nrr closure operator",
+      "to": "predual collapse framework (rh 1/2)",
+      "rel": "explicit_statement",
+      "n": 1
+    },
+    {
+      "from": "nrr closure operator",
+      "to": "predual",
+      "rel": "unique observation locus of involution",
+      "n": 1
+    },
+    {
+      "from": "nrr state variable nrr(k)",
+      "to": "nrr as normalized chaitin residual (chai",
+      "rel": "equals balance quotient",
+      "n": 1
+    },
+    {
+      "from": "predual",
+      "to": "nrr",
+      "rel": "=",
+      "n": 1
+    },
+    {
+      "from": "predual (pre-dual view)",
+      "to": "0-\u221e closure",
+      "rel": "closure of 0 and inf into",
+      "n": 1
+    },
+    {
+      "from": "predual (pre-dual view)",
+      "to": "collapse residue / projection \u03c0 from nrr",
+      "rel": "is field",
+      "n": 1
+    },
+    {
+      "from": "predual relation",
+      "to": "interbound_0inf_pair",
+      "rel": "is",
+      "n": 1
+    },
+    {
+      "from": "q\u2088 holonomy algebra",
+      "to": "ivi-2",
+      "rel": "emerges at Level 3 from closure demand",
+      "n": 1
+    },
+    {
+      "from": "predual collapse framework (rh 1/2)",
+      "to": "0-\u221e closure",
+      "rel": "is",
+      "n": 1
+    },
+    {
+      "from": "ivi canonical statement (qg as verificat",
+      "to": "0-\u221e closure",
+      "rel": "final formula",
+      "n": 1
+    },
+    {
+      "from": "resuperposition",
+      "to": "collapse (ivi)",
+      "rel": "preserves",
+      "n": 1
+    }
+  ],
+  "layer_names": {
+    "0": "Place / 0\u2013\u221e / checker",
+    "1": "Predual / M\u00f6bius / tan(\u03c0/2)",
+    "2": "Triangle time / W-Lambert / \u03c9_K",
+    "3": "Kakeya\u2013Chaitin",
+    "4": "NRR / collapse / resuperposition",
+    "5": "IVI / verification / sheaf / spine",
+    "6": "Arithmetic shadows (\u03bc, RH, primes)"
+  },
+  "stats": {
+    "novel_structures_total": 404,
+    "nodes_in_map": 197,
+    "stated_edges": 227,
+    "hub_nodes": 35,
+    "hub_edges": 82
+  }
+}

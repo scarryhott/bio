@@ -1,0 +1,499 @@
+{
+  "schema_version": "1.0",
+  "protocol": "our-closure-admission-vs-frontier-paper-results",
+  "generated_at": "2026-08-05T21:18:27.572921+00:00",
+  "programme_priority": {
+    "primary": "our_closure_verification_admission_vs_frontier_paper_results",
+    "not_primary": "rnd1_30b_language_hybrid",
+    "rnd1_30b_role": "FINITE_AI_SUBSTRATE_TEST_NOT_BIO_CLOSURE"
+  },
+  "relation": "M_ClosureBio vs FrontierPaperResults inside return-unified admission; RND1-30B = FINITE_AI_SUBSTRATE_TEST_NOT_BIO_CLOSURE",
+  "verdict": "OUR_CLOSURE_ADMISSION_VS_FRONTIER_PAPERS_MEASURED",
+  "passed": true,
+  "our_closure_gate": {
+    "verdict": "OUR_CLOSURE_REUNIFIED_VERIFIED",
+    "passed": true
+  },
+  "our_admission": {
+    "by_benchmark_family": {
+      "sequence-likelihood": {
+        "verified": 3,
+        "open": 0,
+        "rejected": 0,
+        "total": 3
+      },
+      "variant-effect": {
+        "verified": 10,
+        "open": 1,
+        "rejected": 0,
+        "total": 11
+      },
+      "gene-completion": {
+        "verified": 3,
+        "open": 0,
+        "rejected": 0,
+        "total": 3
+      },
+      "rna-fitness": {
+        "verified": 4,
+        "open": 0,
+        "rejected": 0,
+        "total": 4
+      },
+      "perturbation-response": {
+        "verified": 1,
+        "open": 0,
+        "rejected": 0,
+        "total": 1
+      }
+    },
+    "episodes": [
+      {
+        "episode_id": "seq-lik-001",
+        "benchmark_id": "sequence-likelihood",
+        "role": "held-out-return",
+        "joint_arm_status": "VERIFIED",
+        "verification_status": "VERIFIED",
+        "admission_label": "VERIFIED"
+      },
+      {
+        "episode_id": "var-eff-001",
+        "benchmark_id": "variant-effect",
+        "role": "held-out-return",
+        "joint_arm_status": "VERIFIED",
+        "verification_status": "VERIFIED",
+        "admission_label": "VERIFIED"
+      },
+      {
+        "episode_id": "gene-comp-001",
+        "benchmark_id": "gene-completion",
+        "role": "held-out-return",
+        "joint_arm_status": "VERIFIED",
+        "verification_status": "VERIFIED",
+        "admission_label": "VERIFIED"
+      },
+      {
+        "episode_id": "rna-fit-001",
+        "benchmark_id": "rna-fitness",
+        "role": "held-out-return",
+        "joint_arm_status": "VERIFIED",
+        "verification_status": "VERIFIED",
+        "admission_label": "VERIFIED"
+      },
+      {
+        "episode_id": "pert-resp-001",
+        "benchmark_id": "perturbation-response",
+        "role": "held-out-return",
+        "joint_arm_status": "VERIFIED",
+        "verification_status": "VERIFIED",
+        "admission_label": "VERIFIED"
+      },
+      {
+        "episode_id": "var-eff-open-self",
+        "benchmark_id": "variant-effect",
+        "role": "negative-control-self-authored",
+        "joint_arm_status": "OPEN",
+        "verification_status": "OPEN",
+        "admission_label": "OPEN"
+      },
+      {
+        "episode_id": "traitgym-000",
+        "benchmark_id": "variant-effect",
+        "role": "open-dataset:traitgym",
+        "joint_arm_status": "VERIFIED",
+        "verification_status": "VERIFIED",
+        "admission_label": "VERIFIED"
+      },
+      {
+        "episode_id": "traitgym-001",
+        "benchmark_id": "variant-effect",
+        "role": "open-dataset:traitgym",
+        "joint_arm_status": "VERIFIED",
+        "verification_status": "VERIFIED",
+        "admission_label": "VERIFIED"
+      },
+      {
+        "episode_id": "traitgym-002",
+        "benchmark_id": "variant-effect",
+        "role": "open-dataset:traitgym",
+        "joint_arm_status": "VERIFIED",
+        "verification_status": "VERIFIED",
+        "admission_label": "VERIFIED"
+      },
+      {
+        "episode_id": "rnagym-000",
+        "benchmark_id": "rna-fitness",
+        "role": "open-dataset:rnagym",
+        "joint_arm_status": "VERIFIED",
+        "verification_status": "VERIFIED",
+        "admission_label": "VERIFIED"
+      },
+      {
+        "episode_id": "rnagym-001",
+        "benchmark_id": "rna-fitness",
+        "role": "open-dataset:rnagym",
+        "joint_arm_status": "VERIFIED",
+        "verification_status": "VERIFIED",
+        "admission_label": "VERIFIED"
+      },
+      {
+        "episode_id": "rnagym-002",
+        "benchmark_id": "rna-fitness",
+        "role": "open-dataset:rnagym",
+        "joint_arm_status": "VERIFIED",
+        "verification_status": "VERIFIED",
+        "admission_label": "VERIFIED"
+      },
+      {
+        "episode_id": "clinvar-000",
+        "benchmark_id": "variant-effect",
+        "role": "open-dataset:clinvar",
+        "joint_arm_status": "VERIFIED",
+        "verification_status": "VERIFIED",
+        "admission_label": "VERIFIED"
+      },
+      {
+        "episode_id": "clinvar-001",
+        "benchmark_id": "variant-effect",
+        "role": "open-dataset:clinvar",
+        "joint_arm_status": "VERIFIED",
+        "verification_status": "VERIFIED",
+        "admission_label": "VERIFIED"
+      },
+      {
+        "episode_id": "clinvar-002",
+        "benchmark_id": "variant-effect",
+        "role": "open-dataset:clinvar",
+        "joint_arm_status": "VERIFIED",
+        "verification_status": "VERIFIED",
+        "admission_label": "VERIFIED"
+      },
+      {
+        "episode_id": "proteingym-000",
+        "benchmark_id": "variant-effect",
+        "role": "open-dataset:proteingym",
+        "joint_arm_status": "VERIFIED",
+        "verification_status": "VERIFIED",
+        "admission_label": "VERIFIED"
+      },
+      {
+        "episode_id": "proteingym-001",
+        "benchmark_id": "variant-effect",
+        "role": "open-dataset:proteingym",
+        "joint_arm_status": "VERIFIED",
+        "verification_status": "VERIFIED",
+        "admission_label": "VERIFIED"
+      },
+      {
+        "episode_id": "proteingym-002",
+        "benchmark_id": "variant-effect",
+        "role": "open-dataset:proteingym",
+        "joint_arm_status": "VERIFIED",
+        "verification_status": "VERIFIED",
+        "admission_label": "VERIFIED"
+      },
+      {
+        "episode_id": "opengenome2-seq-000",
+        "benchmark_id": "sequence-likelihood",
+        "role": "open-dataset:opengenome2",
+        "joint_arm_status": "VERIFIED",
+        "verification_status": "VERIFIED",
+        "admission_label": "VERIFIED"
+      },
+      {
+        "episode_id": "opengenome2-gene-000",
+        "benchmark_id": "gene-completion",
+        "role": "open-dataset:opengenome2",
+        "joint_arm_status": "VERIFIED",
+        "verification_status": "VERIFIED",
+        "admission_label": "VERIFIED"
+      },
+      {
+        "episode_id": "opengenome2-seq-001",
+        "benchmark_id": "sequence-likelihood",
+        "role": "open-dataset:opengenome2",
+        "joint_arm_status": "VERIFIED",
+        "verification_status": "VERIFIED",
+        "admission_label": "VERIFIED"
+      },
+      {
+        "episode_id": "opengenome2-gene-001",
+        "benchmark_id": "gene-completion",
+        "role": "open-dataset:opengenome2",
+        "joint_arm_status": "VERIFIED",
+        "verification_status": "VERIFIED",
+        "admission_label": "VERIFIED"
+      }
+    ]
+  },
+  "frontier_claims": [
+    {
+      "claim_id": "evo2-nature-2026-opengenome2",
+      "family": "evo2",
+      "epistemic_status": "REPORTED_PAPER_CLAIM",
+      "our_admission_role": "external_learned_bio_architecture_comparator",
+      "overlap_families": [
+        "sequence-likelihood",
+        "gene-completion",
+        "variant-effect"
+      ],
+      "our_admission_summary": {
+        "verified": 16,
+        "total": 17,
+        "by_family": {
+          "sequence-likelihood": {
+            "verified": 3,
+            "open": 0,
+            "rejected": 0,
+            "total": 3
+          },
+          "gene-completion": {
+            "verified": 3,
+            "open": 0,
+            "rejected": 0,
+            "total": 3
+          },
+          "variant-effect": {
+            "verified": 10,
+            "open": 1,
+            "rejected": 0,
+            "total": 11
+          }
+        }
+      },
+      "stated_results": {
+        "evo2_7b_tokens": "2.4 trillion",
+        "evo2_40b_tokens": "9.3 trillion",
+        "opengenome2_nucleotides": ">8.8 trillion curated non-redundant",
+        "domains": [
+          "bacteria",
+          "archaea",
+          "eukarya",
+          "bacteriophage"
+        ]
+      },
+      "scores_certify_closure": false,
+      "comparison": "OUR_ADMISSION_ON_HELD_OUT_RETURNS vs PAPER_STATED_SHADOW"
+    },
+    {
+      "claim_id": "omnii-health-preview-reported",
+      "family": "omnii",
+      "epistemic_status": "REPORTED_EXTERNAL_NOT_RERUN",
+      "our_admission_role": "frontier_reported_score_shadow_only",
+      "overlap_families": [
+        "variant-effect",
+        "rna-fitness"
+      ],
+      "our_admission_summary": {
+        "verified": 14,
+        "total": 15,
+        "by_family": {
+          "variant-effect": {
+            "verified": 10,
+            "open": 1,
+            "rejected": 0,
+            "total": 11
+          },
+          "rna-fitness": {
+            "verified": 4,
+            "open": 0,
+            "rejected": 0,
+            "total": 4
+          }
+        }
+      },
+      "stated_results": {
+        "reported_tasks": [
+          "ClinVar coding and noncoding SNVs and indels",
+          "ClinVar copy-number variants",
+          "TraitGym complex-trait benchmarks",
+          "RNAGym RNA-fitness benchmarks"
+        ],
+        "metrics_named": [
+          "AUROC",
+          "AUPRC"
+        ],
+        "note": "Preview publishes comparison tables; public weights / full rerun package absent \u2014 treat as REPORTED_ONLY"
+      },
+      "scores_certify_closure": false,
+      "comparison": "OUR_ADMISSION_ON_HELD_OUT_RETURNS vs PAPER_STATED_SHADOW"
+    },
+    {
+      "claim_id": "goel-pnas-dna-environment-motor",
+      "family": "goel-nanobiophysics",
+      "epistemic_status": "PAPER_LOGIC_BOUND_IN_OUR_OPERATOR",
+      "our_admission_role": "global_chaitin_hair_paper_logic",
+      "overlap_families": [
+        "sequence-likelihood",
+        "perturbation-response"
+      ],
+      "our_admission_summary": {
+        "verified": 4,
+        "total": 4,
+        "by_family": {
+          "sequence-likelihood": {
+            "verified": 3,
+            "open": 0,
+            "rejected": 0,
+            "total": 3
+          },
+          "perturbation-response": {
+            "verified": 1,
+            "open": 0,
+            "rejected": 0,
+            "total": 1
+          }
+        }
+      },
+      "stated_results": {
+        "mechanism": "DNA polymerase as environment-coupled information motor; tension tunes/switches polymerase\u2194exonuclease",
+        "efficiency_figures": "programme-reported thermodynamic / step-count scales \u2014 shadows only",
+        "biological_double_slit": "proposed coherence/interference gate; \u03b4_C(Q) remains OPEN until witnessed return"
+      },
+      "scores_certify_closure": false,
+      "comparison": "OUR_ADMISSION_ON_HELD_OUT_RETURNS vs PAPER_STATED_SHADOW"
+    },
+    {
+      "claim_id": "wuite-bustamante-nature-2000-tension",
+      "family": "single-molecule-prior",
+      "epistemic_status": "FINITE_LITERATURE_PRIOR_IN_REPO",
+      "our_admission_role": "goel_tension_landmark_prior",
+      "overlap_families": [
+        "sequence-likelihood",
+        "perturbation-response"
+      ],
+      "our_admission_summary": {
+        "verified": 4,
+        "total": 4,
+        "by_family": {
+          "sequence-likelihood": {
+            "verified": 3,
+            "open": 0,
+            "rejected": 0,
+            "total": 3
+          },
+          "perturbation-response": {
+            "verified": 1,
+            "open": 0,
+            "rejected": 0,
+            "total": 1
+          }
+        }
+      },
+      "stated_results": {
+        "stall_approx_pN": 34,
+        "exonuclease_acceleration_above_pN": 40
+      },
+      "scores_certify_closure": false,
+      "comparison": "OUR_ADMISSION_ON_HELD_OUT_RETURNS vs PAPER_STATED_SHADOW"
+    },
+    {
+      "claim_id": "traitgym-songlab-reported",
+      "family": "traitgym",
+      "epistemic_status": "OPEN_BENCHMARK_PLUS_LOCAL_SAMPLE",
+      "our_admission_role": "held_out_return_for_our_admission",
+      "overlap_families": [
+        "variant-effect"
+      ],
+      "our_admission_summary": {
+        "verified": 10,
+        "total": 11,
+        "by_family": {
+          "variant-effect": {
+            "verified": 10,
+            "open": 1,
+            "rejected": 0,
+            "total": 11
+          }
+        }
+      },
+      "stated_results": {
+        "task": "causal / candidate regulatory variant consequence vs matched controls",
+        "splits_used_here": "mendelian_traits/test sample via HF datasets-server"
+      },
+      "scores_certify_closure": false,
+      "comparison": "OUR_ADMISSION_ON_HELD_OUT_RETURNS vs PAPER_STATED_SHADOW"
+    },
+    {
+      "claim_id": "rnagym-marks-lab-reported",
+      "family": "rnagym",
+      "epistemic_status": "OPEN_BENCHMARK_PLUS_LOCAL_SAMPLE",
+      "our_admission_role": "held_out_return_for_our_admission",
+      "overlap_families": [
+        "rna-fitness"
+      ],
+      "our_admission_summary": {
+        "verified": 4,
+        "total": 4,
+        "by_family": {
+          "rna-fitness": {
+            "verified": 4,
+            "open": 0,
+            "rejected": 0,
+            "total": 4
+          }
+        }
+      },
+      "stated_results": {
+        "task": "RNA mutational fitness / structure returns",
+        "splits_used_here": "fitness sample via HF datasets-server"
+      },
+      "scores_certify_closure": false,
+      "comparison": "OUR_ADMISSION_ON_HELD_OUT_RETURNS vs PAPER_STATED_SHADOW"
+    },
+    {
+      "claim_id": "rnd1-30b-finite-ai-substrate-test",
+      "family": "radical-numerics-rnd1",
+      "epistemic_status": "MEASURED_FINITE_AI_SUBSTRATE_TEST",
+      "our_admission_role": "FINITE_AI_TEST_NOT_BIO_CLOSURE",
+      "overlap_families": [],
+      "our_admission_summary": null,
+      "stated_results": {
+        "model": "30.5B sparse MoE diffusion language model (~3.3B active/token)",
+        "eval_suite": [
+          "MMLU",
+          "ARC-C",
+          "RACE",
+          "BBH",
+          "GSM8K",
+          "MBPP"
+        ],
+        "not_a_genomics_model": true
+      },
+      "scores_certify_closure": false,
+      "comparison": "EXCLUDED_FROM_BIO_PRIMARY \u2014 finite AI substrate test only"
+    }
+  ],
+  "rnd1_30b_finite_ai_test": {
+    "role": "FINITE_AI_SUBSTRATE_TEST_NOT_BIO_CLOSURE",
+    "claim_id": "rnd1-30b-finite-ai-substrate-test",
+    "epistemic_status": "MEASURED_FINITE_AI_SUBSTRATE_TEST",
+    "stated_results": {
+      "model": "30.5B sparse MoE diffusion language model (~3.3B active/token)",
+      "eval_suite": [
+        "MMLU",
+        "ARC-C",
+        "RACE",
+        "BBH",
+        "GSM8K",
+        "MBPP"
+      ],
+      "not_a_genomics_model": true
+    },
+    "local_holistic_artifact_present": true,
+    "local_artifact": "benchmarks/results/cloud_holistic_unified.json",
+    "programme_chapter": "A_language_substrate_only",
+    "not_bio_closure": true,
+    "note": "RND1-30B four-mode hybrid is a single finite AI/language substrate test under our hooks. It does not decide biological closure admission."
+  },
+  "epistemic": {
+    "primary_goal": "our_closure_verification_admission_vs_frontier_paper_results",
+    "frontier_scores_are_shadows": true,
+    "rnd1_30b_is_bio_closure": false,
+    "rnd1_30b_role": "FINITE_AI_SUBSTRATE_TEST_NOT_BIO_CLOSURE",
+    "omnii": "REPORTED_ONLY",
+    "evo_live_weights": "OPEN",
+    "delta_c_q": "OPEN"
+  },
+  "architecture_digest": "294fd4dd2cd96f3ac1211883"
+}

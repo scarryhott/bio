@@ -1,8 +1,45 @@
 # Stage status
 
+Authority: `docs/PROGRAMME.md`
+
+## Programme priority (authoritative)
+
+**Primary goal:** our Closure AGI **verification admission** against **stated
+frontier paper results** (Evo 2 / OpenGenome2, Omnii reported, Goel, TraitGym,
+RNAGym, …) inside return-unified admission.
+
+```bash
+python3.11 benchmarks/run_frontier_paper_admission.py
+```
+
+Artifact: `benchmarks/results/frontier_paper_admission.json`
+
+**Not primary:** RND1-30B language hybrid. That is a **single finite AI
+substrate test** (Chapter A) — not biological closure.
+
+\[
+\boxed{
+M_{\mathrm{ClosureBio}}
+\;\text{vs}\;
+\text{FrontierPaperResults}
+\quad\text{inside return-unified admission}
+}
+\]
+
+\[
+\text{RND1-30B}(\pm C)
+\;=\;
+\text{FINITE\_AI\_SUBSTRATE\_TEST}
+\;\neq\;
+\text{bio closure}
+\]
+
 ## Current verdict
 
 ```text
+CLOSED_PROGRAMME_PRIORITY_OUR_CLOSURE_VS_FRONTIER_PAPERS
+CLOSED_RND1_30B_AS_FINITE_AI_SUBSTRATE_TEST_NOT_BIO
+MEASURED_OUR_CLOSURE_ADMISSION_VS_FRONTIER_PAPERS
 CLOSED_INDEPENDENT_BIO_CLOSURE_MODEL_PORT
 CLOSED_RND1_CLOSURE_HYBRID_EXECUTION
 CLOSED_THREE_ARM_COMPARISON_ARCHITECTURE
@@ -15,6 +52,23 @@ CLOSED_RADICAL_NUMERICS_MODEL_AND_DATA_PROVENANCE
 CLOSED_FULL_RADICAL_NUMERICS_OPEN_SUITE_COMPARISON_FRAMEWORK
 CLOSED_ARC_DERIVED_RETURN_UNIFIED_RUNTIME_ARCHITECTURE
 CLOSED_DATA_AS_RESOLVED_RELATION_PRINCIPLE
+MEASURED_FINITE_FULL_CLOSURE_REUNIFICATION
+CLOSED_GOEL_DNA_ENVIRONMENT_CHAITIN_OPERATOR_BINDING
+CLOSED_GOEL_BLACK_MIRROR_PARALLEL_DIALOGUE
+CLOSED_BIOLOGICAL_DOUBLE_SLIT_AS_CHAITIN_GLOBAL_HAIR_GATE
+MEASURED_FINITE_GOEL_OPERATOR_IN_REUNIFICATION
+OPEN_DELTA_C_Q_BIOLOGICAL_DOUBLE_SLIT
+CLOSED_OUR_CLOSURE_AGI_OWNERSHIP_VS_RN
+CLOSED_TRANSCRIPT_STRUCTURE_MAP_PORTED
+MEASURED_OUR_CLOSURE_REUNIFIED_VERIFIED
+MEASURED_EXTERNAL_SUITE_INTEGRATED
+CLOSED_PAPER_ARCHITECTURE_DATA_CATALOG
+MEASURED_PAPER_DATA_LAYER_IN_EXTERNAL_SUITE
+MEASURED_UNIFIED_VERIFICATION_CLOSED
+CLOSED_ADMISSIBLE_DATA_ARCHITECTURE_DERIVATION
+MEASURED_BIOLOGICAL_DOUBLE_SLIT_RELATIVE_RETURN_IN_CLOSURE_MODEL
+MEASURED_OPEN_DATASET_ONLINE_SAMPLES_IN_CLOSURE
+MEASURED_RN_OPEN_PLUS_GOEL_PAPER_COMBINED
 OPEN_BIO_CLOSURE_VS_RADICAL_NUMERICS_RESULT
 OPEN_HYBRID_VS_INDEPENDENT_ADVANTAGE
 OPEN_BIOLOGICAL_RETURN_VALIDATION
@@ -26,23 +80,86 @@ OPEN_CONNECTED_RETURN_QUALITY_ADVANTAGE
 ```
 
 **Programme thesis:** `docs/UNIFICATION_THESIS.md` —
-*Bio Closure and Radical Numerics: Independent Return, Learned Proposal, and
-Unified Admission Verification of Biology AGI*.
+primary compare is **our Closure admission vs frontier paper results**.
+Chapter A (RND1-30B) is a finite AI/language substrate measurement only.
 
-\[
-\boxed{
-M_{\mathrm{ClosureBio}}
-\;\text{vs}\;
-M_{\mathrm{learned\ bio}}
-\;\text{vs}\;
-M_{\mathrm{RND1(+Closure)}}
-\quad\text{inside one return-unified admission}
-}
-\]
+Full biological closure = that primary compare on held-out returned biological
+episodes vs stated Evo/Omnii/Goel/open-benchmark claims (scores = shadows).
+**Finite reunification** of open architectures + held-out return data into
+admissible verification is **MEASURED** (`benchmarks/run_full_closure.py`).
+**Unified verification** reveals the **admissible-data architecture**
+(`closure/admissible_data.py`) — not a PASS aggregate.
+Biological double-slit relative verification runs **inside** our Closure AGI
+return (`closure/double_slit_return.py`); \(\delta_C(Q)\) stays OPEN until
+artifact-excluded interference.
+External Evo **weight execution** and live Omnii rerun remain OPEN.
 
-Full biological closure = that compare on held-out returned biological episodes.
-Chapter A (RND1 hybrid four-mode) remains a language/substrate measurement, not
-the biological thesis conclusion. Suite **framework** CLOSED; suite **run** OPEN.
+## Finite full-closure reunification (local, no external bio weights)
+
+Protocol: `closure/return_unified_runtime.py` + `benchmarks/run_full_closure.py`
+
+Artifact: `benchmarks/results/full_closure_reunified.json`
+
+Held-out episodes: `benchmarks/finite_bio_returns.json`
+
+| Joint arm status | Count | Meaning |
+|------------------|-----:|---------|
+| `VERIFIED` | 5 | Bio Closure kernel × positive held-out returns |
+| `OPEN_ARCHITECTURE_WEIGHTS_ABSENT` | 19 | Evo/OpenGenome2 carriers reunified; weights absent |
+| `OPEN` | 4 | Self-authored negative controls (correct non-write-back) |
+
+Verification topology + independent return: **24 VERIFIED / 4 OPEN**.
+Joint biological thesis vs learned Evo remains OPEN until open weights execute
+inside the same return-unified episode.
+
+## Goel ↔ Black Mirror ↔ Chaitin hair (RN external)
+
+Doctrine: `docs/GOEL_BLACK_MIRROR_PARALLEL_DIALOGUE.md`,
+`docs/GOEL_DNA_ENVIRONMENT_CHAITIN_OPERATOR.md`
+
+| Pole | Realization |
+|------|-------------|
+| Parallel programmes | Goel Consciousness Science ↔ Black Mirror Closure Axiometry (**not** subsumption) |
+| Global Chaitin hair | Goel DNA×environment carrier; biological double-slit = \(\delta_C(Q)\) global-hair gate (default OPEN) |
+| Local Kakeya / bio-tokens | **Ours** — tokenized relativity / connected-return |
+| RND1 / Evo / Omnii | **Radical Numerics (external)** comparators only |
+
+Finite reunification invokes the Goel operator on DNA-bearing episodes. Physical
+polymerase runtime and witnessed quantum / double-slit return remain OPEN.
+
+## Our Closure AGI reunified and verified (before external arms)
+
+Protocol: `closure/our_closure_verify.py` + `benchmarks/verify_our_closure.py`
+
+Artifact: `benchmarks/results/our_closure_reunified_verified.json`
+
+```text
+OUR_CLOSURE_REUNIFIED_VERIFIED
+```
+
+Nine internal checks (ownership, transcript spine, module surface, no-RND1
+kernel, runtime+topology, independent loop + self-verification + tagtokn,
+local Kakeya, Goel dual, ours-only episode reunification) all pass.
+
+## External suite integrated (gated)
+
+Protocol: `closure/external_suite.py` + `benchmarks/run_external_suite.py`
+
+Artifact: `benchmarks/results/external_suite_integrated.json`
+
+```text
+EXTERNAL_SUITE_INTEGRATED
+```
+
+Runs only after our-closure gate. Includes: RND1 upstream hash verify, mock
+sampler hooks under our admission, Chapter A artifact record (if present),
+**paper architectures + open datasets** (Goel, Evo/OpenGenome2, TraitGym,
+RNAGym, ProteinGym, ClinVar, Wuite prior — not weights-only), Evo arm
+reunification (weights absent → joint OPEN), Omnii reported-only rows.
+Biological three-arm result vs live Evo weights remains OPEN.
+
+Catalog: `benchmarks/paper_architecture_data_catalog.json`  
+Doctrine: `docs/PAPER_ARCHITECTURE_DATA_LAYER.md`
 
 ## Full unified 30B holistic comparison — Chapter A hybrid only (A100-80GB, bf16)
 

@@ -6,7 +6,8 @@
     {
       "id": "bio-closure-independent",
       "family": "black-mirror-closure",
-      "role": "closure-native proposal, return resolution, and admitted memory",
+      "role": "OUR self-contained Closure AGI — proposal, return resolution, admitted memory",
+      "ownership": "scarryhott-bio-transcript-thesis",
       "availability": "repository-local",
       "runnable": true,
       "open_weights": false,
@@ -14,35 +15,37 @@
       "biological_native": true,
       "adapter": "closure.independent_model:UnifiedClosureArchitecturalLoop",
       "epistemic_status": "RERUNNABLE_FINITE_KERNEL"
-    },
-    {
+    },    {
       "id": "rnd1-base-0910",
       "family": "radical-numerics-rnd1",
-      "role": "general diffusion language model baseline",
+      "role": "EXTERNAL Radical Numerics diffusion language architecture (not our Closure AGI)",
+      "ownership": "radical-numerics",
       "availability": "open-weights",
       "runnable": true,
       "open_weights": true,
       "open_code": true,
       "biological_native": false,
       "model_id": "radicalnumerics/RND1-Base-0910",
-      "epistemic_status": "MEASURED_LANGUAGE_MODEL_ARM"
+      "epistemic_status": "EXTERNAL_RN_LANGUAGE_ARCHITECTURE_MEASURED_UNDER_OUR_HOOKS"
     },
     {
       "id": "rnd1-plus-closure",
-      "family": "hybrid",
-      "role": "RND1 proposals with closure admission",
+      "family": "hybrid-external-under-our-admission",
+      "role": "EXTERNAL RND1 proposals admitted under OUR closure hooks (stress test, not our model)",
+      "ownership": "radical-numerics-weights-plus-our-admission",
       "availability": "repository-local-plus-open-weights",
       "runnable": true,
       "open_weights": true,
       "open_code": true,
       "biological_native": false,
       "model_id": "radicalnumerics/RND1-Base-0910",
-      "epistemic_status": "MEASURED_HYBRID_ARM"
+      "epistemic_status": "EXTERNAL_RN_ARCHITECTURE_UNDER_OUR_ADMISSION"
     },
     {
       "id": "evo-1",
       "family": "evo",
-      "role": "open prokaryotic genome language model",
+      "role": "EXTERNAL open prokaryotic genome language model",
+      "ownership": "arc-evo-radical-numerics-associated",
       "availability": "open-weights",
       "runnable": true,
       "open_weights": true,
@@ -55,7 +58,8 @@
     {
       "id": "evo2-1b-base",
       "family": "evo2",
-      "role": "small open genome language model smoke-test baseline",
+      "role": "EXTERNAL small open genome language model smoke-test baseline",
+      "ownership": "arc-evo-radical-numerics-associated",
       "availability": "open-weights",
       "runnable": true,
       "open_weights": true,
@@ -69,7 +73,8 @@
     {
       "id": "evo2-7b",
       "family": "evo2",
-      "role": "primary accessible open biological baseline",
+      "role": "EXTERNAL primary accessible open biological baseline",
+      "ownership": "arc-evo-radical-numerics-associated",
       "availability": "open-weights",
       "runnable": true,
       "open_weights": true,
@@ -83,7 +88,8 @@
     {
       "id": "evo2-20b",
       "family": "evo2",
-      "role": "single-H100 strong biological baseline",
+      "role": "EXTERNAL single-H100 strong biological baseline",
+      "ownership": "arc-evo-radical-numerics-associated",
       "availability": "open-weights",
       "runnable": true,
       "open_weights": true,
@@ -98,7 +104,8 @@
     {
       "id": "evo2-40b",
       "family": "evo2",
-      "role": "strongest fully open Evo 2 baseline",
+      "role": "EXTERNAL strongest fully open Evo 2 baseline",
+      "ownership": "arc-evo-radical-numerics-associated",
       "availability": "open-weights",
       "runnable": true,
       "open_weights": true,
@@ -113,7 +120,8 @@
     {
       "id": "omnii",
       "family": "radical-numerics-omnii",
-      "role": "reported next-generation genome language model",
+      "role": "EXTERNAL reported next-generation genome language model",
+      "ownership": "radical-numerics",
       "availability": "early-access-reported-only",
       "runnable": false,
       "open_weights": false,
@@ -126,8 +134,7 @@
         "RNAGym"
       ],
       "epistemic_status": "REPORTED_EXTERNAL_SYSTEM_NOT_REPRODUCIBLE"
-    }
-  ],
+    }  ],
   "benchmark_families": [
     {
       "id": "sequence-likelihood",

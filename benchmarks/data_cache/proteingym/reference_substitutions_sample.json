@@ -1,0 +1,45 @@
+{
+  "dataset_id": "proteingym",
+  "fetched_at": "2026-08-05T20:51:42.704221+00:00",
+  "source": "https://huggingface.co/datasets/ICML2022/ProteinGym/resolve/main/ProteinGym_reference_file_substitutions.csv",
+  "provenance": {
+    "api": "huggingface resolve",
+    "file": "ProteinGym_reference_file_substitutions.csv",
+    "note": "reference metadata sample; full DMS CSVs not downloaded"
+  },
+  "rows": [
+    {
+      "DMS_id": "A0A140D2T1_ZIKV_Sourisseau_growth_2019",
+      "UniProt_ID": "A0A140D2T1_ZIKV",
+      "taxon": "Virus",
+      "seq_len": "3423",
+      "molecule_name": "E",
+      "source_organism": "Zika virus",
+      "selection_assay": "Viral replication",
+      "target_seq_prefix": "MKNPKKKSGGFRIVNMLKRGVARVNPLGGLKRLPAGLLLGHGPIRMVLAILAFLRFTAIKPSLGLINRWGSVGKKEAMEI",
+      "target_seq_len": 3423
+    },
+    {
+      "DMS_id": "A0A192B1T2_9HIV1_Haddox_2018",
+      "UniProt_ID": "A0A192B1T2_9HIV1",
+      "taxon": "Virus",
+      "seq_len": "852",
+      "molecule_name": "HIV env protein (BF520)",
+      "source_organism": "HIV",
+      "selection_assay": "Viral replication",
+      "target_seq_prefix": "MRVKGIQMNSQHLLRWGIMILGMIMICSVAGNLWVTVYYGVPVWKDAETTLFCASDAKAYDAEVHNIWATHACVPTDPNP",
+      "target_seq_len": 852
+    },
+    {
+      "DMS_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "UniProt_ID": "A0A1I9GEU1_NEIME",
+      "taxon": "Prokaryote",
+      "seq_len": "161",
+      "molecule_name": "pilin (PilE)",
+      "source_organism": "Neisseria meningitidis",
+      "selection_assay": "piliation (20D9 anti-pilus monoclonal Ab), aggregation, adhesion (human umbilical vein endothelial cells (HUVECs))",
+      "target_seq_prefix": "FTLIELMIVIAIVGILAAVALPAYQDYTARAQVSEAILLAEGQKSAVTEYYLNHGEWPGDNSSAGVATSADIKGKYVQSV",
+      "target_seq_len": 161
+    }
+  ]
+}

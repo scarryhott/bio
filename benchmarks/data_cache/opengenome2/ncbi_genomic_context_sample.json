@@ -1,0 +1,34 @@
+{
+  "dataset_id": "opengenome2",
+  "fetched_at": "2026-08-05T20:51:44.186044+00:00",
+  "opengenome2_hf": "https://huggingface.co/datasets/arcinstitute/opengenome2",
+  "opengenome2_readme_excerpt": "---\nlicense: apache-2.0\ntask_categories:\n- text-generation\ntags:\n- biology\n- DNA\n- genomics\n- genetics\n- metagenomics\n- fasta\n- json\nsize_categories:\n- n>1T\n---\n\n# OpenGenome2\n\n<p align=\"center\">\n<img src=\"https://cdn-uploads.huggingface.co/production/uploads/649aee789fc303937a045f6a/Ma6udvzIkeAypUXcH-FJR.jpeg\" width=\"70%\" />\n</p>\n\nOpenGenome2 is a database of nearly 9 trillion base pairs of curated DNA from across all domains of life. Collected from diverse species and public data sources, OpenGenome2 was used to train Evo 2 models. Please refer to the [Evo 2 preprint](https://www.biorxiv.org/content/10.1101/2025.02.18.638918v1) or  [github repository](https://github.com/ArcInstitute/evo2) for further details and usage examples.\n\nWe provide OpenGenome2 in two formats, the dataset is organized into two main directories to reflect this:\n- **fasta** which contain the DNA sequences\n- **jsonl** which include the specific preprocessed sequences used for Evo 2 pretraining, such as adding special tokens and phylogenetic tags\n\nThis dataset was specifically curated and preprocessed for training the Evo 2 family of genomic language models and can be used for training models or bioinformatics.\n\n## Dataset Statistics\n- **Total size**: 8.8 trillion base pairs\n- **Coverage**: All domains of life (Bacteria, Archaea, Eukaryota, Viruses)\n- **Formats available**: FASTA, JSONL\n\n## Data Sources\n\nThe dataset combines sequences from various public databases and repositories:\n- **Prokaryotic genomes**: GTDBv220, IMG/PR\n- **Metagenomics**: MGD DB\n- **Viral sequences**: IMG/VR\n- **Eukaryotic data**: NCBI, Ensembl (from which we identified mRNAs, genomic windows)\n- **Eukaryotic elements**: Eukaryotic Promoter Database new (EPDnew)\n- **RNA sequences**: RNAcentral, Rfam\n- **Organellar genomes**: Various organelles\n\n## Training Data Composition\n\nEvo 2 uses a two stage to train on OpenGenome2, first pretraining on a focused dataset at shorter sequence length and then longer sequence length with ",
+  "provenance": {
+    "api": "NCBI E-utilities efetch",
+    "role": "online genomic context stand-in for OpenGenome2 benchmark families; full Arc OpenGenome2 corpus not downloaded",
+    "benchmark_families": [
+      "sequence-likelihood",
+      "gene-completion"
+    ]
+  },
+  "rows": [
+    {
+      "label": "ecoli_k12_window",
+      "accession": "NC_000913.3",
+      "start": 1,
+      "stop": 160,
+      "header": ">NC_000913.3:1-160 Escherichia coli str. K-12 substr. MG1655, complete genome",
+      "sequence": "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGCTTCTGAACTGGTTACCTGCCGTGAGTAAATTAAAATTTTATTGACTTAGGTCACTAAATACTTTAACCAATATAGGCATAGCGCACAGAC",
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&id=NC_000913.3&rettype=fasta&retmode=text&seq_start=1&seq_stop=160"
+    },
+    {
+      "label": "ecoli_k12_interior",
+      "accession": "NC_000913.3",
+      "start": 2000,
+      "stop": 2160,
+      "header": ">NC_000913.3:2000-2160 Escherichia coli str. K-12 substr. MG1655, complete genome",
+      "sequence": "CTTCCAGCCAGGCAGTGGCGGATCAATATGCCGACTTCCTGCGCGAAGGTTTCCACGTTGTCACGCCGAACAAAAAGGCCAACACCTCGTCGATGGATTACTACCATCAGTTGCGTTATGCGGCGGAAAAATCGCGGCGTAAATTCCTCTATGACACCAAC",
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&id=NC_000913.3&rettype=fasta&retmode=text&seq_start=2000&seq_stop=2160"
+    }
+  ]
+}

@@ -38,31 +38,35 @@ authority remains `OPEN`. A contradictory or unrecoverable return is
 `REJECTED`. Only a complete independently returned cycle is `ADMITTED` and
 enters authoritative memory. Repetition does not inflate memory.
 
-## Relationship to the three-arm programme
+## Relationship to the programme
 
-Programme thesis: `docs/UNIFICATION_THESIS.md`.
+Programme authority: `docs/PROGRAMME.md` / `docs/UNIFICATION_THESIS.md`.
 
-The existing 30B result is **Chapter A** — hybrid substrate only:
+**Primary bio arm** is this package (\(M_{\mathrm{ClosureBio}}\)) against
+**frontier paper results** — not against RND1-30B.
+
+RND1-30B hybrid is a **finite AI substrate test only**:
 
 ```text
-RND1 proposal + closure admission
+RND1 proposal + closure admission  →  FINITE_AI_SUBSTRATE_TEST_NOT_BIO_CLOSURE
 ```
 
-This package is arm \(M_{\mathrm{ClosureBio}}\):
+This package is:
 
 ```text
 closure-native proposal + closure-native return resolution
 ```
 
-A valid future comparison is:
+A valid biological comparison is:
 
-1. native RND1;
-2. independent closure-native model;
-3. RND1 + closure hybrid;
+1. independent Closure AGI admission on held-out returns;
+2. stated frontier paper / open-bio results (Evo 2, Omnii reported, Goel, …);
+3. optionally live Evo weights inside the same return (still OPEN).
 
-under matched biological tasks and independently returned environments. Token
-coherence from the previous RND1 run is not a score for this independent model.
-Empirical status: `OPEN_BIO_CLOSURE_VS_RADICAL_NUMERICS_RESULT`.
+RND1 language modes are excluded from the bio winner table.
+Token coherence from the RND1 Chapter A run is not a score for this independent
+model. Empirical bio result vs live Evo remains
+`OPEN_BIO_CLOSURE_VS_RADICAL_NUMERICS_BIOLOGICAL_RESULT`.
 
 ## Tagtokn compatibility audit
 

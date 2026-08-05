@@ -1,0 +1,47 @@
+{
+  "dataset_id": "traitgym",
+  "hf_dataset": "songlab/TraitGym",
+  "config": "mendelian_traits",
+  "split": "test",
+  "fetched_at": "2026-08-05T20:51:41.447045+00:00",
+  "source": "https://datasets-server.huggingface.co/rows?dataset=songlab%2FTraitGym&config=mendelian_traits&split=test&offset=0&length=3",
+  "provenance": {
+    "api": "huggingface datasets-server",
+    "revision_note": "live server rows; not a pinned git SHA of the parquet"
+  },
+  "rows": [
+    {
+      "chrom": "1",
+      "pos": 1425822,
+      "ref": "C",
+      "alt": "G",
+      "OMIM": null,
+      "consequence": "PLS",
+      "label": false,
+      "tss_dist": 48,
+      "match_group": "PLS_4"
+    },
+    {
+      "chrom": "1",
+      "pos": 1615869,
+      "ref": "C",
+      "alt": "T",
+      "OMIM": null,
+      "consequence": "PLS",
+      "label": false,
+      "tss_dist": 35,
+      "match_group": "PLS_0"
+    },
+    {
+      "chrom": "1",
+      "pos": 1659060,
+      "ref": "G",
+      "alt": "A",
+      "OMIM": null,
+      "consequence": "PLS",
+      "label": false,
+      "tss_dist": 47,
+      "match_group": "PLS_4"
+    }
+  ]
+}

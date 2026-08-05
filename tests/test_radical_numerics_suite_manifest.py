@@ -10,6 +10,9 @@ def test_manifest_separates_open_and_reported_only_systems() -> None:
     assert systems["evo2-40b"]["open_weights"] is True
     assert systems["omnii"]["runnable"] is False
     assert systems["omnii"]["availability"] == "early-access-reported-only"
+    assert systems["bio-closure-independent"]["ownership"] == "scarryhott-bio-transcript-thesis"
+    assert systems["rnd1-base-0910"]["ownership"] == "radical-numerics"
+    assert "EXTERNAL" in systems["rnd1-base-0910"]["epistemic_status"]
 
 
 def test_default_plan_is_biological_and_runnable() -> None:

@@ -1,0 +1,169 @@
+#!/usr/bin/env python3
+"""Reunify downloaded/online open-dataset episodes through closure runtime.
+
+Combines our Closure AGI + open architecture carriers (Evo/Evo2) with live
+TraitGym / RNAGym / ClinVar / ProteinGym / OpenGenome2-family samples.
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import sys
+from collections import Counter
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from benchmarks.plan_radical_numerics_suite import build_plan, load_manifest, summarize
+from closure.dataset_adapters import (
+    fetch_all_open_samples,
+    load_all_open_episodes,
+    load_cache_manifest,
+    receipt_to_dict,
+)
+from closure.return_unified_runtime import (
+    architecture_from_system,
+    receipt_to_dict as reunify_receipt_to_dict,
+    reunify_episode,
+)
+
+DEFAULT_OUT = Path(__file__).with_name("results") / "open_data_closure_reunified.json"
+
+
+def run_open_data_closure(
+    *,
+    fetch: bool = False,
+    force_fetch: bool = False,
+    ours_only: bool = False,
+    include_reported: bool = False,
+) -> dict[str, Any]:
+    fetch_receipts = []
+    if fetch or not load_all_open_episodes():
+        fetch_receipts = [
+            receipt_to_dict(r)
+            for r in fetch_all_open_samples(force=force_fetch)
+        ]
+
+    episodes = load_all_open_episodes()
+    if not episodes:
+        raise RuntimeError(
+            "no open-dataset episodes available; run benchmarks/download_open_datasets.py"
+        )
+
+    manifest = load_manifest()
+    systems = {row["id"]: row for row in manifest["systems"]}
+    plan = build_plan(
+        manifest,
+        include_nonbiological=False,
+        include_reported=include_reported,
+    )
+    if ours_only:
+        plan = [arm for arm in plan if arm.system_id == "bio-closure-independent"]
+
+    by_benchmark: dict[str, list] = {}
+    for episode in episodes:
+        by_benchmark.setdefault(episode.benchmark_id, []).append(episode)
+
+    receipts: list[dict[str, Any]] = []
+    for arm in plan:
+        system = systems[arm.system_id]
+        architecture = architecture_from_system(system)
+        for episode in by_benchmark.get(arm.benchmark_id, []):
+            receipt = reunify_episode(architecture, episode)
+            row = reunify_receipt_to_dict(receipt)
+            row["dataset_role"] = episode.role
+            receipts.append(row)
+
+    joint = Counter(r["joint_arm_status"] for r in receipts)
+    verification = Counter(r["verification_status"] for r in receipts)
+    learned = Counter(r["learned_claim_status"] for r in receipts)
+    by_dataset: Counter[str] = Counter()
+    for ep in episodes:
+        # role is open-dataset:<id>
+        ds = ep.role.split(":", 1)[-1] if ":" in ep.role else ep.role
+        by_dataset[ds] += 1
+
+    kernel_verified = [
+        r
+        for r in receipts
+        if r["system_id"] == "bio-closure-independent"
+        and r["joint_arm_status"] == "VERIFIED"
+    ]
+    return {
+        "schema_version": "1.0",
+        "protocol": "open-dataset-return-unified-closure",
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "relation": "(C_t, E_t, A_legal,t) ↔_C (A_t, E_{t+1}, R_t, V_t, C_{t+1})",
+        "fetch_receipts": fetch_receipts,
+        "cache_manifest": load_cache_manifest(),
+        "plan_summary": summarize(manifest, plan),
+        "episode_count": len(episodes),
+        "episodes_by_dataset": dict(by_dataset),
+        "receipt_count": len(receipts),
+        "joint_arm_status_counts": dict(joint),
+        "verification_status_counts": dict(verification),
+        "learned_claim_status_counts": dict(learned),
+        "kernel_positive_verified": len(kernel_verified),
+        "epistemic": {
+            "open_datasets_executed": True,
+            "full_opengenome2_corpus_mirrored": False,
+            "opengenome2_family_via": "ncbi-nucleotide-online-stand-in",
+            "evo_weights_executed": False,
+            "omnii": "reported_only" if include_reported else "excluded",
+            "note": (
+                "Live online samples reunified under our C. Evo arms stay "
+                "OPEN_ARCHITECTURE_WEIGHTS_ABSENT until weights execute in-return."
+            ),
+        },
+        "receipts": receipts,
+    }
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--fetch", action="store_true", help="fetch/refresh samples first")
+    parser.add_argument("--force-fetch", action="store_true")
+    parser.add_argument("--ours-only", action="store_true")
+    parser.add_argument("--include-reported", action="store_true")
+    parser.add_argument("--out", type=Path, default=DEFAULT_OUT)
+    parser.add_argument("--json", action="store_true")
+    args = parser.parse_args()
+
+    report = run_open_data_closure(
+        fetch=args.fetch or args.force_fetch,
+        force_fetch=args.force_fetch,
+        ours_only=args.ours_only,
+        include_reported=args.include_reported,
+    )
+    args.out.parent.mkdir(parents=True, exist_ok=True)
+    args.out.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+
+    summary = {
+        "out": str(args.out),
+        "episode_count": report["episode_count"],
+        "episodes_by_dataset": report["episodes_by_dataset"],
+        "receipt_count": report["receipt_count"],
+        "joint_arm_status_counts": report["joint_arm_status_counts"],
+        "kernel_positive_verified": report["kernel_positive_verified"],
+        "epistemic": report["epistemic"],
+    }
+    if args.json:
+        print(json.dumps(summary, indent=2))
+    else:
+        print(
+            f"OPEN_DATA_CLOSURE episodes={report['episode_count']} "
+            f"receipts={report['receipt_count']} "
+            f"kernel_verified={report['kernel_positive_verified']} → {args.out}"
+        )
+        print("datasets:", report["episodes_by_dataset"])
+        print("joint:", report["joint_arm_status_counts"])
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

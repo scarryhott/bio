@@ -1,0 +1,223 @@
+{
+  "schema_version": "1.0",
+  "status_date": "2026-08-05",
+  "purpose": "External comparison is not RND1-weights-only. Gather architectures and held-out return data from referenced papers (Goel, Radical Numerics / Evo / Omnii, related open datasets) and place them under our Closure AGI admission.",
+  "stack": {
+    "top": "our Closure AGI admission (C)",
+    "middle": "paper-derived architectures and operators",
+    "bottom": "open datasets / measured returns",
+    "optional": "open model weights (RND1, Evo 2, …) when present"
+  },
+  "paper_architectures": [
+    {
+      "id": "goel-dna-environment-motor",
+      "family": "goel-nanobiophysics",
+      "role": "DNA polymerase as environment-coupled information motor (tension tune/switch)",
+      "ownership": "goel-published-mechanism-bound-into-our-global-chaitin-hair",
+      "module": "closure.goel_operator",
+      "papers": [
+        {
+          "cite": "Goel PhD thesis — Single Molecule Dynamics of Motor Enzymes Along DNA (Harvard Physics)",
+          "url": "https://www.physics.harvard.edu/academics/phds"
+        },
+        {
+          "cite": "Goel, Frank-Kamenetskii, Ellenberger, Herschbach, PNAS 98:8485–8489 (2001)",
+          "doi": "10.1073/pnas.151261198"
+        },
+        {
+          "cite": "Goel, Astumian, Herschbach, PNAS 100:9699–9704 (2003)",
+          "doi": "10.1073/pnas.1033134100"
+        },
+        {
+          "cite": "Goel, in Quantum Aspects of Life (2008) — QM hypothesis for DNA-read/write motors",
+          "url": "https://doi.org/10.1142/9781848162556_0006"
+        },
+        {
+          "cite": "Wuite, Smith, Young, Keller, Bustamante, Nature 404:103–106 (2000) — tension/stall empirical prior",
+          "doi": "10.1038/35003614"
+        }
+      ],
+      "places_on_top_of": ["any-dna-sequence-proposal", "evo-open-weights", "finite-bio-episodes"],
+      "data_bindings": ["wuite-bustamante-tension-prior", "finite-goel-env-returns"],
+      "epistemic_status": "BOUND_FINITE_OPERATOR_PLUS_LITERATURE_PRIOR"
+    },
+    {
+      "id": "evo2-opengenome2-runtime",
+      "family": "evo2",
+      "role": "Open genome LM architecture + OpenGenome2 training/eval surface",
+      "ownership": "arc-evo-radical-numerics-associated",
+      "papers": [
+        {
+          "cite": "Brixi et al., Genome modeling and design across all domains of life with Evo 2, Nature (2026)",
+          "doi": "10.1038/s41586-026-10176-5",
+          "url": "https://www.nature.com/articles/s41586-026-10176-5"
+        }
+      ],
+      "code": "https://github.com/ArcInstitute/evo2",
+      "weights": [
+        "arcinstitute/evo2_1b_base",
+        "arcinstitute/evo2_7b",
+        "arcinstitute/evo2_20b",
+        "arcinstitute/evo2_40b"
+      ],
+      "data_bindings": ["opengenome2", "traitgym", "clinvar", "proteingym"],
+      "places_on_top_of": ["opengenome2"],
+      "epistemic_status": "OPEN_WEIGHTS_AND_DATA_PUBLIC_ADAPTER_PARTIAL"
+    },
+    {
+      "id": "evo1-opengenome",
+      "family": "evo",
+      "role": "Historical open prokaryotic genome LM + OpenGenome",
+      "ownership": "arc-evo-radical-numerics-associated",
+      "code": "https://github.com/evo-design/evo",
+      "data_bindings": ["opengenome"],
+      "epistemic_status": "OPEN_EXTERNAL_BASELINE"
+    },
+    {
+      "id": "rnd1-diffusion-language",
+      "family": "radical-numerics-rnd1",
+      "role": "Diffusion language architecture (not a genome model) — optional local presentation carrier",
+      "ownership": "radical-numerics",
+      "papers": [
+        {
+          "cite": "Radical Numerics, Training Diffusion Language Models at Scale using Autoregressive Models (RND1 report)",
+          "url": "https://www.radicalnumerics.ai/assets/rnd1_report.pdf"
+        },
+        {
+          "cite": "RND1 blog",
+          "url": "https://www.radicalnumerics.ai/blog/rnd1"
+        }
+      ],
+      "weights": ["radicalnumerics/RND1-Base-0910"],
+      "code": "https://github.com/RadicalNumerics/RND1",
+      "data_bindings": [],
+      "places_on_top_of": ["general-language-tasks"],
+      "epistemic_status": "MEASURED_LANGUAGE_SUBSTRATE_ONLY"
+    },
+    {
+      "id": "omnii-reported-genome-lm",
+      "family": "radical-numerics-omnii",
+      "role": "Reported multimodal genome LM preview — architecture+task list without public weights",
+      "ownership": "radical-numerics",
+      "papers": [
+        {
+          "cite": "Omnii health research preview",
+          "url": "https://www.radicalnumerics.ai/blog/omnii-health-preview"
+        }
+      ],
+      "data_bindings": ["clinvar", "traitgym", "rnagym"],
+      "epistemic_status": "REPORTED_ONLY_NOT_RERUN"
+    }
+  ],
+  "datasets": [
+    {
+      "id": "opengenome2",
+      "kind": "pretraining-and-genomic-context",
+      "url": "https://huggingface.co/datasets/arcinstitute/opengenome2",
+      "paper_architectures": ["evo2-opengenome2-runtime"],
+      "return_type": "held-out nucleotide / genomic continuation context",
+      "license_note": "multi-source curated; record license per subset before redistribution",
+      "adapter_status": "OPEN_DOWNLOAD_ADAPTER",
+      "benchmark_families": ["sequence-likelihood", "gene-completion"]
+    },
+    {
+      "id": "opengenome",
+      "kind": "pretraining-historical",
+      "url": "https://github.com/evo-design/evo",
+      "paper_architectures": ["evo1-opengenome"],
+      "return_type": "prokaryotic genomic context",
+      "adapter_status": "OPEN_DOWNLOAD_ADAPTER",
+      "benchmark_families": ["sequence-likelihood", "gene-completion"]
+    },
+    {
+      "id": "traitgym",
+      "kind": "held-out-variant-return",
+      "url": "https://huggingface.co/datasets/songlab/TraitGym",
+      "paper": "https://doi.org/10.1101/2025.02.11.637758",
+      "paper_architectures": ["evo2-opengenome2-runtime", "omnii-reported-genome-lm"],
+      "return_type": "causal / candidate regulatory variant consequence vs matched controls",
+      "adapter_status": "OPEN_DOWNLOAD_ADAPTER",
+      "benchmark_families": ["variant-effect"]
+    },
+    {
+      "id": "rnagym",
+      "kind": "held-out-rna-fitness-return",
+      "url": "https://huggingface.co/datasets/Marks-lab/RNAgym",
+      "paper_architectures": ["evo2-opengenome2-runtime", "omnii-reported-genome-lm"],
+      "return_type": "measured RNA mutational fitness / structure",
+      "adapter_status": "OPEN_DOWNLOAD_ADAPTER",
+      "benchmark_families": ["rna-fitness"]
+    },
+    {
+      "id": "proteingym",
+      "kind": "held-out-protein-fitness-return",
+      "url": "https://proteingym.org/",
+      "hf": "https://huggingface.co/datasets/ICML2022/ProteinGym",
+      "paper_architectures": ["evo2-opengenome2-runtime"],
+      "return_type": "DMS fitness / clinical annotation",
+      "adapter_status": "OPEN_DOWNLOAD_ADAPTER",
+      "benchmark_families": ["variant-effect"]
+    },
+    {
+      "id": "clinvar",
+      "kind": "clinical-variant-return",
+      "url": "https://www.ncbi.nlm.nih.gov/clinvar/",
+      "paper_architectures": ["omnii-reported-genome-lm", "evo2-opengenome2-runtime"],
+      "return_type": "clinical significance / CNV annotations",
+      "adapter_status": "OPEN_DOWNLOAD_ADAPTER",
+      "benchmark_families": ["variant-effect"]
+    },
+    {
+      "id": "lincs-l1000",
+      "kind": "perturbation-phenotype-return",
+      "url": "https://clue.io/",
+      "paper_architectures": ["evo2-opengenome2-runtime"],
+      "return_type": "post-intervention expression signature",
+      "adapter_status": "OPEN_MULTIMODAL_ADAPTER",
+      "benchmark_families": ["perturbation-response"]
+    },
+    {
+      "id": "scperturb",
+      "kind": "perturbation-phenotype-return",
+      "url": "https://perturbation.cellarity.com/",
+      "paper_architectures": ["evo2-opengenome2-runtime"],
+      "return_type": "single-cell perturbation phenotype",
+      "adapter_status": "OPEN_MULTIMODAL_ADAPTER",
+      "benchmark_families": ["perturbation-response"]
+    },
+    {
+      "id": "wuite-bustamante-tension-prior",
+      "kind": "literature-prior-for-goel-operator",
+      "url": "https://doi.org/10.1038/35003614",
+      "paper_architectures": ["goel-dna-environment-motor"],
+      "return_type": "polymerase rate vs template tension; stall ~34 pN; exo increase ~>40 pN",
+      "adapter_status": "FINITE_LITERATURE_PRIOR_IN_REPO",
+      "local_path": "benchmarks/data_priors/wuite_bustamante_tension_prior.json",
+      "benchmark_families": ["sequence-likelihood", "perturbation-response"],
+      "note": "Published empirical prior for Goel tension tune/switch — not a claim we remeasured the curve"
+    },
+    {
+      "id": "finite-goel-env-returns",
+      "kind": "finite-held-out-episodes",
+      "local_path": "benchmarks/finite_bio_returns.json",
+      "paper_architectures": ["goel-dna-environment-motor", "bio-closure-independent"],
+      "return_type": "multi-modality biological episode returns under our admission",
+      "adapter_status": "RERUNNABLE_IN_REPO",
+      "benchmark_families": [
+        "sequence-likelihood",
+        "variant-effect",
+        "gene-completion",
+        "rna-fitness",
+        "perturbation-response"
+      ]
+    }
+  ],
+  "composition_rules": {
+    "weights_optional": true,
+    "papers_and_data_required_for_external_biology": true,
+    "do_not_equate_rnd1_weights_with_biological_stack": true,
+    "goel_architecture_binds_under_our_chaitin_hair": true,
+    "omnii_scores_reported_only_until_public_interface": true,
+    "record_license_split_revision_for_every_dataset_row": true
+  }
+}

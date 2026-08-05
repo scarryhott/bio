@@ -1,0 +1,122 @@
+{
+  "thesis": "Closure is not the universe itself; it is the generator/operator that takes relations (topoi, paths, verifications) and produces further structure until evaluation/halting/fixed-point identification becomes possible. IVI is the ladder of how verification becomes closable; NRR is the multi-directional admissible bundle above single collapses.",
+  "primitive": {
+    "id": "0_inf_dual",
+    "name": "0 ↔ ∞ duality (Pure Place)",
+    "rule": "Pre-phenomenal substrate: only dual limits, no orientation, no algebra, no collapse. Past-like 0 and future-like ∞ interact potentially into higher complexity without a midpoint object.",
+    "relates_to": ["ivi0", "predual", "closure_operator"]
+  },
+  "ladder": [
+    {
+      "id": "ivi0",
+      "name": "IVI-0 Pure Place",
+      "rules": ["Only 0–∞ duality", "No orientation", "No algebra", "No collapse possible"]
+    },
+    {
+      "id": "ivi1",
+      "name": "IVI-1 Adjacency",
+      "rules": ["Local adjacency (von Neumann)", "Undirected", "Abelian", "No loops / no holonomy"],
+      "enables": "distinction without forced relation"
+    },
+    {
+      "id": "ivi2",
+      "name": "IVI-2 Orientation",
+      "rules": ["Directions emerge (four phases of i)", "Order matters", "Paths exist", "Still no forced closure / no collapse"],
+      "enables": "directed paths without non-invertible closure"
+    },
+    {
+      "id": "ivi3",
+      "name": "IVI-3 Triality / Collapse level",
+      "rules": [
+        "Superposition: multiple verification paths coexist",
+        "Resuperposition: paths recombine with order sensitivity",
+        "Non-invertible closure: some recombinations cannot be undone locally",
+        "Creates verification frustration",
+        "Holonomy algebra minimally Q₈ when closure is demanded"
+      ],
+      "equals": "quantum-gravity axiometry"
+    },
+    {
+      "id": "ivi4",
+      "name": "IVI-4+ projections",
+      "rules": ["QFT as IVI-4 projection", "Further effective theories as constrained projections of closure"]
+    }
+  ],
+  "core_structures": [
+    {
+      "id": "closure_operator",
+      "name": "Closure as generator/operator",
+      "rule": "Closure takes an arbitrary topos/relation and constructs further layers until Turing-encoding and halting-evaluation become possible; fixed eval appears unitary; layers/inversions that match relational and encoding topoi are closure.",
+      "depends_on": ["0_inf_dual", "topos_eval"]
+    },
+    {
+      "id": "collapse",
+      "name": "Collapse (diagonal connection)",
+      "rule": "Collapse = diagonal connection 0→0 or ∞→∞; violates von Neumann adjacency; resolves −1 holonomy; rotates by ½i locally; topological not probabilistic; costs verification energy K; forced when local refinement fails.",
+      "level": "ivi3",
+      "is_single_direction": true
+    },
+    {
+      "id": "nrr",
+      "name": "NRR resuperposition / closure bundle",
+      "rule": "Higher object that does not keep old collapse as fixed state; absorbs the set of admissible diagonals/potentials collapse could have selected; re-expresses them as new closure with global energy i e^K and local complexity-length ω_K.",
+      "relation_to_collapse": "collapse = one directional realization; NRR = multi-directional admissible potential bundle"
+    },
+    {
+      "id": "predual",
+      "name": "0↔∞ predual diagonal",
+      "rule": "i = rotation (Kakeya); r = extension (Chaitin). Predual Fourier reverses end, direction, scaling, order; Möbius ±1/0 as path-end/collapse of closure.",
+      "pairs": ["kakeya_i", "chaitin_r"]
+    },
+    {
+      "id": "resonance_community",
+      "name": "Resonance community (axiom II)",
+      "rule": "For each context c, closed convex C_c ⊆ H; evolution projects toward resonance (axiom III / continuous projection–drift).",
+      "role": "dynamics layer sitting on color/Hilbert substrate"
+    },
+    {
+      "id": "identifiability_retained",
+      "name": "Identifiability / retained state",
+      "rule": "What survives across collapse–resuperposition cycles as witnessable structure (ledger/memory of admissible relations), distinguishing formal IVI objects from contingent instantiations."
+    }
+  ],
+  "bridge_rules": [
+    {
+      "id": "gravity",
+      "from": "ivi3",
+      "rule": "Gravity = global well-foundedness of verification (no infinite descending contradiction); GR effective description of IVI-3+ consistency; time = refinement order not dimension"
+    },
+    {
+      "id": "quantum",
+      "from": "ivi3",
+      "rule": "Quantum = local non-invertibility + resuperposition + partial verification; qubits on relations not points; measurement = finite Euclidean closure"
+    },
+    {
+      "id": "rh_bridge",
+      "from": ["collapse", "nrr"],
+      "rule": "Observed Möbius/Mertens imbalance is square-root shadow of deeper NRR mass: collapse residue ≲ √(active NRR energy)"
+    },
+    {
+      "id": "spine",
+      "rule": "light/token operator → communities (closure-derived equal relations) → η/meta-vectors → tip-to-tail lattice → fractal mutual containment → 0↔∞ predual diagonal"
+    }
+  ],
+  "relational_edges": [
+    {"from": "0_inf_dual", "to": "ivi0", "via": "is"},
+    {"from": "ivi0", "to": "ivi1", "via": "adds adjacency"},
+    {"from": "ivi1", "to": "ivi2", "via": "adds orientation / four phases of i"},
+    {"from": "ivi2", "to": "ivi3", "via": "demands closure → non-invertibility"},
+    {"from": "ivi3", "to": "collapse", "via": "diagonal connection when refinement fails"},
+    {"from": "collapse", "to": "nrr", "via": "resuperposes admissible diagonals"},
+    {"from": "nrr", "to": "closure_operator", "via": "multi-directional closure energy"},
+    {"from": "predual", "to": "0_inf_dual", "via": "witnessable diagonal of dual limits"},
+    {"from": "predual", "to": "collapse", "via": "Möbius path-end / ±1 collapse"},
+    {"from": "ivi3", "to": "gravity", "via": "global well-foundedness"},
+    {"from": "ivi3", "to": "quantum", "via": "local non-invertibility"},
+    {"from": "collapse", "to": "rh_bridge", "via": "residue / shadow"},
+    {"from": "nrr", "to": "rh_bridge", "via": "active energy / mass"},
+    {"from": "resonance_community", "to": "closure_operator", "via": "projection dynamics toward closed C_c"},
+    {"from": "closure_operator", "to": "identifiability_retained", "via": "what remains after eval/halting identification"},
+    {"from": "spine", "to": "predual", "via": "program terminus"}
+  ]
+}

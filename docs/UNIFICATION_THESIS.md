@@ -5,40 +5,57 @@
 **Epistemic status:** DESIGN DERIVATION + REPORTED ARTIFACT architecture  
 **Empirical biological suite / three-arm result:** OPEN (not yet closed)
 
-This document is the programme thesis. The completed 30B four-mode RND1 run is
-**Chapter A — hybrid language/substrate experiment**, not the biological
-conclusion. Holistic biology AGI closure is comparison against **existing
-architecture and data** inside **unified admission verification**
-(`docs/RETURN_UNIFIED_BIO_AGI_RUNTIME.md`,
-`docs/FULL_RADICAL_NUMERICS_OPEN_SUITE_COMPARISON.md`,
-`docs/RADICAL_NUMERICS_BIOLOGY_DATA_PROVENANCE.md`).
+This document is the programme thesis.
+
+**Primary goal:** our Closure AGI verification admission against **stated
+frontier paper results** (Evo 2 / OpenGenome2, Omnii reported, Goel, open
+benchmarks) inside unified admission verification.
+
+**Not the primary goal:** the completed 30B four-mode RND1 run is
+**Chapter A — a single finite AI / language-substrate test**, not biological
+closure (`docs/CLOUD_RUN_STATUS.md`).
 
 \[
 \boxed{
 M_{\mathrm{ClosureBio}}
 \;\text{vs}\;
-M_{\mathrm{learned\ bio}}
-\;\text{vs}\;
-M_{\mathrm{RND1(+Closure)}}
-\quad\text{inside one return-unified admission}
+\text{FrontierPaperResults}
+\quad\text{inside return-unified admission}
 }
 \]
 
-Companion language/substrate framing (Chapter A / Chapter D):
+Secondary / finite AI test only:
 
 \[
-\text{Bio Closure}
-\quad\text{vs}\quad
-\text{Radical Numerics}
-\quad\text{vs}\quad
-\text{Radical Numerics + Closure}
+\text{RND1-30B}(\pm\text{Closure hooks})
+\;=\;
+\text{FINITE\_AI\_SUBSTRATE\_TEST}
+\;\neq\;
+\text{bio closure}
 \]
+
+Optional three-arm expansion once live bio weights execute:
+
+\[
+M_{\mathrm{ClosureBio}}
+\;\text{vs}\;
+M_{\mathrm{learned\ bio}}
+\;\text{vs}\;
+M_{\mathrm{RN\text{-}bio reported}}
+\quad\text{(RND1 excluded from bio primary)}
+\]
+
+Companion docs:
+`docs/RETURN_UNIFIED_BIO_AGI_RUNTIME.md`,
+`docs/FULL_RADICAL_NUMERICS_OPEN_SUITE_COMPARISON.md`,
+`docs/RADICAL_NUMERICS_BIOLOGY_DATA_PROVENANCE.md`,
+`benchmarks/frontier_paper_results.json`.
 
 ---
 
 ## 1. The three systems
 
-### 1.1 Radical Numerics (\(M_{\mathrm{RND1}}\))
+### 1.1 Radical Numerics RND1 (\(M_{\mathrm{RND1}}\)) — finite AI test only
 
 ```text
 RND1 state
@@ -47,7 +64,8 @@ RND1 state
 → next diffusion state
 ```
 
-Learned 30B masked-diffusion substrate (`radicalnumerics/RND1-Base-0910`).
+Learned 30B masked-diffusion **language** substrate (`radicalnumerics/RND1-Base-0910`).
+Programme role: **FINITE_AI_SUBSTRATE_TEST_NOT_BIO_CLOSURE**.
 Public Apache-2.0 inference in `rnd/`. Weights external.
 
 ### 1.2 Independent Bio Closure model (\(M_{\mathrm{ClosureBio}}\))
@@ -172,6 +190,9 @@ CLOSED_FULL_RADICAL_NUMERICS_OPEN_SUITE_COMPARISON_FRAMEWORK
 CLOSED_ARC_DERIVED_RETURN_UNIFIED_RUNTIME_ARCHITECTURE
 CLOSED_DATA_AS_RESOLVED_RELATION_PRINCIPLE
 CLOSED_ENDOGENOUS_VERIFICATION_TOPOLOGY_DESIGN
+MEASURED_FINITE_FULL_CLOSURE_REUNIFICATION
+CLOSED_GOEL_DNA_ENVIRONMENT_CHAITIN_OPERATOR_BINDING
+MEASURED_FINITE_GOEL_OPERATOR_IN_REUNIFICATION
 ```
 
 (Also retained: causal hybrid facts from Chapter A —
@@ -189,10 +210,16 @@ OPEN_FULL_RADICAL_NUMERICS_BIOLOGICAL_SUITE_RUN
 OPEN_BIO_CLOSURE_VS_RADICAL_NUMERICS_BIOLOGICAL_RESULT
 OPEN_FULL_BIOLOGICAL_UNIFICATION_AGI_EXECUTION
 OPEN_EVO_REPRESENTATION_IN_RETURN_UNIFIED_RUNTIME
+OPEN_GOEL_PHYSICAL_POLYMERASE_RUNTIME
+OPEN_WITNESSED_QUANTUM_CARRIER_BIOLOGY
 OPEN_HOLISTIC_QUALITY_ADVANTAGE
 OPEN_CONNECTED_RETURN_QUALITY_ADVANTAGE
 ```
 
+Finite reunification (`benchmarks/results/full_closure_reunified.json`) measures
+architecture+data entry into admissible verification for the independent kernel;
+it does **not** close the external open-weight biological suite. Goel supplies
+the global Chaitin DNA–env hair binding; Radical Numerics remains local Kakeya.
 The thesis is the **programme** of Bio Closure versus Radical Numerics under
 **unified admission verification**. It must **not** claim that the biological
 suite execution or three-arm biological result is closed.
@@ -323,14 +350,24 @@ does not.
 
 ## Relation to Black Mirror / Goel / Levin / space organs
 
-These remain DESIGN DERIVATION bindings (see also prior notes in repo docs):
+Ownership first: **our** Closure AGI vs **their** RN architectures —
+`docs/OUR_CLOSURE_AGI_VS_RADICAL_NUMERICS.md`.
 
-* **Goel:** DNA×environment open systems → environment as independent return hair.
+* **Transcript thesis spine:** IVI ladder, C operator, collapse vs NRR, predual
+  Kakeya(i)/Chaitin(r) — `docs/transcript_closure/`, `docs/OUR_CLOSURE_AGI_ARCHITECTURE.md`.
+* **Goel ↔ Black Mirror (parallel, not subsumption):**
+  `docs/GOEL_BLACK_MIRROR_PARALLEL_DIALOGUE.md`. Goel Consciousness Science
+  supplies living carrier / \((M,E,I)\) / biological double-slit roadmap;
+  Black Mirror supplies verification architecture. Biological double-slit =
+  Chaitin **global hair return** for \(\delta_C(Q)\) over DNA×env bio-tokens
+  (default OPEN). Module: `closure/goel_operator.py`.
+* **Local Kakeya:** **ours** (connected-return / bio-token relativity). RND1 may
+  feed tokens into those laws; it does not own them.
 * **Levin:** morphospace / coevolution → same relation, new admission basis after return.
 * **Organs in space:** multi-carrier connected return; topology ⇏ physical substrate token.
 * **Lean Phase 6 negatives:** what AGI cannot be (`docs/AGI_NEGATIVE_FORMAL.md`).
 
-None of these are proved by Chapter A token diffs.
+None of these are proved by Chapter A token diffs on **their** RND1.
 
 ---
 

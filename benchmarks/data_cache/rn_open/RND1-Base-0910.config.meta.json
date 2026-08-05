@@ -1,0 +1,7 @@
+{
+  "model_id": "radicalnumerics/RND1-Base-0910",
+  "file": "config.json",
+  "url": "https://huggingface.co/radicalnumerics/RND1-Base-0910/resolve/main/config.json",
+  "fetched_at": "2026-08-05T21:11:01.611610+00:00",
+  "note": "open config only; safetensor shards not downloaded by this adapter"
+}

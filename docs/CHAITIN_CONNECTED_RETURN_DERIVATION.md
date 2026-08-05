@@ -397,3 +397,40 @@ The testable hypothesis is not “more token divergence.” It is:
 \]
 
 This remains an `OPEN EMPIRICAL CLAIM` until independent downstream evaluation shows an advantage over `off`, `probe`, and the present `full` controller. Finite reunification against RND1 (`closure_mode="off"` baseline + live pristine verify) is CLOSED as a controller-integration fact.
+
+## 12. Biological realization: Goel global hair ↔ Black Mirror verification
+
+**Parallel dialogue (not subsumption):**
+`docs/GOEL_BLACK_MIRROR_PARALLEL_DIALOGUE.md`
+
+The dual prerequisite \(\operatorname{Close}(B_{\mathrm{local}})\land\operatorname{Close}(R_{\mathrm{Chaitin}})\) is biologically read as:
+
+\[
+B_{\mathrm{local}}
+\;\simeq\;
+\text{our bio-token Kakeya ball (tokenized relativity)}
+\]
+
+\[
+R_{\mathrm{Chaitin}}
+\;\simeq_{\text{dialogue}}\;
+\operatorname{Goel}(D,E,Q?)
+\]
+
+Goel’s open DNA×environment motor is the living carrier for the **global**
+Chaitin-side hair. Her biological double-slit / coherence experiment is a
+candidate **Chaitin global-hair return** for \(\delta_C(Q)\) over DNA operators
+in environments within larger bio-tokens. Default:
+
+\[
+\delta_C(Q)=\mathrm{OPEN}
+\]
+
+until independent, artifact-excluded interference return. Efficiency figures
+do not certify.
+
+Executable binding: `closure/goel_operator.py` (`evaluate_biological_double_slit`)
+and **relative return inside our Closure AGI**:
+`closure/double_slit_return.py` (`run_double_slit_relative_return`).
+Both slit arms reunify through `UnifiedClosureArchitecturalLoop`; \(\delta_C(Q)\)
+is resolved from the relative residue — default OPEN.

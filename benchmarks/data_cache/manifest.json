@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "datasets": {
+    "traitgym": {
+      "source": "https://datasets-server.huggingface.co/rows?dataset=songlab%2FTraitGym&config=mendelian_traits&split=test&offset=0&length=3",
+      "transport": "huggingface-datasets-server",
+      "local_path": "benchmarks/data_cache/traitgym/mendelian_traits_test_sample.json",
+      "n_rows": 3,
+      "fetched_at": "2026-08-05T20:51:41.447045+00:00",
+      "epistemic_status": "CACHED_ONLINE_SAMPLE",
+      "license_note": "TraitGym MIT (songlab/TraitGym); sample only",
+      "provenance": {
+        "api": "huggingface datasets-server",
+        "revision_note": "live server rows; not a pinned git SHA of the parquet"
+      },
+      "ok": true,
+      "detail": "cache hit"
+    },
+    "rnagym": {
+      "source": "https://datasets-server.huggingface.co/rows?dataset=Marks-lab%2FRNAgym&config=default&split=fitness&offset=0&length=3",
+      "transport": "huggingface-datasets-server",
+      "local_path": "benchmarks/data_cache/rnagym/fitness_sample.json",
+      "n_rows": 3,
+      "fetched_at": "2026-08-05T20:51:41.941281+00:00",
+      "epistemic_status": "CACHED_ONLINE_SAMPLE",
+      "license_note": "RNAGym (Marks-lab/RNAgym); check upstream license before redistribution",
+      "provenance": {
+        "api": "huggingface datasets-server"
+      },
+      "ok": true,
+      "detail": "cache hit"
+    },
+    "clinvar": {
+      "source": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=BRCA1%5Bgene%5D+AND+pathogenic%5Bclinical_significance%5D&retmax=3&retmode=json",
+      "transport": "ncbi-eutils",
+      "local_path": "benchmarks/data_cache/clinvar/brca1_pathogenic_sample.json",
+      "n_rows": 3,
+      "fetched_at": "2026-08-05T20:51:42.312292+00:00",
+      "epistemic_status": "CACHED_ONLINE_SAMPLE",
+      "license_note": "NCBI ClinVar public data; cite ClinVar",
+      "provenance": {
+        "api": "NCBI E-utilities",
+        "query": "BRCA1 pathogenic"
+      },
+      "ok": true,
+      "detail": "cache hit"
+    },
+    "proteingym": {
+      "source": "https://huggingface.co/datasets/ICML2022/ProteinGym/resolve/main/ProteinGym_reference_file_substitutions.csv",
+      "transport": "huggingface-resolve",
+      "local_path": "benchmarks/data_cache/proteingym/reference_substitutions_sample.json",
+      "n_rows": 3,
+      "fetched_at": "2026-08-05T20:51:42.704221+00:00",
+      "epistemic_status": "CACHED_ONLINE_SAMPLE",
+      "license_note": "ProteinGym reference metadata; DMS assay tables not fully mirrored",
+      "provenance": {
+        "api": "huggingface resolve",
+        "file": "ProteinGym_reference_file_substitutions.csv",
+        "note": "reference metadata sample; full DMS CSVs not downloaded"
+      },
+      "ok": true,
+      "detail": "cache hit"
+    },
+    "opengenome2": {
+      "source": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi",
+      "transport": "ncbi-eutils-stand-in-for-opengenome2-family",
+      "local_path": "benchmarks/data_cache/opengenome2/ncbi_genomic_context_sample.json",
+      "n_rows": 2,
+      "fetched_at": "2026-08-05T20:51:44.186044+00:00",
+      "epistemic_status": "CACHED_ONLINE_STAND_IN",
+      "license_note": "NCBI nucleotide public sequence; OpenGenome2 corpus itself not mirrored (Arc Institute / HF shards are multi-GB)",
+      "provenance": {
+        "api": "NCBI E-utilities efetch",
+        "role": "online genomic context stand-in for OpenGenome2 benchmark families; full Arc OpenGenome2 corpus not downloaded",
+        "benchmark_families": [
+          "sequence-likelihood",
+          "gene-completion"
+        ]
+      },
+      "ok": true,
+      "detail": "cache hit"
+    }
+  },
+  "updated_at": "2026-08-05T20:51:44.909797+00:00"
+}

@@ -1,0 +1,779 @@
+{
+  "schema_version": "2.0",
+  "protocol": "unified-verification-admissible-data-architecture",
+  "generated_at": "2026-08-05T21:18:31.167340+00:00",
+  "relation": "(C_t, B_bio_token, H_Goel_Chaitin_incl_\u03b4_C(Q), E_t, A_legal,t) \u2194_C (A_t, E_{t+1}, R_t, V_t, C_{t+1})",
+  "verdict": "UNIFIED_VERIFICATION_ARCHITECTURE_REVEALED",
+  "passed": true,
+  "primary_product": {
+    "kind": "ADMISSIBLE_DATA_ARCHITECTURE",
+    "epistemic_status": "DESIGN_DERIVATION",
+    "not_a_pass_aggregate": true,
+    "relation": "(C_t, B_bio_token, H_Goel_Chaitin_incl_\u03b4_C(Q), E_t, A_legal,t) \u2194_C (A_t, E_{t+1}, R_t, V_t, C_{t+1})",
+    "general_derivation": [
+      {
+        "step_id": "originless_basis",
+        "statement": "Admit current relational basis C_t provisionally; ball/hair are projections, not priors.",
+        "writes_memory": false,
+        "epistemic_note": "C is prior to subject/object and to any dataset inventory."
+      },
+      {
+        "step_id": "expose_observation_field",
+        "statement": "Expose provisional observation, measurement, and action field A_legal,t as candidates.",
+        "writes_memory": false,
+        "epistemic_note": "Provisional data is not yet admissible identity."
+      },
+      {
+        "step_id": "provisional_transform",
+        "statement": "Generate provisional act A_t inside the current basis without write-back.",
+        "writes_memory": false,
+        "epistemic_note": ""
+      },
+      {
+        "step_id": "preserve_pre_return",
+        "statement": "Preserve the pre-return relation so return can recover identity non-identically.",
+        "writes_memory": false,
+        "epistemic_note": ""
+      },
+      {
+        "step_id": "environmental_transform",
+        "statement": "Allow organism / environment / architecture interaction to transform the episode.",
+        "writes_memory": false,
+        "epistemic_note": "Environment is a modality, not an auxiliary feature vector."
+      },
+      {
+        "step_id": "independent_return",
+        "statement": "Receive independently returned consequence R_t (not model echo from a controlled boundary).",
+        "writes_memory": false,
+        "epistemic_note": "Missing return \u2192 OPEN; self-authored echo \u2192 OPEN; contradiction \u2192 REJECTED."
+      },
+      {
+        "step_id": "endogenous_topology",
+        "statement": "Generate candidate verification topology V_t from the return (not a fixed chart catalog).",
+        "writes_memory": false,
+        "epistemic_note": ""
+      },
+      {
+        "step_id": "delta_c_resolution",
+        "statement": "Resolve \u03b4_C(h): C \u22a2 h, C \u22a2 \u00ach, or open \u2014 relational admissibility, not external assertion.",
+        "writes_memory": false,
+        "epistemic_note": ""
+      },
+      {
+        "step_id": "integrate_resolved_relation",
+        "statement": "Integrate only the resolved relational identity into C_{t+1}; shadows never certify.",
+        "writes_memory": true,
+        "epistemic_note": "Write-back is allowed only for jointly verified operation \u2227 topology."
+      },
+      {
+        "step_id": "repartition_next",
+        "statement": "Repartition local (Kakeya bio-token) and global (Goel\u2013Chaitin hair, incl. \u03b4_C(Q)) for the next episode.",
+        "writes_memory": false,
+        "epistemic_note": ""
+      }
+    ],
+    "data_classes": {
+      "provisional_observation": "Candidate ball/hair presentation before return \u2014 not memory.",
+      "returned_consequence": "Independently measured modality that can complete a recovery cycle.",
+      "axiometric_shadow": "Likelihood, fitness, confidence, entropy, PASS counts \u2014 may propose, never certify.",
+      "open_candidate": "\u03b4_C open: retained as an opening / next topos layer, not discarded as a suite failure.",
+      "admitted_memory": "Resolved relation with write_back_allowed \u2014 enters C_{t+1}.",
+      "refused_or_collapsed": "Mandate refusal or false collapse \u2014 positively non-admissible.",
+      "relative_interference_residue": "Double-slit relative difference across arms; becomes \u03b4_C(Q) only after artifact-excluded independent return."
+    },
+    "motifs": [
+      "originless_prior",
+      "generator_not_totality",
+      "relational_admissibility",
+      "cycle_equality_derives_closure",
+      "ordered_support_identity",
+      "nrr_non_repetition",
+      "axiometry_is_shadow",
+      "independent_return",
+      "missing_return_is_open",
+      "return_side_partition",
+      "refusal_blocks_writeback",
+      "biological_nonidentical_recovery"
+    ],
+    "contrast_to_existing_models": {
+      "train_predict_filter": "Learned proposal \u2192 prediction \u2192 external score/filter. Data is training fuel; admission is post-hoc ranking.",
+      "benchmark_suite_pass": "Aggregated PASS/FAIL over fixed tasks. Pass counts are shadows, not identity.",
+      "return_unified_admission": "Data becomes admissible only as its relation is resolved inside one return with endogenous verification topology. Holistic verification reveals this architecture \u2014 it does not reduce to containing a pass."
+    },
+    "revealed_from_run": {
+      "admitted_memory_episodes": [
+        "seq-lik-001",
+        "var-eff-001",
+        "gene-comp-001",
+        "rna-fit-001",
+        "pert-resp-001",
+        "double-slit-thermal",
+        "double-slit-coherence"
+      ],
+      "open_candidate_episodes": [
+        "var-eff-open-self",
+        "delta_c_q_biological_double_slit"
+      ],
+      "refused_or_rejected_episodes": [],
+      "next_openings": [
+        "delta_c_q_interference_layer",
+        "next-control-channel",
+        "next-locus-layer",
+        "tissue-context-layer",
+        "expression-layer",
+        "ligand-bound-layer",
+        "tissue-scale-layer"
+      ],
+      "double_slit_relative_verification": {
+        "kind": "BIOLOGICAL_DOUBLE_SLIT_RELATIVE_RETURN",
+        "epistemic_status": "RERUNNABLE_FINITE_RELATIVE_VERIFICATION",
+        "ran_inside_closure_model": true,
+        "common_bio_token_digest": "f6ad561858e939c6ba6e923c",
+        "arm_thermal": {
+          "arm_id": "thermal",
+          "path_kind": "thermal_environmental_path",
+          "episode_id": "double-slit-thermal",
+          "operation_admission": "ADMITTED",
+          "verification_status": "VERIFIED",
+          "write_back_allowed": true,
+          "joint_arm_status": "VERIFIED",
+          "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+          "topology_resolution": "CLOSED_TO_OPENING"
+        },
+        "arm_coherence": {
+          "arm_id": "coherence",
+          "path_kind": "coherence_candidate_path",
+          "episode_id": "double-slit-coherence",
+          "operation_admission": "ADMITTED",
+          "verification_status": "VERIFIED",
+          "write_back_allowed": true,
+          "joint_arm_status": "VERIFIED",
+          "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+          "topology_resolution": "CLOSED_TO_OPENING"
+        },
+        "relative_residue": {
+          "shared_dna_locus": "synthetic:double_slit",
+          "shared_base_read": true,
+          "path_identity_differs": true,
+          "thermal_unity": "4da8c30abb24e21b98ad1bf52e8f920e03f271856ce7969f79b4005c6c57339b",
+          "coherence_unity": "52e7f55b19590390fb57c8a8fcb0123de508bd4861597d33e56efffaea7628d0",
+          "unities_identical": false,
+          "both_arms_operation_admitted": true,
+          "both_arms_data_verified": true,
+          "interference_in_return": false,
+          "controls": {
+            "thermal_excluded": false,
+            "mechanical_excluded": false,
+            "detector_excluded": false
+          }
+        },
+        "relative_architecture": {
+          "verification_kind": "relative_two_arm_return_inside_closure_model",
+          "model": "closure.independent_model:UnifiedClosureArchitecturalLoop",
+          "owner": "ours",
+          "not_external_side_check": true,
+          "arms": [
+            "thermal_environmental_path",
+            "coherence_candidate_path"
+          ],
+          "global_hair": "goel_chaitin_delta_c_q",
+          "local_ball": "bio_token_kakeya",
+          "admission_rule": "\u03b4_C(Q) admits only when relative interference residue returns independently with thermal/mechanical/detector controls excluded",
+          "default": "OPEN",
+          "contrast": "Existing models would score coherence; this architecture runs both paths as returns and leaves Q open without witnessed relative residue"
+        },
+        "slit_gate": {
+          "status": "OPEN_DELTA_C_Q",
+          "delta_c_q": "OPEN",
+          "chaitin_global_hair": true,
+          "write_back_allowed": false,
+          "reason": "biological double-slit remains \u03b4_C(Q)=OPEN \u2014 Goel's empirical gate as Chaitin global-hair candidate over DNA operators in environment within bio-tokens; theoretical plausibility \u2260 verified return",
+          "gate_digest": "85e11a04c17c205bad0bce79"
+        },
+        "delta_c_q": "OPEN",
+        "reason": "relative return inside our closure model: thermal=VERIFIED, coherence=VERIFIED; biological double-slit remains \u03b4_C(Q)=OPEN \u2014 Goel's empirical gate as Chaitin global-hair candidate over DNA operators in environment within bio-tokens; theoretical plausibility \u2260 verified return",
+        "return_digest": "f1b51d742a2a941f4c3b715d71e3f54fbb419d33a55fe7908f95ab49aeeb2904"
+      },
+      "ownership": {
+        "closure_agi": "ours_transcript_ivi_nrr",
+        "rnd1_is_our_model": false,
+        "goel_dialogue": "parallel_not_subsumption"
+      },
+      "principle": "data_as_resolved_relation",
+      "certifiers_forbidden": [
+        "mutation_likelihood",
+        "fitness",
+        "confidence",
+        "entropy",
+        "PASS_count",
+        "weight_presence",
+        "thermodynamic_efficiency_figures"
+      ]
+    },
+    "architecture_digest": "0021e9e1d24dcc15313870e0"
+  },
+  "biological_double_slit_relative_return": {
+    "kind": "BIOLOGICAL_DOUBLE_SLIT_RELATIVE_RETURN",
+    "epistemic_status": "RERUNNABLE_FINITE_RELATIVE_VERIFICATION",
+    "ran_inside_closure_model": true,
+    "common_bio_token_digest": "f6ad561858e939c6ba6e923c",
+    "arm_thermal": {
+      "arm_id": "thermal",
+      "path_kind": "thermal_environmental_path",
+      "episode_id": "double-slit-thermal",
+      "operation_admission": "ADMITTED",
+      "verification_status": "VERIFIED",
+      "write_back_allowed": true,
+      "joint_arm_status": "VERIFIED",
+      "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+      "topology_resolution": "CLOSED_TO_OPENING"
+    },
+    "arm_coherence": {
+      "arm_id": "coherence",
+      "path_kind": "coherence_candidate_path",
+      "episode_id": "double-slit-coherence",
+      "operation_admission": "ADMITTED",
+      "verification_status": "VERIFIED",
+      "write_back_allowed": true,
+      "joint_arm_status": "VERIFIED",
+      "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+      "topology_resolution": "CLOSED_TO_OPENING"
+    },
+    "relative_residue": {
+      "shared_dna_locus": "synthetic:double_slit",
+      "shared_base_read": true,
+      "path_identity_differs": true,
+      "thermal_unity": "4da8c30abb24e21b98ad1bf52e8f920e03f271856ce7969f79b4005c6c57339b",
+      "coherence_unity": "52e7f55b19590390fb57c8a8fcb0123de508bd4861597d33e56efffaea7628d0",
+      "unities_identical": false,
+      "both_arms_operation_admitted": true,
+      "both_arms_data_verified": true,
+      "interference_in_return": false,
+      "controls": {
+        "thermal_excluded": false,
+        "mechanical_excluded": false,
+        "detector_excluded": false
+      }
+    },
+    "relative_architecture": {
+      "verification_kind": "relative_two_arm_return_inside_closure_model",
+      "model": "closure.independent_model:UnifiedClosureArchitecturalLoop",
+      "owner": "ours",
+      "not_external_side_check": true,
+      "arms": [
+        "thermal_environmental_path",
+        "coherence_candidate_path"
+      ],
+      "global_hair": "goel_chaitin_delta_c_q",
+      "local_ball": "bio_token_kakeya",
+      "admission_rule": "\u03b4_C(Q) admits only when relative interference residue returns independently with thermal/mechanical/detector controls excluded",
+      "default": "OPEN",
+      "contrast": "Existing models would score coherence; this architecture runs both paths as returns and leaves Q open without witnessed relative residue"
+    },
+    "slit_gate": {
+      "status": "OPEN_DELTA_C_Q",
+      "delta_c_q": "OPEN",
+      "chaitin_global_hair": true,
+      "write_back_allowed": false,
+      "reason": "biological double-slit remains \u03b4_C(Q)=OPEN \u2014 Goel's empirical gate as Chaitin global-hair candidate over DNA operators in environment within bio-tokens; theoretical plausibility \u2260 verified return",
+      "gate_digest": "85e11a04c17c205bad0bce79"
+    },
+    "delta_c_q": "OPEN",
+    "reason": "relative return inside our closure model: thermal=VERIFIED, coherence=VERIFIED; biological double-slit remains \u03b4_C(Q)=OPEN \u2014 Goel's empirical gate as Chaitin global-hair candidate over DNA operators in environment within bio-tokens; theoretical plausibility \u2260 verified return",
+    "return_digest": "f1b51d742a2a941f4c3b715d71e3f54fbb419d33a55fe7908f95ab49aeeb2904"
+  },
+  "instrument_layers_passed": 6,
+  "instrument_layers_total": 6,
+  "failed_layers": [],
+  "epistemic": {
+    "primary_product": "ADMISSIBLE_DATA_ARCHITECTURE",
+    "not_a_pass_aggregate": true,
+    "unified_harness": "MEASURED",
+    "our_closure_agi": "VERIFIED",
+    "goel_black_mirror_dialogue": "PARALLEL_NOT_SUBSUMPTION",
+    "biological_double_slit_relative_return": "RAN_INSIDE_CLOSURE_MODEL",
+    "delta_c_q_biological_double_slit": "OPEN",
+    "bio_token_self_verification": "VERIFIED",
+    "paper_data_layer": "CATALOGUED",
+    "external_suite": "EXTERNAL_SUITE_INTEGRATED",
+    "evo_live_weight_execution": "OPEN",
+    "biological_three_arm_result": "OPEN",
+    "rnd1_is_our_model": false
+  },
+  "layers": [
+    {
+      "layer_id": "our_closure_agi",
+      "ok": true,
+      "verdict": "OUR_CLOSURE_REUNIFIED_VERIFIED",
+      "detail": "9/9 internal checks",
+      "evidence": {
+        "failed": [],
+        "ownership": {
+          "closure_agi_owner": "scarryhott/bio transcript thesis (IVI\u2013NRR)",
+          "radical_numerics_role": "external_architecture_comparator_only",
+          "rnd1_is_our_model": false,
+          "local_kakeya_owner": "our_ivi_connected_return",
+          "global_chaitin_owner": "our_binding_of_goel_dna_environment",
+          "structure_map": "transcript_closure/closure_structure_map.json"
+        }
+      },
+      "role": "instrument"
+    },
+    {
+      "layer_id": "goel_black_mirror_parallel_dialogue",
+      "ok": true,
+      "verdict": "PARALLEL_DIALOGUE_NOT_SUBSUMPTION",
+      "detail": "Goel Consciousness Science \u2194 Black Mirror Closure Axiometry",
+      "evidence": {
+        "parallel_dialogue": {
+          "relation": "Goel Consciousness Science \u2194 Black Mirror Closure Axiometry",
+          "subsumption": false,
+          "doctrine": "docs/GOEL_BLACK_MIRROR_PARALLEL_DIALOGUE.md",
+          "goel_supplies": "biological carrier, (M,E,I), open living motors, consciousness-first ontology, biological double-slit roadmap, Fifth Revolution teleology",
+          "black_mirror_supplies": "originless C, ball\u2013hair, independent return \u03c1, \u03b4_C, Chaitin global hair / Kakeya local bio-token verification"
+        },
+        "global_chaitin": "Chaitin global-hair return candidate for \u03b4_C(Q); default OPEN until artifact-excluded independent interference return",
+        "ownership": {
+          "closure_agi": "ours_transcript_ivi_nrr",
+          "goel_programme": "independent_parallel_scientific_paradigm",
+          "rnd1": "radical_numerics_external_architecture",
+          "rnd1_is_our_model": false
+        }
+      },
+      "role": "instrument"
+    },
+    {
+      "layer_id": "biological_double_slit_relative_return",
+      "ok": true,
+      "verdict": "DOUBLE_SLIT_RELATIVE_RETURN_OPEN_DELTA_C_Q",
+      "detail": "relative return inside our closure model: thermal=VERIFIED, coherence=VERIFIED; biological double-slit remains \u03b4_C(Q)=OPEN \u2014 Goel's empirical gate as Chaitin global-hair candidate over DNA operators in environment within bio-tokens; theoretical plausibility \u2260 verified return",
+      "evidence": {
+        "kind": "BIOLOGICAL_DOUBLE_SLIT_RELATIVE_RETURN",
+        "epistemic_status": "RERUNNABLE_FINITE_RELATIVE_VERIFICATION",
+        "ran_inside_closure_model": true,
+        "common_bio_token_digest": "f6ad561858e939c6ba6e923c",
+        "arm_thermal": {
+          "arm_id": "thermal",
+          "path_kind": "thermal_environmental_path",
+          "episode_id": "double-slit-thermal",
+          "operation_admission": "ADMITTED",
+          "verification_status": "VERIFIED",
+          "write_back_allowed": true,
+          "joint_arm_status": "VERIFIED",
+          "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+          "topology_resolution": "CLOSED_TO_OPENING"
+        },
+        "arm_coherence": {
+          "arm_id": "coherence",
+          "path_kind": "coherence_candidate_path",
+          "episode_id": "double-slit-coherence",
+          "operation_admission": "ADMITTED",
+          "verification_status": "VERIFIED",
+          "write_back_allowed": true,
+          "joint_arm_status": "VERIFIED",
+          "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+          "topology_resolution": "CLOSED_TO_OPENING"
+        },
+        "relative_residue": {
+          "shared_dna_locus": "synthetic:double_slit",
+          "shared_base_read": true,
+          "path_identity_differs": true,
+          "thermal_unity": "4da8c30abb24e21b98ad1bf52e8f920e03f271856ce7969f79b4005c6c57339b",
+          "coherence_unity": "52e7f55b19590390fb57c8a8fcb0123de508bd4861597d33e56efffaea7628d0",
+          "unities_identical": false,
+          "both_arms_operation_admitted": true,
+          "both_arms_data_verified": true,
+          "interference_in_return": false,
+          "controls": {
+            "thermal_excluded": false,
+            "mechanical_excluded": false,
+            "detector_excluded": false
+          }
+        },
+        "relative_architecture": {
+          "verification_kind": "relative_two_arm_return_inside_closure_model",
+          "model": "closure.independent_model:UnifiedClosureArchitecturalLoop",
+          "owner": "ours",
+          "not_external_side_check": true,
+          "arms": [
+            "thermal_environmental_path",
+            "coherence_candidate_path"
+          ],
+          "global_hair": "goel_chaitin_delta_c_q",
+          "local_ball": "bio_token_kakeya",
+          "admission_rule": "\u03b4_C(Q) admits only when relative interference residue returns independently with thermal/mechanical/detector controls excluded",
+          "default": "OPEN",
+          "contrast": "Existing models would score coherence; this architecture runs both paths as returns and leaves Q open without witnessed relative residue"
+        },
+        "slit_gate": {
+          "status": "OPEN_DELTA_C_Q",
+          "delta_c_q": "OPEN",
+          "chaitin_global_hair": true,
+          "write_back_allowed": false,
+          "reason": "biological double-slit remains \u03b4_C(Q)=OPEN \u2014 Goel's empirical gate as Chaitin global-hair candidate over DNA operators in environment within bio-tokens; theoretical plausibility \u2260 verified return",
+          "gate_digest": "85e11a04c17c205bad0bce79"
+        },
+        "delta_c_q": "OPEN",
+        "reason": "relative return inside our closure model: thermal=VERIFIED, coherence=VERIFIED; biological double-slit remains \u03b4_C(Q)=OPEN \u2014 Goel's empirical gate as Chaitin global-hair candidate over DNA operators in environment within bio-tokens; theoretical plausibility \u2260 verified return",
+        "return_digest": "f1b51d742a2a941f4c3b715d71e3f54fbb419d33a55fe7908f95ab49aeeb2904"
+      },
+      "role": "instrument"
+    },
+    {
+      "layer_id": "unified_self_verification_bio_tokens",
+      "ok": true,
+      "verdict": "BIO_TOKEN_SELF_VERIFICATION_CLOSED",
+      "detail": "verified_positives=5/5 open_controls=1/1",
+      "evidence": {
+        "episodes": [
+          {
+            "episode_id": "seq-lik-001",
+            "reunify_status": "VERIFIED",
+            "self_verification": "VERIFIED",
+            "authoritative": true,
+            "topology_resolution": "CLOSED_TO_OPENING",
+            "operation_admission": "ADMITTED",
+            "is_control": false,
+            "openings": [
+              "next-locus-layer"
+            ]
+          },
+          {
+            "episode_id": "var-eff-001",
+            "reunify_status": "VERIFIED",
+            "self_verification": "VERIFIED",
+            "authoritative": true,
+            "topology_resolution": "CLOSED_TO_OPENING",
+            "operation_admission": "ADMITTED",
+            "is_control": false,
+            "openings": [
+              "tissue-context-layer"
+            ]
+          },
+          {
+            "episode_id": "gene-comp-001",
+            "reunify_status": "VERIFIED",
+            "self_verification": "VERIFIED",
+            "authoritative": true,
+            "topology_resolution": "CLOSED_TO_OPENING",
+            "operation_admission": "ADMITTED",
+            "is_control": false,
+            "openings": [
+              "expression-layer"
+            ]
+          },
+          {
+            "episode_id": "rna-fit-001",
+            "reunify_status": "VERIFIED",
+            "self_verification": "VERIFIED",
+            "authoritative": true,
+            "topology_resolution": "CLOSED_TO_OPENING",
+            "operation_admission": "ADMITTED",
+            "is_control": false,
+            "openings": [
+              "ligand-bound-layer"
+            ]
+          },
+          {
+            "episode_id": "pert-resp-001",
+            "reunify_status": "VERIFIED",
+            "self_verification": "VERIFIED",
+            "authoritative": true,
+            "topology_resolution": "CLOSED_TO_OPENING",
+            "operation_admission": "ADMITTED",
+            "is_control": false,
+            "openings": [
+              "tissue-scale-layer"
+            ]
+          },
+          {
+            "episode_id": "var-eff-open-self",
+            "reunify_status": "OPEN",
+            "self_verification": "OPEN",
+            "authoritative": false,
+            "topology_resolution": "CLOSED_TO_OPENING",
+            "operation_admission": "OPEN",
+            "is_control": true,
+            "openings": []
+          }
+        ]
+      },
+      "role": "instrument"
+    },
+    {
+      "layer_id": "paper_architecture_data_layer",
+      "ok": true,
+      "verdict": "PAPERS_PLUS_DATA_CATALOGUED",
+      "detail": "papers+datasets under C; RND1 weights optional",
+      "evidence": {
+        "stack": {
+          "stack": {
+            "top": "our Closure AGI admission (C)",
+            "middle": "paper-derived architectures and operators",
+            "bottom": "open datasets / measured returns",
+            "optional": "open model weights (RND1, Evo 2, \u2026) when present"
+          },
+          "composition_rules": {
+            "weights_optional": true,
+            "papers_and_data_required_for_external_biology": true,
+            "do_not_equate_rnd1_weights_with_biological_stack": true,
+            "goel_architecture_binds_under_our_chaitin_hair": true,
+            "omnii_scores_reported_only_until_public_interface": true,
+            "record_license_split_revision_for_every_dataset_row": true
+          },
+          "rnd1_weights_are_not_the_whole_external_stack": true,
+          "paper_architecture_count": 5,
+          "dataset_count": 10
+        },
+        "paper_architectures": [
+          "goel-dna-environment-motor",
+          "evo2-opengenome2-runtime",
+          "evo1-opengenome",
+          "rnd1-diffusion-language",
+          "omnii-reported-genome-lm"
+        ],
+        "datasets": [
+          "opengenome2",
+          "opengenome",
+          "traitgym",
+          "rnagym",
+          "proteingym",
+          "clinvar",
+          "lincs-l1000",
+          "scperturb",
+          "wuite-bustamante-tension-prior",
+          "finite-goel-env-returns"
+        ],
+        "local_ready_datasets": [
+          "opengenome2",
+          "traitgym",
+          "rnagym",
+          "proteingym",
+          "clinvar",
+          "wuite-bustamante-tension-prior",
+          "finite-goel-env-returns"
+        ],
+        "download_open_datasets": [
+          "opengenome",
+          "lincs-l1000",
+          "scperturb"
+        ],
+        "cached_online_samples": [
+          "opengenome2",
+          "traitgym",
+          "rnagym",
+          "proteingym",
+          "clinvar"
+        ],
+        "availability": {
+          "opengenome2": {
+            "adapter_status": "CACHED_ONLINE_SAMPLE",
+            "catalog_adapter_status": "OPEN_DOWNLOAD_ADAPTER",
+            "local_path": "benchmarks/data_cache/opengenome2/ncbi_genomic_context_sample.json",
+            "local_present": true,
+            "url": "https://huggingface.co/datasets/arcinstitute/opengenome2",
+            "kind": "pretraining-and-genomic-context",
+            "benchmark_families": [
+              "sequence-likelihood",
+              "gene-completion"
+            ],
+            "cache": {
+              "local_present": true,
+              "local_path": "benchmarks/data_cache/opengenome2/ncbi_genomic_context_sample.json",
+              "epistemic_status": "CACHED_ONLINE_STAND_IN",
+              "transport": "ncbi-eutils-stand-in-for-opengenome2-family",
+              "n_rows": 2,
+              "fetched_at": "2026-08-05T20:51:44.186044+00:00"
+            }
+          },
+          "opengenome": {
+            "adapter_status": "OPEN_DOWNLOAD_ADAPTER",
+            "catalog_adapter_status": "OPEN_DOWNLOAD_ADAPTER",
+            "local_path": null,
+            "local_present": false,
+            "url": "https://github.com/evo-design/evo",
+            "kind": "pretraining-historical",
+            "benchmark_families": [
+              "sequence-likelihood",
+              "gene-completion"
+            ],
+            "cache": null
+          },
+          "traitgym": {
+            "adapter_status": "CACHED_ONLINE_SAMPLE",
+            "catalog_adapter_status": "OPEN_DOWNLOAD_ADAPTER",
+            "local_path": "benchmarks/data_cache/traitgym/mendelian_traits_test_sample.json",
+            "local_present": true,
+            "url": "https://huggingface.co/datasets/songlab/TraitGym",
+            "kind": "held-out-variant-return",
+            "benchmark_families": [
+              "variant-effect"
+            ],
+            "cache": {
+              "local_present": true,
+              "local_path": "benchmarks/data_cache/traitgym/mendelian_traits_test_sample.json",
+              "epistemic_status": "CACHED_ONLINE_SAMPLE",
+              "transport": "huggingface-datasets-server",
+              "n_rows": 3,
+              "fetched_at": "2026-08-05T20:51:41.447045+00:00"
+            }
+          },
+          "rnagym": {
+            "adapter_status": "CACHED_ONLINE_SAMPLE",
+            "catalog_adapter_status": "OPEN_DOWNLOAD_ADAPTER",
+            "local_path": "benchmarks/data_cache/rnagym/fitness_sample.json",
+            "local_present": true,
+            "url": "https://huggingface.co/datasets/Marks-lab/RNAgym",
+            "kind": "held-out-rna-fitness-return",
+            "benchmark_families": [
+              "rna-fitness"
+            ],
+            "cache": {
+              "local_present": true,
+              "local_path": "benchmarks/data_cache/rnagym/fitness_sample.json",
+              "epistemic_status": "CACHED_ONLINE_SAMPLE",
+              "transport": "huggingface-datasets-server",
+              "n_rows": 3,
+              "fetched_at": "2026-08-05T20:51:41.941281+00:00"
+            }
+          },
+          "proteingym": {
+            "adapter_status": "CACHED_ONLINE_SAMPLE",
+            "catalog_adapter_status": "OPEN_DOWNLOAD_ADAPTER",
+            "local_path": "benchmarks/data_cache/proteingym/reference_substitutions_sample.json",
+            "local_present": true,
+            "url": "https://proteingym.org/",
+            "kind": "held-out-protein-fitness-return",
+            "benchmark_families": [
+              "variant-effect"
+            ],
+            "cache": {
+              "local_present": true,
+              "local_path": "benchmarks/data_cache/proteingym/reference_substitutions_sample.json",
+              "epistemic_status": "CACHED_ONLINE_SAMPLE",
+              "transport": "huggingface-resolve",
+              "n_rows": 3,
+              "fetched_at": "2026-08-05T20:51:42.704221+00:00"
+            }
+          },
+          "clinvar": {
+            "adapter_status": "CACHED_ONLINE_SAMPLE",
+            "catalog_adapter_status": "OPEN_DOWNLOAD_ADAPTER",
+            "local_path": "benchmarks/data_cache/clinvar/brca1_pathogenic_sample.json",
+            "local_present": true,
+            "url": "https://www.ncbi.nlm.nih.gov/clinvar/",
+            "kind": "clinical-variant-return",
+            "benchmark_families": [
+              "variant-effect"
+            ],
+            "cache": {
+              "local_present": true,
+              "local_path": "benchmarks/data_cache/clinvar/brca1_pathogenic_sample.json",
+              "epistemic_status": "CACHED_ONLINE_SAMPLE",
+              "transport": "ncbi-eutils",
+              "n_rows": 3,
+              "fetched_at": "2026-08-05T20:51:42.312292+00:00"
+            }
+          },
+          "lincs-l1000": {
+            "adapter_status": "OPEN_MULTIMODAL_ADAPTER",
+            "catalog_adapter_status": "OPEN_MULTIMODAL_ADAPTER",
+            "local_path": null,
+            "local_present": false,
+            "url": "https://clue.io/",
+            "kind": "perturbation-phenotype-return",
+            "benchmark_families": [
+              "perturbation-response"
+            ],
+            "cache": null
+          },
+          "scperturb": {
+            "adapter_status": "OPEN_MULTIMODAL_ADAPTER",
+            "catalog_adapter_status": "OPEN_MULTIMODAL_ADAPTER",
+            "local_path": null,
+            "local_present": false,
+            "url": "https://perturbation.cellarity.com/",
+            "kind": "perturbation-phenotype-return",
+            "benchmark_families": [
+              "perturbation-response"
+            ],
+            "cache": null
+          },
+          "wuite-bustamante-tension-prior": {
+            "adapter_status": "FINITE_LITERATURE_PRIOR_IN_REPO",
+            "catalog_adapter_status": "FINITE_LITERATURE_PRIOR_IN_REPO",
+            "local_path": "benchmarks/data_priors/wuite_bustamante_tension_prior.json",
+            "local_present": true,
+            "url": "https://doi.org/10.1038/35003614",
+            "kind": "literature-prior-for-goel-operator",
+            "benchmark_families": [
+              "sequence-likelihood",
+              "perturbation-response"
+            ],
+            "cache": null
+          },
+          "finite-goel-env-returns": {
+            "adapter_status": "RERUNNABLE_IN_REPO",
+            "catalog_adapter_status": "RERUNNABLE_IN_REPO",
+            "local_path": "benchmarks/finite_bio_returns.json",
+            "local_present": true,
+            "url": null,
+            "kind": "finite-held-out-episodes",
+            "benchmark_families": [
+              "sequence-likelihood",
+              "variant-effect",
+              "gene-completion",
+              "rna-fitness",
+              "perturbation-response"
+            ],
+            "cache": null
+          }
+        },
+        "goel_bound": true,
+        "rnd1_is_only_optional_weight_layer": true
+      },
+      "role": "instrument"
+    },
+    {
+      "layer_id": "external_suite",
+      "ok": true,
+      "verdict": "EXTERNAL_SUITE_INTEGRATED",
+      "detail": "6/6 external checks",
+      "evidence": {
+        "failed": [],
+        "epistemic": {
+          "external_harness": "MEASURED_INTEGRATED",
+          "external_stack": "PAPERS_PLUS_DATA_PLUS_OPTIONAL_WEIGHTS",
+          "evo_open_weight_execution": "OPEN_WEIGHTS_ABSENT",
+          "omnii": "REPORTED_ONLY",
+          "rnd1_language_hooks": "MEASURED_MOCK_PLUS_UPSTREAM_HASH",
+          "goel_paper_architecture": "BOUND",
+          "open_datasets_catalogued": true,
+          "local_ready_datasets": [
+            "opengenome2",
+            "traitgym",
+            "rnagym",
+            "proteingym",
+            "clinvar",
+            "wuite-bustamante-tension-prior",
+            "finite-goel-env-returns"
+          ],
+          "download_open_datasets": [
+            "opengenome",
+            "lincs-l1000",
+            "scperturb"
+          ],
+          "biological_three_arm_result": "OPEN"
+        },
+        "ownership": {
+          "closure_agi": "ours",
+          "rnd1_evo_omnii": "radical-numerics-external",
+          "goel_architecture": "published-mechanism-bound-into-ours",
+          "rnd1_is_our_model": false,
+          "external_is_not_weights_only": true
+        }
+      },
+      "role": "instrument"
+    }
+  ]
+}

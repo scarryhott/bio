@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "bio-closure-rnd1"
 version = "0.1.0"
-description = "Closure-derived admissible verification and biological coevolution control integrated with Radical Numerics RND1"
+description = "Our Closure AGI verification admission vs frontier paper results; RND1-30B is a finite AI substrate test only"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "Apache-2.0" }

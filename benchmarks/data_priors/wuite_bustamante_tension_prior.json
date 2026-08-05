@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "source": "Wuite, Smith, Young, Keller, Bustamante, Nature 404:103–106 (2000). doi:10.1038/35003614",
+  "related_goel": [
+    "Goel et al. PNAS 2001 — Tuning DNA strings",
+    "Goel, Astumian, Herschbach PNAS 2003 — Tuning and switching polymerase with tension"
+  ],
+  "epistemic": "LITERATURE_PRIOR — qualitative/semi-quantitative published curve landmarks for Goel operator binding; not a remeasurement by this repo",
+  "units": {"tension": "pN", "relative_rate": "normalized_arbitrary"},
+  "landmarks": {
+    "rate_maximum_approx_pN": 6,
+    "stall_approx_pN": 34,
+    "exonuclease_acceleration_above_pN": 40
+  },
+  "curve": [
+    {"tension_pN": 0, "relative_polymerase_rate": 0.55, "mode": "polymerase"},
+    {"tension_pN": 6, "relative_polymerase_rate": 1.0, "mode": "polymerase"},
+    {"tension_pN": 15, "relative_polymerase_rate": 0.7, "mode": "polymerase"},
+    {"tension_pN": 25, "relative_polymerase_rate": 0.35, "mode": "polymerase"},
+    {"tension_pN": 34, "relative_polymerase_rate": 0.05, "mode": "stalled"},
+    {"tension_pN": 40, "relative_polymerase_rate": 0.0, "mode": "exonuclease_elevated"},
+    {"tension_pN": 45, "relative_polymerase_rate": 0.0, "mode": "exonuclease_elevated"}
+  ],
+  "closure_use": "Maps environmental tension hair into Goel polymerase_mode proposals; never certifies admission alone"
+}

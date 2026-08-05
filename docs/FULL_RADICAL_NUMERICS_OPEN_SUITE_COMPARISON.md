@@ -4,13 +4,15 @@ Status date: 2026-08-05
 
 ## Purpose
 
-This document defines the complete comparison surface between the independent
-Black Mirror Bio Closure kernel and every relevant Radical Numerics-associated
-system that is currently open enough to reproduce. It also records systems that
-are publicly described but not yet reproducible.
+This document defines the comparison surface between the independent Black Mirror
+Bio Closure kernel and Radical Numerics-associated systems / paper surfaces.
+
+**Programme priority** (`docs/PROGRAMME.md`): primary = our Closure admission vs
+**stated frontier paper results**. RND1-30B is a finite AI substrate test only —
+not counted as the biological comparison.
 
 The framework closes the comparison design. It does **not** claim that the full
-biological suite has been executed.
+biological suite with live Evo weights has been executed.
 
 ## Suite boundary
 
@@ -24,13 +26,14 @@ biological suite has been executed.
 
 2. **RND1-Base-0910**
    - open general diffusion language model;
-   - retained as a language-model and substrate baseline;
-   - not treated as a genomics model.
+   - **finite AI substrate test only** (Chapter A);
+   - not treated as a genomics model;
+   - excluded from the bio primary.
 
 3. **RND1 + closure**
    - existing hybrid arm;
    - measured on the 30B language model;
-   - not counted as the biological comparison.
+   - **not** the biological comparison.
 
 4. **Evo 1 / Evo 1.5 family**
    - open genomic foundation models trained on OpenGenome;
@@ -172,16 +175,21 @@ biological prediction.
   availability and benchmark manifest.
 - `benchmarks/plan_radical_numerics_suite.py` validates the manifest and produces
   auditable runnable plans.
+- `benchmarks/verify_our_closure.py` — **our** Closure AGI gate (required first).
+- `benchmarks/run_external_suite.py` — gated external integration (RND1 hooks,
+  Evo reunification, Omnii reported-only).
+- Artifact: `benchmarks/results/external_suite_integrated.json`
 - `tests/test_radical_numerics_suite_manifest.py` prevents Omnii from being
   misclassified as runnable and prevents RND1 from being treated as a biological
   baseline by default.
+- `tests/test_external_suite_integration.py` — gated external suite.
 
 Example:
 
 ```bash
+python benchmarks/verify_our_closure.py
+python benchmarks/run_external_suite.py --json
 python benchmarks/plan_radical_numerics_suite.py --json
-python benchmarks/plan_radical_numerics_suite.py --include-reported --json
-python benchmarks/plan_radical_numerics_suite.py --benchmark variant-effect
 ```
 
 ## Current verdict
@@ -190,6 +198,8 @@ python benchmarks/plan_radical_numerics_suite.py --benchmark variant-effect
 CLOSED_FULL_RADICAL_NUMERICS_OPEN_SUITE_COMPARISON_FRAMEWORK
 CLOSED_OPEN_VS_REPORTED_MODEL_BOUNDARY
 CLOSED_BIOLOGICAL_BENCHMARK_FAMILY_MANIFEST
+MEASURED_OUR_CLOSURE_REUNIFIED_VERIFIED
+MEASURED_EXTERNAL_SUITE_INTEGRATED
 OPEN_DATASET_ADAPTER_IMPLEMENTATION
 OPEN_EVO2_PLUS_CLOSURE_INTEGRATION
 OPEN_FULL_RADICAL_NUMERICS_BIOLOGICAL_SUITE_RUN
@@ -197,5 +207,5 @@ OPEN_BIO_CLOSURE_COMPARATIVE_RESULT
 ```
 
 The existing RND1 holistic artifact remains valid as a language-model hybrid
-experiment. It is not relabelled as an Evo 2, Omnii, or full biological-suite
-result.
+experiment on **their** architecture. It is not relabelled as an Evo 2, Omnii,
+or full biological-suite result. Live Evo weight execution remains OPEN.

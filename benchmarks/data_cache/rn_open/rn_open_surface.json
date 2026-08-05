@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-08-05T21:18:33.559741+00:00",
+  "org": "https://github.com/RadicalNumerics",
+  "vendored_rnd1_commit": "13f81540fc2f4eb3da0959956398e5c395620b15",
+  "repos": [
+    {
+      "id": "RND1",
+      "url": "https://github.com/RadicalNumerics/RND1",
+      "role": "diffusion language model inference (vendored in rnd/)",
+      "license": "Apache-2.0",
+      "programme_use": "local_kakeya_presentation_carrier",
+      "vendored_path": "rnd/",
+      "vendored_commit": "13f81540fc2f4eb3da0959956398e5c395620b15",
+      "hf_model": "radicalnumerics/RND1-Base-0910"
+    },
+    {
+      "id": "spear",
+      "url": "https://github.com/RadicalNumerics/spear",
+      "role": "Structured Primitives for Efficient Architecture Research",
+      "license": "Apache-2.0",
+      "programme_use": "reported_open_infra_not_vendored"
+    },
+    {
+      "id": "dInfer",
+      "url": "https://github.com/RadicalNumerics/dInfer",
+      "role": "Efficient inference framework for diffusion LMs",
+      "license": "Apache-2.0",
+      "programme_use": "reported_open_infra_not_vendored"
+    },
+    {
+      "id": "assets",
+      "url": "https://github.com/RadicalNumerics/assets",
+      "role": "Brand/assets repo",
+      "license": "unspecified",
+      "programme_use": "provenance_only"
+    }
+  ],
+  "rnd1_weights": {
+    "model_id": "radicalnumerics/RND1-Base-0910",
+    "hf_url": "https://huggingface.co/radicalnumerics/RND1-Base-0910",
+    "local_weights_present": false,
+    "config_cached": true,
+    "config_error": null,
+    "epistemic": "OPEN_WEIGHTS_OPTIONAL \u2014 30B safetensors not required for combined paper-logic + mock-sampler path; config metadata is open"
+  },
+  "rnd1_config_local": "benchmarks/data_cache/rn_open/RND1-Base-0910.config.json",
+  "ownership": {
+    "rnd1_is_our_model": false,
+    "spear_is_our_model": false,
+    "dinfer_is_our_model": false,
+    "closure_agi": "ours_transcript_ivi_nrr",
+    "radical_numerics_role": "external_open_architecture_and_infra",
+    "goel_role": "parallel_paper_logic_global_chaitin_hair"
+  },
+  "surface_digest": "de13142070f84b1f79bf384c",
+  "not_our_closure_agi": true
+}

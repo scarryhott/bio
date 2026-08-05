@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.0",
+  "status_date": "2026-08-05",
+  "purpose": "Stated frontier paper / preview results against which OUR Closure AGI verification admission is the primary programme goal. Scores are axiometric shadows — never identity. RND1-30B is recorded only as a finite AI substrate test, not bio closure.",
+  "programme_priority": {
+    "primary": "our_closure_verification_admission_vs_frontier_paper_results",
+    "not_primary": "rnd1_30b_language_hybrid",
+    "rnd1_30b_role": "FINITE_AI_SUBSTRATE_TEST_NOT_BIO_CLOSURE"
+  },
+  "claims": [
+    {
+      "id": "evo2-nature-2026-opengenome2",
+      "family": "evo2",
+      "ownership": "arc-evo-radical-numerics-associated",
+      "paper": {
+        "cite": "Brixi et al., Genome modeling and design across all domains of life with Evo 2, Nature (2026)",
+        "doi": "10.1038/s41586-026-10176-5",
+        "url": "https://www.nature.com/articles/s41586-026-10176-5"
+      },
+      "stated_results": {
+        "evo2_7b_tokens": "2.4 trillion",
+        "evo2_40b_tokens": "9.3 trillion",
+        "opengenome2_nucleotides": ">8.8 trillion curated non-redundant",
+        "domains": ["bacteria", "archaea", "eukarya", "bacteriophage"]
+      },
+      "benchmark_families": ["sequence-likelihood", "gene-completion", "variant-effect"],
+      "data_bindings": ["opengenome2", "traitgym", "clinvar", "proteingym"],
+      "epistemic_status": "REPORTED_PAPER_CLAIM",
+      "our_admission_role": "external_learned_bio_architecture_comparator",
+      "scores_certify_closure": false
+    },
+    {
+      "id": "omnii-health-preview-reported",
+      "family": "omnii",
+      "ownership": "radical-numerics",
+      "paper": {
+        "cite": "Omnii health research preview (Radical Numerics)",
+        "url": "https://www.radicalnumerics.ai/blog/omnii-health-preview"
+      },
+      "stated_results": {
+        "reported_tasks": [
+          "ClinVar coding and noncoding SNVs and indels",
+          "ClinVar copy-number variants",
+          "TraitGym complex-trait benchmarks",
+          "RNAGym RNA-fitness benchmarks"
+        ],
+        "metrics_named": ["AUROC", "AUPRC"],
+        "note": "Preview publishes comparison tables; public weights / full rerun package absent — treat as REPORTED_ONLY"
+      },
+      "benchmark_families": ["variant-effect", "rna-fitness"],
+      "data_bindings": ["clinvar", "traitgym", "rnagym"],
+      "epistemic_status": "REPORTED_EXTERNAL_NOT_RERUN",
+      "our_admission_role": "frontier_reported_score_shadow_only",
+      "scores_certify_closure": false
+    },
+    {
+      "id": "goel-pnas-dna-environment-motor",
+      "family": "goel-nanobiophysics",
+      "ownership": "goel-published-mechanism-bound-into-our-global-chaitin-hair",
+      "paper": {
+        "cite": "Goel et al. PNAS 2001/2003 tension tune/switch of DNA polymerase motors; Quantum Aspects of Life 2008",
+        "dois": ["10.1073/pnas.151261198", "10.1073/pnas.1033134100"]
+      },
+      "stated_results": {
+        "mechanism": "DNA polymerase as environment-coupled information motor; tension tunes/switches polymerase↔exonuclease",
+        "efficiency_figures": "programme-reported thermodynamic / step-count scales — shadows only",
+        "biological_double_slit": "proposed coherence/interference gate; δ_C(Q) remains OPEN until witnessed return"
+      },
+      "benchmark_families": ["sequence-likelihood", "perturbation-response"],
+      "data_bindings": ["wuite-bustamante-tension-prior", "finite-goel-env-returns"],
+      "epistemic_status": "PAPER_LOGIC_BOUND_IN_OUR_OPERATOR",
+      "our_admission_role": "global_chaitin_hair_paper_logic",
+      "scores_certify_closure": false
+    },
+    {
+      "id": "wuite-bustamante-nature-2000-tension",
+      "family": "single-molecule-prior",
+      "ownership": "published-literature-prior",
+      "paper": {
+        "cite": "Wuite, Smith, Young, Keller, Bustamante, Nature 404:103–106 (2000)",
+        "doi": "10.1038/35003614"
+      },
+      "stated_results": {
+        "stall_approx_pN": 34,
+        "exonuclease_acceleration_above_pN": 40
+      },
+      "benchmark_families": ["sequence-likelihood", "perturbation-response"],
+      "data_bindings": ["wuite-bustamante-tension-prior"],
+      "epistemic_status": "FINITE_LITERATURE_PRIOR_IN_REPO",
+      "our_admission_role": "goel_tension_landmark_prior",
+      "scores_certify_closure": false
+    },
+    {
+      "id": "traitgym-songlab-reported",
+      "family": "traitgym",
+      "ownership": "songlab-open-benchmark",
+      "paper": {
+        "cite": "TraitGym (songlab/TraitGym) — regulatory variant consequence benchmark",
+        "url": "https://huggingface.co/datasets/songlab/TraitGym",
+        "preprint": "https://doi.org/10.1101/2025.02.11.637758"
+      },
+      "stated_results": {
+        "task": "causal / candidate regulatory variant consequence vs matched controls",
+        "splits_used_here": "mendelian_traits/test sample via HF datasets-server"
+      },
+      "benchmark_families": ["variant-effect"],
+      "data_bindings": ["traitgym"],
+      "epistemic_status": "OPEN_BENCHMARK_PLUS_LOCAL_SAMPLE",
+      "our_admission_role": "held_out_return_for_our_admission",
+      "scores_certify_closure": false
+    },
+    {
+      "id": "rnagym-marks-lab-reported",
+      "family": "rnagym",
+      "ownership": "marks-lab-open-benchmark",
+      "paper": {
+        "cite": "RNAGym (Marks-lab/RNAgym)",
+        "url": "https://huggingface.co/datasets/Marks-lab/RNAgym"
+      },
+      "stated_results": {
+        "task": "RNA mutational fitness / structure returns",
+        "splits_used_here": "fitness sample via HF datasets-server"
+      },
+      "benchmark_families": ["rna-fitness"],
+      "data_bindings": ["rnagym"],
+      "epistemic_status": "OPEN_BENCHMARK_PLUS_LOCAL_SAMPLE",
+      "our_admission_role": "held_out_return_for_our_admission",
+      "scores_certify_closure": false
+    },
+    {
+      "id": "rnd1-30b-finite-ai-substrate-test",
+      "family": "radical-numerics-rnd1",
+      "ownership": "radical-numerics",
+      "paper": {
+        "cite": "Radical Numerics RND1 report / blog — diffusion language model",
+        "url": "https://www.radicalnumerics.ai/blog/rnd1",
+        "weights": "radicalnumerics/RND1-Base-0910"
+      },
+      "stated_results": {
+        "model": "30.5B sparse MoE diffusion language model (~3.3B active/token)",
+        "eval_suite": ["MMLU", "ARC-C", "RACE", "BBH", "GSM8K", "MBPP"],
+        "not_a_genomics_model": true
+      },
+      "benchmark_families": [],
+      "data_bindings": [],
+      "epistemic_status": "MEASURED_FINITE_AI_SUBSTRATE_TEST",
+      "our_admission_role": "FINITE_AI_TEST_NOT_BIO_CLOSURE",
+      "programme_chapter": "A_language_substrate_only",
+      "scores_certify_closure": false,
+      "local_artifact": "benchmarks/results/cloud_holistic_unified.json"
+    }
+  ]
+}

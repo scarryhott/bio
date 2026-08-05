@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Finite held-out biological return episodes for return-unified admissible verification. Modalities stay separate; fitness/confidence shadows never certify.",
+  "episodes": [
+    {
+      "episode_id": "seq-lik-001",
+      "benchmark_id": "sequence-likelihood",
+      "shared_relation": "genome-context-return",
+      "modalities": {
+        "DNA": {"sequence": "ATGCGTACGTAGCTAGCTAG", "locus": "synthetic:promoter_a"},
+        "environment": {"media": "defined", "temperature_c": 37},
+        "returned_consequence": {"viability": "maintained", "measured": true}
+      },
+      "openings": ["next-locus-layer"],
+      "axiometric_shadows": {"mutation_likelihood": 0.12, "confidence": 0.81},
+      "source_observation": {
+        "DNA": "ATGCGTACGTAGCTAGCTAG",
+        "context": "pre-return"
+      },
+      "legal_actions": [
+        {"act": "score_context"},
+        {"act": "hold"}
+      ],
+      "returned_observation": {
+        "DNA": "ATGCGTACGTAGCTAGCTAG",
+        "context": "post-return",
+        "measured_viability": "maintained"
+      },
+      "next_legal_actions": [{"act": "observe"}],
+      "independent": true,
+      "contradictory": false,
+      "self_authored": false
+    },
+    {
+      "episode_id": "var-eff-001",
+      "benchmark_id": "variant-effect",
+      "shared_relation": "variant-phenotype-return",
+      "modalities": {
+        "DNA": {"sequence": "ATGCGTACGTAGCTAGCTAG", "variant": "c.12A>G"},
+        "protein": {"effect_class": "missense_candidate"},
+        "cell_state": {"pathway": "stress_response", "delta": "elevated"},
+        "environment": {"stressor": "oxidative"},
+        "returned_consequence": {"phenotype": "stress_tolerance_shift", "measured": true}
+      },
+      "openings": ["tissue-context-layer"],
+      "axiometric_shadows": {"fitness": 0.64, "phenotype_probability": 0.55},
+      "source_observation": {
+        "variant": "c.12A>G",
+        "cell_state": "baseline"
+      },
+      "legal_actions": [
+        {"act": "perturb_variant"},
+        {"act": "observe_wt"}
+      ],
+      "returned_observation": {
+        "variant": "c.12A>G",
+        "cell_state": "stress_elevated",
+        "phenotype": "stress_tolerance_shift"
+      },
+      "next_legal_actions": [{"act": "observe"}],
+      "independent": true,
+      "contradictory": false,
+      "self_authored": false
+    },
+    {
+      "episode_id": "gene-comp-001",
+      "benchmark_id": "gene-completion",
+      "shared_relation": "partial-gene-return",
+      "modalities": {
+        "DNA": {"prefix": "ATGCGTA", "mask_span": 8},
+        "RNA": {"transcript_hint": "partial"},
+        "returned_consequence": {"completed_span": "CGTAGCTA", "measured": true}
+      },
+      "openings": ["expression-layer"],
+      "axiometric_shadows": {"confidence": 0.77},
+      "source_observation": {"prefix": "ATGCGTA", "mask_span": 8},
+      "legal_actions": [
+        {"act": "complete_span"},
+        {"act": "abstain"}
+      ],
+      "returned_observation": {
+        "prefix": "ATGCGTA",
+        "completed_span": "CGTAGCTA",
+        "measured": true
+      },
+      "next_legal_actions": [{"act": "observe"}],
+      "independent": true,
+      "contradictory": false,
+      "self_authored": false
+    },
+    {
+      "episode_id": "rna-fit-001",
+      "benchmark_id": "rna-fitness",
+      "shared_relation": "rna-fitness-return",
+      "modalities": {
+        "RNA": {"sequence": "GGCUAUGCAUGC", "structure_proxy": "stem_loop"},
+        "environment": {"ligand": "none"},
+        "returned_consequence": {"relative_fitness": 0.71, "measured": true}
+      },
+      "openings": ["ligand-bound-layer"],
+      "axiometric_shadows": {"fitness": 0.71},
+      "source_observation": {"RNA": "GGCUAUGCAUGC", "assay": "pre"},
+      "legal_actions": [
+        {"act": "assay_fitness"},
+        {"act": "hold"}
+      ],
+      "returned_observation": {
+        "RNA": "GGCUAUGCAUGC",
+        "relative_fitness": 0.71,
+        "measured": true
+      },
+      "next_legal_actions": [{"act": "observe"}],
+      "independent": true,
+      "contradictory": false,
+      "self_authored": false
+    },
+    {
+      "episode_id": "pert-resp-001",
+      "benchmark_id": "perturbation-response",
+      "shared_relation": "perturbation-organism-return",
+      "modalities": {
+        "DNA": {"locus": "synth_tf"},
+        "cell_state": {"before": "quiescent"},
+        "intervention": {"kind": "crispr_activation", "target": "synth_tf"},
+        "tissue_context": {"niche": "synthetic_monolayer"},
+        "organism_state": {"readout": "proliferation_index"},
+        "environment": {"serum": "low"},
+        "returned_consequence": {"proliferation_index": 1.4, "measured": true}
+      },
+      "openings": ["tissue-scale-layer"],
+      "axiometric_shadows": {"confidence": 0.6, "phenotype_probability": 0.58},
+      "source_observation": {
+        "cell_state": "quiescent",
+        "intervention": "crispr_activation:synth_tf"
+      },
+      "legal_actions": [
+        {"act": "apply_perturbation"},
+        {"act": "sham"}
+      ],
+      "returned_observation": {
+        "cell_state": "activated",
+        "proliferation_index": 1.4,
+        "measured": true
+      },
+      "next_legal_actions": [{"act": "observe"}],
+      "independent": true,
+      "contradictory": false,
+      "self_authored": false
+    },
+    {
+      "episode_id": "var-eff-open-self",
+      "benchmark_id": "variant-effect",
+      "shared_relation": "variant-phenotype-return",
+      "modalities": {
+        "DNA": {"sequence": "ATGC", "variant": "c.1A>T"},
+        "returned_consequence": {"phenotype": "model_echo", "measured": false}
+      },
+      "openings": [],
+      "axiometric_shadows": {"confidence": 0.99},
+      "source_observation": {"variant": "c.1A>T"},
+      "legal_actions": [{"act": "predict"}],
+      "returned_observation": {"variant": "c.1A>T", "echo": true},
+      "next_legal_actions": [{"act": "observe"}],
+      "independent": false,
+      "contradictory": false,
+      "self_authored": true,
+      "role": "negative-control-self-authored"
+    }
+  ]
+}

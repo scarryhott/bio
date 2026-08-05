@@ -1,0 +1,2658 @@
+{
+  "schema_version": "1.0",
+  "protocol": "rn-open-plus-goel-paper-logic-under-our-c",
+  "generated_at": "2026-08-05T21:11:50.562492+00:00",
+  "relation": "(C_t, B_RND1_local_Kakeya, H_Goel_Chaitin, E_t, A_legal,t) \u2194_C (A_t, E_{t+1}, R_t, V_t, C_{t+1})",
+  "stack": {
+    "top": "our Closure AGI admission (C)",
+    "goel_paper_logic": {
+      "architecture": "goel-dna-environment-motor",
+      "prior": "wuite-bustamante-tension-prior",
+      "landmarks_pN": {
+        "rate_maximum_approx_pN": 6,
+        "stall_approx_pN": 34,
+        "exonuclease_acceleration_above_pN": 40
+      },
+      "dialogue": "Goel Consciousness Science \u2194 Black Mirror Closure Axiometry",
+      "subsumption": false
+    },
+    "radical_numerics_open": {
+      "surface_digest": "de13142070f84b1f79bf384c",
+      "repos": [
+        "RND1",
+        "spear",
+        "dInfer",
+        "assets"
+      ],
+      "rnd1_hf": "radicalnumerics/RND1-Base-0910",
+      "rnd1_proposal_mode": "open_code_mock_sampler",
+      "weights_local": false
+    },
+    "bottom": "held-out / open biological returns",
+    "ownership": {
+      "rnd1_is_our_model": false,
+      "spear_is_our_model": false,
+      "dinfer_is_our_model": false,
+      "closure_agi": "ours_transcript_ivi_nrr",
+      "radical_numerics_role": "external_open_architecture_and_infra",
+      "goel_role": "parallel_paper_logic_global_chaitin_hair"
+    }
+  },
+  "rn_open_surface": {
+    "generated_at": "2026-08-05T21:11:48.438370+00:00",
+    "org": "https://github.com/RadicalNumerics",
+    "vendored_rnd1_commit": "13f81540fc2f4eb3da0959956398e5c395620b15",
+    "repos": [
+      {
+        "id": "RND1",
+        "url": "https://github.com/RadicalNumerics/RND1",
+        "role": "diffusion language model inference (vendored in rnd/)",
+        "license": "Apache-2.0",
+        "programme_use": "local_kakeya_presentation_carrier",
+        "readme_cache": "benchmarks/data_cache/rn_open/RND1.README.excerpt.md",
+        "vendored_path": "rnd/",
+        "vendored_commit": "13f81540fc2f4eb3da0959956398e5c395620b15",
+        "hf_model": "radicalnumerics/RND1-Base-0910"
+      },
+      {
+        "id": "spear",
+        "url": "https://github.com/RadicalNumerics/spear",
+        "role": "Structured Primitives for Efficient Architecture Research",
+        "license": "Apache-2.0",
+        "programme_use": "reported_open_infra_not_vendored",
+        "readme_cache": "benchmarks/data_cache/rn_open/spear.README.excerpt.md"
+      },
+      {
+        "id": "dInfer",
+        "url": "https://github.com/RadicalNumerics/dInfer",
+        "role": "Efficient inference framework for diffusion LMs",
+        "license": "Apache-2.0",
+        "programme_use": "reported_open_infra_not_vendored",
+        "readme_cache": "benchmarks/data_cache/rn_open/dInfer.README.excerpt.md"
+      },
+      {
+        "id": "assets",
+        "url": "https://github.com/RadicalNumerics/assets",
+        "role": "Brand/assets repo",
+        "license": "unspecified",
+        "programme_use": "provenance_only",
+        "readme_cache": "benchmarks/data_cache/rn_open/assets.README.excerpt.md"
+      }
+    ],
+    "rnd1_weights": {
+      "model_id": "radicalnumerics/RND1-Base-0910",
+      "hf_url": "https://huggingface.co/radicalnumerics/RND1-Base-0910",
+      "local_weights_present": false,
+      "config_cached": true,
+      "config_error": null,
+      "epistemic": "OPEN_WEIGHTS_OPTIONAL \u2014 30B safetensors not required for combined paper-logic + mock-sampler path; config metadata is open"
+    },
+    "rnd1_config_local": "benchmarks/data_cache/rn_open/RND1-Base-0910.config.json",
+    "ownership": {
+      "rnd1_is_our_model": false,
+      "spear_is_our_model": false,
+      "dinfer_is_our_model": false,
+      "closure_agi": "ours_transcript_ivi_nrr",
+      "radical_numerics_role": "external_open_architecture_and_infra",
+      "goel_role": "parallel_paper_logic_global_chaitin_hair"
+    },
+    "surface_digest": "de13142070f84b1f79bf384c",
+    "not_our_closure_agi": true
+  },
+  "rnd1_proposal": {
+    "mode": "open_code_mock_sampler",
+    "closure_mode": "full",
+    "sequences_digest": "379bfbbbe5c3a4bc7f6a58abe07f2df792257c6a740c320da8d79b9688035b28",
+    "trace_steps": 6,
+    "weights_used": false,
+    "detail": "RND1 open sampling.py under our hooks with finite mock LM (no 30B)",
+    "evidence": {
+      "forward_passes": 6,
+      "shape": [
+        1,
+        16
+      ],
+      "hf_model": "radicalnumerics/RND1-Base-0910",
+      "vendored": "rnd/"
+    }
+  },
+  "episode_count": 22,
+  "receipt_count": 22,
+  "combined_status_counts": {
+    "COMBINED_OUR_VERIFIED_RN_PRESENT_GOEL_BOUND": 21,
+    "COMBINED_OPEN": 1
+  },
+  "our_kernel_verified": 21,
+  "goel_bound_episodes": 15,
+  "dual_status_present": 14,
+  "epistemic": {
+    "rnd1_is_our_model": false,
+    "goel_subsumed_into_black_mirror": false,
+    "rnd1_30b_weights_executed": false,
+    "rnd1_open_code_executed": true,
+    "spear_dinfer": "reported_open_infra_cached",
+    "omnii": "reported_only",
+    "combined_harness": "MEASURED"
+  },
+  "receipts": [
+    {
+      "episode_id": "seq-lik-001",
+      "benchmark_id": "sequence-likelihood",
+      "dataset_role": "held-out-return",
+      "combined_status": "COMBINED_OUR_VERIFIED_RN_PRESENT_GOEL_BOUND",
+      "reason": "our=VERIFIED; rnd1=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING; rnd1_proposal=open_code_mock_sampler",
+      "combined_digest": "2ea406fcae4173fe83a8dc8e8a6465efb9a4ad509878ea213bdc01f299312daf",
+      "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+      "goel_mode_from_wuite": "polymerase",
+      "dual_status": "DUAL_CLOSED_TO_OPENING",
+      "rnd1_proposal": {
+        "mode": "open_code_mock_sampler",
+        "closure_mode": "full",
+        "sequences_digest": "379bfbbbe5c3a4bc7f6a58abe07f2df792257c6a740c320da8d79b9688035b28",
+        "trace_steps": 6,
+        "weights_used": false,
+        "detail": "RND1 open sampling.py under our hooks with finite mock LM (no 30B)",
+        "evidence": {
+          "forward_passes": 6,
+          "shape": [
+            1,
+            16
+          ],
+          "hf_model": "radicalnumerics/RND1-Base-0910",
+          "vendored": "rnd/"
+        }
+      },
+      "our_joint": "VERIFIED",
+      "rnd1_joint": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+      "our_receipt": {
+        "system_id": "bio-closure-independent",
+        "benchmark_id": "sequence-likelihood",
+        "episode_id": "seq-lik-001",
+        "architecture": {
+          "system_id": "bio-closure-independent",
+          "family": "black-mirror-closure",
+          "biological_native": true,
+          "open_weights": false,
+          "weights_available": true,
+          "proposal_mode": "independent_kernel",
+          "architecture_digest": "02a12803098d30f16ff02cc17243a65cb6615e95d86edf446d05579612dd5679",
+          "representation_shadow": {
+            "epistemic_status": "RERUNNABLE_FINITE_KERNEL",
+            "availability": "repository-local",
+            "role": "OUR self-contained Closure AGI"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "environment",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": true,
+        "learned_claim_status": "KERNEL_EXECUTED",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "VERIFIED",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=KERNEL_EXECUTED; joint=VERIFIED; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING; axiometric_shadows_present_noncertifying",
+        "reunification_digest": "b11c07d233923950c4cd99cbcd66c8cb1bfdb160655c036aa78bd1604d0c3fea",
+        "turn_unity_digest": "e17855ebd014ed79b1a3937b7da203a09795c8559dd18ee7a84b26dc568529f4",
+        "verification_digest": "085bf1d82b1e7aed5333a15236bc68678aedadd1bee887aa1c022b7ed773b91f",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "b4bac833dcbfe993a1aef05b",
+        "dual_digest": "dd7d2606211ae11bcb046f10"
+      },
+      "rnd1_receipt": {
+        "system_id": "rnd1-plus-closure",
+        "benchmark_id": "sequence-likelihood",
+        "episode_id": "seq-lik-001",
+        "architecture": {
+          "system_id": "rnd1-plus-closure",
+          "family": "hybrid-external-under-our-admission",
+          "biological_native": false,
+          "open_weights": true,
+          "weights_available": false,
+          "proposal_mode": "open_weights_absent",
+          "architecture_digest": "4e2605a80ebce3f1512e0438b0544ae5856c21b51ab32acd56af4f85efb699cb",
+          "representation_shadow": {
+            "epistemic_status": "EXTERNAL_RN_ARCHITECTURE_UNDER_OUR_ADMISSION",
+            "availability": "repository-local-plus-open-weights",
+            "role": "EXTERNAL RND1 proposals admitted under OUR closure hooks"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "environment",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": true,
+        "learned_claim_status": "OPEN_WEIGHTS_ABSENT",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=OPEN_WEIGHTS_ABSENT; joint=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING; axiometric_shadows_present_noncertifying",
+        "reunification_digest": "e9315a8ec130d534cdf9df52507921feaa55c7ce8d70eb7027c7cbeb1f9bde1a",
+        "turn_unity_digest": "3c1c04d04611d2f7e3787689180bdb3f4a0fbaaecd7607c69d22839de21737cb",
+        "verification_digest": "931cbf1eba5035eb5676b91743528861f893afb1e57eb5382ec7b7f6f768c077",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "b4bac833dcbfe993a1aef05b",
+        "dual_digest": "3ab75a163663a28e592ff392"
+      }
+    },
+    {
+      "episode_id": "var-eff-001",
+      "benchmark_id": "variant-effect",
+      "dataset_role": "held-out-return",
+      "combined_status": "COMBINED_OUR_VERIFIED_RN_PRESENT_GOEL_BOUND",
+      "reason": "our=VERIFIED; rnd1=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING; rnd1_proposal=open_code_mock_sampler",
+      "combined_digest": "c3ea57a2e2043701b151d908364bb43e5e1fc77c91752e814ea93fe3fd430782",
+      "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+      "goel_mode_from_wuite": "polymerase",
+      "dual_status": "DUAL_CLOSED_TO_OPENING",
+      "rnd1_proposal": {
+        "mode": "open_code_mock_sampler",
+        "closure_mode": "full",
+        "sequences_digest": "379bfbbbe5c3a4bc7f6a58abe07f2df792257c6a740c320da8d79b9688035b28",
+        "trace_steps": 6,
+        "weights_used": false,
+        "detail": "RND1 open sampling.py under our hooks with finite mock LM (no 30B)",
+        "evidence": {
+          "forward_passes": 6,
+          "shape": [
+            1,
+            16
+          ],
+          "hf_model": "radicalnumerics/RND1-Base-0910",
+          "vendored": "rnd/"
+        }
+      },
+      "our_joint": "VERIFIED",
+      "rnd1_joint": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+      "our_receipt": {
+        "system_id": "bio-closure-independent",
+        "benchmark_id": "variant-effect",
+        "episode_id": "var-eff-001",
+        "architecture": {
+          "system_id": "bio-closure-independent",
+          "family": "black-mirror-closure",
+          "biological_native": true,
+          "open_weights": false,
+          "weights_available": true,
+          "proposal_mode": "independent_kernel",
+          "architecture_digest": "02a12803098d30f16ff02cc17243a65cb6615e95d86edf446d05579612dd5679",
+          "representation_shadow": {
+            "epistemic_status": "RERUNNABLE_FINITE_KERNEL",
+            "availability": "repository-local",
+            "role": "OUR self-contained Closure AGI"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "cell_state",
+          "environment",
+          "protein",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": true,
+        "learned_claim_status": "KERNEL_EXECUTED",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "VERIFIED",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=KERNEL_EXECUTED; joint=VERIFIED; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING; axiometric_shadows_present_noncertifying",
+        "reunification_digest": "10bdad5343dfeef898fd58ed1666dde552e81f94b4076fdfa79e72e75bf7444f",
+        "turn_unity_digest": "8e0f86718e11caef43e71c7d2f655711e866e23dae3fc8ee439e198a04d527ea",
+        "verification_digest": "719ce041dc0a40a1546cc7c6ccb582907f83c6b8d08e711d2421b339829ad9ac",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "c9411cd0dda33403685dbb49",
+        "dual_digest": "fd4fe164f0941d93e3df155c"
+      },
+      "rnd1_receipt": {
+        "system_id": "rnd1-plus-closure",
+        "benchmark_id": "variant-effect",
+        "episode_id": "var-eff-001",
+        "architecture": {
+          "system_id": "rnd1-plus-closure",
+          "family": "hybrid-external-under-our-admission",
+          "biological_native": false,
+          "open_weights": true,
+          "weights_available": false,
+          "proposal_mode": "open_weights_absent",
+          "architecture_digest": "4e2605a80ebce3f1512e0438b0544ae5856c21b51ab32acd56af4f85efb699cb",
+          "representation_shadow": {
+            "epistemic_status": "EXTERNAL_RN_ARCHITECTURE_UNDER_OUR_ADMISSION",
+            "availability": "repository-local-plus-open-weights",
+            "role": "EXTERNAL RND1 proposals admitted under OUR closure hooks"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "cell_state",
+          "environment",
+          "protein",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": true,
+        "learned_claim_status": "OPEN_WEIGHTS_ABSENT",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=OPEN_WEIGHTS_ABSENT; joint=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING; axiometric_shadows_present_noncertifying",
+        "reunification_digest": "c086118bf05b3d187fa6834e6eedd40ac4f1e0427e92a9452014949838a1fcab",
+        "turn_unity_digest": "745d9ccc3239a9b53e317fe25c693cafcab1df885e10d35eeb6bc37629829884",
+        "verification_digest": "cdbf198af956a2a23c76be6c2f644fcee95da7e0e4b9dc5509e485490db82863",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "c9411cd0dda33403685dbb49",
+        "dual_digest": "030796c7aad35a8b2bd53502"
+      }
+    },
+    {
+      "episode_id": "gene-comp-001",
+      "benchmark_id": "gene-completion",
+      "dataset_role": "held-out-return",
+      "combined_status": "COMBINED_OUR_VERIFIED_RN_PRESENT_GOEL_BOUND",
+      "reason": "our=VERIFIED; rnd1=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING; rnd1_proposal=open_code_mock_sampler",
+      "combined_digest": "f485ff2f71a414e7d450dc6dba547279e28899dee3c38f41b1b0b2ca09b911d5",
+      "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+      "goel_mode_from_wuite": "polymerase",
+      "dual_status": "DUAL_CLOSED_TO_OPENING",
+      "rnd1_proposal": {
+        "mode": "open_code_mock_sampler",
+        "closure_mode": "full",
+        "sequences_digest": "379bfbbbe5c3a4bc7f6a58abe07f2df792257c6a740c320da8d79b9688035b28",
+        "trace_steps": 6,
+        "weights_used": false,
+        "detail": "RND1 open sampling.py under our hooks with finite mock LM (no 30B)",
+        "evidence": {
+          "forward_passes": 6,
+          "shape": [
+            1,
+            16
+          ],
+          "hf_model": "radicalnumerics/RND1-Base-0910",
+          "vendored": "rnd/"
+        }
+      },
+      "our_joint": "VERIFIED",
+      "rnd1_joint": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+      "our_receipt": {
+        "system_id": "bio-closure-independent",
+        "benchmark_id": "gene-completion",
+        "episode_id": "gene-comp-001",
+        "architecture": {
+          "system_id": "bio-closure-independent",
+          "family": "black-mirror-closure",
+          "biological_native": true,
+          "open_weights": false,
+          "weights_available": true,
+          "proposal_mode": "independent_kernel",
+          "architecture_digest": "02a12803098d30f16ff02cc17243a65cb6615e95d86edf446d05579612dd5679",
+          "representation_shadow": {
+            "epistemic_status": "RERUNNABLE_FINITE_KERNEL",
+            "availability": "repository-local",
+            "role": "OUR self-contained Closure AGI"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "RNA",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": true,
+        "learned_claim_status": "KERNEL_EXECUTED",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "VERIFIED",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=KERNEL_EXECUTED; joint=VERIFIED; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING; axiometric_shadows_present_noncertifying",
+        "reunification_digest": "b65330332f09d96892d32b5e1036efecd1e40eb7abfb1d8af1a9f5e573523eb3",
+        "turn_unity_digest": "2d0dbd016ac843a7ba1a8856d3f1be174cc3db8de2af620b3c94b736ada32859",
+        "verification_digest": "2e4a572c4bd30ba47f4afb608a52211276a2b5a67d8b1b3662ca2a7c5c33b4f1",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "4940427b2fb0a2c1011475ae",
+        "dual_digest": "38e3e5f072958a3b8bfc747a"
+      },
+      "rnd1_receipt": {
+        "system_id": "rnd1-plus-closure",
+        "benchmark_id": "gene-completion",
+        "episode_id": "gene-comp-001",
+        "architecture": {
+          "system_id": "rnd1-plus-closure",
+          "family": "hybrid-external-under-our-admission",
+          "biological_native": false,
+          "open_weights": true,
+          "weights_available": false,
+          "proposal_mode": "open_weights_absent",
+          "architecture_digest": "4e2605a80ebce3f1512e0438b0544ae5856c21b51ab32acd56af4f85efb699cb",
+          "representation_shadow": {
+            "epistemic_status": "EXTERNAL_RN_ARCHITECTURE_UNDER_OUR_ADMISSION",
+            "availability": "repository-local-plus-open-weights",
+            "role": "EXTERNAL RND1 proposals admitted under OUR closure hooks"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "RNA",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": true,
+        "learned_claim_status": "OPEN_WEIGHTS_ABSENT",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=OPEN_WEIGHTS_ABSENT; joint=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING; axiometric_shadows_present_noncertifying",
+        "reunification_digest": "4ac0f40faeceaa13fb6ac059aa20c1fb5f5cf2b8e9f44284d64b257bbe16ec80",
+        "turn_unity_digest": "eb5b5f4b0e2d2e7df0e7cc2213fa0e0dbc84b6b648f8a2161bd0bb9f94259038",
+        "verification_digest": "e4e56692bb546e2948964c64306763b6dff786a1af21809946dc9eee093520be",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "4940427b2fb0a2c1011475ae",
+        "dual_digest": "544f9e3a507afea91de81b4f"
+      }
+    },
+    {
+      "episode_id": "rna-fit-001",
+      "benchmark_id": "rna-fitness",
+      "dataset_role": "held-out-return",
+      "combined_status": "COMBINED_OUR_VERIFIED_RN_PRESENT_GOEL_BOUND",
+      "reason": "our=VERIFIED; rnd1=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=None; dual=None; rnd1_proposal=open_code_mock_sampler",
+      "combined_digest": "e75cb50f979b49b90814ccc35dae5956d1619fc30a7873bcb3dfa27ffdcc183b",
+      "goel_operator_status": null,
+      "goel_mode_from_wuite": null,
+      "dual_status": null,
+      "rnd1_proposal": {
+        "mode": "open_code_mock_sampler",
+        "closure_mode": "full",
+        "sequences_digest": "379bfbbbe5c3a4bc7f6a58abe07f2df792257c6a740c320da8d79b9688035b28",
+        "trace_steps": 6,
+        "weights_used": false,
+        "detail": "RND1 open sampling.py under our hooks with finite mock LM (no 30B)",
+        "evidence": {
+          "forward_passes": 6,
+          "shape": [
+            1,
+            16
+          ],
+          "hf_model": "radicalnumerics/RND1-Base-0910",
+          "vendored": "rnd/"
+        }
+      },
+      "our_joint": "VERIFIED",
+      "rnd1_joint": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+      "our_receipt": {
+        "system_id": "bio-closure-independent",
+        "benchmark_id": "rna-fitness",
+        "episode_id": "rna-fit-001",
+        "architecture": {
+          "system_id": "bio-closure-independent",
+          "family": "black-mirror-closure",
+          "biological_native": true,
+          "open_weights": false,
+          "weights_available": true,
+          "proposal_mode": "independent_kernel",
+          "architecture_digest": "02a12803098d30f16ff02cc17243a65cb6615e95d86edf446d05579612dd5679",
+          "representation_shadow": {
+            "epistemic_status": "RERUNNABLE_FINITE_KERNEL",
+            "availability": "repository-local",
+            "role": "OUR self-contained Closure AGI"
+          }
+        },
+        "modalities": [
+          "RNA",
+          "environment",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": true,
+        "learned_claim_status": "KERNEL_EXECUTED",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "VERIFIED",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=KERNEL_EXECUTED; joint=VERIFIED; axiometric_shadows_present_noncertifying",
+        "reunification_digest": "5c3f65f6540255cb8d8551dcf3cd1841615231cfbc91d75a11b329779a94f440",
+        "turn_unity_digest": "8762eb2e9d1338bae083908c3f0479c51ec8ea7dc4dc8bc611d68d5ebf5254f9",
+        "verification_digest": "2cb801aaef71c66aa2f1959f370774fabe43ec811b1b29cc6952a18a61a6bb59",
+        "goel_operator_status": null,
+        "goel_quantum_claim": null,
+        "dual_kakeya_goel_status": null,
+        "goel_operator_digest": null,
+        "dual_digest": null
+      },
+      "rnd1_receipt": {
+        "system_id": "rnd1-plus-closure",
+        "benchmark_id": "rna-fitness",
+        "episode_id": "rna-fit-001",
+        "architecture": {
+          "system_id": "rnd1-plus-closure",
+          "family": "hybrid-external-under-our-admission",
+          "biological_native": false,
+          "open_weights": true,
+          "weights_available": false,
+          "proposal_mode": "open_weights_absent",
+          "architecture_digest": "4e2605a80ebce3f1512e0438b0544ae5856c21b51ab32acd56af4f85efb699cb",
+          "representation_shadow": {
+            "epistemic_status": "EXTERNAL_RN_ARCHITECTURE_UNDER_OUR_ADMISSION",
+            "availability": "repository-local-plus-open-weights",
+            "role": "EXTERNAL RND1 proposals admitted under OUR closure hooks"
+          }
+        },
+        "modalities": [
+          "RNA",
+          "environment",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": true,
+        "learned_claim_status": "OPEN_WEIGHTS_ABSENT",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=OPEN_WEIGHTS_ABSENT; joint=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; axiometric_shadows_present_noncertifying",
+        "reunification_digest": "c0031d08949ee8d5542712143c8610df636815a9d4d7fb4dc6d1dad3b180dc57",
+        "turn_unity_digest": "5fa85766e6fc670b966d7891b2915d8c76edfba74150319a348e1e9aa9c081f9",
+        "verification_digest": "aca3ece2cd5bcf488124975361a587d22bc06437263a170c97cddab19a3e339b",
+        "goel_operator_status": null,
+        "goel_quantum_claim": null,
+        "dual_kakeya_goel_status": null,
+        "goel_operator_digest": null,
+        "dual_digest": null
+      }
+    },
+    {
+      "episode_id": "pert-resp-001",
+      "benchmark_id": "perturbation-response",
+      "dataset_role": "held-out-return",
+      "combined_status": "COMBINED_OUR_VERIFIED_RN_PRESENT_GOEL_BOUND",
+      "reason": "our=VERIFIED; rnd1=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING; rnd1_proposal=open_code_mock_sampler",
+      "combined_digest": "3d670130646190b16c3f7f71cf8104e3bf1fbb7431636325a3ff7a223f68d08e",
+      "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+      "goel_mode_from_wuite": "polymerase",
+      "dual_status": "DUAL_CLOSED_TO_OPENING",
+      "rnd1_proposal": {
+        "mode": "open_code_mock_sampler",
+        "closure_mode": "full",
+        "sequences_digest": "379bfbbbe5c3a4bc7f6a58abe07f2df792257c6a740c320da8d79b9688035b28",
+        "trace_steps": 6,
+        "weights_used": false,
+        "detail": "RND1 open sampling.py under our hooks with finite mock LM (no 30B)",
+        "evidence": {
+          "forward_passes": 6,
+          "shape": [
+            1,
+            16
+          ],
+          "hf_model": "radicalnumerics/RND1-Base-0910",
+          "vendored": "rnd/"
+        }
+      },
+      "our_joint": "VERIFIED",
+      "rnd1_joint": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+      "our_receipt": {
+        "system_id": "bio-closure-independent",
+        "benchmark_id": "perturbation-response",
+        "episode_id": "pert-resp-001",
+        "architecture": {
+          "system_id": "bio-closure-independent",
+          "family": "black-mirror-closure",
+          "biological_native": true,
+          "open_weights": false,
+          "weights_available": true,
+          "proposal_mode": "independent_kernel",
+          "architecture_digest": "02a12803098d30f16ff02cc17243a65cb6615e95d86edf446d05579612dd5679",
+          "representation_shadow": {
+            "epistemic_status": "RERUNNABLE_FINITE_KERNEL",
+            "availability": "repository-local",
+            "role": "OUR self-contained Closure AGI"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "cell_state",
+          "environment",
+          "intervention",
+          "organism_state",
+          "returned_consequence",
+          "tissue_context"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": true,
+        "learned_claim_status": "KERNEL_EXECUTED",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "VERIFIED",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=KERNEL_EXECUTED; joint=VERIFIED; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING; axiometric_shadows_present_noncertifying",
+        "reunification_digest": "1ab683ec70531f96059ac18993e36bcce309773eccfee143cdc970e016d5051b",
+        "turn_unity_digest": "eb41682bc51367e7f5b73d0707d5755223eaf3f582179dbb3122435091a96226",
+        "verification_digest": "2b875c6e1f69b902ad9e3b30b820264bdeb7a4c0c5e6354514da60eff6ece126",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "6b540bd303ef48efb55d39d8",
+        "dual_digest": "0de1d6cde6952c4d3c34fa04"
+      },
+      "rnd1_receipt": {
+        "system_id": "rnd1-plus-closure",
+        "benchmark_id": "perturbation-response",
+        "episode_id": "pert-resp-001",
+        "architecture": {
+          "system_id": "rnd1-plus-closure",
+          "family": "hybrid-external-under-our-admission",
+          "biological_native": false,
+          "open_weights": true,
+          "weights_available": false,
+          "proposal_mode": "open_weights_absent",
+          "architecture_digest": "4e2605a80ebce3f1512e0438b0544ae5856c21b51ab32acd56af4f85efb699cb",
+          "representation_shadow": {
+            "epistemic_status": "EXTERNAL_RN_ARCHITECTURE_UNDER_OUR_ADMISSION",
+            "availability": "repository-local-plus-open-weights",
+            "role": "EXTERNAL RND1 proposals admitted under OUR closure hooks"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "cell_state",
+          "environment",
+          "intervention",
+          "organism_state",
+          "returned_consequence",
+          "tissue_context"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": true,
+        "learned_claim_status": "OPEN_WEIGHTS_ABSENT",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=OPEN_WEIGHTS_ABSENT; joint=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING; axiometric_shadows_present_noncertifying",
+        "reunification_digest": "d1afb40038b2e7fc33f3c4880e6b608031cfecc6d0f1d82c83edc5e21d3b5657",
+        "turn_unity_digest": "189a928733428c3d6ac528d7486ccdc92e2c37d105fcddc6f47a23b6bd821690",
+        "verification_digest": "8d589369e2285d71048e92d380bf56a75ec9e99df0f9265d96a89785d3b51fe5",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "6b540bd303ef48efb55d39d8",
+        "dual_digest": "9cd0a17df445e04055999a74"
+      }
+    },
+    {
+      "episode_id": "var-eff-open-self",
+      "benchmark_id": "variant-effect",
+      "dataset_role": "negative-control-self-authored",
+      "combined_status": "COMBINED_OPEN",
+      "reason": "our=OPEN; rnd1=OPEN; goel=OPEN_SELF_AUTHORED; dual=OPEN_GLOBAL_GOEL_CHAITIN; rnd1_proposal=open_code_mock_sampler",
+      "combined_digest": "a0212da4810264a8c4f98df96e0450d84e1255d92409e3377f478ca3d3a8d7c7",
+      "goel_operator_status": "OPEN_SELF_AUTHORED",
+      "goel_mode_from_wuite": "polymerase",
+      "dual_status": "OPEN_GLOBAL_GOEL_CHAITIN",
+      "rnd1_proposal": {
+        "mode": "open_code_mock_sampler",
+        "closure_mode": "full",
+        "sequences_digest": "379bfbbbe5c3a4bc7f6a58abe07f2df792257c6a740c320da8d79b9688035b28",
+        "trace_steps": 6,
+        "weights_used": false,
+        "detail": "RND1 open sampling.py under our hooks with finite mock LM (no 30B)",
+        "evidence": {
+          "forward_passes": 6,
+          "shape": [
+            1,
+            16
+          ],
+          "hf_model": "radicalnumerics/RND1-Base-0910",
+          "vendored": "rnd/"
+        }
+      },
+      "our_joint": "OPEN",
+      "rnd1_joint": "OPEN",
+      "our_receipt": {
+        "system_id": "bio-closure-independent",
+        "benchmark_id": "variant-effect",
+        "episode_id": "var-eff-open-self",
+        "architecture": {
+          "system_id": "bio-closure-independent",
+          "family": "black-mirror-closure",
+          "biological_native": true,
+          "open_weights": false,
+          "weights_available": true,
+          "proposal_mode": "independent_kernel",
+          "architecture_digest": "02a12803098d30f16ff02cc17243a65cb6615e95d86edf446d05579612dd5679",
+          "representation_shadow": {
+            "epistemic_status": "RERUNNABLE_FINITE_KERNEL",
+            "availability": "repository-local",
+            "role": "OUR self-contained Closure AGI"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "returned_consequence"
+        ],
+        "operation_admission": "OPEN",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "OPEN",
+        "write_back_allowed": false,
+        "authoritative": false,
+        "shadows_present_noncertifying": true,
+        "learned_claim_status": "KERNEL_EXECUTED",
+        "data_admission_status": "OPEN",
+        "joint_arm_status": "OPEN",
+        "reason": "operation or verification topology lacks an admissible return; learned_claim=KERNEL_EXECUTED; joint=OPEN; goel=OPEN_SELF_AUTHORED; dual=OPEN_GLOBAL_GOEL_CHAITIN; axiometric_shadows_present_noncertifying",
+        "reunification_digest": "3460ea21a02b11e2e3cbee4d1dc62f2971eb79248c0303bd38f146279c89742f",
+        "turn_unity_digest": "4f38733f764b0c9ee5812647feea23c4f4db6275b7784b503285b21d47f2d460",
+        "verification_digest": "79e409b597384b2be163637e1fdcccf905b5abe44ef024a993383dc7e009f470",
+        "goel_operator_status": "OPEN_SELF_AUTHORED",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "OPEN_GLOBAL_GOEL_CHAITIN",
+        "goel_operator_digest": "1a39d4819c20050b401dd157",
+        "dual_digest": "c3c7da1354915d8a1f524dd2"
+      },
+      "rnd1_receipt": {
+        "system_id": "rnd1-plus-closure",
+        "benchmark_id": "variant-effect",
+        "episode_id": "var-eff-open-self",
+        "architecture": {
+          "system_id": "rnd1-plus-closure",
+          "family": "hybrid-external-under-our-admission",
+          "biological_native": false,
+          "open_weights": true,
+          "weights_available": false,
+          "proposal_mode": "open_weights_absent",
+          "architecture_digest": "4e2605a80ebce3f1512e0438b0544ae5856c21b51ab32acd56af4f85efb699cb",
+          "representation_shadow": {
+            "epistemic_status": "EXTERNAL_RN_ARCHITECTURE_UNDER_OUR_ADMISSION",
+            "availability": "repository-local-plus-open-weights",
+            "role": "EXTERNAL RND1 proposals admitted under OUR closure hooks"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "returned_consequence"
+        ],
+        "operation_admission": "OPEN",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "OPEN",
+        "write_back_allowed": false,
+        "authoritative": false,
+        "shadows_present_noncertifying": true,
+        "learned_claim_status": "OPEN_WEIGHTS_ABSENT",
+        "data_admission_status": "OPEN",
+        "joint_arm_status": "OPEN",
+        "reason": "operation or verification topology lacks an admissible return; learned_claim=OPEN_WEIGHTS_ABSENT; joint=OPEN; goel=OPEN_SELF_AUTHORED; dual=OPEN_GLOBAL_GOEL_CHAITIN; axiometric_shadows_present_noncertifying",
+        "reunification_digest": "e29df929dfc8dd72ec9e52e4331b231c04f55bcdc5bbd055369f55cd0343bed1",
+        "turn_unity_digest": "5e9a360ce32b4d60c4be6743b2a2a749bd776d73942745311a0bffa467a1247f",
+        "verification_digest": "1cb8fe1dbc99aa1b07438316c328ed1b6810eedd81f4058180769ff46f741f76",
+        "goel_operator_status": "OPEN_SELF_AUTHORED",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "OPEN_GLOBAL_GOEL_CHAITIN",
+        "goel_operator_digest": "1a39d4819c20050b401dd157",
+        "dual_digest": "e3b9c0e0aeb653c4153a0036"
+      }
+    },
+    {
+      "episode_id": "traitgym-000",
+      "benchmark_id": "variant-effect",
+      "dataset_role": "open-dataset:traitgym",
+      "combined_status": "COMBINED_OUR_VERIFIED_RN_PRESENT_GOEL_BOUND",
+      "reason": "our=VERIFIED; rnd1=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING; rnd1_proposal=open_code_mock_sampler",
+      "combined_digest": "9d60602754c397f73c0cc073147ce09107a1b9e7c78c02cab7084f8c63617a25",
+      "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+      "goel_mode_from_wuite": "polymerase",
+      "dual_status": "DUAL_CLOSED_TO_OPENING",
+      "rnd1_proposal": {
+        "mode": "open_code_mock_sampler",
+        "closure_mode": "full",
+        "sequences_digest": "379bfbbbe5c3a4bc7f6a58abe07f2df792257c6a740c320da8d79b9688035b28",
+        "trace_steps": 6,
+        "weights_used": false,
+        "detail": "RND1 open sampling.py under our hooks with finite mock LM (no 30B)",
+        "evidence": {
+          "forward_passes": 6,
+          "shape": [
+            1,
+            16
+          ],
+          "hf_model": "radicalnumerics/RND1-Base-0910",
+          "vendored": "rnd/"
+        }
+      },
+      "our_joint": "VERIFIED",
+      "rnd1_joint": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+      "our_receipt": {
+        "system_id": "bio-closure-independent",
+        "benchmark_id": "variant-effect",
+        "episode_id": "traitgym-000",
+        "architecture": {
+          "system_id": "bio-closure-independent",
+          "family": "black-mirror-closure",
+          "biological_native": true,
+          "open_weights": false,
+          "weights_available": true,
+          "proposal_mode": "independent_kernel",
+          "architecture_digest": "02a12803098d30f16ff02cc17243a65cb6615e95d86edf446d05579612dd5679",
+          "representation_shadow": {
+            "epistemic_status": "RERUNNABLE_FINITE_KERNEL",
+            "availability": "repository-local",
+            "role": "OUR self-contained Closure AGI"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "environment",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "KERNEL_EXECUTED",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "VERIFIED",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=KERNEL_EXECUTED; joint=VERIFIED; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING",
+        "reunification_digest": "1f6e9cf5295d2fd7513c9126defc384fd96d47d0e84a5e91147824340144dd1e",
+        "turn_unity_digest": "18231d45894a19fe173efa2e97997372feab4d040b2b49d92a8b5f960074c83a",
+        "verification_digest": "bc137429b8159a25c5ce688658597ae829f5433a3904ec02b23881ef4ec3cd8e",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "7faed9635299e3e7b4d71336",
+        "dual_digest": "e752d4a31b83dea192bc9da3"
+      },
+      "rnd1_receipt": {
+        "system_id": "rnd1-plus-closure",
+        "benchmark_id": "variant-effect",
+        "episode_id": "traitgym-000",
+        "architecture": {
+          "system_id": "rnd1-plus-closure",
+          "family": "hybrid-external-under-our-admission",
+          "biological_native": false,
+          "open_weights": true,
+          "weights_available": false,
+          "proposal_mode": "open_weights_absent",
+          "architecture_digest": "4e2605a80ebce3f1512e0438b0544ae5856c21b51ab32acd56af4f85efb699cb",
+          "representation_shadow": {
+            "epistemic_status": "EXTERNAL_RN_ARCHITECTURE_UNDER_OUR_ADMISSION",
+            "availability": "repository-local-plus-open-weights",
+            "role": "EXTERNAL RND1 proposals admitted under OUR closure hooks"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "environment",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "OPEN_WEIGHTS_ABSENT",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=OPEN_WEIGHTS_ABSENT; joint=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING",
+        "reunification_digest": "9d16ebbc8dc1d62d3710d2a25673946f1caec671a78c0425f737c779d5da7b3f",
+        "turn_unity_digest": "6ca5f32cd84f346a7d267185a9d50f001b8a0ceb4c615a416597d8803b3c23a0",
+        "verification_digest": "85373589eea510b31885db198bba589a7025ed5d693e0d0bbf241553b8e9ef6d",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "7faed9635299e3e7b4d71336",
+        "dual_digest": "76b79cf8006728b37d473bfd"
+      }
+    },
+    {
+      "episode_id": "traitgym-001",
+      "benchmark_id": "variant-effect",
+      "dataset_role": "open-dataset:traitgym",
+      "combined_status": "COMBINED_OUR_VERIFIED_RN_PRESENT_GOEL_BOUND",
+      "reason": "our=VERIFIED; rnd1=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING; rnd1_proposal=open_code_mock_sampler",
+      "combined_digest": "76f424b0bf9951eae6b5b58f3111329950417dcd6bba500f461f6f8f20812e6a",
+      "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+      "goel_mode_from_wuite": "polymerase",
+      "dual_status": "DUAL_CLOSED_TO_OPENING",
+      "rnd1_proposal": {
+        "mode": "open_code_mock_sampler",
+        "closure_mode": "full",
+        "sequences_digest": "379bfbbbe5c3a4bc7f6a58abe07f2df792257c6a740c320da8d79b9688035b28",
+        "trace_steps": 6,
+        "weights_used": false,
+        "detail": "RND1 open sampling.py under our hooks with finite mock LM (no 30B)",
+        "evidence": {
+          "forward_passes": 6,
+          "shape": [
+            1,
+            16
+          ],
+          "hf_model": "radicalnumerics/RND1-Base-0910",
+          "vendored": "rnd/"
+        }
+      },
+      "our_joint": "VERIFIED",
+      "rnd1_joint": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+      "our_receipt": {
+        "system_id": "bio-closure-independent",
+        "benchmark_id": "variant-effect",
+        "episode_id": "traitgym-001",
+        "architecture": {
+          "system_id": "bio-closure-independent",
+          "family": "black-mirror-closure",
+          "biological_native": true,
+          "open_weights": false,
+          "weights_available": true,
+          "proposal_mode": "independent_kernel",
+          "architecture_digest": "02a12803098d30f16ff02cc17243a65cb6615e95d86edf446d05579612dd5679",
+          "representation_shadow": {
+            "epistemic_status": "RERUNNABLE_FINITE_KERNEL",
+            "availability": "repository-local",
+            "role": "OUR self-contained Closure AGI"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "environment",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "KERNEL_EXECUTED",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "VERIFIED",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=KERNEL_EXECUTED; joint=VERIFIED; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING",
+        "reunification_digest": "3773e4ce28bf91325f2909c442539caf2ea56c7a8dde396f677261e2ad2ff4be",
+        "turn_unity_digest": "6bdde0eaafc70aa4d2bc5e230593342119ea8ddbd51fd575f82c5e7c825f3a70",
+        "verification_digest": "ab164bf058c2db849a6b395a7806ac5d09441e86280fcd059944084dff102248",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "22fe1dd377e2a84094d83e53",
+        "dual_digest": "2c9d8b3d3cf76cc1632bd455"
+      },
+      "rnd1_receipt": {
+        "system_id": "rnd1-plus-closure",
+        "benchmark_id": "variant-effect",
+        "episode_id": "traitgym-001",
+        "architecture": {
+          "system_id": "rnd1-plus-closure",
+          "family": "hybrid-external-under-our-admission",
+          "biological_native": false,
+          "open_weights": true,
+          "weights_available": false,
+          "proposal_mode": "open_weights_absent",
+          "architecture_digest": "4e2605a80ebce3f1512e0438b0544ae5856c21b51ab32acd56af4f85efb699cb",
+          "representation_shadow": {
+            "epistemic_status": "EXTERNAL_RN_ARCHITECTURE_UNDER_OUR_ADMISSION",
+            "availability": "repository-local-plus-open-weights",
+            "role": "EXTERNAL RND1 proposals admitted under OUR closure hooks"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "environment",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "OPEN_WEIGHTS_ABSENT",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=OPEN_WEIGHTS_ABSENT; joint=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING",
+        "reunification_digest": "06b5f4c91fe992bc650d898d6755ff84d32510a8767a48fc07e322b4a143fcdf",
+        "turn_unity_digest": "24903cc5c65468b9a4750e4035cb694d1261c9a0bd12744e52e386bdff04bee6",
+        "verification_digest": "66c8c7814927f0bfa5db6a2b064d3a03bee609a8c77badc9f336084e7a4fe931",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "22fe1dd377e2a84094d83e53",
+        "dual_digest": "2b2467457d1d5412406de877"
+      }
+    },
+    {
+      "episode_id": "traitgym-002",
+      "benchmark_id": "variant-effect",
+      "dataset_role": "open-dataset:traitgym",
+      "combined_status": "COMBINED_OUR_VERIFIED_RN_PRESENT_GOEL_BOUND",
+      "reason": "our=VERIFIED; rnd1=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING; rnd1_proposal=open_code_mock_sampler",
+      "combined_digest": "293a7bda4283d641c7b925d07b09072aa733daf7e85fb3ee58a954d9d8fb248f",
+      "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+      "goel_mode_from_wuite": "polymerase",
+      "dual_status": "DUAL_CLOSED_TO_OPENING",
+      "rnd1_proposal": {
+        "mode": "open_code_mock_sampler",
+        "closure_mode": "full",
+        "sequences_digest": "379bfbbbe5c3a4bc7f6a58abe07f2df792257c6a740c320da8d79b9688035b28",
+        "trace_steps": 6,
+        "weights_used": false,
+        "detail": "RND1 open sampling.py under our hooks with finite mock LM (no 30B)",
+        "evidence": {
+          "forward_passes": 6,
+          "shape": [
+            1,
+            16
+          ],
+          "hf_model": "radicalnumerics/RND1-Base-0910",
+          "vendored": "rnd/"
+        }
+      },
+      "our_joint": "VERIFIED",
+      "rnd1_joint": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+      "our_receipt": {
+        "system_id": "bio-closure-independent",
+        "benchmark_id": "variant-effect",
+        "episode_id": "traitgym-002",
+        "architecture": {
+          "system_id": "bio-closure-independent",
+          "family": "black-mirror-closure",
+          "biological_native": true,
+          "open_weights": false,
+          "weights_available": true,
+          "proposal_mode": "independent_kernel",
+          "architecture_digest": "02a12803098d30f16ff02cc17243a65cb6615e95d86edf446d05579612dd5679",
+          "representation_shadow": {
+            "epistemic_status": "RERUNNABLE_FINITE_KERNEL",
+            "availability": "repository-local",
+            "role": "OUR self-contained Closure AGI"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "environment",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "KERNEL_EXECUTED",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "VERIFIED",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=KERNEL_EXECUTED; joint=VERIFIED; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING",
+        "reunification_digest": "51adbc6bcd62b92310cb0d7f607c16dbb5798663a7cf8de49047419f2f2eeedb",
+        "turn_unity_digest": "54033a457067c9fb73a17e83229a28c8fd11861a2efb759dbe3f7bc9dbdae2e7",
+        "verification_digest": "47e0305d5b4ad3a4c646942bf0e5119fb2e30bb2836e21c264ba21a3e8df8d39",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "7ea1648edd376176a123dc75",
+        "dual_digest": "417fa2729251bce622add886"
+      },
+      "rnd1_receipt": {
+        "system_id": "rnd1-plus-closure",
+        "benchmark_id": "variant-effect",
+        "episode_id": "traitgym-002",
+        "architecture": {
+          "system_id": "rnd1-plus-closure",
+          "family": "hybrid-external-under-our-admission",
+          "biological_native": false,
+          "open_weights": true,
+          "weights_available": false,
+          "proposal_mode": "open_weights_absent",
+          "architecture_digest": "4e2605a80ebce3f1512e0438b0544ae5856c21b51ab32acd56af4f85efb699cb",
+          "representation_shadow": {
+            "epistemic_status": "EXTERNAL_RN_ARCHITECTURE_UNDER_OUR_ADMISSION",
+            "availability": "repository-local-plus-open-weights",
+            "role": "EXTERNAL RND1 proposals admitted under OUR closure hooks"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "environment",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "OPEN_WEIGHTS_ABSENT",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=OPEN_WEIGHTS_ABSENT; joint=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING",
+        "reunification_digest": "dbd4f82448297b079af5ec361e6a591b2bdc77bf9ca677e3bc9e56af58e73d07",
+        "turn_unity_digest": "8971a1d71ec7f64c0362b436615f27e63efd619ef0c1c86f186d32c2f44f002d",
+        "verification_digest": "f09653bba78f4e318e27f7c0186ec46884d11660cbd01d074429496dc389d913",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "7ea1648edd376176a123dc75",
+        "dual_digest": "90e8c8885c066c752aa7c57e"
+      }
+    },
+    {
+      "episode_id": "rnagym-000",
+      "benchmark_id": "rna-fitness",
+      "dataset_role": "open-dataset:rnagym",
+      "combined_status": "COMBINED_OUR_VERIFIED_RN_PRESENT_GOEL_BOUND",
+      "reason": "our=VERIFIED; rnd1=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=None; dual=None; rnd1_proposal=open_code_mock_sampler",
+      "combined_digest": "4da57083d0d46f82557c12f5236b652cca93013e8af85fd5d30544415313563b",
+      "goel_operator_status": null,
+      "goel_mode_from_wuite": null,
+      "dual_status": null,
+      "rnd1_proposal": {
+        "mode": "open_code_mock_sampler",
+        "closure_mode": "full",
+        "sequences_digest": "379bfbbbe5c3a4bc7f6a58abe07f2df792257c6a740c320da8d79b9688035b28",
+        "trace_steps": 6,
+        "weights_used": false,
+        "detail": "RND1 open sampling.py under our hooks with finite mock LM (no 30B)",
+        "evidence": {
+          "forward_passes": 6,
+          "shape": [
+            1,
+            16
+          ],
+          "hf_model": "radicalnumerics/RND1-Base-0910",
+          "vendored": "rnd/"
+        }
+      },
+      "our_joint": "VERIFIED",
+      "rnd1_joint": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+      "our_receipt": {
+        "system_id": "bio-closure-independent",
+        "benchmark_id": "rna-fitness",
+        "episode_id": "rnagym-000",
+        "architecture": {
+          "system_id": "bio-closure-independent",
+          "family": "black-mirror-closure",
+          "biological_native": true,
+          "open_weights": false,
+          "weights_available": true,
+          "proposal_mode": "independent_kernel",
+          "architecture_digest": "02a12803098d30f16ff02cc17243a65cb6615e95d86edf446d05579612dd5679",
+          "representation_shadow": {
+            "epistemic_status": "RERUNNABLE_FINITE_KERNEL",
+            "availability": "repository-local",
+            "role": "OUR self-contained Closure AGI"
+          }
+        },
+        "modalities": [
+          "RNA",
+          "environment",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "KERNEL_EXECUTED",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "VERIFIED",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=KERNEL_EXECUTED; joint=VERIFIED",
+        "reunification_digest": "33c5c4c4d1fd5eb7adf27ccacb523c0c80b225ff59f1793237fa5d79ed5f18f0",
+        "turn_unity_digest": "0e74e57d8a90573257c2f92aa7d579e72f626cc83f26f450069d08c652376958",
+        "verification_digest": "ab7cc0aabcd12cf24f1a93f0c75c9c667e0ab9e8c7578b2b9da94ea9c2a6e30f",
+        "goel_operator_status": null,
+        "goel_quantum_claim": null,
+        "dual_kakeya_goel_status": null,
+        "goel_operator_digest": null,
+        "dual_digest": null
+      },
+      "rnd1_receipt": {
+        "system_id": "rnd1-plus-closure",
+        "benchmark_id": "rna-fitness",
+        "episode_id": "rnagym-000",
+        "architecture": {
+          "system_id": "rnd1-plus-closure",
+          "family": "hybrid-external-under-our-admission",
+          "biological_native": false,
+          "open_weights": true,
+          "weights_available": false,
+          "proposal_mode": "open_weights_absent",
+          "architecture_digest": "4e2605a80ebce3f1512e0438b0544ae5856c21b51ab32acd56af4f85efb699cb",
+          "representation_shadow": {
+            "epistemic_status": "EXTERNAL_RN_ARCHITECTURE_UNDER_OUR_ADMISSION",
+            "availability": "repository-local-plus-open-weights",
+            "role": "EXTERNAL RND1 proposals admitted under OUR closure hooks"
+          }
+        },
+        "modalities": [
+          "RNA",
+          "environment",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "OPEN_WEIGHTS_ABSENT",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=OPEN_WEIGHTS_ABSENT; joint=OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reunification_digest": "afe0fd666737fcccb4e0d3510cd36701c0ce27bfedd4e3e82d1469923eefd08c",
+        "turn_unity_digest": "fe5ea39a6931f315517d5c500fbb6d610fdab04ac2146f4cd89c162be6178ab2",
+        "verification_digest": "eeeaa2ee5ab2bcaab4c33af86a449f2686371891a3d1dcc1fc1a9c938801c972",
+        "goel_operator_status": null,
+        "goel_quantum_claim": null,
+        "dual_kakeya_goel_status": null,
+        "goel_operator_digest": null,
+        "dual_digest": null
+      }
+    },
+    {
+      "episode_id": "rnagym-001",
+      "benchmark_id": "rna-fitness",
+      "dataset_role": "open-dataset:rnagym",
+      "combined_status": "COMBINED_OUR_VERIFIED_RN_PRESENT_GOEL_BOUND",
+      "reason": "our=VERIFIED; rnd1=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=None; dual=None; rnd1_proposal=open_code_mock_sampler",
+      "combined_digest": "608804c0eaf214759e3a10b3398cceaffdeae202c4d32e1c4cefbd7e45733088",
+      "goel_operator_status": null,
+      "goel_mode_from_wuite": null,
+      "dual_status": null,
+      "rnd1_proposal": {
+        "mode": "open_code_mock_sampler",
+        "closure_mode": "full",
+        "sequences_digest": "379bfbbbe5c3a4bc7f6a58abe07f2df792257c6a740c320da8d79b9688035b28",
+        "trace_steps": 6,
+        "weights_used": false,
+        "detail": "RND1 open sampling.py under our hooks with finite mock LM (no 30B)",
+        "evidence": {
+          "forward_passes": 6,
+          "shape": [
+            1,
+            16
+          ],
+          "hf_model": "radicalnumerics/RND1-Base-0910",
+          "vendored": "rnd/"
+        }
+      },
+      "our_joint": "VERIFIED",
+      "rnd1_joint": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+      "our_receipt": {
+        "system_id": "bio-closure-independent",
+        "benchmark_id": "rna-fitness",
+        "episode_id": "rnagym-001",
+        "architecture": {
+          "system_id": "bio-closure-independent",
+          "family": "black-mirror-closure",
+          "biological_native": true,
+          "open_weights": false,
+          "weights_available": true,
+          "proposal_mode": "independent_kernel",
+          "architecture_digest": "02a12803098d30f16ff02cc17243a65cb6615e95d86edf446d05579612dd5679",
+          "representation_shadow": {
+            "epistemic_status": "RERUNNABLE_FINITE_KERNEL",
+            "availability": "repository-local",
+            "role": "OUR self-contained Closure AGI"
+          }
+        },
+        "modalities": [
+          "RNA",
+          "environment",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "KERNEL_EXECUTED",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "VERIFIED",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=KERNEL_EXECUTED; joint=VERIFIED",
+        "reunification_digest": "678147d9bef5331eb7550fa2252077bfe2955307d1a6181a51c77650de6481de",
+        "turn_unity_digest": "69c65e335b33c1adb6e580b85b254a0f4ba2d313c0cf9405754d90628f798c7f",
+        "verification_digest": "cff1db8f707f6e38addba9704d915da2a5bdf9d16f0207423a5202c8595051b8",
+        "goel_operator_status": null,
+        "goel_quantum_claim": null,
+        "dual_kakeya_goel_status": null,
+        "goel_operator_digest": null,
+        "dual_digest": null
+      },
+      "rnd1_receipt": {
+        "system_id": "rnd1-plus-closure",
+        "benchmark_id": "rna-fitness",
+        "episode_id": "rnagym-001",
+        "architecture": {
+          "system_id": "rnd1-plus-closure",
+          "family": "hybrid-external-under-our-admission",
+          "biological_native": false,
+          "open_weights": true,
+          "weights_available": false,
+          "proposal_mode": "open_weights_absent",
+          "architecture_digest": "4e2605a80ebce3f1512e0438b0544ae5856c21b51ab32acd56af4f85efb699cb",
+          "representation_shadow": {
+            "epistemic_status": "EXTERNAL_RN_ARCHITECTURE_UNDER_OUR_ADMISSION",
+            "availability": "repository-local-plus-open-weights",
+            "role": "EXTERNAL RND1 proposals admitted under OUR closure hooks"
+          }
+        },
+        "modalities": [
+          "RNA",
+          "environment",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "OPEN_WEIGHTS_ABSENT",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=OPEN_WEIGHTS_ABSENT; joint=OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reunification_digest": "d65ef010fa8de7a99c60d41fb27728fc2fe07377283e205188662d00f6da0245",
+        "turn_unity_digest": "4729d8fe70795a20621adf6d28b6756e5eef2de58203dfef4c7882812be36964",
+        "verification_digest": "4874713ae93809cae2dc65c1a9fb2b07a1c3a617dd31ec65bc3bf73aff3752fa",
+        "goel_operator_status": null,
+        "goel_quantum_claim": null,
+        "dual_kakeya_goel_status": null,
+        "goel_operator_digest": null,
+        "dual_digest": null
+      }
+    },
+    {
+      "episode_id": "rnagym-002",
+      "benchmark_id": "rna-fitness",
+      "dataset_role": "open-dataset:rnagym",
+      "combined_status": "COMBINED_OUR_VERIFIED_RN_PRESENT_GOEL_BOUND",
+      "reason": "our=VERIFIED; rnd1=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=None; dual=None; rnd1_proposal=open_code_mock_sampler",
+      "combined_digest": "15799aacd68bfd9b1d19d03a755e9c74c487c962bdddf65bff7e17c294ed9161",
+      "goel_operator_status": null,
+      "goel_mode_from_wuite": null,
+      "dual_status": null,
+      "rnd1_proposal": {
+        "mode": "open_code_mock_sampler",
+        "closure_mode": "full",
+        "sequences_digest": "379bfbbbe5c3a4bc7f6a58abe07f2df792257c6a740c320da8d79b9688035b28",
+        "trace_steps": 6,
+        "weights_used": false,
+        "detail": "RND1 open sampling.py under our hooks with finite mock LM (no 30B)",
+        "evidence": {
+          "forward_passes": 6,
+          "shape": [
+            1,
+            16
+          ],
+          "hf_model": "radicalnumerics/RND1-Base-0910",
+          "vendored": "rnd/"
+        }
+      },
+      "our_joint": "VERIFIED",
+      "rnd1_joint": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+      "our_receipt": {
+        "system_id": "bio-closure-independent",
+        "benchmark_id": "rna-fitness",
+        "episode_id": "rnagym-002",
+        "architecture": {
+          "system_id": "bio-closure-independent",
+          "family": "black-mirror-closure",
+          "biological_native": true,
+          "open_weights": false,
+          "weights_available": true,
+          "proposal_mode": "independent_kernel",
+          "architecture_digest": "02a12803098d30f16ff02cc17243a65cb6615e95d86edf446d05579612dd5679",
+          "representation_shadow": {
+            "epistemic_status": "RERUNNABLE_FINITE_KERNEL",
+            "availability": "repository-local",
+            "role": "OUR self-contained Closure AGI"
+          }
+        },
+        "modalities": [
+          "RNA",
+          "environment",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "KERNEL_EXECUTED",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "VERIFIED",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=KERNEL_EXECUTED; joint=VERIFIED",
+        "reunification_digest": "0dd490f2b769c3f825b9954cf476fa0a87a916493ca5a3b85f80ca4e4e9e64ea",
+        "turn_unity_digest": "381065ee4e590ba8c5b4089ba147fd672b23f086332e9e7c87b107e62c9b825a",
+        "verification_digest": "e3e35170f314604c338210177932f9989bd4c2a96d8b2200d808fb9a6b082fff",
+        "goel_operator_status": null,
+        "goel_quantum_claim": null,
+        "dual_kakeya_goel_status": null,
+        "goel_operator_digest": null,
+        "dual_digest": null
+      },
+      "rnd1_receipt": {
+        "system_id": "rnd1-plus-closure",
+        "benchmark_id": "rna-fitness",
+        "episode_id": "rnagym-002",
+        "architecture": {
+          "system_id": "rnd1-plus-closure",
+          "family": "hybrid-external-under-our-admission",
+          "biological_native": false,
+          "open_weights": true,
+          "weights_available": false,
+          "proposal_mode": "open_weights_absent",
+          "architecture_digest": "4e2605a80ebce3f1512e0438b0544ae5856c21b51ab32acd56af4f85efb699cb",
+          "representation_shadow": {
+            "epistemic_status": "EXTERNAL_RN_ARCHITECTURE_UNDER_OUR_ADMISSION",
+            "availability": "repository-local-plus-open-weights",
+            "role": "EXTERNAL RND1 proposals admitted under OUR closure hooks"
+          }
+        },
+        "modalities": [
+          "RNA",
+          "environment",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "OPEN_WEIGHTS_ABSENT",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=OPEN_WEIGHTS_ABSENT; joint=OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reunification_digest": "61515177f08fa1ce1be540223fffd3065f5499499cded821b87940e43031cad8",
+        "turn_unity_digest": "cef4e748a9ee0993ae3249577fe1eb5792f611204cb2a57c0a98deccb1e51926",
+        "verification_digest": "30a7857e691a38f98d93d0bf42cc31f274320e73a41ced68a3273cc684aa2f72",
+        "goel_operator_status": null,
+        "goel_quantum_claim": null,
+        "dual_kakeya_goel_status": null,
+        "goel_operator_digest": null,
+        "dual_digest": null
+      }
+    },
+    {
+      "episode_id": "clinvar-000",
+      "benchmark_id": "variant-effect",
+      "dataset_role": "open-dataset:clinvar",
+      "combined_status": "COMBINED_OUR_VERIFIED_RN_PRESENT_GOEL_BOUND",
+      "reason": "our=VERIFIED; rnd1=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING; rnd1_proposal=open_code_mock_sampler",
+      "combined_digest": "8c775966c1ba67e2c4c72cdaa19b6b8069db34e124cf782136a26dd41eb4b96d",
+      "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+      "goel_mode_from_wuite": "polymerase",
+      "dual_status": "DUAL_CLOSED_TO_OPENING",
+      "rnd1_proposal": {
+        "mode": "open_code_mock_sampler",
+        "closure_mode": "full",
+        "sequences_digest": "379bfbbbe5c3a4bc7f6a58abe07f2df792257c6a740c320da8d79b9688035b28",
+        "trace_steps": 6,
+        "weights_used": false,
+        "detail": "RND1 open sampling.py under our hooks with finite mock LM (no 30B)",
+        "evidence": {
+          "forward_passes": 6,
+          "shape": [
+            1,
+            16
+          ],
+          "hf_model": "radicalnumerics/RND1-Base-0910",
+          "vendored": "rnd/"
+        }
+      },
+      "our_joint": "VERIFIED",
+      "rnd1_joint": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+      "our_receipt": {
+        "system_id": "bio-closure-independent",
+        "benchmark_id": "variant-effect",
+        "episode_id": "clinvar-000",
+        "architecture": {
+          "system_id": "bio-closure-independent",
+          "family": "black-mirror-closure",
+          "biological_native": true,
+          "open_weights": false,
+          "weights_available": true,
+          "proposal_mode": "independent_kernel",
+          "architecture_digest": "02a12803098d30f16ff02cc17243a65cb6615e95d86edf446d05579612dd5679",
+          "representation_shadow": {
+            "epistemic_status": "RERUNNABLE_FINITE_KERNEL",
+            "availability": "repository-local",
+            "role": "OUR self-contained Closure AGI"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "environment",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "KERNEL_EXECUTED",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "VERIFIED",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=KERNEL_EXECUTED; joint=VERIFIED; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING",
+        "reunification_digest": "976ac31b7747f2700e51be85ac6000026670695b0e063ca775367c8c5100b603",
+        "turn_unity_digest": "55b272947bb24eae2d79ffc60879617796cfed52181a6f620288b30d4f64f07b",
+        "verification_digest": "65f34ca002608e51ac0837e6bfbc1a0793e9ca05834997c6bd98ca0356444cb7",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "1a7e5472c1e96e594d366b6a",
+        "dual_digest": "0291e83bacafc3b198f25c5f"
+      },
+      "rnd1_receipt": {
+        "system_id": "rnd1-plus-closure",
+        "benchmark_id": "variant-effect",
+        "episode_id": "clinvar-000",
+        "architecture": {
+          "system_id": "rnd1-plus-closure",
+          "family": "hybrid-external-under-our-admission",
+          "biological_native": false,
+          "open_weights": true,
+          "weights_available": false,
+          "proposal_mode": "open_weights_absent",
+          "architecture_digest": "4e2605a80ebce3f1512e0438b0544ae5856c21b51ab32acd56af4f85efb699cb",
+          "representation_shadow": {
+            "epistemic_status": "EXTERNAL_RN_ARCHITECTURE_UNDER_OUR_ADMISSION",
+            "availability": "repository-local-plus-open-weights",
+            "role": "EXTERNAL RND1 proposals admitted under OUR closure hooks"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "environment",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "OPEN_WEIGHTS_ABSENT",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=OPEN_WEIGHTS_ABSENT; joint=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING",
+        "reunification_digest": "7d2c3b8a48295a54053f6fc30a13478b962062eaec167adeb88f01ba92bea02a",
+        "turn_unity_digest": "85e536561b1b6291a968d5aefc93be15553fed990365be9398da0c59dc23eb0c",
+        "verification_digest": "3769fc9691666420c3cc242e7a71a3bbde0ddad9ba7293237e92bbeb53c654b7",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "1a7e5472c1e96e594d366b6a",
+        "dual_digest": "59b5a704e81e0199d5bb635b"
+      }
+    },
+    {
+      "episode_id": "clinvar-001",
+      "benchmark_id": "variant-effect",
+      "dataset_role": "open-dataset:clinvar",
+      "combined_status": "COMBINED_OUR_VERIFIED_RN_PRESENT_GOEL_BOUND",
+      "reason": "our=VERIFIED; rnd1=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING; rnd1_proposal=open_code_mock_sampler",
+      "combined_digest": "c034db51e6dad08d3450405d1ede7688a7572430b8d9fb0473481aa7af4a666d",
+      "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+      "goel_mode_from_wuite": "polymerase",
+      "dual_status": "DUAL_CLOSED_TO_OPENING",
+      "rnd1_proposal": {
+        "mode": "open_code_mock_sampler",
+        "closure_mode": "full",
+        "sequences_digest": "379bfbbbe5c3a4bc7f6a58abe07f2df792257c6a740c320da8d79b9688035b28",
+        "trace_steps": 6,
+        "weights_used": false,
+        "detail": "RND1 open sampling.py under our hooks with finite mock LM (no 30B)",
+        "evidence": {
+          "forward_passes": 6,
+          "shape": [
+            1,
+            16
+          ],
+          "hf_model": "radicalnumerics/RND1-Base-0910",
+          "vendored": "rnd/"
+        }
+      },
+      "our_joint": "VERIFIED",
+      "rnd1_joint": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+      "our_receipt": {
+        "system_id": "bio-closure-independent",
+        "benchmark_id": "variant-effect",
+        "episode_id": "clinvar-001",
+        "architecture": {
+          "system_id": "bio-closure-independent",
+          "family": "black-mirror-closure",
+          "biological_native": true,
+          "open_weights": false,
+          "weights_available": true,
+          "proposal_mode": "independent_kernel",
+          "architecture_digest": "02a12803098d30f16ff02cc17243a65cb6615e95d86edf446d05579612dd5679",
+          "representation_shadow": {
+            "epistemic_status": "RERUNNABLE_FINITE_KERNEL",
+            "availability": "repository-local",
+            "role": "OUR self-contained Closure AGI"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "environment",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "KERNEL_EXECUTED",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "VERIFIED",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=KERNEL_EXECUTED; joint=VERIFIED; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING",
+        "reunification_digest": "248ef391980c6bbe555db30918ea70c3d0fb8e42a5e115b75fbe9be1fcad82c2",
+        "turn_unity_digest": "151f081fe69551cda4d23a705d5bd8f73d3e167338cae948342f7e17f78f55c0",
+        "verification_digest": "4ac8da792bbff392a2ea16fad21674c965c066fbd98354c85aca7f07c9c48204",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "ceea09be0079c2d840ef8977",
+        "dual_digest": "0a4b14834b56d3b0821e1736"
+      },
+      "rnd1_receipt": {
+        "system_id": "rnd1-plus-closure",
+        "benchmark_id": "variant-effect",
+        "episode_id": "clinvar-001",
+        "architecture": {
+          "system_id": "rnd1-plus-closure",
+          "family": "hybrid-external-under-our-admission",
+          "biological_native": false,
+          "open_weights": true,
+          "weights_available": false,
+          "proposal_mode": "open_weights_absent",
+          "architecture_digest": "4e2605a80ebce3f1512e0438b0544ae5856c21b51ab32acd56af4f85efb699cb",
+          "representation_shadow": {
+            "epistemic_status": "EXTERNAL_RN_ARCHITECTURE_UNDER_OUR_ADMISSION",
+            "availability": "repository-local-plus-open-weights",
+            "role": "EXTERNAL RND1 proposals admitted under OUR closure hooks"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "environment",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "OPEN_WEIGHTS_ABSENT",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=OPEN_WEIGHTS_ABSENT; joint=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING",
+        "reunification_digest": "62c89fbd294806224cf171addd9663ae14b92348dd2bce8e813f2f498696d865",
+        "turn_unity_digest": "80d25501ca3bf497d08ae88dc0bb54ad4e5a3541a5f55e36d7b13d64a2d63657",
+        "verification_digest": "4b9936e7dc8b48ae1e02f20144f0b933dd36724b87ff0630a4d3530aa5e317f5",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "ceea09be0079c2d840ef8977",
+        "dual_digest": "c0ae5fbe220c054c433bc993"
+      }
+    },
+    {
+      "episode_id": "clinvar-002",
+      "benchmark_id": "variant-effect",
+      "dataset_role": "open-dataset:clinvar",
+      "combined_status": "COMBINED_OUR_VERIFIED_RN_PRESENT_GOEL_BOUND",
+      "reason": "our=VERIFIED; rnd1=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING; rnd1_proposal=open_code_mock_sampler",
+      "combined_digest": "d2d6500a6b36137a602dbcb6d693b03e1828abaae79a72ebe8bfefeb56c118db",
+      "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+      "goel_mode_from_wuite": "polymerase",
+      "dual_status": "DUAL_CLOSED_TO_OPENING",
+      "rnd1_proposal": {
+        "mode": "open_code_mock_sampler",
+        "closure_mode": "full",
+        "sequences_digest": "379bfbbbe5c3a4bc7f6a58abe07f2df792257c6a740c320da8d79b9688035b28",
+        "trace_steps": 6,
+        "weights_used": false,
+        "detail": "RND1 open sampling.py under our hooks with finite mock LM (no 30B)",
+        "evidence": {
+          "forward_passes": 6,
+          "shape": [
+            1,
+            16
+          ],
+          "hf_model": "radicalnumerics/RND1-Base-0910",
+          "vendored": "rnd/"
+        }
+      },
+      "our_joint": "VERIFIED",
+      "rnd1_joint": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+      "our_receipt": {
+        "system_id": "bio-closure-independent",
+        "benchmark_id": "variant-effect",
+        "episode_id": "clinvar-002",
+        "architecture": {
+          "system_id": "bio-closure-independent",
+          "family": "black-mirror-closure",
+          "biological_native": true,
+          "open_weights": false,
+          "weights_available": true,
+          "proposal_mode": "independent_kernel",
+          "architecture_digest": "02a12803098d30f16ff02cc17243a65cb6615e95d86edf446d05579612dd5679",
+          "representation_shadow": {
+            "epistemic_status": "RERUNNABLE_FINITE_KERNEL",
+            "availability": "repository-local",
+            "role": "OUR self-contained Closure AGI"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "environment",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "KERNEL_EXECUTED",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "VERIFIED",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=KERNEL_EXECUTED; joint=VERIFIED; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING",
+        "reunification_digest": "c0ec432ebadba1fbe5a4f2cc41cfae1700b118cf13dd8f7e94c0ba1d69c50014",
+        "turn_unity_digest": "957b93c7b818d59cea5e8949e8945601fa1f3656c6045ca92b9e2c863aa171b1",
+        "verification_digest": "d1e10b4f0183b7cb1b873ea5967188476ea0a947a9fac022592d14538c677cf4",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "9f2498ea7102c27bdfb608df",
+        "dual_digest": "0b95805c3ecd89854bb7c21a"
+      },
+      "rnd1_receipt": {
+        "system_id": "rnd1-plus-closure",
+        "benchmark_id": "variant-effect",
+        "episode_id": "clinvar-002",
+        "architecture": {
+          "system_id": "rnd1-plus-closure",
+          "family": "hybrid-external-under-our-admission",
+          "biological_native": false,
+          "open_weights": true,
+          "weights_available": false,
+          "proposal_mode": "open_weights_absent",
+          "architecture_digest": "4e2605a80ebce3f1512e0438b0544ae5856c21b51ab32acd56af4f85efb699cb",
+          "representation_shadow": {
+            "epistemic_status": "EXTERNAL_RN_ARCHITECTURE_UNDER_OUR_ADMISSION",
+            "availability": "repository-local-plus-open-weights",
+            "role": "EXTERNAL RND1 proposals admitted under OUR closure hooks"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "environment",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "OPEN_WEIGHTS_ABSENT",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=OPEN_WEIGHTS_ABSENT; joint=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING",
+        "reunification_digest": "4ead7e0012a99e17c5d5e8311a1390dd15642679f6ab777d0a068950bbfdfbf5",
+        "turn_unity_digest": "45b3ec08242769b98eebba7a306c6eeb736db45f2a0e0064c1c271464072d79f",
+        "verification_digest": "74288c94f3ddb448490420d1145ff2228957dcffd8eda7e266f3de7adbea7d0c",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "9f2498ea7102c27bdfb608df",
+        "dual_digest": "4f5424e4b9af314ec7fac7ca"
+      }
+    },
+    {
+      "episode_id": "proteingym-000",
+      "benchmark_id": "variant-effect",
+      "dataset_role": "open-dataset:proteingym",
+      "combined_status": "COMBINED_OUR_VERIFIED_RN_PRESENT_GOEL_BOUND",
+      "reason": "our=VERIFIED; rnd1=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=None; dual=None; rnd1_proposal=open_code_mock_sampler",
+      "combined_digest": "8c821640a5fc4aefd1d2be7f49a25f819f5884599ab3e0e35eafe02ec1dc905b",
+      "goel_operator_status": null,
+      "goel_mode_from_wuite": null,
+      "dual_status": null,
+      "rnd1_proposal": {
+        "mode": "open_code_mock_sampler",
+        "closure_mode": "full",
+        "sequences_digest": "379bfbbbe5c3a4bc7f6a58abe07f2df792257c6a740c320da8d79b9688035b28",
+        "trace_steps": 6,
+        "weights_used": false,
+        "detail": "RND1 open sampling.py under our hooks with finite mock LM (no 30B)",
+        "evidence": {
+          "forward_passes": 6,
+          "shape": [
+            1,
+            16
+          ],
+          "hf_model": "radicalnumerics/RND1-Base-0910",
+          "vendored": "rnd/"
+        }
+      },
+      "our_joint": "VERIFIED",
+      "rnd1_joint": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+      "our_receipt": {
+        "system_id": "bio-closure-independent",
+        "benchmark_id": "variant-effect",
+        "episode_id": "proteingym-000",
+        "architecture": {
+          "system_id": "bio-closure-independent",
+          "family": "black-mirror-closure",
+          "biological_native": true,
+          "open_weights": false,
+          "weights_available": true,
+          "proposal_mode": "independent_kernel",
+          "architecture_digest": "02a12803098d30f16ff02cc17243a65cb6615e95d86edf446d05579612dd5679",
+          "representation_shadow": {
+            "epistemic_status": "RERUNNABLE_FINITE_KERNEL",
+            "availability": "repository-local",
+            "role": "OUR self-contained Closure AGI"
+          }
+        },
+        "modalities": [
+          "environment",
+          "protein",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "KERNEL_EXECUTED",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "VERIFIED",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=KERNEL_EXECUTED; joint=VERIFIED",
+        "reunification_digest": "6e22f3578ed73b86098f285696bce0c39e40746797d5b179a30534627c09e53f",
+        "turn_unity_digest": "7e954b89cafd2ddba571b6155ac3b37717bb5b4fcc7083936dc32d862626b33d",
+        "verification_digest": "6fba7eecab4f675f83567298ddcbf5e198208346c5e06136591182d77ff4bc34",
+        "goel_operator_status": null,
+        "goel_quantum_claim": null,
+        "dual_kakeya_goel_status": null,
+        "goel_operator_digest": null,
+        "dual_digest": null
+      },
+      "rnd1_receipt": {
+        "system_id": "rnd1-plus-closure",
+        "benchmark_id": "variant-effect",
+        "episode_id": "proteingym-000",
+        "architecture": {
+          "system_id": "rnd1-plus-closure",
+          "family": "hybrid-external-under-our-admission",
+          "biological_native": false,
+          "open_weights": true,
+          "weights_available": false,
+          "proposal_mode": "open_weights_absent",
+          "architecture_digest": "4e2605a80ebce3f1512e0438b0544ae5856c21b51ab32acd56af4f85efb699cb",
+          "representation_shadow": {
+            "epistemic_status": "EXTERNAL_RN_ARCHITECTURE_UNDER_OUR_ADMISSION",
+            "availability": "repository-local-plus-open-weights",
+            "role": "EXTERNAL RND1 proposals admitted under OUR closure hooks"
+          }
+        },
+        "modalities": [
+          "environment",
+          "protein",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "OPEN_WEIGHTS_ABSENT",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=OPEN_WEIGHTS_ABSENT; joint=OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reunification_digest": "869c04603bdc54ec0d154293d918e0d0dd79767eb8556fa9919fc13499559be0",
+        "turn_unity_digest": "7161e90df8018cb1f8b57613ebed9b3ed15e2f3eb1a769bf81042d05fc235c8b",
+        "verification_digest": "4eec510ffc6f7473e21c51a3f0660eb70c563b312253d3b9359816b240b0c890",
+        "goel_operator_status": null,
+        "goel_quantum_claim": null,
+        "dual_kakeya_goel_status": null,
+        "goel_operator_digest": null,
+        "dual_digest": null
+      }
+    },
+    {
+      "episode_id": "proteingym-001",
+      "benchmark_id": "variant-effect",
+      "dataset_role": "open-dataset:proteingym",
+      "combined_status": "COMBINED_OUR_VERIFIED_RN_PRESENT_GOEL_BOUND",
+      "reason": "our=VERIFIED; rnd1=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=None; dual=None; rnd1_proposal=open_code_mock_sampler",
+      "combined_digest": "831caa45593a1013f77a3905d4c47ef2c5c489b663212c5c6b27af4008bf6621",
+      "goel_operator_status": null,
+      "goel_mode_from_wuite": null,
+      "dual_status": null,
+      "rnd1_proposal": {
+        "mode": "open_code_mock_sampler",
+        "closure_mode": "full",
+        "sequences_digest": "379bfbbbe5c3a4bc7f6a58abe07f2df792257c6a740c320da8d79b9688035b28",
+        "trace_steps": 6,
+        "weights_used": false,
+        "detail": "RND1 open sampling.py under our hooks with finite mock LM (no 30B)",
+        "evidence": {
+          "forward_passes": 6,
+          "shape": [
+            1,
+            16
+          ],
+          "hf_model": "radicalnumerics/RND1-Base-0910",
+          "vendored": "rnd/"
+        }
+      },
+      "our_joint": "VERIFIED",
+      "rnd1_joint": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+      "our_receipt": {
+        "system_id": "bio-closure-independent",
+        "benchmark_id": "variant-effect",
+        "episode_id": "proteingym-001",
+        "architecture": {
+          "system_id": "bio-closure-independent",
+          "family": "black-mirror-closure",
+          "biological_native": true,
+          "open_weights": false,
+          "weights_available": true,
+          "proposal_mode": "independent_kernel",
+          "architecture_digest": "02a12803098d30f16ff02cc17243a65cb6615e95d86edf446d05579612dd5679",
+          "representation_shadow": {
+            "epistemic_status": "RERUNNABLE_FINITE_KERNEL",
+            "availability": "repository-local",
+            "role": "OUR self-contained Closure AGI"
+          }
+        },
+        "modalities": [
+          "environment",
+          "protein",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "KERNEL_EXECUTED",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "VERIFIED",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=KERNEL_EXECUTED; joint=VERIFIED",
+        "reunification_digest": "7471866fca01e94a5b5a6f0e6ee336711f9e8c8d95a6b1858e0cc5398cb2f82f",
+        "turn_unity_digest": "3d3aa5333dad4d40ef23036101c72d121b782a46378454df9a9e5f2c473ce3f8",
+        "verification_digest": "7b2537e3d5fd839b214043deb3775207916a58a6e7497142bc8558504675b2a7",
+        "goel_operator_status": null,
+        "goel_quantum_claim": null,
+        "dual_kakeya_goel_status": null,
+        "goel_operator_digest": null,
+        "dual_digest": null
+      },
+      "rnd1_receipt": {
+        "system_id": "rnd1-plus-closure",
+        "benchmark_id": "variant-effect",
+        "episode_id": "proteingym-001",
+        "architecture": {
+          "system_id": "rnd1-plus-closure",
+          "family": "hybrid-external-under-our-admission",
+          "biological_native": false,
+          "open_weights": true,
+          "weights_available": false,
+          "proposal_mode": "open_weights_absent",
+          "architecture_digest": "4e2605a80ebce3f1512e0438b0544ae5856c21b51ab32acd56af4f85efb699cb",
+          "representation_shadow": {
+            "epistemic_status": "EXTERNAL_RN_ARCHITECTURE_UNDER_OUR_ADMISSION",
+            "availability": "repository-local-plus-open-weights",
+            "role": "EXTERNAL RND1 proposals admitted under OUR closure hooks"
+          }
+        },
+        "modalities": [
+          "environment",
+          "protein",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "OPEN_WEIGHTS_ABSENT",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=OPEN_WEIGHTS_ABSENT; joint=OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reunification_digest": "754a7a639b871e3ccba38aa5474bcc3348bc5709a3f78f4ca92a226986ba0599",
+        "turn_unity_digest": "e4a9fa83b81e03b48e68579bb4dff93ddb9dd4040c7051a9c17fb79f06f72dfd",
+        "verification_digest": "904be839bba180061dbe4e815b99f2276c3fa8795e0e61fd860f017af158597e",
+        "goel_operator_status": null,
+        "goel_quantum_claim": null,
+        "dual_kakeya_goel_status": null,
+        "goel_operator_digest": null,
+        "dual_digest": null
+      }
+    },
+    {
+      "episode_id": "proteingym-002",
+      "benchmark_id": "variant-effect",
+      "dataset_role": "open-dataset:proteingym",
+      "combined_status": "COMBINED_OUR_VERIFIED_RN_PRESENT_GOEL_BOUND",
+      "reason": "our=VERIFIED; rnd1=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=None; dual=None; rnd1_proposal=open_code_mock_sampler",
+      "combined_digest": "6bf7a432980a123f18aa19e01044bbbdc069525b55da2843ab234240b9ffcf91",
+      "goel_operator_status": null,
+      "goel_mode_from_wuite": null,
+      "dual_status": null,
+      "rnd1_proposal": {
+        "mode": "open_code_mock_sampler",
+        "closure_mode": "full",
+        "sequences_digest": "379bfbbbe5c3a4bc7f6a58abe07f2df792257c6a740c320da8d79b9688035b28",
+        "trace_steps": 6,
+        "weights_used": false,
+        "detail": "RND1 open sampling.py under our hooks with finite mock LM (no 30B)",
+        "evidence": {
+          "forward_passes": 6,
+          "shape": [
+            1,
+            16
+          ],
+          "hf_model": "radicalnumerics/RND1-Base-0910",
+          "vendored": "rnd/"
+        }
+      },
+      "our_joint": "VERIFIED",
+      "rnd1_joint": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+      "our_receipt": {
+        "system_id": "bio-closure-independent",
+        "benchmark_id": "variant-effect",
+        "episode_id": "proteingym-002",
+        "architecture": {
+          "system_id": "bio-closure-independent",
+          "family": "black-mirror-closure",
+          "biological_native": true,
+          "open_weights": false,
+          "weights_available": true,
+          "proposal_mode": "independent_kernel",
+          "architecture_digest": "02a12803098d30f16ff02cc17243a65cb6615e95d86edf446d05579612dd5679",
+          "representation_shadow": {
+            "epistemic_status": "RERUNNABLE_FINITE_KERNEL",
+            "availability": "repository-local",
+            "role": "OUR self-contained Closure AGI"
+          }
+        },
+        "modalities": [
+          "environment",
+          "protein",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "KERNEL_EXECUTED",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "VERIFIED",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=KERNEL_EXECUTED; joint=VERIFIED",
+        "reunification_digest": "5f392fe90258dec44692bdd64cd9afc020f51ad21a03f5e54e472fb17855ecf0",
+        "turn_unity_digest": "bb0b782818460eefc895550f7971febb7f7b76ce6566ba61133c8a0997383167",
+        "verification_digest": "53441aecf31cf36b3c132f3bada2f7f114a3295acc11c54e624842c33f82b89e",
+        "goel_operator_status": null,
+        "goel_quantum_claim": null,
+        "dual_kakeya_goel_status": null,
+        "goel_operator_digest": null,
+        "dual_digest": null
+      },
+      "rnd1_receipt": {
+        "system_id": "rnd1-plus-closure",
+        "benchmark_id": "variant-effect",
+        "episode_id": "proteingym-002",
+        "architecture": {
+          "system_id": "rnd1-plus-closure",
+          "family": "hybrid-external-under-our-admission",
+          "biological_native": false,
+          "open_weights": true,
+          "weights_available": false,
+          "proposal_mode": "open_weights_absent",
+          "architecture_digest": "4e2605a80ebce3f1512e0438b0544ae5856c21b51ab32acd56af4f85efb699cb",
+          "representation_shadow": {
+            "epistemic_status": "EXTERNAL_RN_ARCHITECTURE_UNDER_OUR_ADMISSION",
+            "availability": "repository-local-plus-open-weights",
+            "role": "EXTERNAL RND1 proposals admitted under OUR closure hooks"
+          }
+        },
+        "modalities": [
+          "environment",
+          "protein",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "OPEN_WEIGHTS_ABSENT",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=OPEN_WEIGHTS_ABSENT; joint=OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reunification_digest": "69dc9ee131cefce5cd0efe01e264338fb51fdd96ccccad565d7eca80c03bc040",
+        "turn_unity_digest": "e3d1ee8e54c8ba87509173a4460d362ef542bd6e21bd44a59ea3065c8ec13369",
+        "verification_digest": "7bfdb9c9ea95577b98205b5c3f04ac20cd74b74c34d803104f682abd8ef84d95",
+        "goel_operator_status": null,
+        "goel_quantum_claim": null,
+        "dual_kakeya_goel_status": null,
+        "goel_operator_digest": null,
+        "dual_digest": null
+      }
+    },
+    {
+      "episode_id": "opengenome2-seq-000",
+      "benchmark_id": "sequence-likelihood",
+      "dataset_role": "open-dataset:opengenome2",
+      "combined_status": "COMBINED_OUR_VERIFIED_RN_PRESENT_GOEL_BOUND",
+      "reason": "our=VERIFIED; rnd1=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING; rnd1_proposal=open_code_mock_sampler",
+      "combined_digest": "7062c4a182a900bd47178154ba46f375e5ef97f25f2f709fd569f7616511abfc",
+      "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+      "goel_mode_from_wuite": "polymerase",
+      "dual_status": "DUAL_CLOSED_TO_OPENING",
+      "rnd1_proposal": {
+        "mode": "open_code_mock_sampler",
+        "closure_mode": "full",
+        "sequences_digest": "379bfbbbe5c3a4bc7f6a58abe07f2df792257c6a740c320da8d79b9688035b28",
+        "trace_steps": 6,
+        "weights_used": false,
+        "detail": "RND1 open sampling.py under our hooks with finite mock LM (no 30B)",
+        "evidence": {
+          "forward_passes": 6,
+          "shape": [
+            1,
+            16
+          ],
+          "hf_model": "radicalnumerics/RND1-Base-0910",
+          "vendored": "rnd/"
+        }
+      },
+      "our_joint": "VERIFIED",
+      "rnd1_joint": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+      "our_receipt": {
+        "system_id": "bio-closure-independent",
+        "benchmark_id": "sequence-likelihood",
+        "episode_id": "opengenome2-seq-000",
+        "architecture": {
+          "system_id": "bio-closure-independent",
+          "family": "black-mirror-closure",
+          "biological_native": true,
+          "open_weights": false,
+          "weights_available": true,
+          "proposal_mode": "independent_kernel",
+          "architecture_digest": "02a12803098d30f16ff02cc17243a65cb6615e95d86edf446d05579612dd5679",
+          "representation_shadow": {
+            "epistemic_status": "RERUNNABLE_FINITE_KERNEL",
+            "availability": "repository-local",
+            "role": "OUR self-contained Closure AGI"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "environment",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "KERNEL_EXECUTED",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "VERIFIED",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=KERNEL_EXECUTED; joint=VERIFIED; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING",
+        "reunification_digest": "ab2860247aa0323f87817e24815c0f9366b8c340ef248ccda87485e265e32213",
+        "turn_unity_digest": "75ac7af1a0ca3b4041390e0f7b2275e1be78211e7b138f1769164ad328785950",
+        "verification_digest": "eceb6d32cf911cb34aa7ec4cfefa3ae5bd96be51f047a97abf183b4922bc1d22",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "ab6262cc8c306e99c233118f",
+        "dual_digest": "439613dc2c1d4fa6234a0455"
+      },
+      "rnd1_receipt": {
+        "system_id": "rnd1-plus-closure",
+        "benchmark_id": "sequence-likelihood",
+        "episode_id": "opengenome2-seq-000",
+        "architecture": {
+          "system_id": "rnd1-plus-closure",
+          "family": "hybrid-external-under-our-admission",
+          "biological_native": false,
+          "open_weights": true,
+          "weights_available": false,
+          "proposal_mode": "open_weights_absent",
+          "architecture_digest": "4e2605a80ebce3f1512e0438b0544ae5856c21b51ab32acd56af4f85efb699cb",
+          "representation_shadow": {
+            "epistemic_status": "EXTERNAL_RN_ARCHITECTURE_UNDER_OUR_ADMISSION",
+            "availability": "repository-local-plus-open-weights",
+            "role": "EXTERNAL RND1 proposals admitted under OUR closure hooks"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "environment",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "OPEN_WEIGHTS_ABSENT",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=OPEN_WEIGHTS_ABSENT; joint=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING",
+        "reunification_digest": "20fb0cdf39abb626c42cbe419fdd3608cc9e45732bfa73b453b3e17b8800013a",
+        "turn_unity_digest": "95da3d1f97b01bc743b7263370e0e6d65b2e428d7da3647757a7c277273051cf",
+        "verification_digest": "b93f25c4cb58df38bb589e5633e670de05115218dda6cc2bec7f360c21cd48d2",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "ab6262cc8c306e99c233118f",
+        "dual_digest": "c332170c8bb208848a8dae92"
+      }
+    },
+    {
+      "episode_id": "opengenome2-gene-000",
+      "benchmark_id": "gene-completion",
+      "dataset_role": "open-dataset:opengenome2",
+      "combined_status": "COMBINED_OUR_VERIFIED_RN_PRESENT_GOEL_BOUND",
+      "reason": "our=VERIFIED; rnd1=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING; rnd1_proposal=open_code_mock_sampler",
+      "combined_digest": "53307244b2614320866af1df6f4a03017fcbb74907cd4e4c28e56ba5ae5d1e18",
+      "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+      "goel_mode_from_wuite": "polymerase",
+      "dual_status": "DUAL_CLOSED_TO_OPENING",
+      "rnd1_proposal": {
+        "mode": "open_code_mock_sampler",
+        "closure_mode": "full",
+        "sequences_digest": "379bfbbbe5c3a4bc7f6a58abe07f2df792257c6a740c320da8d79b9688035b28",
+        "trace_steps": 6,
+        "weights_used": false,
+        "detail": "RND1 open sampling.py under our hooks with finite mock LM (no 30B)",
+        "evidence": {
+          "forward_passes": 6,
+          "shape": [
+            1,
+            16
+          ],
+          "hf_model": "radicalnumerics/RND1-Base-0910",
+          "vendored": "rnd/"
+        }
+      },
+      "our_joint": "VERIFIED",
+      "rnd1_joint": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+      "our_receipt": {
+        "system_id": "bio-closure-independent",
+        "benchmark_id": "gene-completion",
+        "episode_id": "opengenome2-gene-000",
+        "architecture": {
+          "system_id": "bio-closure-independent",
+          "family": "black-mirror-closure",
+          "biological_native": true,
+          "open_weights": false,
+          "weights_available": true,
+          "proposal_mode": "independent_kernel",
+          "architecture_digest": "02a12803098d30f16ff02cc17243a65cb6615e95d86edf446d05579612dd5679",
+          "representation_shadow": {
+            "epistemic_status": "RERUNNABLE_FINITE_KERNEL",
+            "availability": "repository-local",
+            "role": "OUR self-contained Closure AGI"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "RNA",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "KERNEL_EXECUTED",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "VERIFIED",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=KERNEL_EXECUTED; joint=VERIFIED; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING",
+        "reunification_digest": "82b414cc70ab103eb60d7ecb28943a1a9e999cd68fa59b8487945979710799c2",
+        "turn_unity_digest": "c8e2883628479d8c5ac98324cb623d311accd53a981f52bcd4d59344c580bd8a",
+        "verification_digest": "857f244b0096ff54c81c414c64a04c17fcc200f50a5bcd806a4efe064c1a6281",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "980105653b2e13d1ed62acb7",
+        "dual_digest": "13ddfac77f38201c72478555"
+      },
+      "rnd1_receipt": {
+        "system_id": "rnd1-plus-closure",
+        "benchmark_id": "gene-completion",
+        "episode_id": "opengenome2-gene-000",
+        "architecture": {
+          "system_id": "rnd1-plus-closure",
+          "family": "hybrid-external-under-our-admission",
+          "biological_native": false,
+          "open_weights": true,
+          "weights_available": false,
+          "proposal_mode": "open_weights_absent",
+          "architecture_digest": "4e2605a80ebce3f1512e0438b0544ae5856c21b51ab32acd56af4f85efb699cb",
+          "representation_shadow": {
+            "epistemic_status": "EXTERNAL_RN_ARCHITECTURE_UNDER_OUR_ADMISSION",
+            "availability": "repository-local-plus-open-weights",
+            "role": "EXTERNAL RND1 proposals admitted under OUR closure hooks"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "RNA",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "OPEN_WEIGHTS_ABSENT",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=OPEN_WEIGHTS_ABSENT; joint=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING",
+        "reunification_digest": "68eb92c0884ae289c9a73c3660a72c7e9cab15297cc47c0a32b246750b7ec6a3",
+        "turn_unity_digest": "6b3eacba9763adfea0d0e435e135cdadef7e0d55367d322343cfc0e003670389",
+        "verification_digest": "f593509cb26ade7b7a16c8746c5db7f0904d82b24dccd0130d283bb90c2be51e",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "980105653b2e13d1ed62acb7",
+        "dual_digest": "0c7b7a3f544959aa79d37258"
+      }
+    },
+    {
+      "episode_id": "opengenome2-seq-001",
+      "benchmark_id": "sequence-likelihood",
+      "dataset_role": "open-dataset:opengenome2",
+      "combined_status": "COMBINED_OUR_VERIFIED_RN_PRESENT_GOEL_BOUND",
+      "reason": "our=VERIFIED; rnd1=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING; rnd1_proposal=open_code_mock_sampler",
+      "combined_digest": "489de695c2d8614e2d094fb68bd4729e86420cde20960c8c7b162f4f93dc487f",
+      "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+      "goel_mode_from_wuite": "polymerase",
+      "dual_status": "DUAL_CLOSED_TO_OPENING",
+      "rnd1_proposal": {
+        "mode": "open_code_mock_sampler",
+        "closure_mode": "full",
+        "sequences_digest": "379bfbbbe5c3a4bc7f6a58abe07f2df792257c6a740c320da8d79b9688035b28",
+        "trace_steps": 6,
+        "weights_used": false,
+        "detail": "RND1 open sampling.py under our hooks with finite mock LM (no 30B)",
+        "evidence": {
+          "forward_passes": 6,
+          "shape": [
+            1,
+            16
+          ],
+          "hf_model": "radicalnumerics/RND1-Base-0910",
+          "vendored": "rnd/"
+        }
+      },
+      "our_joint": "VERIFIED",
+      "rnd1_joint": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+      "our_receipt": {
+        "system_id": "bio-closure-independent",
+        "benchmark_id": "sequence-likelihood",
+        "episode_id": "opengenome2-seq-001",
+        "architecture": {
+          "system_id": "bio-closure-independent",
+          "family": "black-mirror-closure",
+          "biological_native": true,
+          "open_weights": false,
+          "weights_available": true,
+          "proposal_mode": "independent_kernel",
+          "architecture_digest": "02a12803098d30f16ff02cc17243a65cb6615e95d86edf446d05579612dd5679",
+          "representation_shadow": {
+            "epistemic_status": "RERUNNABLE_FINITE_KERNEL",
+            "availability": "repository-local",
+            "role": "OUR self-contained Closure AGI"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "environment",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "KERNEL_EXECUTED",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "VERIFIED",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=KERNEL_EXECUTED; joint=VERIFIED; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING",
+        "reunification_digest": "db066730fac7a6dd9ab6b27cf42227d556805b2473129f15ab8a6e3a7eb48058",
+        "turn_unity_digest": "3b558ef9be4dc1e5481f61a86041a1448fb8863d053fa1e6e80a47f8164e5eaf",
+        "verification_digest": "b291c763e50571c667994924bb7a0dfd7ec792bfca784e5371a5ebbf16db9321",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "379c316d60f65eef4d33b02c",
+        "dual_digest": "457339284985c9a4ffd162ae"
+      },
+      "rnd1_receipt": {
+        "system_id": "rnd1-plus-closure",
+        "benchmark_id": "sequence-likelihood",
+        "episode_id": "opengenome2-seq-001",
+        "architecture": {
+          "system_id": "rnd1-plus-closure",
+          "family": "hybrid-external-under-our-admission",
+          "biological_native": false,
+          "open_weights": true,
+          "weights_available": false,
+          "proposal_mode": "open_weights_absent",
+          "architecture_digest": "4e2605a80ebce3f1512e0438b0544ae5856c21b51ab32acd56af4f85efb699cb",
+          "representation_shadow": {
+            "epistemic_status": "EXTERNAL_RN_ARCHITECTURE_UNDER_OUR_ADMISSION",
+            "availability": "repository-local-plus-open-weights",
+            "role": "EXTERNAL RND1 proposals admitted under OUR closure hooks"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "environment",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "OPEN_WEIGHTS_ABSENT",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=OPEN_WEIGHTS_ABSENT; joint=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING",
+        "reunification_digest": "24a30a53561f1a8aad1c7f04d29708c8213468b878c3b86c711b59b7ea266284",
+        "turn_unity_digest": "99e9fb0468e02d7c3b32a4a9bbae36d0308546da72df9e655b19b864ebe61100",
+        "verification_digest": "39bb9c9d1f1bf7d0cb6313a6a5e50b52380c5824b7823d81c71adfb1dfeb42e9",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "379c316d60f65eef4d33b02c",
+        "dual_digest": "574f82fd01f8fffcc32cbaa7"
+      }
+    },
+    {
+      "episode_id": "opengenome2-gene-001",
+      "benchmark_id": "gene-completion",
+      "dataset_role": "open-dataset:opengenome2",
+      "combined_status": "COMBINED_OUR_VERIFIED_RN_PRESENT_GOEL_BOUND",
+      "reason": "our=VERIFIED; rnd1=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING; rnd1_proposal=open_code_mock_sampler",
+      "combined_digest": "3ac0c427532bc690f87d031b3e230daa3dcec7da5c95617b9bbbedf083acad14",
+      "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+      "goel_mode_from_wuite": "polymerase",
+      "dual_status": "DUAL_CLOSED_TO_OPENING",
+      "rnd1_proposal": {
+        "mode": "open_code_mock_sampler",
+        "closure_mode": "full",
+        "sequences_digest": "379bfbbbe5c3a4bc7f6a58abe07f2df792257c6a740c320da8d79b9688035b28",
+        "trace_steps": 6,
+        "weights_used": false,
+        "detail": "RND1 open sampling.py under our hooks with finite mock LM (no 30B)",
+        "evidence": {
+          "forward_passes": 6,
+          "shape": [
+            1,
+            16
+          ],
+          "hf_model": "radicalnumerics/RND1-Base-0910",
+          "vendored": "rnd/"
+        }
+      },
+      "our_joint": "VERIFIED",
+      "rnd1_joint": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+      "our_receipt": {
+        "system_id": "bio-closure-independent",
+        "benchmark_id": "gene-completion",
+        "episode_id": "opengenome2-gene-001",
+        "architecture": {
+          "system_id": "bio-closure-independent",
+          "family": "black-mirror-closure",
+          "biological_native": true,
+          "open_weights": false,
+          "weights_available": true,
+          "proposal_mode": "independent_kernel",
+          "architecture_digest": "02a12803098d30f16ff02cc17243a65cb6615e95d86edf446d05579612dd5679",
+          "representation_shadow": {
+            "epistemic_status": "RERUNNABLE_FINITE_KERNEL",
+            "availability": "repository-local",
+            "role": "OUR self-contained Closure AGI"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "RNA",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "KERNEL_EXECUTED",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "VERIFIED",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=KERNEL_EXECUTED; joint=VERIFIED; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING",
+        "reunification_digest": "cb7b69b13a9a9951457e2b4df73623407c17ed2eaa66d0f61606af8ad95e7f48",
+        "turn_unity_digest": "268cd3c8746feccc67b1e739a63ff42ef2f44dc6dde578bedc5404d0fcfa281f",
+        "verification_digest": "4e2dbd96120bcaa4a2007cc30099702af9c93f951d3e7cef2921bab225594a6e",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "bb3fedf81ceb16cc699e9f97",
+        "dual_digest": "efe621d88db3caa0c966b899"
+      },
+      "rnd1_receipt": {
+        "system_id": "rnd1-plus-closure",
+        "benchmark_id": "gene-completion",
+        "episode_id": "opengenome2-gene-001",
+        "architecture": {
+          "system_id": "rnd1-plus-closure",
+          "family": "hybrid-external-under-our-admission",
+          "biological_native": false,
+          "open_weights": true,
+          "weights_available": false,
+          "proposal_mode": "open_weights_absent",
+          "architecture_digest": "4e2605a80ebce3f1512e0438b0544ae5856c21b51ab32acd56af4f85efb699cb",
+          "representation_shadow": {
+            "epistemic_status": "EXTERNAL_RN_ARCHITECTURE_UNDER_OUR_ADMISSION",
+            "availability": "repository-local-plus-open-weights",
+            "role": "EXTERNAL RND1 proposals admitted under OUR closure hooks"
+          }
+        },
+        "modalities": [
+          "DNA",
+          "RNA",
+          "returned_consequence"
+        ],
+        "operation_admission": "ADMITTED",
+        "topology_resolution": "CLOSED_TO_OPENING",
+        "verification_status": "VERIFIED",
+        "write_back_allowed": true,
+        "authoritative": true,
+        "shadows_present_noncertifying": false,
+        "learned_claim_status": "OPEN_WEIGHTS_ABSENT",
+        "data_admission_status": "VERIFIED",
+        "joint_arm_status": "OPEN_ARCHITECTURE_WEIGHTS_ABSENT",
+        "reason": "operation and its verification topology are jointly closure-admitted; learned_claim=OPEN_WEIGHTS_ABSENT; joint=OPEN_ARCHITECTURE_WEIGHTS_ABSENT; goel=ADMITTED_GLOBAL_HAIR; dual=DUAL_CLOSED_TO_OPENING",
+        "reunification_digest": "43c8c5417a93433122dddc39d095962b0d5c7850cc1c6ca76566473805e1fc5e",
+        "turn_unity_digest": "8e75fe08f0d740f58e055f17d601182eca64b45d597d71024e427423ee1993df",
+        "verification_digest": "08439033b69d886fb6bb9acac8f14cc912a4b871f3a4fe12267f5d1f915a068a",
+        "goel_operator_status": "ADMITTED_GLOBAL_HAIR",
+        "goel_quantum_claim": "NO_QUANTUM_CARRIER_ASSERTED",
+        "dual_kakeya_goel_status": "DUAL_CLOSED_TO_OPENING",
+        "goel_operator_digest": "bb3fedf81ceb16cc699e9f97",
+        "dual_digest": "2fa5a9c5211c2ca065586f45"
+      }
+    }
+  ],
+  "architecture_digest": "9259a95dea7778a883f96ced"
+}
