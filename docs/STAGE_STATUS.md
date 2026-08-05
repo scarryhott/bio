@@ -3,23 +3,24 @@
 ## Current verdict
 
 ```text
-CLOSED_FULL_CLOSURE_REUNIFIED_RND1_VERIFIED
+CLOSED_FINITE_UPSTREAM_VERIFIED_RND1_CLOSURE_INTEGRATION
 CLOSED_FULL_MODEL_CAUSAL_INTEGRATION
+CLOSED_FULL_CLOSURE_CONTROLLER_REUNIFIED_RND1
+OPEN_FULL_UNIFIED_30B_HOLISTIC_COMPARISON
 OPEN_HOLISTIC_QUALITY_ADVANTAGE
 OPEN_CONNECTED_RETURN_QUALITY_ADVANTAGE
 ```
 
-Prior finite stage remains closed as foundation:
+**Definition:** the *full unified verification closure* is the **full 30B-model
+holistic comparison** across
 
 ```text
-CLOSED_FINITE_UPSTREAM_VERIFIED_RND1_CLOSURE_INTEGRATION
+off | probe | full | full-connected-return
 ```
 
-Epistemic labels: **REPORTED ARTIFACT** (A100 full-model compare) atop **RERUNNABLE** finite/upstream verification.
-
-One-line reading:
-
-> The closure architecture is verified as a live, low-overhead intervention on current RND1, but holistic generation quality remains OPEN because full admission substantially changes outputs while lowering the current coherence shadow.
+on `radicalnumerics/RND1-Base-0910` under identical prompts, seeds, and hardware.
+Finite controller reunification and the prior A100 `off/probe/full` causal run are
+necessary foundations; they are **not** that closure.
 
 ## Full-model result (A100-80GB, bf16)
 

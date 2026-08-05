@@ -9,9 +9,34 @@ Explicit labels used throughout this repository:
 | **DESIGN DERIVATION** | Architecture derived from unified Black Mirror / IVI–NRR closure axiometry |
 | **OPEN EMPIRICAL CLAIM** | Requires `radicalnumerics/RND1-Base-0910` + GPU; not asserted by CI |
 
-## Full-model stage (measured)
+## Full unified verification (= 30B holistic comparison)
 
-A100 compare (`benchmarks/results/cloud_latest.json`) closes **causal integration**:
+The full unified verification closure is **not** the finite reunification commit.
+It is the GPU holistic compare of all four modes on `RND1-Base-0910`:
+
+```text
+off | probe | full | full-connected-return
+```
+
+Until that artifact is measured and quality criteria are assessed, status remains:
+
+```text
+OPEN_FULL_UNIFIED_30B_HOLISTIC_COMPARISON
+```
+
+Harness:
+
+```bash
+python benchmarks/compare_rnd1_closure.py \
+  --model radicalnumerics/RND1-Base-0910 \
+  --modes off probe full full-connected-return \
+  --seeds 1 2 3 4 5 --steps 32
+```
+
+## Full-model stage (measured so far)
+
+A100 compare (`benchmarks/results/cloud_latest.json`) closes **causal integration**
+for `off/probe/full` only (no `full-connected-return` in that run):
 
 - \(\operatorname{Output}_{\mathrm{probe}}=\operatorname{Output}_{\mathrm{off}}\) with open-event telemetry
 - \(\operatorname{Output}_{\mathrm{full}}\neq\operatorname{Output}_{\mathrm{off}}\) (~92.6% token diffs; ~4.4% latency)
